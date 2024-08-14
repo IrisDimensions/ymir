@@ -4,8 +4,8 @@
 
 ## Screenshots:
 
-![Image](screenshots/image.jpg)
-![Image](screenshots/image-1.jpg)
-![Image](screenshots/image-2.jpg)
-![Image](screenshots/image-3.jpg)
-![Image](screenshots/image-4.jpg)
+![Image](screenshots/image.png)
+![Image](screenshots/image-1.png)
+![Image](screenshots/image-2.png)
+![Image](screenshots/image-3.png)
+![Image](screenshots/image-4.png)
