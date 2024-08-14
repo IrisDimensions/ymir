@@ -2,7 +2,7 @@
   "name": "Snowy Sakura",
   "rarity": 1,
   "color": "#72d86e",
-  "landBiomeZoom": 1,
+  "landBiomeZoom": 2,
   "landBiomes": ["sakura/snowy-sakura"],
   "entitySpawners": ["temperate/passive"],
   "seaBiomeZoom": 1,

@@ -1,40 +1,33 @@
 {
-    "name": "Ocean",
-    "rarity": 1,
-    "color": "#72d86e",
-    "landBiomeZoom": 1,
-    "landBiomes": [
-        "ocean/coast"
-        ],
-    "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
-    "entitySpawners": [
-        "ocean"
-    ],
-    "jigsawStructures": [
-        {
-            "separation": 100,
-            "spacing": 100,
-            "spreadType": "LINEAR",
-            "rarity": 7000,
-            "structure": "ocean-monument"
-        }
-    ],
-    "shoreBiomeZoom": 0.15,
-    "shoreHeightMin": 1,
-    "shoreHeightMax": 5.2,
-    "shoreHeightZoom": 1.14,
-    "shoreBiomes": [
-        "temperate/shore/beach",
-        "temperate/shore/oak-beach"
-        ],
-    "seaBiomeZoom": 5,
-    "seaBiomes": [
-        "ocean/deep",
-        "ocean/dark-depth-ocean",
-        "ocean/rich-oceans",
-        "ocean/coral-sea",
-        "tropical/sea/ocean",
-        "tropical/sea/coral-ocean",
-        "ocean/end-deep-ocean"
-    ]
+  "name": "Ocean",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 0.01,
+  "landBiomes": ["ocean/coast"],
+  "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
+  "entitySpawners": ["ocean"],
+  "jigsawStructures": [
+    {
+      "separation": 100,
+      "spacing": 100,
+      "spreadType": "LINEAR",
+      "rarity": 7000,
+      "structure": "ocean-monument"
+    }
+  ],
+  "shoreBiomeZoom": 0.15,
+  "shoreHeightMin": 1,
+  "shoreHeightMax": 5.2,
+  "shoreHeightZoom": 1.14,
+  "shoreBiomes": ["temperate/shore/beach", "temperate/shore/oak-beach"],
+  "seaBiomeZoom": 7,
+  "seaBiomes": [
+    "ocean/deep",
+    "ocean/dark-depth-ocean",
+    "ocean/rich-oceans",
+    "ocean/coral-sea",
+    "tropical/sea/ocean",
+    "tropical/sea/coral-ocean",
+    "ocean/end-deep-ocean"
+  ]
 }

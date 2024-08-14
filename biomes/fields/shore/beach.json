@@ -1,0 +1,58 @@
+{
+  "name": "Beach",
+  "derivative": "BEACH",
+  "vanillaDerivative": "BEACH",
+  "color": "#e7ea48",
+  "generators": [
+    {
+      "min": 0,
+      "max": 2,
+      "generator": "smooth-land"
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "fields_green",
+      "foliageColor": "#2b772c",
+      "grassColor": "#2b772c",
+      "skyColor": "#56a2e7",
+      "category": "icy"
+    },
+    {
+      "id": "fields_darkgreen",
+      "foliageColor": "#549a54",
+      "grassColor": "#549a54",
+      "skyColor": "#56a2e7",
+      "category": "icy"
+    },
+    {
+      "id": "fields_darkgreener",
+      "foliageColor": "#185737",
+      "grassColor": "#185737",
+      "skyColor": "#56a2e7",
+      "category": "icy"
+    }
+  ],
+  "biomeStyle": {
+    "style": "GLOB",
+    "zoom": 0.05
+  },
+  "entitySpawners": [
+    "temperate/passive",
+    "temperate/hostile",
+    "temperate/cave"
+  ],
+  "layers": [
+    {
+      "palette": [
+        { "block": "minecraft:sand" },
+        { "block": "minecraft:sandstone" }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [{ "block": "minecraft:sandstone" }]
+    }
+  ]
+}

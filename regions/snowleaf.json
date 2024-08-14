@@ -2,7 +2,7 @@
   "name": "Snowleaf",
   "rarity": 1,
   "color": "#274e13",
-  "landBiomeZoom": 1,
+  "landBiomeZoom": 2,
   "landBiomes": [
     "snowleaf/snowy-briar-hollow",
     "snowleaf/briar-hollow",

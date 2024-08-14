@@ -16,7 +16,7 @@
     "multiplier": 1,
     "tables": ["tropical/dungeon"]
   },
-  "landBiomeZoom": 1,
+  "landBiomeZoom": 2,
   "seaBiomeZoom": 1,
   "shoreBiomes": ["summit/shore/beach"],
   "seaBiomes": ["summit/ocean/river"],

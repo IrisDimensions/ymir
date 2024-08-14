@@ -2,7 +2,7 @@
   "name": "Sangria",
   "rarity": 1,
   "color": "#fffa66",
-  "landBiomeZoom": 1,
+  "landBiomeZoom": 2,
   "landBiomes": ["sangria/small-valley", "sangria/arid-valley"],
   "entitySpawners": ["hot/passive", "hot/hostile", "hot/cave"],
   "shoreBiomeZoom": 1,

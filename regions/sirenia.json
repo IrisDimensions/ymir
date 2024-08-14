@@ -2,7 +2,7 @@
   "name": "Sirenia",
   "rarity": 1,
   "color": "#274e13",
-  "landBiomeZoom": 1,
+  "landBiomeZoom": 3,
   "landBiomes": [
     "sirenia/torrential-basin",
     "sirenia/whispering-vines",

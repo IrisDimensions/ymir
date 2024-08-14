@@ -1,40 +1,33 @@
 {
-    "name": "Galecrest",
-    "rarity": 1,
-    "color": "#72d86e",
-    "landBiomeZoom": 1,
-    "landBiomes": [
-        "galecrest/golden-desert",
-        "galecrest/golden-plains",
-        "galecrest/golden-desert-spires"
-        ],
-    "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
-    "entitySpawners": [
-        "hot/cave",
-        "hot/hostile",
-        "hot/water",
-        "hot/passive"
-    ],
-    "jigsawStructures": [
-        {
-            "separation": 100,
-            "spacing": 100,
-            "spreadType": "LINEAR",
-            "rarity": 5000,
-            "structure": "village-desert"
-        }
-    ],
-    "shoreBiomeZoom": 1,
-    "shoreHeightMax": 4,
-    "shoreHeightMin": 0,
-    "shoreBiomes": [
-        "galecrest/shore/beach"
-        ],
-    "seaBiomeZoom": 1,
-    "seaBiomes": [
-        "galecrest/ocean/river",
-        "ocean/dark-depth-ocean",
-        "ocean/deep",
-        "ocean/rich-oceans"
-    ]
+  "name": "Galecrest",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 1,
+  "landBiomes": [
+    "galecrest/golden-desert",
+    "galecrest/golden-plains",
+    "galecrest/golden-desert-spires"
+  ],
+  "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
+  "entitySpawners": ["hot/cave", "hot/hostile", "hot/water", "hot/passive"],
+  "jigsawStructures": [
+    {
+      "separation": 100,
+      "spacing": 100,
+      "spreadType": "LINEAR",
+      "rarity": 5000,
+      "structure": "village-desert"
+    }
+  ],
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 4,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["galecrest/shore/beach"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": [
+    "galecrest/ocean/river",
+    "ocean/dark-depth-ocean",
+    "ocean/deep",
+    "ocean/rich-oceans"
+  ]
 }

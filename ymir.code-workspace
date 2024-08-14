@@ -1,1095 +1,1095 @@
 {
-  "folders": [{ "path": "." }],
-  "settings": {
-    "workbench.colorTheme": "Monokai Classic",
-    "workbench.preferredDarkColorTheme": "Monokai Classic",
-    "workbench.tips.enabled": false,
-    "workbench.tree.indent": 24,
-    "files.autoSave": "onFocusChange",
-    "[json]": {
-      "editor.autoIndent": "brackets",
-      "editor.acceptSuggestionOnEnter": "smart",
-      "editor.cursorSmoothCaretAnimation": "on",
-      "editor.dragAndDrop": false,
-      "files.trimTrailingWhitespace": true,
-      "diffEditor.ignoreTrimWhitespace": true,
-      "files.trimFinalNewlines": true,
-      "editor.suggest.showKeywords": false,
-      "editor.suggest.showSnippets": false,
-      "editor.suggest.showWords": false,
-      "editor.quickSuggestions": { "strings": true },
-      "editor.suggest.insertMode": "replace"
-    },
-    "json.maxItemsComputed": 30000,
-    "json.schemas": [
-      {
-        "fileMatch": [
-          "/jigsaw-structures/*.json",
-          "/jigsaw-structures/*/*.json",
-          "/jigsaw-structures/*/*/*.json",
-          "/jigsaw-structures/*/*/*/*.json",
-          "/jigsaw-structures/*/*/*/*/*.json",
-          "/jigsaw-structures/*/*/*/*/*/*.json",
-          "/jigsaw-structures/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/jigsaw-structures-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/jigsaw-pieces/*.json",
-          "/jigsaw-pieces/*/*.json",
-          "/jigsaw-pieces/*/*/*.json",
-          "/jigsaw-pieces/*/*/*/*.json",
-          "/jigsaw-pieces/*/*/*/*/*.json",
-          "/jigsaw-pieces/*/*/*/*/*/*.json",
-          "/jigsaw-pieces/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/jigsaw-pieces-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/ravines/*.json",
-          "/ravines/*/*.json",
-          "/ravines/*/*/*.json",
-          "/ravines/*/*/*/*.json",
-          "/ravines/*/*/*/*/*.json",
-          "/ravines/*/*/*/*/*/*.json",
-          "/ravines/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/ravines-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/jigsaw-pools/*.json",
-          "/jigsaw-pools/*/*.json",
-          "/jigsaw-pools/*/*/*.json",
-          "/jigsaw-pools/*/*/*/*.json",
-          "/jigsaw-pools/*/*/*/*/*.json",
-          "/jigsaw-pools/*/*/*/*/*/*.json",
-          "/jigsaw-pools/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/jigsaw-pools-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/biomes/*.json",
-          "/biomes/*/*.json",
-          "/biomes/*/*/*.json",
-          "/biomes/*/*/*/*.json",
-          "/biomes/*/*/*/*/*.json",
-          "/biomes/*/*/*/*/*/*.json",
-          "/biomes/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/biomes-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/spawners/*.json",
-          "/spawners/*/*.json",
-          "/spawners/*/*/*.json",
-          "/spawners/*/*/*/*.json",
-          "/spawners/*/*/*/*/*.json",
-          "/spawners/*/*/*/*/*/*.json",
-          "/spawners/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/spawners-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/regions/*.json",
-          "/regions/*/*.json",
-          "/regions/*/*/*.json",
-          "/regions/*/*/*/*.json",
-          "/regions/*/*/*/*/*.json",
-          "/regions/*/*/*/*/*/*.json",
-          "/regions/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/regions-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/loot/*.json",
-          "/loot/*/*.json",
-          "/loot/*/*/*.json",
-          "/loot/*/*/*/*.json",
-          "/loot/*/*/*/*/*.json",
-          "/loot/*/*/*/*/*/*.json",
-          "/loot/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/loot-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/entities/*.json",
-          "/entities/*/*.json",
-          "/entities/*/*/*.json",
-          "/entities/*/*/*/*.json",
-          "/entities/*/*/*/*/*.json",
-          "/entities/*/*/*/*/*/*.json",
-          "/entities/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/entities-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/expressions/*.json",
-          "/expressions/*/*.json",
-          "/expressions/*/*/*.json",
-          "/expressions/*/*/*/*.json",
-          "/expressions/*/*/*/*/*.json",
-          "/expressions/*/*/*/*/*/*.json",
-          "/expressions/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/expressions-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/blocks/*.json",
-          "/blocks/*/*.json",
-          "/blocks/*/*/*.json",
-          "/blocks/*/*/*/*.json",
-          "/blocks/*/*/*/*/*.json",
-          "/blocks/*/*/*/*/*/*.json",
-          "/blocks/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/blocks-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/mods/*.json",
-          "/mods/*/*.json",
-          "/mods/*/*/*.json",
-          "/mods/*/*/*/*.json",
-          "/mods/*/*/*/*/*.json",
-          "/mods/*/*/*/*/*/*.json",
-          "/mods/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/mods-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/dimensions/*.json",
-          "/dimensions/*/*.json",
-          "/dimensions/*/*/*.json",
-          "/dimensions/*/*/*/*.json",
-          "/dimensions/*/*/*/*/*.json",
-          "/dimensions/*/*/*/*/*/*.json",
-          "/dimensions/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/dimensions-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/markers/*.json",
-          "/markers/*/*.json",
-          "/markers/*/*/*.json",
-          "/markers/*/*/*/*.json",
-          "/markers/*/*/*/*/*.json",
-          "/markers/*/*/*/*/*/*.json",
-          "/markers/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/markers-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/generators/*.json",
-          "/generators/*/*.json",
-          "/generators/*/*/*.json",
-          "/generators/*/*/*/*.json",
-          "/generators/*/*/*/*/*.json",
-          "/generators/*/*/*/*/*/*.json",
-          "/generators/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/generators-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/caves/*.json",
-          "/caves/*/*.json",
-          "/caves/*/*/*.json",
-          "/caves/*/*/*/*.json",
-          "/caves/*/*/*/*/*.json",
-          "/caves/*/*/*/*/*/*.json",
-          "/caves/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/caves-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/effect/*.json",
-          "/snippet/effect/*/*.json",
-          "/snippet/effect/*/*/*.json",
-          "/snippet/effect/*/*/*/*.json",
-          "/snippet/effect/*/*/*/*/*.json",
-          "/snippet/effect/*/*/*/*/*/*.json",
-          "/snippet/effect/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/effect-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-replacer/*.json",
-          "/snippet/object-replacer/*/*.json",
-          "/snippet/object-replacer/*/*/*.json",
-          "/snippet/object-replacer/*/*/*/*.json",
-          "/snippet/object-replacer/*/*/*/*/*.json",
-          "/snippet/object-replacer/*/*/*/*/*/*.json",
-          "/snippet/object-replacer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-replacer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/carving-pyramid/*.json",
-          "/snippet/carving-pyramid/*/*.json",
-          "/snippet/carving-pyramid/*/*/*.json",
-          "/snippet/carving-pyramid/*/*/*/*.json",
-          "/snippet/carving-pyramid/*/*/*/*/*.json",
-          "/snippet/carving-pyramid/*/*/*/*/*/*.json",
-          "/snippet/carving-pyramid/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/carving-pyramid-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/noise-style-replacer/*.json",
-          "/snippet/noise-style-replacer/*/*.json",
-          "/snippet/noise-style-replacer/*/*/*.json",
-          "/snippet/noise-style-replacer/*/*/*/*.json",
-          "/snippet/noise-style-replacer/*/*/*/*/*.json",
-          "/snippet/noise-style-replacer/*/*/*/*/*/*.json",
-          "/snippet/noise-style-replacer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/noise-style-replacer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-placement-biome-injector/*.json",
-          "/snippet/object-placement-biome-injector/*/*.json",
-          "/snippet/object-placement-biome-injector/*/*/*.json",
-          "/snippet/object-placement-biome-injector/*/*/*/*.json",
-          "/snippet/object-placement-biome-injector/*/*/*/*/*.json",
-          "/snippet/object-placement-biome-injector/*/*/*/*/*/*.json",
-          "/snippet/object-placement-biome-injector/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-placement-biome-injector-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/custom-biome-particle/*.json",
-          "/snippet/custom-biome-particle/*/*.json",
-          "/snippet/custom-biome-particle/*/*/*.json",
-          "/snippet/custom-biome-particle/*/*/*/*.json",
-          "/snippet/custom-biome-particle/*/*/*/*/*.json",
-          "/snippet/custom-biome-particle/*/*/*/*/*/*.json",
-          "/snippet/custom-biome-particle/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/custom-biome-particle-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/loot/*.json",
-          "/snippet/loot/*/*.json",
-          "/snippet/loot/*/*/*.json",
-          "/snippet/loot/*/*/*/*.json",
-          "/snippet/loot/*/*/*/*/*.json",
-          "/snippet/loot/*/*/*/*/*/*.json",
-          "/snippet/loot/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/loot-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/potion-effect/*.json",
-          "/snippet/potion-effect/*/*.json",
-          "/snippet/potion-effect/*/*/*.json",
-          "/snippet/potion-effect/*/*/*/*.json",
-          "/snippet/potion-effect/*/*/*/*/*.json",
-          "/snippet/potion-effect/*/*/*/*/*/*.json",
-          "/snippet/potion-effect/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/potion-effect-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/enchantment/*.json",
-          "/snippet/enchantment/*/*.json",
-          "/snippet/enchantment/*/*/*.json",
-          "/snippet/enchantment/*/*/*/*.json",
-          "/snippet/enchantment/*/*/*/*/*.json",
-          "/snippet/enchantment/*/*/*/*/*/*.json",
-          "/snippet/enchantment/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/enchantment-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-block-replacer/*.json",
-          "/snippet/object-block-replacer/*/*.json",
-          "/snippet/object-block-replacer/*/*/*.json",
-          "/snippet/object-block-replacer/*/*/*/*.json",
-          "/snippet/object-block-replacer/*/*/*/*/*.json",
-          "/snippet/object-block-replacer/*/*/*/*/*/*.json",
-          "/snippet/object-block-replacer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-block-replacer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-scale/*.json",
-          "/snippet/object-scale/*/*.json",
-          "/snippet/object-scale/*/*/*.json",
-          "/snippet/object-scale/*/*/*/*.json",
-          "/snippet/object-scale/*/*/*/*/*.json",
-          "/snippet/object-scale/*/*/*/*/*/*.json",
-          "/snippet/object-scale/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-scale-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/block-drops/*.json",
-          "/snippet/block-drops/*/*.json",
-          "/snippet/block-drops/*/*/*.json",
-          "/snippet/block-drops/*/*/*/*.json",
-          "/snippet/block-drops/*/*/*/*/*.json",
-          "/snippet/block-drops/*/*/*/*/*/*.json",
-          "/snippet/block-drops/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/block-drops-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/jigsaw-placer/*.json",
-          "/snippet/jigsaw-placer/*/*.json",
-          "/snippet/jigsaw-placer/*/*/*.json",
-          "/snippet/jigsaw-placer/*/*/*/*.json",
-          "/snippet/jigsaw-placer/*/*/*/*/*.json",
-          "/snippet/jigsaw-placer/*/*/*/*/*/*.json",
-          "/snippet/jigsaw-placer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/jigsaw-placer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/generator/*.json",
-          "/snippet/generator/*/*.json",
-          "/snippet/generator/*/*/*.json",
-          "/snippet/generator/*/*/*/*.json",
-          "/snippet/generator/*/*/*/*/*.json",
-          "/snippet/generator/*/*/*/*/*/*.json",
-          "/snippet/generator/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/generator-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/carving-sphere/*.json",
-          "/snippet/carving-sphere/*/*.json",
-          "/snippet/carving-sphere/*/*/*.json",
-          "/snippet/carving-sphere/*/*/*/*.json",
-          "/snippet/carving-sphere/*/*/*/*/*.json",
-          "/snippet/carving-sphere/*/*/*/*/*/*.json",
-          "/snippet/carving-sphere/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/carving-sphere-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-limit/*.json",
-          "/snippet/object-limit/*/*.json",
-          "/snippet/object-limit/*/*/*.json",
-          "/snippet/object-limit/*/*/*/*.json",
-          "/snippet/object-limit/*/*/*/*/*.json",
-          "/snippet/object-limit/*/*/*/*/*/*.json",
-          "/snippet/object-limit/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-limit-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/ravine-placer/*.json",
-          "/snippet/ravine-placer/*/*.json",
-          "/snippet/ravine-placer/*/*/*.json",
-          "/snippet/ravine-placer/*/*/*/*.json",
-          "/snippet/ravine-placer/*/*/*/*/*.json",
-          "/snippet/ravine-placer/*/*/*/*/*/*.json",
-          "/snippet/ravine-placer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/ravine-placer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/loot-registry/*.json",
-          "/snippet/loot-registry/*/*.json",
-          "/snippet/loot-registry/*/*/*.json",
-          "/snippet/loot-registry/*/*/*/*.json",
-          "/snippet/loot-registry/*/*/*/*/*.json",
-          "/snippet/loot-registry/*/*/*/*/*/*.json",
-          "/snippet/loot-registry/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/loot-registry-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/cave-placer/*.json",
-          "/snippet/cave-placer/*/*.json",
-          "/snippet/cave-placer/*/*/*.json",
-          "/snippet/cave-placer/*/*/*/*.json",
-          "/snippet/cave-placer/*/*/*/*/*.json",
-          "/snippet/cave-placer/*/*/*/*/*/*.json",
-          "/snippet/cave-placer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/cave-placer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-loot/*.json",
-          "/snippet/object-loot/*/*.json",
-          "/snippet/object-loot/*/*/*.json",
-          "/snippet/object-loot/*/*/*/*.json",
-          "/snippet/object-loot/*/*/*/*/*.json",
-          "/snippet/object-loot/*/*/*/*/*/*.json",
-          "/snippet/object-loot/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-loot-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/style-range/*.json",
-          "/snippet/style-range/*/*.json",
-          "/snippet/style-range/*/*/*.json",
-          "/snippet/style-range/*/*/*/*.json",
-          "/snippet/style-range/*/*/*/*/*.json",
-          "/snippet/style-range/*/*/*/*/*/*.json",
-          "/snippet/style-range/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/style-range-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/time-block/*.json",
-          "/snippet/time-block/*/*.json",
-          "/snippet/time-block/*/*/*.json",
-          "/snippet/time-block/*/*/*/*.json",
-          "/snippet/time-block/*/*/*/*/*.json",
-          "/snippet/time-block/*/*/*/*/*/*.json",
-          "/snippet/time-block/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/time-block-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/command/*.json",
-          "/snippet/command/*/*.json",
-          "/snippet/command/*/*/*.json",
-          "/snippet/command/*/*/*/*.json",
-          "/snippet/command/*/*/*/*/*.json",
-          "/snippet/command/*/*/*/*/*/*.json",
-          "/snippet/command/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/command-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/biome-replacer/*.json",
-          "/snippet/biome-replacer/*/*.json",
-          "/snippet/biome-replacer/*/*/*.json",
-          "/snippet/biome-replacer/*/*/*/*.json",
-          "/snippet/biome-replacer/*/*/*/*/*.json",
-          "/snippet/biome-replacer/*/*/*/*/*/*.json",
-          "/snippet/biome-replacer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/biome-replacer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/deposit/*.json",
-          "/snippet/deposit/*/*.json",
-          "/snippet/deposit/*/*/*.json",
-          "/snippet/deposit/*/*/*/*.json",
-          "/snippet/deposit/*/*/*/*/*.json",
-          "/snippet/deposit/*/*/*/*/*/*.json",
-          "/snippet/deposit/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/deposit-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/matter-placer/*.json",
-          "/snippet/matter-placer/*/*.json",
-          "/snippet/matter-placer/*/*/*.json",
-          "/snippet/matter-placer/*/*/*/*.json",
-          "/snippet/matter-placer/*/*/*/*/*.json",
-          "/snippet/matter-placer/*/*/*/*/*/*.json",
-          "/snippet/matter-placer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/matter-placer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-marker/*.json",
-          "/snippet/object-marker/*/*.json",
-          "/snippet/object-marker/*/*/*.json",
-          "/snippet/object-marker/*/*/*/*.json",
-          "/snippet/object-marker/*/*/*/*/*.json",
-          "/snippet/object-marker/*/*/*/*/*/*.json",
-          "/snippet/object-marker/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-marker-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/attribute-modifier/*.json",
-          "/snippet/attribute-modifier/*/*.json",
-          "/snippet/attribute-modifier/*/*/*.json",
-          "/snippet/attribute-modifier/*/*/*/*.json",
-          "/snippet/attribute-modifier/*/*/*/*/*.json",
-          "/snippet/attribute-modifier/*/*/*/*/*/*.json",
-          "/snippet/attribute-modifier/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/attribute-modifier-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/carving/*.json",
-          "/snippet/carving/*/*.json",
-          "/snippet/carving/*/*/*.json",
-          "/snippet/carving/*/*/*/*.json",
-          "/snippet/carving/*/*/*/*/*.json",
-          "/snippet/carving/*/*/*/*/*/*.json",
-          "/snippet/carving/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/carving-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/custom-biome/*.json",
-          "/snippet/custom-biome/*/*.json",
-          "/snippet/custom-biome/*/*/*.json",
-          "/snippet/custom-biome/*/*/*/*.json",
-          "/snippet/custom-biome/*/*/*/*/*.json",
-          "/snippet/custom-biome/*/*/*/*/*/*.json",
-          "/snippet/custom-biome/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/custom-biome-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/image-map/*.json",
-          "/snippet/image-map/*/*.json",
-          "/snippet/image-map/*/*/*.json",
-          "/snippet/image-map/*/*/*/*.json",
-          "/snippet/image-map/*/*/*/*/*.json",
-          "/snippet/image-map/*/*/*/*/*/*.json",
-          "/snippet/image-map/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/image-map-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/axis-rotation/*.json",
-          "/snippet/axis-rotation/*/*.json",
-          "/snippet/axis-rotation/*/*/*.json",
-          "/snippet/axis-rotation/*/*/*/*.json",
-          "/snippet/axis-rotation/*/*/*/*/*.json",
-          "/snippet/axis-rotation/*/*/*/*/*/*.json",
-          "/snippet/axis-rotation/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/axis-rotation-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/color/*.json",
-          "/snippet/color/*/*.json",
-          "/snippet/color/*/*/*.json",
-          "/snippet/color/*/*/*/*.json",
-          "/snippet/color/*/*/*/*/*.json",
-          "/snippet/color/*/*/*/*/*/*.json",
-          "/snippet/color/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/color-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/duration/*.json",
-          "/snippet/duration/*/*.json",
-          "/snippet/duration/*/*/*.json",
-          "/snippet/duration/*/*/*/*.json",
-          "/snippet/duration/*/*/*/*/*.json",
-          "/snippet/duration/*/*/*/*/*/*.json",
-          "/snippet/duration/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/duration-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/stilt-settings/*.json",
-          "/snippet/stilt-settings/*/*.json",
-          "/snippet/stilt-settings/*/*/*.json",
-          "/snippet/stilt-settings/*/*/*/*.json",
-          "/snippet/stilt-settings/*/*/*/*/*.json",
-          "/snippet/stilt-settings/*/*/*/*/*/*.json",
-          "/snippet/stilt-settings/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/stilt-settings-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/color/*.json",
-          "/snippet/color/*/*.json",
-          "/snippet/color/*/*/*.json",
-          "/snippet/color/*/*/*/*.json",
-          "/snippet/color/*/*/*/*/*.json",
-          "/snippet/color/*/*/*/*/*/*.json",
-          "/snippet/color/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/color-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/command-registry/*.json",
-          "/snippet/command-registry/*/*.json",
-          "/snippet/command-registry/*/*/*.json",
-          "/snippet/command-registry/*/*/*/*.json",
-          "/snippet/command-registry/*/*/*/*/*.json",
-          "/snippet/command-registry/*/*/*/*/*/*.json",
-          "/snippet/command-registry/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/command-registry-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/tree/*.json",
-          "/snippet/tree/*/*.json",
-          "/snippet/tree/*/*/*.json",
-          "/snippet/tree/*/*/*/*.json",
-          "/snippet/tree/*/*/*/*/*.json",
-          "/snippet/tree/*/*/*/*/*/*.json",
-          "/snippet/tree/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/tree-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/dimension-mode/*.json",
-          "/snippet/dimension-mode/*/*.json",
-          "/snippet/dimension-mode/*/*/*.json",
-          "/snippet/dimension-mode/*/*/*/*.json",
-          "/snippet/dimension-mode/*/*/*/*/*.json",
-          "/snippet/dimension-mode/*/*/*/*/*/*.json",
-          "/snippet/dimension-mode/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/dimension-mode-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/region-replacer/*.json",
-          "/snippet/region-replacer/*/*.json",
-          "/snippet/region-replacer/*/*/*.json",
-          "/snippet/region-replacer/*/*/*/*.json",
-          "/snippet/region-replacer/*/*/*/*/*.json",
-          "/snippet/region-replacer/*/*/*/*/*/*.json",
-          "/snippet/region-replacer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/region-replacer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/tree-settings/*.json",
-          "/snippet/tree-settings/*/*.json",
-          "/snippet/tree-settings/*/*/*.json",
-          "/snippet/tree-settings/*/*/*/*.json",
-          "/snippet/tree-settings/*/*/*/*/*.json",
-          "/snippet/tree-settings/*/*/*/*/*/*.json",
-          "/snippet/tree-settings/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/tree-settings-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/decorator/*.json",
-          "/snippet/decorator/*/*.json",
-          "/snippet/decorator/*/*/*.json",
-          "/snippet/decorator/*/*/*/*.json",
-          "/snippet/decorator/*/*/*/*/*.json",
-          "/snippet/decorator/*/*/*/*/*/*.json",
-          "/snippet/decorator/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/decorator-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-placement-region-injector/*.json",
-          "/snippet/object-placement-region-injector/*/*.json",
-          "/snippet/object-placement-region-injector/*/*/*.json",
-          "/snippet/object-placement-region-injector/*/*/*/*.json",
-          "/snippet/object-placement-region-injector/*/*/*/*/*.json",
-          "/snippet/object-placement-region-injector/*/*/*/*/*/*.json",
-          "/snippet/object-placement-region-injector/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-placement-region-injector-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/biome-palette/*.json",
-          "/snippet/biome-palette/*/*.json",
-          "/snippet/biome-palette/*/*/*.json",
-          "/snippet/biome-palette/*/*/*/*.json",
-          "/snippet/biome-palette/*/*/*/*/*.json",
-          "/snippet/biome-palette/*/*/*/*/*/*.json",
-          "/snippet/biome-palette/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/biome-palette-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/river/*.json",
-          "/snippet/river/*/*.json",
-          "/snippet/river/*/*/*.json",
-          "/snippet/river/*/*/*/*.json",
-          "/snippet/river/*/*/*/*/*.json",
-          "/snippet/river/*/*/*/*/*/*.json",
-          "/snippet/river/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/river-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/lake/*.json",
-          "/snippet/lake/*/*.json",
-          "/snippet/lake/*/*/*.json",
-          "/snippet/lake/*/*/*/*.json",
-          "/snippet/lake/*/*/*/*/*.json",
-          "/snippet/lake/*/*/*/*/*/*.json",
-          "/snippet/lake/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/lake-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-placer/*.json",
-          "/snippet/object-placer/*/*.json",
-          "/snippet/object-placer/*/*/*.json",
-          "/snippet/object-placer/*/*/*/*.json",
-          "/snippet/object-placer/*/*/*/*/*.json",
-          "/snippet/object-placer/*/*/*/*/*/*.json",
-          "/snippet/object-placer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-placer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/worm/*.json",
-          "/snippet/worm/*/*.json",
-          "/snippet/worm/*/*/*.json",
-          "/snippet/worm/*/*/*/*.json",
-          "/snippet/worm/*/*/*/*/*.json",
-          "/snippet/worm/*/*/*/*/*/*.json",
-          "/snippet/worm/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/worm-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/style/*.json",
-          "/snippet/style/*/*.json",
-          "/snippet/style/*/*/*.json",
-          "/snippet/style/*/*/*/*.json",
-          "/snippet/style/*/*/*/*/*.json",
-          "/snippet/style/*/*/*/*/*/*.json",
-          "/snippet/style/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/style-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/range/*.json",
-          "/snippet/range/*/*.json",
-          "/snippet/range/*/*/*.json",
-          "/snippet/range/*/*/*/*.json",
-          "/snippet/range/*/*/*/*/*.json",
-          "/snippet/range/*/*/*/*/*/*.json",
-          "/snippet/range/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/range-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/custom-biome-spawn/*.json",
-          "/snippet/custom-biome-spawn/*/*.json",
-          "/snippet/custom-biome-spawn/*/*/*.json",
-          "/snippet/custom-biome-spawn/*/*/*/*.json",
-          "/snippet/custom-biome-spawn/*/*/*/*/*.json",
-          "/snippet/custom-biome-spawn/*/*/*/*/*/*.json",
-          "/snippet/custom-biome-spawn/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/custom-biome-spawn-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/generator-layer/*.json",
-          "/snippet/generator-layer/*/*.json",
-          "/snippet/generator-layer/*/*/*.json",
-          "/snippet/generator-layer/*/*/*/*.json",
-          "/snippet/generator-layer/*/*/*/*/*.json",
-          "/snippet/generator-layer/*/*/*/*/*/*.json",
-          "/snippet/generator-layer/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/generator-layer-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-rotator/*.json",
-          "/snippet/object-rotator/*/*.json",
-          "/snippet/object-rotator/*/*/*.json",
-          "/snippet/object-rotator/*/*/*/*.json",
-          "/snippet/object-rotator/*/*/*/*/*.json",
-          "/snippet/object-rotator/*/*/*/*/*/*.json",
-          "/snippet/object-rotator/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-rotator-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/jigsaw-structure-placement/*.json",
-          "/snippet/jigsaw-structure-placement/*/*.json",
-          "/snippet/jigsaw-structure-placement/*/*/*.json",
-          "/snippet/jigsaw-structure-placement/*/*/*/*.json",
-          "/snippet/jigsaw-structure-placement/*/*/*/*/*.json",
-          "/snippet/jigsaw-structure-placement/*/*/*/*/*/*.json",
-          "/snippet/jigsaw-structure-placement/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/jigsaw-structure-placement-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/villager-override/*.json",
-          "/snippet/villager-override/*/*.json",
-          "/snippet/villager-override/*/*/*.json",
-          "/snippet/villager-override/*/*/*/*.json",
-          "/snippet/villager-override/*/*/*/*/*.json",
-          "/snippet/villager-override/*/*/*/*/*/*.json",
-          "/snippet/villager-override/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/villager-override-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/rate/*.json",
-          "/snippet/rate/*/*.json",
-          "/snippet/rate/*/*/*.json",
-          "/snippet/rate/*/*/*/*.json",
-          "/snippet/rate/*/*/*/*/*.json",
-          "/snippet/rate/*/*/*/*/*/*.json",
-          "/snippet/rate/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/rate-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/rare-object/*.json",
-          "/snippet/rare-object/*/*.json",
-          "/snippet/rare-object/*/*/*.json",
-          "/snippet/rare-object/*/*/*/*.json",
-          "/snippet/rare-object/*/*/*/*/*.json",
-          "/snippet/rare-object/*/*/*/*/*/*.json",
-          "/snippet/rare-object/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/rare-object-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/tree-size/*.json",
-          "/snippet/tree-size/*/*.json",
-          "/snippet/tree-size/*/*/*.json",
-          "/snippet/tree-size/*/*/*/*.json",
-          "/snippet/tree-size/*/*/*/*/*.json",
-          "/snippet/tree-size/*/*/*/*/*/*.json",
-          "/snippet/tree-size/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/tree-size-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/position-2d/*.json",
-          "/snippet/position-2d/*/*.json",
-          "/snippet/position-2d/*/*/*.json",
-          "/snippet/position-2d/*/*/*/*.json",
-          "/snippet/position-2d/*/*/*/*/*.json",
-          "/snippet/position-2d/*/*/*/*/*/*.json",
-          "/snippet/position-2d/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/position-2d-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/expression-load/*.json",
-          "/snippet/expression-load/*/*.json",
-          "/snippet/expression-load/*/*/*.json",
-          "/snippet/expression-load/*/*/*/*.json",
-          "/snippet/expression-load/*/*/*/*/*.json",
-          "/snippet/expression-load/*/*/*/*/*/*.json",
-          "/snippet/expression-load/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/expression-load-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/palette/*.json",
-          "/snippet/palette/*/*.json",
-          "/snippet/palette/*/*/*.json",
-          "/snippet/palette/*/*/*/*.json",
-          "/snippet/palette/*/*/*/*/*.json",
-          "/snippet/palette/*/*/*/*/*/*.json",
-          "/snippet/palette/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/palette-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/entity-spawn/*.json",
-          "/snippet/entity-spawn/*/*.json",
-          "/snippet/entity-spawn/*/*/*.json",
-          "/snippet/entity-spawn/*/*/*/*.json",
-          "/snippet/entity-spawn/*/*/*/*/*.json",
-          "/snippet/entity-spawn/*/*/*/*/*/*.json",
-          "/snippet/entity-spawn/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/entity-spawn-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/villager-trade/*.json",
-          "/snippet/villager-trade/*/*.json",
-          "/snippet/villager-trade/*/*/*.json",
-          "/snippet/villager-trade/*/*/*/*.json",
-          "/snippet/villager-trade/*/*/*/*/*.json",
-          "/snippet/villager-trade/*/*/*/*/*/*.json",
-          "/snippet/villager-trade/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/villager-trade-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/fluid-bodies/*.json",
-          "/snippet/fluid-bodies/*/*.json",
-          "/snippet/fluid-bodies/*/*/*.json",
-          "/snippet/fluid-bodies/*/*/*/*.json",
-          "/snippet/fluid-bodies/*/*/*/*/*.json",
-          "/snippet/fluid-bodies/*/*/*/*/*/*.json",
-          "/snippet/fluid-bodies/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/fluid-bodies-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/jigsaw-structure-min-distance/*.json",
-          "/snippet/jigsaw-structure-min-distance/*/*.json",
-          "/snippet/jigsaw-structure-min-distance/*/*/*.json",
-          "/snippet/jigsaw-structure-min-distance/*/*/*/*.json",
-          "/snippet/jigsaw-structure-min-distance/*/*/*/*/*.json",
-          "/snippet/jigsaw-structure-min-distance/*/*/*/*/*/*.json",
-          "/snippet/jigsaw-structure-min-distance/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/jigsaw-structure-min-distance-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/carving-elipsoid/*.json",
-          "/snippet/carving-elipsoid/*/*.json",
-          "/snippet/carving-elipsoid/*/*/*.json",
-          "/snippet/carving-elipsoid/*/*/*/*.json",
-          "/snippet/carving-elipsoid/*/*/*/*/*.json",
-          "/snippet/carving-elipsoid/*/*/*/*/*/*.json",
-          "/snippet/carving-elipsoid/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/carving-elipsoid-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/position-3d/*.json",
-          "/snippet/position-3d/*/*.json",
-          "/snippet/position-3d/*/*/*.json",
-          "/snippet/position-3d/*/*/*/*.json",
-          "/snippet/position-3d/*/*/*/*/*.json",
-          "/snippet/position-3d/*/*/*/*/*/*.json",
-          "/snippet/position-3d/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/position-3d-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/biome-injector/*.json",
-          "/snippet/biome-injector/*/*.json",
-          "/snippet/biome-injector/*/*/*.json",
-          "/snippet/biome-injector/*/*/*/*.json",
-          "/snippet/biome-injector/*/*/*/*/*.json",
-          "/snippet/biome-injector/*/*/*/*/*/*.json",
-          "/snippet/biome-injector/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/biome-injector-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/slope-clip/*.json",
-          "/snippet/slope-clip/*/*.json",
-          "/snippet/slope-clip/*/*/*.json",
-          "/snippet/slope-clip/*/*/*/*.json",
-          "/snippet/slope-clip/*/*/*/*/*.json",
-          "/snippet/slope-clip/*/*/*/*/*/*.json",
-          "/snippet/slope-clip/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/slope-clip-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/shaped-style/*.json",
-          "/snippet/shaped-style/*/*.json",
-          "/snippet/shaped-style/*/*/*.json",
-          "/snippet/shaped-style/*/*/*/*.json",
-          "/snippet/shaped-style/*/*/*/*/*.json",
-          "/snippet/shaped-style/*/*/*/*/*/*.json",
-          "/snippet/shaped-style/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/shaped-style-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/connector/*.json",
-          "/snippet/connector/*/*.json",
-          "/snippet/connector/*/*/*.json",
-          "/snippet/connector/*/*/*/*.json",
-          "/snippet/connector/*/*/*/*/*.json",
-          "/snippet/connector/*/*/*/*/*/*.json",
-          "/snippet/connector/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/connector-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/object-translator/*.json",
-          "/snippet/object-translator/*/*.json",
-          "/snippet/object-translator/*/*/*.json",
-          "/snippet/object-translator/*/*/*/*.json",
-          "/snippet/object-translator/*/*/*/*/*.json",
-          "/snippet/object-translator/*/*/*/*/*/*.json",
-          "/snippet/object-translator/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/object-translator-schema.json"
-      },
-      {
-        "fileMatch": [
-          "/snippet/interpolator-3d/*.json",
-          "/snippet/interpolator-3d/*/*.json",
-          "/snippet/interpolator-3d/*/*/*.json",
-          "/snippet/interpolator-3d/*/*/*/*.json",
-          "/snippet/interpolator-3d/*/*/*/*/*.json",
-          "/snippet/interpolator-3d/*/*/*/*/*/*.json",
-          "/snippet/interpolator-3d/*/*/*/*/*/*/*.json"
-        ],
-        "url": "./.iris/schema/snippet/interpolator-3d-schema.json"
-      }
-    ]
-  }
+    "folders": [{"path": "."}],
+    "settings": {
+        "workbench.colorTheme": "Monokai",
+        "workbench.preferredDarkColorTheme": "Solarized Dark",
+        "workbench.tips.enabled": false,
+        "workbench.tree.indent": 24,
+        "files.autoSave": "onFocusChange",
+        "[json]": {
+            "editor.autoIndent": "brackets",
+            "editor.acceptSuggestionOnEnter": "smart",
+            "editor.cursorSmoothCaretAnimation": true,
+            "editor.dragAndDrop": false,
+            "files.trimTrailingWhitespace": true,
+            "diffEditor.ignoreTrimWhitespace": true,
+            "files.trimFinalNewlines": true,
+            "editor.suggest.showKeywords": false,
+            "editor.suggest.showSnippets": false,
+            "editor.suggest.showWords": false,
+            "editor.quickSuggestions": {"strings": true},
+            "editor.suggest.insertMode": "replace"
+        },
+        "json.maxItemsComputed": 30000,
+        "json.schemas": [
+            {
+                "fileMatch": [
+                    "/dimensions/*.json",
+                    "/dimensions/*/*.json",
+                    "/dimensions/*/*/*.json",
+                    "/dimensions/*/*/*/*.json",
+                    "/dimensions/*/*/*/*/*.json",
+                    "/dimensions/*/*/*/*/*/*.json",
+                    "/dimensions/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/dimensions-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/blocks/*.json",
+                    "/blocks/*/*.json",
+                    "/blocks/*/*/*.json",
+                    "/blocks/*/*/*/*.json",
+                    "/blocks/*/*/*/*/*.json",
+                    "/blocks/*/*/*/*/*/*.json",
+                    "/blocks/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/blocks-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/entities/*.json",
+                    "/entities/*/*.json",
+                    "/entities/*/*/*.json",
+                    "/entities/*/*/*/*.json",
+                    "/entities/*/*/*/*/*.json",
+                    "/entities/*/*/*/*/*/*.json",
+                    "/entities/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/entities-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/biomes/*.json",
+                    "/biomes/*/*.json",
+                    "/biomes/*/*/*.json",
+                    "/biomes/*/*/*/*.json",
+                    "/biomes/*/*/*/*/*.json",
+                    "/biomes/*/*/*/*/*/*.json",
+                    "/biomes/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/biomes-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/mods/*.json",
+                    "/mods/*/*.json",
+                    "/mods/*/*/*.json",
+                    "/mods/*/*/*/*.json",
+                    "/mods/*/*/*/*/*.json",
+                    "/mods/*/*/*/*/*/*.json",
+                    "/mods/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/mods-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/ravines/*.json",
+                    "/ravines/*/*.json",
+                    "/ravines/*/*/*.json",
+                    "/ravines/*/*/*/*.json",
+                    "/ravines/*/*/*/*/*.json",
+                    "/ravines/*/*/*/*/*/*.json",
+                    "/ravines/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/ravines-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/loot/*.json",
+                    "/loot/*/*.json",
+                    "/loot/*/*/*.json",
+                    "/loot/*/*/*/*.json",
+                    "/loot/*/*/*/*/*.json",
+                    "/loot/*/*/*/*/*/*.json",
+                    "/loot/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/loot-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/jigsaw-pieces/*.json",
+                    "/jigsaw-pieces/*/*.json",
+                    "/jigsaw-pieces/*/*/*.json",
+                    "/jigsaw-pieces/*/*/*/*.json",
+                    "/jigsaw-pieces/*/*/*/*/*.json",
+                    "/jigsaw-pieces/*/*/*/*/*/*.json",
+                    "/jigsaw-pieces/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/jigsaw-pieces-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/generators/*.json",
+                    "/generators/*/*.json",
+                    "/generators/*/*/*.json",
+                    "/generators/*/*/*/*.json",
+                    "/generators/*/*/*/*/*.json",
+                    "/generators/*/*/*/*/*/*.json",
+                    "/generators/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/generators-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/caves/*.json",
+                    "/caves/*/*.json",
+                    "/caves/*/*/*.json",
+                    "/caves/*/*/*/*.json",
+                    "/caves/*/*/*/*/*.json",
+                    "/caves/*/*/*/*/*/*.json",
+                    "/caves/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/caves-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/markers/*.json",
+                    "/markers/*/*.json",
+                    "/markers/*/*/*.json",
+                    "/markers/*/*/*/*.json",
+                    "/markers/*/*/*/*/*.json",
+                    "/markers/*/*/*/*/*/*.json",
+                    "/markers/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/markers-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/jigsaw-pools/*.json",
+                    "/jigsaw-pools/*/*.json",
+                    "/jigsaw-pools/*/*/*.json",
+                    "/jigsaw-pools/*/*/*/*.json",
+                    "/jigsaw-pools/*/*/*/*/*.json",
+                    "/jigsaw-pools/*/*/*/*/*/*.json",
+                    "/jigsaw-pools/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/jigsaw-pools-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/regions/*.json",
+                    "/regions/*/*.json",
+                    "/regions/*/*/*.json",
+                    "/regions/*/*/*/*.json",
+                    "/regions/*/*/*/*/*.json",
+                    "/regions/*/*/*/*/*/*.json",
+                    "/regions/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/regions-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/jigsaw-structures/*.json",
+                    "/jigsaw-structures/*/*.json",
+                    "/jigsaw-structures/*/*/*.json",
+                    "/jigsaw-structures/*/*/*/*.json",
+                    "/jigsaw-structures/*/*/*/*/*.json",
+                    "/jigsaw-structures/*/*/*/*/*/*.json",
+                    "/jigsaw-structures/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/jigsaw-structures-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/spawners/*.json",
+                    "/spawners/*/*.json",
+                    "/spawners/*/*/*.json",
+                    "/spawners/*/*/*/*.json",
+                    "/spawners/*/*/*/*/*.json",
+                    "/spawners/*/*/*/*/*/*.json",
+                    "/spawners/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/spawners-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/expressions/*.json",
+                    "/expressions/*/*.json",
+                    "/expressions/*/*/*.json",
+                    "/expressions/*/*/*/*.json",
+                    "/expressions/*/*/*/*/*.json",
+                    "/expressions/*/*/*/*/*/*.json",
+                    "/expressions/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/expressions-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/biome-replacer/*.json",
+                    "/snippet/biome-replacer/*/*.json",
+                    "/snippet/biome-replacer/*/*/*.json",
+                    "/snippet/biome-replacer/*/*/*/*.json",
+                    "/snippet/biome-replacer/*/*/*/*/*.json",
+                    "/snippet/biome-replacer/*/*/*/*/*/*.json",
+                    "/snippet/biome-replacer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/biome-replacer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/carving/*.json",
+                    "/snippet/carving/*/*.json",
+                    "/snippet/carving/*/*/*.json",
+                    "/snippet/carving/*/*/*/*.json",
+                    "/snippet/carving/*/*/*/*/*.json",
+                    "/snippet/carving/*/*/*/*/*/*.json",
+                    "/snippet/carving/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/carving-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/carving-pyramid/*.json",
+                    "/snippet/carving-pyramid/*/*.json",
+                    "/snippet/carving-pyramid/*/*/*.json",
+                    "/snippet/carving-pyramid/*/*/*/*.json",
+                    "/snippet/carving-pyramid/*/*/*/*/*.json",
+                    "/snippet/carving-pyramid/*/*/*/*/*/*.json",
+                    "/snippet/carving-pyramid/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/carving-pyramid-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/biome-palette/*.json",
+                    "/snippet/biome-palette/*/*.json",
+                    "/snippet/biome-palette/*/*/*.json",
+                    "/snippet/biome-palette/*/*/*/*.json",
+                    "/snippet/biome-palette/*/*/*/*/*.json",
+                    "/snippet/biome-palette/*/*/*/*/*/*.json",
+                    "/snippet/biome-palette/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/biome-palette-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-block-replacer/*.json",
+                    "/snippet/object-block-replacer/*/*.json",
+                    "/snippet/object-block-replacer/*/*/*.json",
+                    "/snippet/object-block-replacer/*/*/*/*.json",
+                    "/snippet/object-block-replacer/*/*/*/*/*.json",
+                    "/snippet/object-block-replacer/*/*/*/*/*/*.json",
+                    "/snippet/object-block-replacer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-block-replacer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-placement-region-injector/*.json",
+                    "/snippet/object-placement-region-injector/*/*.json",
+                    "/snippet/object-placement-region-injector/*/*/*.json",
+                    "/snippet/object-placement-region-injector/*/*/*/*.json",
+                    "/snippet/object-placement-region-injector/*/*/*/*/*.json",
+                    "/snippet/object-placement-region-injector/*/*/*/*/*/*.json",
+                    "/snippet/object-placement-region-injector/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-placement-region-injector-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/position-3d/*.json",
+                    "/snippet/position-3d/*/*.json",
+                    "/snippet/position-3d/*/*/*.json",
+                    "/snippet/position-3d/*/*/*/*.json",
+                    "/snippet/position-3d/*/*/*/*/*.json",
+                    "/snippet/position-3d/*/*/*/*/*/*.json",
+                    "/snippet/position-3d/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/position-3d-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/command/*.json",
+                    "/snippet/command/*/*.json",
+                    "/snippet/command/*/*/*.json",
+                    "/snippet/command/*/*/*/*.json",
+                    "/snippet/command/*/*/*/*/*.json",
+                    "/snippet/command/*/*/*/*/*/*.json",
+                    "/snippet/command/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/command-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/custom-biome-particle/*.json",
+                    "/snippet/custom-biome-particle/*/*.json",
+                    "/snippet/custom-biome-particle/*/*/*.json",
+                    "/snippet/custom-biome-particle/*/*/*/*.json",
+                    "/snippet/custom-biome-particle/*/*/*/*/*.json",
+                    "/snippet/custom-biome-particle/*/*/*/*/*/*.json",
+                    "/snippet/custom-biome-particle/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/custom-biome-particle-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/tree-settings/*.json",
+                    "/snippet/tree-settings/*/*.json",
+                    "/snippet/tree-settings/*/*/*.json",
+                    "/snippet/tree-settings/*/*/*/*.json",
+                    "/snippet/tree-settings/*/*/*/*/*.json",
+                    "/snippet/tree-settings/*/*/*/*/*/*.json",
+                    "/snippet/tree-settings/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/tree-settings-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-translator/*.json",
+                    "/snippet/object-translator/*/*.json",
+                    "/snippet/object-translator/*/*/*.json",
+                    "/snippet/object-translator/*/*/*/*.json",
+                    "/snippet/object-translator/*/*/*/*/*.json",
+                    "/snippet/object-translator/*/*/*/*/*/*.json",
+                    "/snippet/object-translator/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-translator-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-limit/*.json",
+                    "/snippet/object-limit/*/*.json",
+                    "/snippet/object-limit/*/*/*.json",
+                    "/snippet/object-limit/*/*/*/*.json",
+                    "/snippet/object-limit/*/*/*/*/*.json",
+                    "/snippet/object-limit/*/*/*/*/*/*.json",
+                    "/snippet/object-limit/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-limit-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/villager-override/*.json",
+                    "/snippet/villager-override/*/*.json",
+                    "/snippet/villager-override/*/*/*.json",
+                    "/snippet/villager-override/*/*/*/*.json",
+                    "/snippet/villager-override/*/*/*/*/*.json",
+                    "/snippet/villager-override/*/*/*/*/*/*.json",
+                    "/snippet/villager-override/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/villager-override-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-replacer/*.json",
+                    "/snippet/object-replacer/*/*.json",
+                    "/snippet/object-replacer/*/*/*.json",
+                    "/snippet/object-replacer/*/*/*/*.json",
+                    "/snippet/object-replacer/*/*/*/*/*.json",
+                    "/snippet/object-replacer/*/*/*/*/*/*.json",
+                    "/snippet/object-replacer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-replacer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/palette/*.json",
+                    "/snippet/palette/*/*.json",
+                    "/snippet/palette/*/*/*.json",
+                    "/snippet/palette/*/*/*/*.json",
+                    "/snippet/palette/*/*/*/*/*.json",
+                    "/snippet/palette/*/*/*/*/*/*.json",
+                    "/snippet/palette/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/palette-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/carving-elipsoid/*.json",
+                    "/snippet/carving-elipsoid/*/*.json",
+                    "/snippet/carving-elipsoid/*/*/*.json",
+                    "/snippet/carving-elipsoid/*/*/*/*.json",
+                    "/snippet/carving-elipsoid/*/*/*/*/*.json",
+                    "/snippet/carving-elipsoid/*/*/*/*/*/*.json",
+                    "/snippet/carving-elipsoid/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/carving-elipsoid-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-rotator/*.json",
+                    "/snippet/object-rotator/*/*.json",
+                    "/snippet/object-rotator/*/*/*.json",
+                    "/snippet/object-rotator/*/*/*/*.json",
+                    "/snippet/object-rotator/*/*/*/*/*.json",
+                    "/snippet/object-rotator/*/*/*/*/*/*.json",
+                    "/snippet/object-rotator/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-rotator-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/carving-sphere/*.json",
+                    "/snippet/carving-sphere/*/*.json",
+                    "/snippet/carving-sphere/*/*/*.json",
+                    "/snippet/carving-sphere/*/*/*/*.json",
+                    "/snippet/carving-sphere/*/*/*/*/*.json",
+                    "/snippet/carving-sphere/*/*/*/*/*/*.json",
+                    "/snippet/carving-sphere/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/carving-sphere-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/stilt-settings/*.json",
+                    "/snippet/stilt-settings/*/*.json",
+                    "/snippet/stilt-settings/*/*/*.json",
+                    "/snippet/stilt-settings/*/*/*/*.json",
+                    "/snippet/stilt-settings/*/*/*/*/*.json",
+                    "/snippet/stilt-settings/*/*/*/*/*/*.json",
+                    "/snippet/stilt-settings/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/stilt-settings-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/tree-size/*.json",
+                    "/snippet/tree-size/*/*.json",
+                    "/snippet/tree-size/*/*/*.json",
+                    "/snippet/tree-size/*/*/*/*.json",
+                    "/snippet/tree-size/*/*/*/*/*.json",
+                    "/snippet/tree-size/*/*/*/*/*/*.json",
+                    "/snippet/tree-size/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/tree-size-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/block-drops/*.json",
+                    "/snippet/block-drops/*/*.json",
+                    "/snippet/block-drops/*/*/*.json",
+                    "/snippet/block-drops/*/*/*/*.json",
+                    "/snippet/block-drops/*/*/*/*/*.json",
+                    "/snippet/block-drops/*/*/*/*/*/*.json",
+                    "/snippet/block-drops/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/block-drops-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/custom-biome-spawn/*.json",
+                    "/snippet/custom-biome-spawn/*/*.json",
+                    "/snippet/custom-biome-spawn/*/*/*.json",
+                    "/snippet/custom-biome-spawn/*/*/*/*.json",
+                    "/snippet/custom-biome-spawn/*/*/*/*/*.json",
+                    "/snippet/custom-biome-spawn/*/*/*/*/*/*.json",
+                    "/snippet/custom-biome-spawn/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/custom-biome-spawn-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/loot/*.json",
+                    "/snippet/loot/*/*.json",
+                    "/snippet/loot/*/*/*.json",
+                    "/snippet/loot/*/*/*/*.json",
+                    "/snippet/loot/*/*/*/*/*.json",
+                    "/snippet/loot/*/*/*/*/*/*.json",
+                    "/snippet/loot/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/loot-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/entity-spawn/*.json",
+                    "/snippet/entity-spawn/*/*.json",
+                    "/snippet/entity-spawn/*/*/*.json",
+                    "/snippet/entity-spawn/*/*/*/*.json",
+                    "/snippet/entity-spawn/*/*/*/*/*.json",
+                    "/snippet/entity-spawn/*/*/*/*/*/*.json",
+                    "/snippet/entity-spawn/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/entity-spawn-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/rare-object/*.json",
+                    "/snippet/rare-object/*/*.json",
+                    "/snippet/rare-object/*/*/*.json",
+                    "/snippet/rare-object/*/*/*/*.json",
+                    "/snippet/rare-object/*/*/*/*/*.json",
+                    "/snippet/rare-object/*/*/*/*/*/*.json",
+                    "/snippet/rare-object/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/rare-object-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/color/*.json",
+                    "/snippet/color/*/*.json",
+                    "/snippet/color/*/*/*.json",
+                    "/snippet/color/*/*/*/*.json",
+                    "/snippet/color/*/*/*/*/*.json",
+                    "/snippet/color/*/*/*/*/*/*.json",
+                    "/snippet/color/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/color-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/noise-style-replacer/*.json",
+                    "/snippet/noise-style-replacer/*/*.json",
+                    "/snippet/noise-style-replacer/*/*/*.json",
+                    "/snippet/noise-style-replacer/*/*/*/*.json",
+                    "/snippet/noise-style-replacer/*/*/*/*/*.json",
+                    "/snippet/noise-style-replacer/*/*/*/*/*/*.json",
+                    "/snippet/noise-style-replacer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/noise-style-replacer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/time-block/*.json",
+                    "/snippet/time-block/*/*.json",
+                    "/snippet/time-block/*/*/*.json",
+                    "/snippet/time-block/*/*/*/*.json",
+                    "/snippet/time-block/*/*/*/*/*.json",
+                    "/snippet/time-block/*/*/*/*/*/*.json",
+                    "/snippet/time-block/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/time-block-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/decorator/*.json",
+                    "/snippet/decorator/*/*.json",
+                    "/snippet/decorator/*/*/*.json",
+                    "/snippet/decorator/*/*/*/*.json",
+                    "/snippet/decorator/*/*/*/*/*.json",
+                    "/snippet/decorator/*/*/*/*/*/*.json",
+                    "/snippet/decorator/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/decorator-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/region-replacer/*.json",
+                    "/snippet/region-replacer/*/*.json",
+                    "/snippet/region-replacer/*/*/*.json",
+                    "/snippet/region-replacer/*/*/*/*.json",
+                    "/snippet/region-replacer/*/*/*/*/*.json",
+                    "/snippet/region-replacer/*/*/*/*/*/*.json",
+                    "/snippet/region-replacer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/region-replacer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/position-2d/*.json",
+                    "/snippet/position-2d/*/*.json",
+                    "/snippet/position-2d/*/*/*.json",
+                    "/snippet/position-2d/*/*/*/*.json",
+                    "/snippet/position-2d/*/*/*/*/*.json",
+                    "/snippet/position-2d/*/*/*/*/*/*.json",
+                    "/snippet/position-2d/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/position-2d-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/jigsaw-structure-min-distance/*.json",
+                    "/snippet/jigsaw-structure-min-distance/*/*.json",
+                    "/snippet/jigsaw-structure-min-distance/*/*/*.json",
+                    "/snippet/jigsaw-structure-min-distance/*/*/*/*.json",
+                    "/snippet/jigsaw-structure-min-distance/*/*/*/*/*.json",
+                    "/snippet/jigsaw-structure-min-distance/*/*/*/*/*/*.json",
+                    "/snippet/jigsaw-structure-min-distance/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/jigsaw-structure-min-distance-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/expression-load/*.json",
+                    "/snippet/expression-load/*/*.json",
+                    "/snippet/expression-load/*/*/*.json",
+                    "/snippet/expression-load/*/*/*/*.json",
+                    "/snippet/expression-load/*/*/*/*/*.json",
+                    "/snippet/expression-load/*/*/*/*/*/*.json",
+                    "/snippet/expression-load/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/expression-load-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/cave-placer/*.json",
+                    "/snippet/cave-placer/*/*.json",
+                    "/snippet/cave-placer/*/*/*.json",
+                    "/snippet/cave-placer/*/*/*/*.json",
+                    "/snippet/cave-placer/*/*/*/*/*.json",
+                    "/snippet/cave-placer/*/*/*/*/*/*.json",
+                    "/snippet/cave-placer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/cave-placer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/generator-layer/*.json",
+                    "/snippet/generator-layer/*/*.json",
+                    "/snippet/generator-layer/*/*/*.json",
+                    "/snippet/generator-layer/*/*/*/*.json",
+                    "/snippet/generator-layer/*/*/*/*/*.json",
+                    "/snippet/generator-layer/*/*/*/*/*/*.json",
+                    "/snippet/generator-layer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/generator-layer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/fluid-bodies/*.json",
+                    "/snippet/fluid-bodies/*/*.json",
+                    "/snippet/fluid-bodies/*/*/*.json",
+                    "/snippet/fluid-bodies/*/*/*/*.json",
+                    "/snippet/fluid-bodies/*/*/*/*/*.json",
+                    "/snippet/fluid-bodies/*/*/*/*/*/*.json",
+                    "/snippet/fluid-bodies/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/fluid-bodies-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/jigsaw-structure-placement/*.json",
+                    "/snippet/jigsaw-structure-placement/*/*.json",
+                    "/snippet/jigsaw-structure-placement/*/*/*.json",
+                    "/snippet/jigsaw-structure-placement/*/*/*/*.json",
+                    "/snippet/jigsaw-structure-placement/*/*/*/*/*.json",
+                    "/snippet/jigsaw-structure-placement/*/*/*/*/*/*.json",
+                    "/snippet/jigsaw-structure-placement/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/jigsaw-structure-placement-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/axis-rotation/*.json",
+                    "/snippet/axis-rotation/*/*.json",
+                    "/snippet/axis-rotation/*/*/*.json",
+                    "/snippet/axis-rotation/*/*/*/*.json",
+                    "/snippet/axis-rotation/*/*/*/*/*.json",
+                    "/snippet/axis-rotation/*/*/*/*/*/*.json",
+                    "/snippet/axis-rotation/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/axis-rotation-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/biome-injector/*.json",
+                    "/snippet/biome-injector/*/*.json",
+                    "/snippet/biome-injector/*/*/*.json",
+                    "/snippet/biome-injector/*/*/*/*.json",
+                    "/snippet/biome-injector/*/*/*/*/*.json",
+                    "/snippet/biome-injector/*/*/*/*/*/*.json",
+                    "/snippet/biome-injector/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/biome-injector-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/image-map/*.json",
+                    "/snippet/image-map/*/*.json",
+                    "/snippet/image-map/*/*/*.json",
+                    "/snippet/image-map/*/*/*/*.json",
+                    "/snippet/image-map/*/*/*/*/*.json",
+                    "/snippet/image-map/*/*/*/*/*/*.json",
+                    "/snippet/image-map/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/image-map-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/river/*.json",
+                    "/snippet/river/*/*.json",
+                    "/snippet/river/*/*/*.json",
+                    "/snippet/river/*/*/*/*.json",
+                    "/snippet/river/*/*/*/*/*.json",
+                    "/snippet/river/*/*/*/*/*/*.json",
+                    "/snippet/river/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/river-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-marker/*.json",
+                    "/snippet/object-marker/*/*.json",
+                    "/snippet/object-marker/*/*/*.json",
+                    "/snippet/object-marker/*/*/*/*.json",
+                    "/snippet/object-marker/*/*/*/*/*.json",
+                    "/snippet/object-marker/*/*/*/*/*/*.json",
+                    "/snippet/object-marker/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-marker-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/ravine-placer/*.json",
+                    "/snippet/ravine-placer/*/*.json",
+                    "/snippet/ravine-placer/*/*/*.json",
+                    "/snippet/ravine-placer/*/*/*/*.json",
+                    "/snippet/ravine-placer/*/*/*/*/*.json",
+                    "/snippet/ravine-placer/*/*/*/*/*/*.json",
+                    "/snippet/ravine-placer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/ravine-placer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/lake/*.json",
+                    "/snippet/lake/*/*.json",
+                    "/snippet/lake/*/*/*.json",
+                    "/snippet/lake/*/*/*/*.json",
+                    "/snippet/lake/*/*/*/*/*.json",
+                    "/snippet/lake/*/*/*/*/*/*.json",
+                    "/snippet/lake/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/lake-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/rate/*.json",
+                    "/snippet/rate/*/*.json",
+                    "/snippet/rate/*/*/*.json",
+                    "/snippet/rate/*/*/*/*.json",
+                    "/snippet/rate/*/*/*/*/*.json",
+                    "/snippet/rate/*/*/*/*/*/*.json",
+                    "/snippet/rate/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/rate-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-scale/*.json",
+                    "/snippet/object-scale/*/*.json",
+                    "/snippet/object-scale/*/*/*.json",
+                    "/snippet/object-scale/*/*/*/*.json",
+                    "/snippet/object-scale/*/*/*/*/*.json",
+                    "/snippet/object-scale/*/*/*/*/*/*.json",
+                    "/snippet/object-scale/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-scale-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/villager-trade/*.json",
+                    "/snippet/villager-trade/*/*.json",
+                    "/snippet/villager-trade/*/*/*.json",
+                    "/snippet/villager-trade/*/*/*/*.json",
+                    "/snippet/villager-trade/*/*/*/*/*.json",
+                    "/snippet/villager-trade/*/*/*/*/*/*.json",
+                    "/snippet/villager-trade/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/villager-trade-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/style/*.json",
+                    "/snippet/style/*/*.json",
+                    "/snippet/style/*/*/*.json",
+                    "/snippet/style/*/*/*/*.json",
+                    "/snippet/style/*/*/*/*/*.json",
+                    "/snippet/style/*/*/*/*/*/*.json",
+                    "/snippet/style/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/style-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/duration/*.json",
+                    "/snippet/duration/*/*.json",
+                    "/snippet/duration/*/*/*.json",
+                    "/snippet/duration/*/*/*/*.json",
+                    "/snippet/duration/*/*/*/*/*.json",
+                    "/snippet/duration/*/*/*/*/*/*.json",
+                    "/snippet/duration/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/duration-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/dimension-mode/*.json",
+                    "/snippet/dimension-mode/*/*.json",
+                    "/snippet/dimension-mode/*/*/*.json",
+                    "/snippet/dimension-mode/*/*/*/*.json",
+                    "/snippet/dimension-mode/*/*/*/*/*.json",
+                    "/snippet/dimension-mode/*/*/*/*/*/*.json",
+                    "/snippet/dimension-mode/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/dimension-mode-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/matter-placer/*.json",
+                    "/snippet/matter-placer/*/*.json",
+                    "/snippet/matter-placer/*/*/*.json",
+                    "/snippet/matter-placer/*/*/*/*.json",
+                    "/snippet/matter-placer/*/*/*/*/*.json",
+                    "/snippet/matter-placer/*/*/*/*/*/*.json",
+                    "/snippet/matter-placer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/matter-placer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/worm/*.json",
+                    "/snippet/worm/*/*.json",
+                    "/snippet/worm/*/*/*.json",
+                    "/snippet/worm/*/*/*/*.json",
+                    "/snippet/worm/*/*/*/*/*.json",
+                    "/snippet/worm/*/*/*/*/*/*.json",
+                    "/snippet/worm/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/worm-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/slope-clip/*.json",
+                    "/snippet/slope-clip/*/*.json",
+                    "/snippet/slope-clip/*/*/*.json",
+                    "/snippet/slope-clip/*/*/*/*.json",
+                    "/snippet/slope-clip/*/*/*/*/*.json",
+                    "/snippet/slope-clip/*/*/*/*/*/*.json",
+                    "/snippet/slope-clip/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/slope-clip-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-placement-biome-injector/*.json",
+                    "/snippet/object-placement-biome-injector/*/*.json",
+                    "/snippet/object-placement-biome-injector/*/*/*.json",
+                    "/snippet/object-placement-biome-injector/*/*/*/*.json",
+                    "/snippet/object-placement-biome-injector/*/*/*/*/*.json",
+                    "/snippet/object-placement-biome-injector/*/*/*/*/*/*.json",
+                    "/snippet/object-placement-biome-injector/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-placement-biome-injector-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-loot/*.json",
+                    "/snippet/object-loot/*/*.json",
+                    "/snippet/object-loot/*/*/*.json",
+                    "/snippet/object-loot/*/*/*/*.json",
+                    "/snippet/object-loot/*/*/*/*/*.json",
+                    "/snippet/object-loot/*/*/*/*/*/*.json",
+                    "/snippet/object-loot/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-loot-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/command-registry/*.json",
+                    "/snippet/command-registry/*/*.json",
+                    "/snippet/command-registry/*/*/*.json",
+                    "/snippet/command-registry/*/*/*/*.json",
+                    "/snippet/command-registry/*/*/*/*/*.json",
+                    "/snippet/command-registry/*/*/*/*/*/*.json",
+                    "/snippet/command-registry/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/command-registry-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/tree/*.json",
+                    "/snippet/tree/*/*.json",
+                    "/snippet/tree/*/*/*.json",
+                    "/snippet/tree/*/*/*/*.json",
+                    "/snippet/tree/*/*/*/*/*.json",
+                    "/snippet/tree/*/*/*/*/*/*.json",
+                    "/snippet/tree/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/tree-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/jigsaw-placer/*.json",
+                    "/snippet/jigsaw-placer/*/*.json",
+                    "/snippet/jigsaw-placer/*/*/*.json",
+                    "/snippet/jigsaw-placer/*/*/*/*.json",
+                    "/snippet/jigsaw-placer/*/*/*/*/*.json",
+                    "/snippet/jigsaw-placer/*/*/*/*/*/*.json",
+                    "/snippet/jigsaw-placer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/jigsaw-placer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/custom-biome/*.json",
+                    "/snippet/custom-biome/*/*.json",
+                    "/snippet/custom-biome/*/*/*.json",
+                    "/snippet/custom-biome/*/*/*/*.json",
+                    "/snippet/custom-biome/*/*/*/*/*.json",
+                    "/snippet/custom-biome/*/*/*/*/*/*.json",
+                    "/snippet/custom-biome/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/custom-biome-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/style-range/*.json",
+                    "/snippet/style-range/*/*.json",
+                    "/snippet/style-range/*/*/*.json",
+                    "/snippet/style-range/*/*/*/*.json",
+                    "/snippet/style-range/*/*/*/*/*.json",
+                    "/snippet/style-range/*/*/*/*/*/*.json",
+                    "/snippet/style-range/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/style-range-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/interpolator-3d/*.json",
+                    "/snippet/interpolator-3d/*/*.json",
+                    "/snippet/interpolator-3d/*/*/*.json",
+                    "/snippet/interpolator-3d/*/*/*/*.json",
+                    "/snippet/interpolator-3d/*/*/*/*/*.json",
+                    "/snippet/interpolator-3d/*/*/*/*/*/*.json",
+                    "/snippet/interpolator-3d/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/interpolator-3d-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/object-placer/*.json",
+                    "/snippet/object-placer/*/*.json",
+                    "/snippet/object-placer/*/*/*.json",
+                    "/snippet/object-placer/*/*/*/*.json",
+                    "/snippet/object-placer/*/*/*/*/*.json",
+                    "/snippet/object-placer/*/*/*/*/*/*.json",
+                    "/snippet/object-placer/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/object-placer-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/attribute-modifier/*.json",
+                    "/snippet/attribute-modifier/*/*.json",
+                    "/snippet/attribute-modifier/*/*/*.json",
+                    "/snippet/attribute-modifier/*/*/*/*.json",
+                    "/snippet/attribute-modifier/*/*/*/*/*.json",
+                    "/snippet/attribute-modifier/*/*/*/*/*/*.json",
+                    "/snippet/attribute-modifier/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/attribute-modifier-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/effect/*.json",
+                    "/snippet/effect/*/*.json",
+                    "/snippet/effect/*/*/*.json",
+                    "/snippet/effect/*/*/*/*.json",
+                    "/snippet/effect/*/*/*/*/*.json",
+                    "/snippet/effect/*/*/*/*/*/*.json",
+                    "/snippet/effect/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/effect-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/connector/*.json",
+                    "/snippet/connector/*/*.json",
+                    "/snippet/connector/*/*/*.json",
+                    "/snippet/connector/*/*/*/*.json",
+                    "/snippet/connector/*/*/*/*/*.json",
+                    "/snippet/connector/*/*/*/*/*/*.json",
+                    "/snippet/connector/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/connector-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/loot-registry/*.json",
+                    "/snippet/loot-registry/*/*.json",
+                    "/snippet/loot-registry/*/*/*.json",
+                    "/snippet/loot-registry/*/*/*/*.json",
+                    "/snippet/loot-registry/*/*/*/*/*.json",
+                    "/snippet/loot-registry/*/*/*/*/*/*.json",
+                    "/snippet/loot-registry/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/loot-registry-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/range/*.json",
+                    "/snippet/range/*/*.json",
+                    "/snippet/range/*/*/*.json",
+                    "/snippet/range/*/*/*/*.json",
+                    "/snippet/range/*/*/*/*/*.json",
+                    "/snippet/range/*/*/*/*/*/*.json",
+                    "/snippet/range/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/range-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/shaped-style/*.json",
+                    "/snippet/shaped-style/*/*.json",
+                    "/snippet/shaped-style/*/*/*.json",
+                    "/snippet/shaped-style/*/*/*/*.json",
+                    "/snippet/shaped-style/*/*/*/*/*.json",
+                    "/snippet/shaped-style/*/*/*/*/*/*.json",
+                    "/snippet/shaped-style/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/shaped-style-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/generator/*.json",
+                    "/snippet/generator/*/*.json",
+                    "/snippet/generator/*/*/*.json",
+                    "/snippet/generator/*/*/*/*.json",
+                    "/snippet/generator/*/*/*/*/*.json",
+                    "/snippet/generator/*/*/*/*/*/*.json",
+                    "/snippet/generator/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/generator-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/color/*.json",
+                    "/snippet/color/*/*.json",
+                    "/snippet/color/*/*/*.json",
+                    "/snippet/color/*/*/*/*.json",
+                    "/snippet/color/*/*/*/*/*.json",
+                    "/snippet/color/*/*/*/*/*/*.json",
+                    "/snippet/color/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/color-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/enchantment/*.json",
+                    "/snippet/enchantment/*/*.json",
+                    "/snippet/enchantment/*/*/*.json",
+                    "/snippet/enchantment/*/*/*/*.json",
+                    "/snippet/enchantment/*/*/*/*/*.json",
+                    "/snippet/enchantment/*/*/*/*/*/*.json",
+                    "/snippet/enchantment/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/enchantment-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/deposit/*.json",
+                    "/snippet/deposit/*/*.json",
+                    "/snippet/deposit/*/*/*.json",
+                    "/snippet/deposit/*/*/*/*.json",
+                    "/snippet/deposit/*/*/*/*/*.json",
+                    "/snippet/deposit/*/*/*/*/*/*.json",
+                    "/snippet/deposit/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/deposit-schema.json"
+            },
+            {
+                "fileMatch": [
+                    "/snippet/potion-effect/*.json",
+                    "/snippet/potion-effect/*/*.json",
+                    "/snippet/potion-effect/*/*/*.json",
+                    "/snippet/potion-effect/*/*/*/*.json",
+                    "/snippet/potion-effect/*/*/*/*/*.json",
+                    "/snippet/potion-effect/*/*/*/*/*/*.json",
+                    "/snippet/potion-effect/*/*/*/*/*/*/*.json"
+                ],
+                "url": "./.iris/schema/snippet/potion-effect-schema.json"
+            }
+        ]
+    }
 }

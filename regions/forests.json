@@ -1,5 +1,5 @@
 {
-  "name": "Pine Forest",
+  "name": "Pine Forests",
   "rarity": 1,
   "color": "#72d86e",
   "landBiomeZoom": 2,
@@ -8,6 +8,6 @@
   "shoreHeightMax": 2,
   "shoreHeightMin": 0,
   "shoreBiomes": ["forests/shore/beach"],
-  "seaBiomeZoom": 1,
+  "seaBiomeZoom": 3,
   "seaBiomes": ["forests/sea/river"]
 }

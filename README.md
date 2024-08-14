@@ -1,5 +1,3 @@
-# Made by Nearest
+# Made by Nearest.
 
-## Inspired by RePixelatedMC, DAYLØS and the builds made by NextDoorPsycho
-
-## I wanted to say thanks to everyone who helped me in the Volmit Software Discord Server, especially CrazyDev22
+### Thanks to everyone in the Discord Server, specially: CrazyDev22, RepixelatedMC, NextDoorPsycho and DAYLØS.

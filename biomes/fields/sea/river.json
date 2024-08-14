@@ -5,18 +5,31 @@
   "color": "#1bb9ee",
   "generators": [
     {
-      "generator": "river",
-      "max": -20,
+      "generator": "dunes",
+      "max": -40,
       "min": -80
     }
   ],
   "customDerivitives": [
     {
-      "id": "pine_green",
-      "foliageColor": "#419642",
-      "grassColor": "#419642",
-      "skyColor": "#7aa6ce",
-      "waterColor": "#4ac5df",
+      "id": "fields_green",
+      "foliageColor": "#2b772c",
+      "grassColor": "#2b772c",
+      "skyColor": "#56a2e7",
+      "category": "icy"
+    },
+    {
+      "id": "fields_darkgreen",
+      "foliageColor": "#549a54",
+      "grassColor": "#549a54",
+      "skyColor": "#56a2e7",
+      "category": "icy"
+    },
+    {
+      "id": "fields_darkgreener",
+      "foliageColor": "#185737",
+      "grassColor": "#185737",
+      "skyColor": "#56a2e7",
       "category": "icy"
     }
   ],
