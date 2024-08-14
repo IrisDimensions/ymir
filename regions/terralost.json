@@ -1,0 +1,20 @@
+{
+  "name": "Terralost",
+  "color": "#446600",
+  "rarity": 1,
+  "landBiomes": ["terralost/alpine-grove", "terralost/alpine-highlands"],
+  "loot": {
+    "mode": "ADD",
+    "multiplier": 1,
+    "tables": ["tropical/dungeon"]
+  },
+  "landBiomeZoom": 1,
+  "shoreBiomes": ["terralost/shore/beach"],
+  "seaBiomes": ["terralost/ocean/river"],
+  "entitySpawners": ["tundra/passive", "tundra/hostile", "tundra/cave"],
+  "shoreHeightMin": 1.2,
+  "shoreHeightMax": 5.2,
+  "shoreHeightZoom": 4.14,
+  "shoreBiomeZoom": 3,
+  "riverThickness": 0.3
+}

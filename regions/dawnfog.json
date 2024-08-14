@@ -1,0 +1,18 @@
+{
+  "name": "Dawnfog",
+  "rarity": 1,
+  "color": "#274e13",
+  "landBiomeZoom": 1,
+  "landBiomes": [
+    "dawnfog/chroma-forest",
+    "dawnfog/chroma-cliffs",
+    "dawnfog/chroma-slope",
+    "dawnfog/chroma-plains"
+  ],
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomeZoom": 1,
+  "shoreBiomes": ["dawnfog/shore/beach"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": ["dawnfog/sea/river", "ocean/deep", "ocean/dark-depth-ocean"]
+}

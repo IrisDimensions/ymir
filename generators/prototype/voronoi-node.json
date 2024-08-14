@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_12"
+    },
+    "seed": 340,
+    "composite": [{
+        "negative": false,
+        "seed": 520,
+    "style":{
+                    "imageMap":{
+                        "channel": "BRIGHTNESS",
+                        "coordinateScale": 12,
+                        "image": "voronoi-node",
+                        "centered": false,
+                        "interpolationMethod": "BILINEAR_PARAMETRIC_4",
+                        "tiled": false,
+                        "inverted": true
+                    },
+                    "zoom": 0.4
+                }
+    }]
+}

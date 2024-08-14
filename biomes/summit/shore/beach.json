@@ -1,0 +1,24 @@
+{
+    "name": "Summit Beach",
+    "derivative": "BEACH",
+    "vanillaDerivative": "BEACH",
+    "rarity": 2,
+    "color": "#e7ea48",
+    "generators": [{
+        "min": 0,
+        "max": 1,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:gravel"}]
+        }
+    ]
+}

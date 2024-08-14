@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE_HALF_NEGATIVE_BIAS",
+        "horizontalScale": 47.0
+    },
+    "seed": 7433,
+    "composite": [
+        {
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "zoom": 3.0,
+                "fracture": {
+                    "style": "CLOVER_STARCAST_3",
+                    "zoom": 1.36,
+                    "multiplier": 7.0
+                },
+                "exponent": 2.0
+            },
+            "seed": 927
+        }
+    ]
+}

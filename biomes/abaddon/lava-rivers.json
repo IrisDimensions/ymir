@@ -1,0 +1,53 @@
+{
+    "name": "Lava Rivers",
+    "color": "#2FAB7B",
+    "derivative": "CRIMSON_FOREST",
+    "vanillaDerivative": "CRIMSON_FOREST",
+    "biomeSkyScatter": ["CRIMSON_FOREST"],
+    "biomeScatter": ["CRIMSON_FOREST"],
+    "customDerivitives": [
+        {
+            "skyColor": "#521111",
+            "fogColor": "#660000",
+            "id": "abyssal_lakes",
+            "category": "nether"
+        }
+    ],
+    "generators": [{
+        "generator": "mountain",
+        "max": 5,
+        "min": 2
+    }],
+    "wall": {"palette": [{
+        "block": "minecraft:lava",
+        "data": {"level": 1}
+    }]},
+    "layers": [
+        {
+            "minHeight": 0,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:cave_air"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 0}
+            }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 4,
+            "palette": [{
+                "block": "minecraft:lava",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:gravel"}]
+        }
+    ]
+}

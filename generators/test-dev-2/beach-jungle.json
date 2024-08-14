@@ -1,0 +1,25 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE",
+        "horizontalScale": 31.31
+    },
+    "seed": 9128,
+    "composite": [
+        {
+            "style": {
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 0.05,
+                "fracture": {
+                    "style": "FRACTAL_FBM_IRIS_THICK",
+                    "zoom": 1,
+                    "multiplier": 3.0
+                },
+                "exponent": 7.76
+            },
+            "seed": 9699,
+            "bezier": false,
+            "sinCentered": true,
+            "opacity": 1.0
+        }
+    ]
+}

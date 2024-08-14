@@ -1,0 +1,35 @@
+{
+    "group": "NORMAL",
+    "maximumRate": {
+        "amount": 8,
+        "per": {"seconds": 15}
+    },
+    "timeBlock": {
+        "startHour": 20,
+        "endHour": 3
+    },
+    "maxEntitiesPerChunk": 5,
+    "energyMultiplier": 0.95,
+    "weather": "ANY",
+    "spawns": [
+    {
+      "entity": "standard/passive/glowsquid",
+      "energyMultiplier": 1,
+      "rarity": 4,
+      "maxSpawns": 3,
+      "minSpawns": 1
+    },
+    {
+      "entity": "standard/passive/squid",
+      "maxSpawns": 1,
+      "minSpawns": 1,
+      "rarity": 1
+    },
+    {
+        "entity": "standard/passive/cod",
+        "maxSpawns": 10,
+        "minSpawns": 3,
+        "rarity": 2
+    }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE_FULL_POSITIVE_BIAS",
+        "horizontalScale": 7130.98
+    },
+    "seed": 195,
+    "composite": [
+        {
+            "style": {
+                "style": "FRACTAL_BILLOW_PERLIN",
+                "zoom": 0.179,
+                "exponent": 24.4,
+                "fracture": {
+                    "style": "CELLULAR_IRIS_HALF",
+                    "zoom": 26.0,
+                    "cellularZoom": 29.468,
+                    "axialFracturing": true,
+                    "cellularFrequency": 5.0,
+                    "exponent": 63.0,
+                    "multiplier": 64.7
+                }
+            },
+            "negative": false,
+            "seed": 112
+        }
+    ],
+    "cliffHeightMax": 42.3,
+    "cliffHeightMin": 10.0,
+    "cliffHeightGenerator": {
+        "seed": 188,
+        "bezier": true,
+        "enabled": false,
+        "exponent": 33.0,
+        "style": {
+            "style": "CELLULAR_BICUBIC"
+        },
+        "zoom": 30.17,
+        "fracture": [
+            {
+                "bezier": false,
+                "enabled": false,
+                "exponent": 58.335,
+                "zoom": 34.17,
+                "style": {
+                    "style": "PERLIN_IRIS_HALF",
+                    "axialFracturing": false,
+                    "cellularFrequency": 21.0,
+                    "cellularZoom": 1.0,
+                    "exponent": 38.0,
+                    "multiplier": 41.2,
+                    "zoom": 45.69
+                },
+                "sinCentered": false,
+                "negative": true,
+                "seed": 158,
+                "parametric": true,
+                "octaves": 19,
+                "offsetX": 25.452,
+                "offsetY": 22.74,
+                "offsetZ": 1.07,
+                "opacity": 0.1
+            }
+        ]
+    },
+    "cellFractureHeight": 65.89,
+    "cellFractureShuffle": 69.0,
+    "cellFractureZoom": 37.0,
+    "cellPercentSize": 0.19,
+    "multiplicitive": false,
+    "offsetX": 26.878,
+    "offsetZ": 15.78,
+    "opacity": 0.5,
+    "zoom": 27.0
+}

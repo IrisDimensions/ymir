@@ -1,0 +1,70 @@
+{
+  "landBiomes": ["mountain/mountain-hills"],
+  "color": "#b4a5a5",
+  "seaBiomes": ["mountain/ocean/mountain-river"],
+  "landBiomeZoom": 1,
+  "entitySpawners": ["tundra/passive", "tundra/hostile", "tundra/cave"],
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["mountain/shore/mountain-beach"],
+  "name": "Mountains",
+  "shoreHeightMax": 2,
+  "rarity": 2,
+  "deposits": [
+    {
+      "minHeight": 60,
+      "maxHeight": 1024,
+      "maxPerChunk": 20,
+      "minPerChunk": 8,
+      "maxSize": 16,
+      "minSize": 2,
+      "varience": 8,
+      "palette": [
+        {
+          "block": "minecraft:coal_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 60,
+      "maxHeight": 1024,
+      "maxPerChunk": 16,
+      "minPerChunk": 10,
+      "maxSize": 7,
+      "minSize": 2,
+      "varience": 2,
+      "palette": [
+        {
+          "block": "minecraft:redstone_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 60,
+      "maxHeight": 1024,
+      "maxPerChunk": 15,
+      "minPerChunk": 10,
+      "maxSize": 7,
+      "minSize": 2,
+      "varience": 4,
+      "palette": [
+        {
+          "block": "minecraft:iron_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 60,
+      "maxHeight": 1024,
+      "maxPerChunk": 20,
+      "minPerChunk": 10,
+      "maxSize": 7,
+      "minSize": 2,
+      "varience": 5,
+      "palette": [
+        {
+          "block": "minecraft:copper_ore"
+        }
+      ]
+    }
+  ]
+}

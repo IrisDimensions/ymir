@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_9",
+        "horizontalScale": 31.45
+    },
+    "seed": 8890,
+    "composite": [
+        {
+            "style": {
+                "style": "BIOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "zoom": 8.0,
+                "fracture": {
+                    "style": "SIMPLEX_VASCULAR",
+                    "zoom": 17.71,
+                    "multiplier": 1.1
+                },
+                "exponent": 5.0
+            },
+            "seed": 1122,
+            "bezier": false,
+            "sinCentered": true,
+            "opacity": 1.0
+        }
+    ],
+    "multiplicitive": true
+}

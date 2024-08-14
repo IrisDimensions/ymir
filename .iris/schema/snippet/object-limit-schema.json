@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irisobjectlimit.json",
+    "anyOf": [
+        {
+            "description": "Translate objects",
+            "type": "object",
+            "properties": {
+                "minimumHeight": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1024,
+                    "description": "minimumHeight\nThe minimum height for placement (bottom of object)\n   \nInteger\n\n    \n* Default Value is -2048\n* Minimum allowed is 0\n* Maximum allowed is 1024"
+                },
+                "maximumHeight": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1024,
+                    "description": "maximumHeight\nThe maximum height for placement (top of object)\n   \nInteger\n\n    \n* Default Value is 2048\n* Minimum allowed is 0\n* Maximum allowed is 1024"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {}
+}

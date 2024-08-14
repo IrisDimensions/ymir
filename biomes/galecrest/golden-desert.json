@@ -1,0 +1,99 @@
+{
+    "name": "Golden Desert",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "golden_desert",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 6,
+        "min": 2
+    }],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "zoom": 0.5,
+        "palette": [
+            {"block": "minecraft:sandstone"},
+            {"block": "minecraft:sand"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:sand","weight": 30},
+                {"block": "minecraft:sandstone","weight": 10}
+                ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {
+                    "block": "minecraft:sandstone"
+                }
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {
+                    "block": "minecraft:stone"
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.01,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }],
+    "objects": [
+        {
+            "chance": 0.20,
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 1.2
+            },
+            "carvingSupport": "SURFACE_ONLY",
+            "translate":{
+                "y": -3
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "edit": [
+                {"find": [{"block": "minecraft:note_block"}],
+                "replace":{
+                    "palette": [{"block": "minecraft:jungle_log"}]
+                }}
+            ],
+            "place": [
+            "palmtrees/generic1",
+            "palmtrees/generic2",
+            "palmtrees/generic3",
+            "palmtrees/generic4",
+            "palmtrees/generic5",
+            "palmtrees/generic6",
+            "palmtrees/generic7"
+            ]
+        }
+    ]
+}

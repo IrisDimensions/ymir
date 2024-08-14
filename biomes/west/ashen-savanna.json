@@ -1,0 +1,162 @@
+{
+    "name": "Ashen Savanna",
+    "color": "#8C3A16",
+    "rarity": 1,
+    "derivative": "SAVANNA",
+    "vanillaDerivative": "BADLANDS",
+        "customDerivitives": [{
+        "id": "ashen_savanna",
+        "category": "plains",
+        "foliageColor": "#938d76",
+        "grassColor": "#938d76"
+    }],
+    "generators": [{
+        "min": 1,
+        "max": 4,
+        "generator": "plain"
+    }],
+    "layers": [
+        {
+            "slopeCondition":{
+                "maximumSlope": 3.6
+            },
+            "style":{
+                "style": "FRACTAL_SMOKE"
+            },
+            "zoom": 0.5,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block","weight": 30
+                },
+                {
+                    "block": "minecraft:blackstone","weight": 20
+                },
+                {
+                    "block": "minecraft:dirt","weight": 10
+                },
+                {
+                    "block": "minecraft:gravel","weight": 20
+                },
+                {
+                    "block": "minecraft:smooth_basalt","weight": 20
+                }
+                ]
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 3.6
+            },
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:stone"}
+            ]
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 3.6
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:blackstone","weight": 13},
+                {"block": "minecraft:smooth_basalt","weight": 5},
+                {"block": "minecraft:smooth_basalt","weight": 1},
+                {"block": "minecraft:gravel","weight": 3}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.5,
+            "rotation": {
+                "yAxis": {
+                    "min": -360,
+                    "max": 360,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "slopeCondition":{
+                "maximumSlope": 1.2
+            },
+            "place": [
+                "custom/trees/ashen/tree1",
+                "custom/trees/ashen/tree2",
+                "custom/trees/ashen/tree3",
+                "custom/trees/ashen/tree4"
+            ]
+        },
+        {
+            "chance": 0.2,
+            "density": 2,
+            "mode": "CENTER_HEIGHT",
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7"
+            ],
+            "rotation": {
+                "yAxis": {
+                    "min": -360,
+                    "max": 360,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "translate":{
+                "y": 1
+            }
+        },
+        {
+            "chance": 0.5,
+            "density": 1,
+            "mode": "CENTER_HEIGHT",
+            "place": [
+                "custom/trees/ashen/shrub1",
+                "custom/trees/ashen/shrub2"
+            ],
+            "rotation": {
+                "yAxis": {
+                    "min": -360,
+                    "max": 360,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            }
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        }
+    ]
+}

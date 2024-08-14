@@ -1,0 +1,56 @@
+{
+    "fill": {"block": "minecraft:cave_air"},
+    "verticalRange": {
+        "max": 400,
+        "min": 15
+    },
+    "customBiome": "carving/draconic",
+    "fork": {
+        "caves": [{
+            "breakSurface": false,
+            "cave": "draconic/small",
+            "rarity": 7
+        }],
+        "elipsoids": [{
+            "fill": {"block": "minecraft:cave_air"},
+            "rarity": 15,
+            "baseWidth": {
+                "min": 5,
+                "max": 27,
+                "style": {"style": "STATIC"}
+            }
+        }]
+    },
+    "worm": {
+        "girth": {
+            "max": 8,
+            "min": 2,
+            "style": {"style": "NOWHERE"}
+        },
+        "maxDistance": 100,
+        "yStyle": {
+            "min": -5,
+            "max": 1,
+            "generator": {
+                "zoom": 3,
+                "style": "NOWHERE"
+            }
+        },
+        "xStyle": {
+            "min": -12,
+            "max": 12,
+            "generator": {
+                "zoom": 0.6,
+                "style": "NOWHERE"
+            }
+        },
+        "zStyle": {
+            "min": -12,
+            "max": 12,
+            "generator": {
+                "zoom": 0.6,
+                "style": "NOWHERE"
+            }
+        }
+    }
+}

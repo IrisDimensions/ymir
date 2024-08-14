@@ -1,0 +1,48 @@
+{
+    "name": "Vinland Sky Island",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "rarity": 1,
+    "biomeStyle":{"imageMap":{"image": "MultiCellDistances","channel": "BRIGHTNESS","interpolationMethod": "HERMITE_STARCAST_12"}},
+    "color": "#b8e84a",
+    "customDerivitives": [{
+        "id": "vinland_plains_1",
+        "foliageColor": "#7FA528",
+        "waterColor": "#2840A5",
+        "grassColor": "#A4C646",
+        "category": "forest"
+    }],
+    "generators": [{
+        "min": 10,
+        "max": 40,
+        "generator": "smooth-dunes"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "wall":{"palette": [{"block": "minecraft:dirt"}]},
+    "layers": [
+        {
+            "minHeight": 0,
+            "maxHeight": 2,
+            "style":{"style": "STATIC"},
+            "palette": [{"block": "minecraft:grass_block"}]
+            },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style":{"style": "STATIC"},
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "style":{"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        }
+    ]
+}

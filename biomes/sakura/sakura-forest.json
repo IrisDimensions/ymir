@@ -1,0 +1,362 @@
+{
+    "name": "Sakura",
+    "derivative": "CHERRY_GROVE",
+    "vanillaDerivative": "CHERRY_GROVE",
+    "rarity": 3,
+    "color": "#97ce55",
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 5,
+        "min": 2
+    }],
+    "entitySpawners": [
+        "temperate/passive"
+    ],
+    "layers": [
+        {
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 5,
+            "palette": [
+                {
+                    "block": "minecraft:stone"
+                }
+            ]
+        }
+    ],
+    "wall":{
+        "style":{
+            "style": "NOWHERE_SIMPLEX"
+        },
+        "zoom": 0.5,
+        "palette": [
+            {"block": "minecraft:stone","weight": 20},
+            {"block": "minecraft:mossy_cobblestone","weight": 5},
+            {"block": "minecraft:cobblestone","weight": 10}
+            ]
+    },
+    "decorators": [
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.6,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 0.2
+                }
+            },
+            "chance": 0.075,
+            "palette": [
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:lily_of_the_valley"},
+                {"block": "minecraft:cornflower"}
+            ]
+        },
+        {
+            "chance": 0.3,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "whitelist": [{"block": "minecraft:grass_block"}],
+            "palette": [
+                {
+                    "block": "minecraft:pink_petals","weight":2,
+                    "data": {"flower_amount": 1}
+                },
+                                {
+                    "block": "minecraft:pink_petals","weight":2,
+                    "data": {"flower_amount": 2}
+                },
+                {
+                    "block": "minecraft:pink_petals","weight":2,
+                    "data": {"flower_amount": 3}
+                },
+                                {
+                    "block": "minecraft:pink_petals","weight":2,
+                    "data": {"flower_amount": 4}
+                }
+
+            ]
+        },
+        {
+            "chance": 0.05,
+            "variance":{
+                "style": "NOWHERE_SIMPLEX",
+                "zoom": 0.3
+            },
+            "style":{
+                "style": "GLOB",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "zoom": 1
+                }
+            },
+            "palette": [
+                {"block": "minecraft:sweet_berry_bush","data": {"age": 0}},
+                {"block": "minecraft:sweet_berry_bush","data": {"age": 1}},
+                {"block": "minecraft:sweet_berry_bush","data": {"age": 2}},
+                {"block": "minecraft:sweet_berry_bush","data": {"age": 3}}
+            ]
+        },
+        {
+            "whitelist": [{"block": "minecraft:grass_block"}],
+            "stackMin": 1,
+            "stackMax": 11,
+            "chance": 0.005,
+            "variance": {
+                "style": "STATIC",
+                "zoom": 0.1
+            },
+            "topPalette": [{
+                "data": {
+                    "stage": 0,
+                    "age": 0,
+                    "leaves": "small"
+                },
+                "block": "minecraft:bamboo"
+            }],
+            "palette": [
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                }
+            ],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/boulder1",
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "clutter/boulder4",
+                "clutter/boulder5",
+                "clutter/boulder6",
+                "clutter/boulder7",
+                "clutter/boulder8",
+                "clutter/boulder9"
+            ],
+            "chance": 0.05,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -2}
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 1.2
+            },
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": -360,
+                    "max": 360,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "mode": "FAST_MIN_STILT",
+            "place": [
+                "trees/sakura/em3",
+                "trees/sakura/em4",
+                "trees/sakura/em5",
+                "trees/sakura/em6",
+                "trees/sakura/em7",
+                "trees/sakura/em8",
+                "trees/sakura/em9",
+                "trees/sakura/em10",
+                "trees/sakura/em11",
+                "trees/sakura/em12",
+                "trees/sakura/em13"
+                ],
+            "edit": [{"find": [{"block": "minecraft:chain"}],"replace":{"palette": [{"block": "minecraft:air"}]}},
+            {"find": [{"block": "minecraft:pearlescent_froglight"}],"replace":{"palette": [{"block": "minecraft:air"}]}}],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 1.2
+            },
+            "place": [
+                "sakura/big1"
+            ],
+            "chance": 0.0000010,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": -3}
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 1.2
+            },
+            "chance": 0.0030,
+            "place": ["trees/sakura/em1"
+            ],
+            "translate":{"y": -2},
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            }
+        }
+    ]
+}

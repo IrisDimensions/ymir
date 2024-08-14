@@ -1,0 +1,18 @@
+{
+  "name": "Ashes",
+  "rarity": 1,
+  "color": "#fffa66",
+  "landBiomeZoom": 2,
+  "landBiomes": [
+    "ashes/ashen-mountain",
+    "ashes/ashen-savanna",
+    "ashes/volcano"
+  ],
+  "entitySpawners": ["hot/passive", "hot/hostile", "hot/cave"],
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["ashes/ashen-savanna"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": ["ashes/ashen-savanna"]
+}

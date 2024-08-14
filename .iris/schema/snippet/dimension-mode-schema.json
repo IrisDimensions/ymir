@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irisdimensionmode.json",
+    "anyOf": [
+        {
+            "description": "Represents a dimensional mode",
+            "type": "object",
+            "properties": {"type": {
+                "type": "string",
+                "$ref": "#/definitions/oneof-enum-com-volmit-iris-engine-object-irisdimensionmodetype",
+                "description": "type\nThe dimension type\n   \nDimensionModeType\nThe type of dimension this is\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid DimensionModeType (use ctrl+space for auto complete!)"
+            }}
+        },
+        {"type": "string"}
+    ],
+    "definitions": {"oneof-enum-com-volmit-iris-engine-object-irisdimensionmodetype": {"oneOf": [
+        {
+            "const": "OVERWORLD",
+            "description": "Typical dimensions. Has a fluid height, and all features of a biome based world"
+        },
+        {
+            "const": "SUPERFLAT",
+            "description": "Ultra fast, but very limited in features. Only supports terrain & biomes. No decorations, mobs, objects, or anything of the sort!"
+        },
+        {
+            "const": "ENCLOSURE",
+            "description": "Like the nether, a ceiling & floor carved out"
+        },
+        {
+            "const": "ISLANDS",
+            "description": "Floating islands of terrain"
+        }
+    ]}}
+}

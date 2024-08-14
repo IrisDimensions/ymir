@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE",
+        "horizontalScale": 66.641
+    },
+    "seed": 9506,
+    "composite": [
+        {
+            "style": {
+                "style": "VIGOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "zoom": 17.98,
+                "fracture": {
+                    "style": "NOWHERE_SIMPLEX",
+                    "zoom": 18.13,
+                    "multiplier": 3.0
+                },
+                "exponent": 10.0
+            },
+            "seed": 2872,
+            "bezier": true,
+            "sinCentered": true,
+            "opacity": 0.96
+        }
+    ],
+    "multiplicitive": true
+}

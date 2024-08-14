@@ -1,0 +1,67 @@
+{
+  "name": "Boreal zone",
+  "rarity": 1,
+  "color": "#00b35c",
+  "landBiomeZoom": 2,
+  "shoreBiomeZoom": 1,
+  "seaBiomeZoom": 6,
+  "landBiomes": [
+    "boreal/mega-taiga",
+    "boreal/rockland",
+    "boreal/rockland-lake",
+    "boreal/shrublands",
+    "boreal/taiga",
+    "boreal/sequoia-forest",
+    "boreal/taiga-hills",
+    "boreal/taiga-mountain"
+  ],
+  "jigsawStructures": [
+    {
+      "separation": 100,
+      "spacing": 100,
+      "spreadType": "LINEAR",
+      "rarity": 5000,
+      "structure": "village-taiga"
+    }
+  ],
+  "shoreHeightMax": 1,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["boreal/shore/beach"],
+  "seaBiomes": [
+    "boreal/ocean/river",
+    "ocean/deep",
+    "ocean/dark-depth-ocean",
+    "ocean/rich-oceans"
+  ],
+  "entitySpawners": ["tundra/passive", "tundra/hostile", "tundra/cave"],
+  "objects": [
+    {
+      "trees": [
+        {
+          "anySize": true,
+          "treeTypes": ["REDWOOD"],
+          "sizes": [
+            {
+              "depth": 1,
+              "width": 1
+            }
+          ]
+        }
+      ],
+      "place": [
+        "trees/spruce/unfrostedlarge2",
+        "trees/spruce/unfrostedlarge3",
+        "trees/spruce/unfrostedlarge4",
+        "trees/spruce/unfrostedlarge5",
+        "trees/spruce/unfrostedlarge6",
+        "trees/spruce/unfrostedlarge7",
+        "trees/spruce/unfrostedsmol1",
+        "trees/spruce/unfrostedsmol2",
+        "trees/spruce/unfrostedsmol3",
+        "trees/spruce/unfrostedsmol4",
+        "trees/spruce/unfrostedsmol5"
+      ],
+      "chance": 0
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "expression": "if(pow(noise,2)>0.5,pow(noise,2)*2-|y/5|,pow(noise,2)-|y/5|)",
+    "variables": [
+        {
+            "name": "noise",
+            "styleValue": {
+                "style": "CELLULAR",
+                "multiplier": 30,
+                "exponent": 0.05
+            }
+        }
+    ]
+}

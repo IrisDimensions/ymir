@@ -1,0 +1,56 @@
+{
+    "name": "Swamp Water",
+    "color": "#2FAB7B",
+    "rarity": 3,
+    "derivative": "MANGROVE_SWAMP",
+    "vanillaDerivative": "MANGROVE_SWAMP",
+    "biomeScatter": ["MANGROVE_SWAMP"],
+    "biomeSkyScatter": ["MANGROVE_SWAMP"],
+    "customDerivitives": [
+        {
+            "id": "dreadbog_water",
+            "category": "swamp",
+            "humidity": 0.4,
+            "downfallType": "rain",
+            "grassColor": "#4f6727",
+            "temperature": 0.2
+        }
+    ],
+    "generators": [{
+        "generator": "mountain",
+        "max": 5,
+        "min": 2
+    }],
+    "wall": {"palette": [{
+        "block": "minecraft:water",
+        "data": {"level": 1}
+    }]},
+    "layers": [
+        {
+            "minHeight": 0,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:cave_air"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{
+                "block": "minecraft:water",
+                "data": {"level": 1}
+            }]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{
+                "block": "minecraft:water",
+                "data": {"level": 0}
+            }]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:clay"}]
+        }
+    ]
+}

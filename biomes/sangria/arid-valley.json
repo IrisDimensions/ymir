@@ -1,0 +1,207 @@
+{
+    "name": "Arid Valley",
+    "color": "#8C3A16",
+    "rarity": 1,
+    "derivative": "SAVANNA",
+    "vanillaDerivative": "BADLANDS",
+    "generators": [{
+        "min": 5,
+        "max": 22,
+        "generator": "custom/dream"
+    }],
+    "childStyle":{
+        "style": "CELLULAR_IRIS_HALF",
+        "zoom": 4
+    },
+    "children": ["sangria/valley-extended"],
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:grass_block","weight": 30},
+                {"block": "minecraft:packed_mud","weight": 10},
+                {"block": "minecraft:coarse_dirt","weight": 10}
+                ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:granite"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:granite"}]
+        }
+    ],
+    "objects": [
+        {
+            "slopeCondition":{
+                "maximumSlope": 0.6
+            },
+            "place": [
+                "trees/acacia/vexed1",
+                "trees/acacia/vexed2",
+                "trees/acacia/vexed3"
+            ],
+            "chance": 0.1,
+            "edit": [{
+                "find": [{"block": "minecraft:acacia_planks"}],
+                "replace": {"palette": [{
+                    "block": "minecraft:acacia_wood",
+                    "data": {"axis": "y"}
+                }]}
+            }]
+        },
+        {
+            "chance": 0.1,
+            "slopeCondition":{
+                "maximumSlope": 0.6
+            },
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 270,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/acacia/savannaF1",
+                "trees/acacia/savannaF2",
+                "trees/acacia/savannaF4",
+                "trees/acacia/savannaF5",
+                "trees/acacia/savannaF6",
+                "trees/acacia/savannaF7",
+                "trees/acacia/savannaF8",
+                "trees/acacia/savannaF9",
+                "trees/acacia/savannaF10",
+                "trees/acacia/savannaF11",
+                "trees/acacia/savannaF13",
+                "trees/acacia/savannaF14"
+            ],
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "chance": 0.1,
+            "slopeCondition":{
+                "maximumSlope": 0.6
+            },
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 270,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "trees/acacia/savannaS1",
+                "trees/acacia/savannaS2",
+                "trees/acacia/savannaS3",
+                "trees/acacia/savannaS4",
+                "trees/acacia/savannaS5",
+                "trees/acacia/savannaS6",
+                "trees/acacia/savannaS7",
+                "trees/acacia/savannaS8",
+                "trees/acacia/savannas9",
+                "trees/acacia/savannas10",
+                "trees/acacia/savannas11",
+                "trees/acacia/savannas12"
+            ]
+        },
+        {
+            "chance": 1,
+            "density": 2,
+            "mode": "CENTER_HEIGHT",
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7"
+            ],
+            "rotation": {
+                "yAxis": {
+                    "min": -360,
+                    "max": 360,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "translate":{
+                "y": 1
+            }
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.189,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "style":{
+                "style": "SIMPLEX",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        }
+    ],
+    "jigsawStructures": [
+        {
+            "separation": 100,
+            "spacing": 100,
+            "spreadType": "LINEAR",
+            "rarity": 3000,
+            "structure": "village-savanna"
+        }
+    ]
+}

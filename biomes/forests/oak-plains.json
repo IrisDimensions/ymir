@@ -1,0 +1,144 @@
+{
+  "name": "Oak Plains",
+  "derivative": "PLAINS",
+  "vanillaDerivative": "PLAINS",
+  "rarity": 1,
+  "color": "#808789",
+  "biomeStyle": {
+    "style": "GLOB",
+    "zoom": 0.05
+  },
+  "generators": [
+    {
+      "generator": "mountain",
+      "min": 10,
+      "max": 20
+    },
+    {
+      "generator": "test-dev-2/copse-ridge",
+      "min": 5,
+      "max": 5
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "pine_green",
+      "foliageColor": "#419642",
+      "grassColor": "#419642",
+      "skyColor": "#7aa6ce",
+      "waterColor": "#4ac5df",
+      "category": "icy"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:stone",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:andesite",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:tuff",
+        "weight": 2
+      }
+    ]
+  },
+  "layers": [
+    {
+      "slopeCondition": {
+        "maximumSlope": 2
+      },
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.5,
+      "palette": [
+        { "block": "minecraft:grass_block", "weight": 30 },
+        { "block": "minecraft:coarse_dirt", "weight": 10 },
+        { "block": "minecraft:rooted_dirt", "weight": 5 }
+      ]
+    },
+    {
+      "slopeCondition": {
+        "maximumSlope": 2
+      },
+      "style": {
+        "style": "GLOB",
+        "zoom": 0.28,
+        "exponent": 7
+      },
+      "palette": [{ "block": "minecraft:dirt_path" }]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        { "block": "minecraft:stone", "weight": 5 },
+        { "block": "minecraft:andesite", "weight": 5 },
+        { "block": "minecraft:tuff", "weight": 2 }
+      ]
+    },
+    {
+      "minHeight": 4,
+      "maxHeight": 8,
+      "palette": [
+        { "block": "minecraft:stone", "weight": 5 },
+        { "block": "minecraft:andesite", "weight": 5 },
+        { "block": "minecraft:tuff", "weight": 2 }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.4,
+      "palette": [{ "block": "minecraft:short_grass" }]
+    },
+    {
+      "chance": 0.05,
+      "palette": [{ "block": "minecraft:oxeye_daisy" }]
+    },
+    {
+      "chance": 0.05,
+      "palette": [{ "block": "minecraft:white_tulip" }]
+    },
+    {
+      "chance": 0.2,
+      "palette": [{ "block": "minecraft:fern" }]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:large_fern" }]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:tall_grass" }]
+    }
+  ],
+  "objects": [
+    {
+      "chance": 0.55,
+      "density": 1,
+      "mode": "CENTER_HEIGHT",
+      "translate": {
+        "y": -3
+      },
+      "slopeCondition": {
+        "maximumSlope": 1.2
+      },
+      "place": [
+        "treepack/oak/ponderosa1",
+        "treepack/oak/ponderosa2",
+        "treepack/oak/ponderosa3",
+        "treepack/oak/ponderosa4",
+        "treepack/oak/ponderosa5",
+        "treepack/oak/ponderosa6",
+        "treepack/oak/ponderosa7",
+        "treepack/oak/ponderosa8",
+        "treepack/oak/ponderosa9"
+      ]
+    }
+  ]
+}

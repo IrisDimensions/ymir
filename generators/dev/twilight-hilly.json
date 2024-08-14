@@ -1,0 +1,40 @@
+{
+    "interpolator": {
+        "function": "HERMITE_STARCAST_3",
+        "horizontalScale": 3415.77
+    },
+    "seed": 9054,
+    "composite": [
+        {
+            "seed": 4446,
+            "style": {
+                "style": "SEXOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "zoom": 89.6,
+                "fracture": {
+                    "style": "FRACTAL_FBM_IRIS_HALF",
+                    "zoom": 45.0,
+                    "exponent": 33.4,
+                    "multiplier": 4.3
+                }
+            },
+            "exponent": 22.576,
+            "negative": true
+        },
+        {
+            "seed": 3005,
+            "style": {
+                "style": "FRACTAL_FBM_IRIS_HALF",
+                "zoom": 3.0,
+                "exponent": 16.3,
+                "fracture": {
+                    "style": "QUINTOCTAVE_FRACTAL_FBM_SIMPLEX",
+                    "zoom": 12.0,
+                    "exponent": 5.0,
+                    "multiplier": 0.406
+                }
+            },
+            "negative": false,
+            "opacity": 1.0
+        }
+    ]
+}

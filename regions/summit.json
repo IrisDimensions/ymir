@@ -1,0 +1,27 @@
+{
+  "name": "Summit",
+  "color": "#446600",
+  "rarity": 1,
+  "landBiomes": [
+    "summit/mediterranean-forest",
+    "summit/rainbow-forest",
+    "summit/plains",
+    "summit/mountain",
+    "summit/mountain-extreme",
+    "summit/mountain-plains",
+    "summit/plains-hills"
+  ],
+  "loot": {
+    "mode": "ADD",
+    "multiplier": 1,
+    "tables": ["tropical/dungeon"]
+  },
+  "landBiomeZoom": 1,
+  "seaBiomeZoom": 1,
+  "shoreBiomes": ["summit/shore/beach"],
+  "seaBiomes": ["summit/ocean/river"],
+  "entitySpawners": ["tundra/passive", "tundra/hostile", "tundra/cave"],
+  "shoreHeightMin": 0,
+  "shoreHeightMax": 1,
+  "shoreBiomeZoom": 1
+}

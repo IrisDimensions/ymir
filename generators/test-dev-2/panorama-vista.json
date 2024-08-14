@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "STARCAST_9",
+        "horizontalScale": 35.112
+    },
+    "seed": 1229,
+    "composite": [
+        {
+            "style": {
+                "style": "CUBIC_IRIS_THICK",
+                "zoom": 10.211,
+                "fracture": {
+                    "style": "FLAT",
+                    "zoom": 14.5,
+                    "multiplier": 11.0
+                },
+                "exponent": 11.221
+            },
+            "seed": 9360,
+            "bezier": true,
+            "sinCentered": false,
+            "opacity": 0.0
+        }
+    ],
+    "multiplicitive": true
+}

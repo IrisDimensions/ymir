@@ -1,0 +1,401 @@
+{
+    "name": "Global Clutter",
+    "rarity": 1,
+    "maxPicked": 2,
+    "minPicked": 1,
+    "loot": [
+        {
+            "type": "book",
+            "maxAmount": 10,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "leather",
+            "maxAmount": 6,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "leather",
+            "maxAmount": 6,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "leather",
+            "maxAmount": 6,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "torch",
+            "maxAmount": 10,
+            "minAmount": 3,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "torch",
+            "maxAmount": 10,
+            "minAmount": 3,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "torch",
+            "maxAmount": 10,
+            "minAmount": 3,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "stone_axe",
+            "maxAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "book",
+            "maxAmount": 6,
+            "minAmount": 2,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "cooked_chicken",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "cooked_beef",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "cooked_rabbit",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "tropical_fish",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "salmon",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "sugar_cane",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "book",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "leather",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "sugar",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "emerald",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "rarity": 4,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "iron_ingot",
+            "maxAmount": 5,
+            "minAmount": 2,
+            "rarity": 4,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "tropical_fish_bucket",
+            "maxAmount": 2,
+            "minAmount": 1,
+            "rarity": 2,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "pufferfish_bucket",
+            "maxAmount": 1,
+            "minAmount": 1,
+            "rarity": 4,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "oak_log",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "spruce_log",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "jungle_log",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "cherry_log",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "oak_sapling",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "spruce_sapling",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "birch_sapling",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "dark_oak_sapling",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "jungle_sapling",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "cherry_sapling",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bone_meal",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bone",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bone_meal",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bone",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bone_meal",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bone",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat_seeds",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat_seeds",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat_seeds",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat_seeds",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "wheat_seeds",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "potatoes",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "potatoes",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "carrot",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "carrot",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "carrot",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "bucket",
+            "maxAmount": 1,
+            "rarity": 3,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "iron_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "iron_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "coal_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "coal_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "coal_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "redstone_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "redstone_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "redstone_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "copper_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "copper_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "copper_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "copper_ore",
+            "maxAmount": 6,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        },
+        {
+            "type": "acacia_log",
+            "maxAmount": 4,
+            "rarity": 1,
+            "slotTypes": "STORAGE"
+        }
+    ]
+}

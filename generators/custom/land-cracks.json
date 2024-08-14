@@ -1,0 +1,25 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_9",
+        "horizontalScale": 77
+    },
+    "seed": 184841,
+    "composite": [
+        {
+            "seed": 123123,
+            "style": {
+                "imageMap":{
+                    "image": "land-cracks",
+                    "centered": true,
+                    "channel": "RED",
+                    "tiled": true,
+                    "interpolationMethod": "STARCAST_12"
+                },
+                "zoom": 0.05,
+                "style": "VASCULAR_THIN",
+                "exponent": 0.01562,
+                "multiplier": 10
+            }
+        }
+    ]
+}

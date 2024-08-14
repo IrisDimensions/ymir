@@ -1,0 +1,69 @@
+{
+    "name": "Hellfire",
+    "derivative": "BASALT_DELTAS",
+    "vanillaDerivative": "BASALT_DELTAS",
+    "rarity": 3,
+    "customDerivitives": [{
+        "id": "hellfire",
+        "category": "nether",
+        "skyColor": "#521111",
+        "fogColor": "#660000"
+    }],
+    "generators": [{
+        "generator": "mountain",
+        "max": 130,
+        "min": 5
+    },
+    {
+        "generator": "mountain",
+        "max": 170,
+        "min": 130
+    }],
+    "layers": [
+        {
+            "style": {"style": "NOWHERE_SIMPLEX"},
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:crimson_nylium",
+                    "weight": 30
+                },
+                {"block": "minecraft:netherrack","weight": 20}
+            ]
+        },
+        {
+            "style": {"style": "NOWHERE_SIMPLEX"},
+            "zoom": 0.5,
+            "minHeight": 0,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:blackstone","weight": 30},
+                        {"block": "minecraft:smooth_basalt","weight": 15}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {
+                    "block": "minecraft:obsidian",
+                    "weight": 4
+                },
+                {"block": "minecraft:netherrack"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:cobbled_deepslate"}]
+        }
+    ],
+    "wall":{
+        "palette": [
+                {"block": "minecraft:blackstone"},
+                {"block": "minecraft:cobbled_deepslate"}
+        ],
+        "style":{
+            "style": "STATIC"
+        }
+    }
+}

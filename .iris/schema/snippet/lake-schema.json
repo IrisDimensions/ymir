@@ -1,0 +1,1436 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irislake.json",
+    "anyOf": [
+        {
+            "description": "Represents an Iris Lake",
+            "type": "object",
+            "properties": {
+                "rarity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "rarity\nTypically a 1 in RARITY on a per chunk/fork basis\n   \nInteger\n\n    \n* Default Value is 15\n* Minimum allowed is 1"
+                },
+                "widthStyle": {
+                    "anyOf": [
+                        {
+                            "!required": false,
+                            "type": "object",
+                            "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisshapedgeneratorstyle",
+                            "description": "widthStyle\nThe width style of this lake\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        },
+                        {
+                            "type": "string",
+                            "$ref": "#/definitions/enum-snippet-shaped-style",
+                            "description": "widthStyle\nThe width style of this lake\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        }
+                    ],
+                    "description": "widthStyle\nThe width style of this lake\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "depthStyle": {
+                    "anyOf": [
+                        {
+                            "!required": false,
+                            "type": "object",
+                            "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisshapedgeneratorstyle",
+                            "description": "depthStyle\nThe depth style of this lake\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        },
+                        {
+                            "type": "string",
+                            "$ref": "#/definitions/enum-snippet-shaped-style",
+                            "description": "depthStyle\nThe depth style of this lake\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        }
+                    ],
+                    "description": "depthStyle\nThe depth style of this lake\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "worm": {
+                    "anyOf": [
+                        {
+                            "!required": false,
+                            "type": "object",
+                            "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisworm",
+                            "description": "worm\nDefine the shape of this lake\n   \nWorm (Object)\nGenerate worms\n    \nYou can instead specify \"snippet/worm/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        },
+                        {
+                            "type": "string",
+                            "$ref": "#/definitions/enum-snippet-worm",
+                            "description": "worm\nDefine the shape of this lake\n   \nWorm (Object)\nGenerate worms\n    \nYou can instead specify \"snippet/worm/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        }
+                    ],
+                    "description": "worm\nDefine the shape of this lake\n   \nWorm (Object)\nGenerate worms\n    \nYou can instead specify \"snippet/worm/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "customBiome": {
+                    "type": "string",
+                    "$ref": "#/definitions/erzbiomes",
+                    "description": "customBiome\nForce this lake to only generate the specified custom biome\n   \nIris Biome\n\n    \n* Default Value is \nMust be a valid biomes (use ctrl+space for auto complete!)"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {
+        "enum-snippet-worm": {"enum": []},
+        "enum-snippet-image-map": {"enum": []},
+        "oneof-enum-com-volmit-iris-engine-object-noisestyle": {"oneOf": [
+            {
+                "const": "STATIC",
+                "description": "White Noise is like static. Useful for block scattering but not terrain."
+            },
+            {
+                "const": "STATIC_BILINEAR",
+                "description": "White Noise is like static. Useful for block scattering but not terrain."
+            },
+            {
+                "const": "STATIC_BICUBIC",
+                "description": "White Noise is like static. Useful for block scattering but not terrain."
+            },
+            {
+                "const": "STATIC_HERMITE",
+                "description": "White Noise is like static. Useful for block scattering but not terrain."
+            },
+            {
+                "const": "IRIS",
+                "description": "Wispy Perlin-looking simplex noise. The 'iris' style noise."
+            },
+            {
+                "const": "CLOVER",
+                "description": "Clover Noise"
+            },
+            {
+                "const": "CLOVER_STARCAST_3",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_STARCAST_6",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_STARCAST_9",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_STARCAST_12",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_BILINEAR_STARCAST_3",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_BILINEAR_STARCAST_6",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_BILINEAR_STARCAST_9",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_BILINEAR_STARCAST_12",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_HERMITE_STARCAST_3",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_HERMITE_STARCAST_6",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_HERMITE_STARCAST_9",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_HERMITE_STARCAST_12",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_BILINEAR",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_BICUBIC",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CLOVER_HERMITE",
+                "description": "CLOVER noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "VASCULAR",
+                "description": "Vascular noise gets higher as the position nears a cell border."
+            },
+            {
+                "const": "FLAT",
+                "description": "It always returns 0.5"
+            },
+            {
+                "const": "CELLULAR",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_STARCAST_3",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_STARCAST_6",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_STARCAST_9",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_STARCAST_12",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_BILINEAR_STARCAST_3",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_BILINEAR_STARCAST_6",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_BILINEAR_STARCAST_9",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_BILINEAR_STARCAST_12",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_HERMITE_STARCAST_3",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_HERMITE_STARCAST_6",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_HERMITE_STARCAST_9",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_HERMITE_STARCAST_12",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_BILINEAR",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_BICUBIC",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "CELLULAR_HERMITE",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders."
+            },
+            {
+                "const": "NOWHERE",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_CELLULAR",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_CLOVER",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_SIMPLEX",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_GLOB",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_VASCULAR",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_CUBIC",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_SUPERFRACTAL",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "NOWHERE_FRACTAL",
+                "description": "Classic German Engineering"
+            },
+            {
+                "const": "IRIS_DOUBLE",
+                "description": "Wispy Perlin-looking simplex noise. The 'iris' style noise."
+            },
+            {
+                "const": "IRIS_THICK",
+                "description": "Wispy Perlin-looking simplex noise. The 'iris' style noise."
+            },
+            {
+                "const": "IRIS_HALF",
+                "description": "Wispy Perlin-looking simplex noise. The 'iris' style noise."
+            },
+            {
+                "const": "SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise."
+            },
+            {
+                "const": "FRACTAL_SMOKE",
+                "description": "Very Detailed smoke using simplex fractured with fractal billow simplex at high octaves."
+            },
+            {
+                "const": "VASCULAR_THIN",
+                "description": "Thinner Veins."
+            },
+            {
+                "const": "SIMPLEX_CELLS",
+                "description": "Cells of simplex noise"
+            },
+            {
+                "const": "SIMPLEX_VASCULAR",
+                "description": "Veins of simplex noise"
+            },
+            {
+                "const": "FRACTAL_WATER",
+                "description": "Very Detailed fluid using simplex fractured with fractal billow simplex at high octaves."
+            },
+            {
+                "const": "PERLIN",
+                "description": "Perlin. Like simplex but more natural"
+            },
+            {
+                "const": "PERLIN_IRIS",
+                "description": "Perlin. Like simplex but more natural"
+            },
+            {
+                "const": "PERLIN_IRIS_HALF",
+                "description": "Perlin. Like simplex but more natural"
+            },
+            {
+                "const": "PERLIN_IRIS_DOUBLE",
+                "description": "Perlin. Like simplex but more natural"
+            },
+            {
+                "const": "PERLIN_IRIS_THICK",
+                "description": "Perlin. Like simplex but more natural"
+            },
+            {
+                "const": "FRACTAL_BILLOW_PERLIN",
+                "description": "Billow Fractal Perlin Noise."
+            },
+            {
+                "const": "BIOCTAVE_FRACTAL_BILLOW_PERLIN",
+                "description": "Billow Fractal Perlin Noise. 2 Octaves"
+            },
+            {
+                "const": "FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_BILLOW_IRIS",
+                "description": "Billow Fractal Iris Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_FBM_IRIS",
+                "description": "FBM Fractal Iris Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_BILLOW_IRIS_HALF",
+                "description": "Billow Fractal Iris Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_FBM_IRIS_HALF",
+                "description": "FBM Fractal Iris Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_BILLOW_IRIS_THICK",
+                "description": "Billow Fractal Iris Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_FBM_IRIS_THICK",
+                "description": "FBM Fractal Iris Noise. Single octave."
+            },
+            {
+                "const": "FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. Single octave."
+            },
+            {
+                "const": "BIOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 2 octaves."
+            },
+            {
+                "const": "BIOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 2 octaves."
+            },
+            {
+                "const": "BIOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 2 octaves."
+            },
+            {
+                "const": "TRIOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 3 octaves."
+            },
+            {
+                "const": "TRIOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 3 octaves."
+            },
+            {
+                "const": "TRIOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 3 octaves."
+            },
+            {
+                "const": "QUADOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 4 octaves."
+            },
+            {
+                "const": "QUADOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 4 octaves."
+            },
+            {
+                "const": "QUADOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 4 octaves."
+            },
+            {
+                "const": "QUINTOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 5 octaves."
+            },
+            {
+                "const": "QUINTOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 5 octaves."
+            },
+            {
+                "const": "QUINTOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 5 octaves."
+            },
+            {
+                "const": "SEXOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 6 octaves."
+            },
+            {
+                "const": "SEXOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 6 octaves."
+            },
+            {
+                "const": "SEXOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 6 octaves."
+            },
+            {
+                "const": "SEPTOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 7 octaves."
+            },
+            {
+                "const": "SEPTOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 7 octaves."
+            },
+            {
+                "const": "SEPTOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 7 octaves."
+            },
+            {
+                "const": "OCTOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 8 octaves."
+            },
+            {
+                "const": "OCTOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 8 octaves."
+            },
+            {
+                "const": "OCTOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 8 octaves."
+            },
+            {
+                "const": "NONOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 9 octaves."
+            },
+            {
+                "const": "NONOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 9 octaves."
+            },
+            {
+                "const": "NONOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 9 octaves."
+            },
+            {
+                "const": "VIGOCTAVE_FRACTAL_RM_SIMPLEX",
+                "description": "Rigid Multi Fractal Simplex Noise. 10 octaves."
+            },
+            {
+                "const": "VIGOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "description": "Billow Fractal Simplex Noise. 10 octaves."
+            },
+            {
+                "const": "VIGOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "description": "FBM Fractal Simplex Noise. 10 octaves."
+            },
+            {
+                "const": "BIOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 2 octaves"
+            },
+            {
+                "const": "TRIOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 3 octaves"
+            },
+            {
+                "const": "QUADOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 4 octaves"
+            },
+            {
+                "const": "QUINTOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 5 octaves"
+            },
+            {
+                "const": "SEXOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 6 octaves"
+            },
+            {
+                "const": "SEPTOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 7 octaves"
+            },
+            {
+                "const": "OCTOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 8 octaves"
+            },
+            {
+                "const": "NONOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 9 octaves"
+            },
+            {
+                "const": "VIGOCTAVE_SIMPLEX",
+                "description": "Basic, Smooth & Fast Simplex noise. Uses 10 octaves"
+            },
+            {
+                "const": "GLOB",
+                "description": "Glob noise is like cellular, but with globs..."
+            },
+            {
+                "const": "GLOB_IRIS",
+                "description": "Glob noise is like cellular, but with globs..."
+            },
+            {
+                "const": "GLOB_IRIS_HALF",
+                "description": "Glob noise is like cellular, but with globs..."
+            },
+            {
+                "const": "GLOB_IRIS_DOUBLE",
+                "description": "Glob noise is like cellular, but with globs..."
+            },
+            {
+                "const": "GLOB_IRIS_THICK",
+                "description": "Glob noise is like cellular, but with globs..."
+            },
+            {
+                "const": "CUBIC",
+                "description": "Cubic Noise"
+            },
+            {
+                "const": "FRACTAL_CUBIC",
+                "description": "Fractal Cubic Noise"
+            },
+            {
+                "const": "FRACTAL_CUBIC_IRIS",
+                "description": "Fractal Cubic Noise With Iris Swirls"
+            },
+            {
+                "const": "FRACTAL_CUBIC_IRIS_THICK",
+                "description": "Fractal Cubic Noise With Iris Swirls"
+            },
+            {
+                "const": "FRACTAL_CUBIC_IRIS_HALF",
+                "description": "Fractal Cubic Noise With Iris Swirls"
+            },
+            {
+                "const": "FRACTAL_CUBIC_IRIS_DOUBLE",
+                "description": "Fractal Cubic Noise With Iris Swirls"
+            },
+            {
+                "const": "BIOCTAVE_FRACTAL_CUBIC",
+                "description": "Fractal Cubic Noise, 2 Octaves"
+            },
+            {
+                "const": "TRIOCTAVE_FRACTAL_CUBIC",
+                "description": "Fractal Cubic Noise, 3 Octaves"
+            },
+            {
+                "const": "QUADOCTAVE_FRACTAL_CUBIC",
+                "description": "Fractal Cubic Noise, 4 Octaves"
+            },
+            {
+                "const": "CUBIC_IRIS",
+                "description": "Cubic Noise"
+            },
+            {
+                "const": "CUBIC_IRIS_HALF",
+                "description": "Cubic Noise"
+            },
+            {
+                "const": "CUBIC_IRIS_DOUBLE",
+                "description": "Cubic Noise"
+            },
+            {
+                "const": "CUBIC_IRIS_THICK",
+                "description": "Cubic Noise"
+            },
+            {
+                "const": "CELLULAR_IRIS",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "CELLULAR_IRIS_THICK",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "CELLULAR_IRIS_DOUBLE",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "CELLULAR_IRIS_HALF",
+                "description": "Cellular noise creates the same noise level for cells, changes noise level on cell borders. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "CELLULAR_HEIGHT",
+                "description": "Inverse of vascular, height gets to 1.0 as it approaches the center of a cell"
+            },
+            {
+                "const": "CELLULAR_HEIGHT_IRIS",
+                "description": "Inverse of vascular, height gets to 1.0 as it approaches the center of a cell, using the iris style."
+            },
+            {
+                "const": "CELLULAR_HEIGHT_IRIS_DOUBLE",
+                "description": "Inverse of vascular, height gets to 1.0 as it approaches the center of a cell, using the iris style."
+            },
+            {
+                "const": "CELLULAR_HEIGHT_IRIS_THICK",
+                "description": "Inverse of vascular, height gets to 1.0 as it approaches the center of a cell, using the iris style."
+            },
+            {
+                "const": "CELLULAR_HEIGHT_IRIS_HALF",
+                "description": "Inverse of vascular, height gets to 1.0 as it approaches the center of a cell, using the iris style."
+            },
+            {
+                "const": "VASCULAR_IRIS",
+                "description": "Vascular noise gets higher as the position nears a cell border. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "VASCULAR_IRIS_DOUBLE",
+                "description": "Vascular noise gets higher as the position nears a cell border. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "VASCULAR_IRIS_THICK",
+                "description": "Vascular noise gets higher as the position nears a cell border. Cells are distorted using Iris styled wispy noise."
+            },
+            {
+                "const": "VASCULAR_IRIS_HALF",
+                "description": "Vascular noise gets higher as the position nears a cell border. Cells are distorted using Iris styled wispy noise."
+            }
+        ]},
+        "oneof-enum-com-volmit-iris-util-interpolation-interpolationmethod": {"oneOf": [
+            {
+                "const": "NONE",
+                "description": "No interpolation. Nearest Neighbor (bad for terrain, great for performance)."
+            },
+            {
+                "const": "BILINEAR",
+                "description": "Uses 4 nearby points in a square to calculate a 2d slope. Very fast but creates square artifacts. See: https://en.wikipedia.org/wiki/Bilinear_interpolation"
+            },
+            {
+                "const": "STARCAST_3",
+                "description": "Starcast is Iris's own creation. It uses raytrace checks to find a horizontal boundary nearby. 3 Checks in a circle. Typically starcast is used with another interpolation method. See BILINEAR_STARCAST_9 For example. Starcast is meant to 'break up' large, abrupt cliffs to make cheap interpolation smoother."
+            },
+            {
+                "const": "STARCAST_6",
+                "description": "Starcast is Iris's own creation. It uses raytrace checks to find a horizontal boundary nearby. 6 Checks in a circle. Typically starcast is used with another interpolation method. See BILINEAR_STARCAST_9 For example. Starcast is meant to 'break up' large, abrupt cliffs to make cheap interpolation smoother."
+            },
+            {
+                "const": "STARCAST_9",
+                "description": "Starcast is Iris's own creation. It uses raytrace checks to find a horizontal boundary nearby. 9 Checks in a circle. Typically starcast is used with another interpolation method. See BILINEAR_STARCAST_9 For example. Starcast is meant to 'break up' large, abrupt cliffs to make cheap interpolation smoother."
+            },
+            {
+                "const": "STARCAST_12",
+                "description": "Starcast is Iris's own creation. It uses raytrace checks to find a horizontal boundary nearby. 12 Checks in a circle. Typically starcast is used with another interpolation method. See BILINEAR_STARCAST_9 For example. Starcast is meant to 'break up' large, abrupt cliffs to make cheap interpolation smoother."
+            },
+            {
+                "const": "BILINEAR_STARCAST_3",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with bilinear."
+            },
+            {
+                "const": "BILINEAR_STARCAST_6",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with bilinear."
+            },
+            {
+                "const": "BILINEAR_STARCAST_9",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with bilinear."
+            },
+            {
+                "const": "BILINEAR_STARCAST_12",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with bilinear."
+            },
+            {
+                "const": "HERMITE_STARCAST_3",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with hermite."
+            },
+            {
+                "const": "HERMITE_STARCAST_6",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with hermite."
+            },
+            {
+                "const": "HERMITE_STARCAST_9",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with hermite."
+            },
+            {
+                "const": "HERMITE_STARCAST_12",
+                "description": "Uses starcast to break up the abrupt sharp cliffs, then smooths the rest out with hermite."
+            },
+            {
+                "const": "BILINEAR_BEZIER",
+                "description": "Uses bilinear but on a bezier curve. See: https://en.wikipedia.org/wiki/Bezier_curve"
+            },
+            {
+                "const": "BILINEAR_PARAMETRIC_2",
+                "description": "Uses Bilinear but with parametric curves alpha 2."
+            },
+            {
+                "const": "BILINEAR_PARAMETRIC_4",
+                "description": "Uses Bilinear but with parametric curves alpha 4."
+            },
+            {
+                "const": "BILINEAR_PARAMETRIC_1_5",
+                "description": "Uses Bilinear but with parametric curves alpha 1.5."
+            },
+            {
+                "const": "BICUBIC",
+                "description": "Bicubic noise creates 4, 4-point splines for a total of 16 checks. Bcubic can go higher than expected and lower than expected right before a large change in slope."
+            },
+            {
+                "const": "HERMITE",
+                "description": "Hermite is similar to bicubic, but faster and it can be tuned a little bit"
+            },
+            {
+                "const": "CATMULL_ROM_SPLINE",
+                "description": "Essentially bicubic with zero tension"
+            },
+            {
+                "const": "HERMITE_TENSE",
+                "description": "Essentially bicubic with max tension"
+            },
+            {
+                "const": "HERMITE_LOOSE",
+                "description": "Hermite is similar to bicubic, this variant reduces the dimple artifacts of bicubic"
+            },
+            {
+                "const": "HERMITE_LOOSE_HALF_POSITIVE_BIAS",
+                "description": "Hermite is similar to bicubic, this variant reduces the dimple artifacts of bicubic"
+            },
+            {
+                "const": "HERMITE_LOOSE_HALF_NEGATIVE_BIAS",
+                "description": "Hermite is similar to bicubic, this variant reduces the dimple artifacts of bicubic"
+            },
+            {
+                "const": "HERMITE_LOOSE_FULL_POSITIVE_BIAS",
+                "description": "Hermite is similar to bicubic, this variant reduces the dimple artifacts of bicubic"
+            },
+            {
+                "const": "HERMITE_LOOSE_FULL_NEGATIVE_BIAS",
+                "description": "Hermite is similar to bicubic, this variant reduces the dimple artifacts of bicubic"
+            }
+        ]},
+        "oneof-enum-com-volmit-iris-engine-object-irisimagechannel": {"oneOf": [
+            {
+                "const": "RED",
+                "description": "The red channel of the image"
+            },
+            {
+                "const": "GREEN",
+                "description": "Thge green channel of the image"
+            },
+            {
+                "const": "BLUE",
+                "description": "The blue channel of the image"
+            },
+            {
+                "const": "SATURATION",
+                "description": "The saturation as a channel of the image"
+            },
+            {
+                "const": "HUE",
+                "description": "The hue as a channel of the image"
+            },
+            {
+                "const": "BRIGHTNESS",
+                "description": "The brightness as a channel of the image"
+            },
+            {
+                "const": "COMPOSITE_ADD_RGB",
+                "description": "The composite of RGB as a channel of the image. Takes the average channel value (adding)"
+            },
+            {
+                "const": "COMPOSITE_MUL_RGB",
+                "description": "The composite of RGB as a channel of the image. Multiplies the channels"
+            },
+            {
+                "const": "COMPOSITE_MAX_RGB",
+                "description": "The composite of RGB as a channel of the image. Picks the highest channel"
+            },
+            {
+                "const": "COMPOSITE_ADD_HSB",
+                "description": "The composite of HSB as a channel of the image Takes the average channel value (adding)"
+            },
+            {
+                "const": "COMPOSITE_MUL_HSB",
+                "description": "The composite of HSB as a channel of the image Multiplies the channels"
+            },
+            {
+                "const": "COMPOSITE_MAX_HSB",
+                "description": "The composite of HSB as a channel of the image Picks the highest channel"
+            },
+            {
+                "const": "RAW",
+                "description": "The raw value as a channel (probably doesnt look very good)"
+            }
+        ]},
+        "enum-snippet-shaped-style": {"enum": []},
+        "obj-com-volmit-iris-engine-object-irisimagemap": {"anyOf": [
+            {
+                "description": "Represents an image map",
+                "type": "object",
+                "properties": {
+                    "image": {
+                        "type": "string",
+                        "$ref": "#/definitions/erzimages",
+                        "description": "image\nDefine the png image to read in this noise map\n   \nIris Image\n\n    \n* Default Value is \nMust be a valid images (use ctrl+space for auto complete!)"
+                    },
+                    "coordinateScale": {
+                        "type": "number",
+                        "minimum": 1,
+                        "description": "coordinateScale\nThe amount of distance a single pixel is when reading this map, reading x=13, would still read pixel 0 if the scale is 32. You can zoom this externally through noise styles for zooming out.\n   \nNumber\n\n    \n* Default Value is 32.0\n* Minimum allowed is 1.0"
+                    },
+                    "interpolationMethod": {
+                        "type": "string",
+                        "$ref": "#/definitions/oneof-enum-com-volmit-iris-util-interpolation-interpolationmethod",
+                        "description": "interpolationMethod\nThe interpolation method if the coordinateScale is greater than 1. This blends the image into noise. For nearest neighbor, use NONE.\n   \nInterpolationMethod\nAn interpolation method (or function) is simply a method of smoothing a position based on surrounding points on a grid. Bicubic for example is smoother, but has 4 times the checks than Bilinear for example. Try using BILINEAR_STARCAST_9 for beautiful results.\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid InterpolationMethod (use ctrl+space for auto complete!)"
+                    },
+                    "channel": {
+                        "type": "string",
+                        "$ref": "#/definitions/oneof-enum-com-volmit-iris-engine-object-irisimagechannel",
+                        "description": "channel\nThe channel of the image to read from. This basically converts image data into a number betwen 0 to 1 per pixel using a certain 'channel/filter'\n   \nImageChannel\nDetermines a derived channel of an image to read\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid ImageChannel (use ctrl+space for auto complete!)"
+                    },
+                    "inverted": {
+                        "type": "boolean",
+                        "description": "inverted\nInvert the channel input\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "tiled": {
+                        "type": "boolean",
+                        "description": "tiled\nTile the image coordinates\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "centered": {
+                        "type": "boolean",
+                        "description": "centered\nCenter 0,0 to the center of the image instead of the top left.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]},
+        "obj-com-volmit-iris-engine-object-irisworm": {"anyOf": [
+            {
+                "description": "Generate worms",
+                "type": "object",
+                "properties": {
+                    "xStyle": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisshapedgeneratorstyle",
+                                "description": "xStyle\nThe style used to determine the curvature of this worm's x\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-shaped-style",
+                                "description": "xStyle\nThe style used to determine the curvature of this worm's x\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "xStyle\nThe style used to determine the curvature of this worm's x\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "yStyle": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisshapedgeneratorstyle",
+                                "description": "yStyle\nThe style used to determine the curvature of this worm's y\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-shaped-style",
+                                "description": "yStyle\nThe style used to determine the curvature of this worm's y\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "yStyle\nThe style used to determine the curvature of this worm's y\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "zStyle": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisshapedgeneratorstyle",
+                                "description": "zStyle\nThe style used to determine the curvature of this worm's z\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-shaped-style",
+                                "description": "zStyle\nThe style used to determine the curvature of this worm's z\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "zStyle\nThe style used to determine the curvature of this worm's z\n   \nShapedGeneratorStyle (Object)\nThis represents a generator with a min and max height\n    \nYou can instead specify \"snippet/shaped-style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "maxDistance": {
+                        "type": "integer",
+                        "description": "maxDistance\nThe max block distance this worm can travel from its start. This can have performance implications at ranges over 1,000 blocks but it's not too serious, test.\n   \nInteger\n\n    \n* Default Value is 128"
+                    },
+                    "maxIterations": {
+                        "type": "integer",
+                        "description": "maxIterations\nThe iterations this worm can make\n   \nInteger\n\n    \n* Default Value is 512"
+                    },
+                    "allowLoops": {
+                        "type": "boolean",
+                        "description": "allowLoops\nBy default if a worm loops back into itself, it stops at that point and does not continue. This is an optimization, to prevent this turn this option on.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "girth": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisstyledrange",
+                                "description": "girth\nThe thickness of the worms. Each individual worm has the same thickness while traveling however, each spawned worm will vary in thickness.\n   \nStyledRange (Object)\nRepresents a range styled with a custom generator\n    \nYou can instead specify \"snippet/style-range/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-style-range",
+                                "description": "girth\nThe thickness of the worms. Each individual worm has the same thickness while traveling however, each spawned worm will vary in thickness.\n   \nStyledRange (Object)\nRepresents a range styled with a custom generator\n    \nYou can instead specify \"snippet/style-range/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "girth\nThe thickness of the worms. Each individual worm has the same thickness while traveling however, each spawned worm will vary in thickness.\n   \nStyledRange (Object)\nRepresents a range styled with a custom generator\n    \nYou can instead specify \"snippet/style-range/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]},
+        "obj-com-volmit-iris-engine-object-irisgeneratorstyle": {"anyOf": [
+            {
+                "description": "A gen style",
+                "type": "object",
+                "properties": {
+                    "style": {
+                        "type": "string",
+                        "$ref": "#/definitions/oneof-enum-com-volmit-iris-engine-object-noisestyle",
+                        "description": "style\nThe chance is 1 in CHANCE per interval\n   \nNoiseStyle\nStyles of noise\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid NoiseStyle (use ctrl+space for auto complete!)"
+                    },
+                    "cellularFrequency": {
+                        "type": "number",
+                        "description": "cellularFrequency\nIf set above 0, this style will be cellularized\n   \nNumber\n\n    \n* Default Value is 0.0"
+                    },
+                    "cellularZoom": {
+                        "type": "number",
+                        "description": "cellularZoom\nCell zooms\n   \nNumber\n\n    \n* Default Value is 1.0"
+                    },
+                    "zoom": {
+                        "type": "number",
+                        "minimum": 1.0E-5,
+                        "description": "zoom\nThe zoom of this style\n   \nNumber\n\n    \n* Default Value is 1.0\n* Minimum allowed is 1.0E-5"
+                    },
+                    "expression": {
+                        "type": "string",
+                        "$ref": "#/definitions/erzexpressions",
+                        "description": "expression\nInstead of using the style property, use a custom expression to represent this style.\n   \nIris Expression\n\nMust be a valid expressions (use ctrl+space for auto complete!)"
+                    },
+                    "imageMap": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisimagemap",
+                                "description": "imageMap\nUse an Image map instead of a generated value\n   \nImageMap (Object)\nRepresents an image map\n    \nYou can instead specify \"snippet/image-map/some-name.json\" to use a snippet file instead of specifying it here."
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-image-map",
+                                "description": "imageMap\nUse an Image map instead of a generated value\n   \nImageMap (Object)\nRepresents an image map\n    \nYou can instead specify \"snippet/image-map/some-name.json\" to use a snippet file instead of specifying it here."
+                            }
+                        ],
+                        "description": "imageMap\nUse an Image map instead of a generated value\n   \nImageMap (Object)\nRepresents an image map\n    \nYou can instead specify \"snippet/image-map/some-name.json\" to use a snippet file instead of specifying it here."
+                    },
+                    "multiplier": {
+                        "type": "number",
+                        "minimum": 1.0E-5,
+                        "description": "multiplier\nThe Output multiplier. Only used if parent is fracture.\n   \nNumber\n\n    \n* Default Value is 1.0\n* Minimum allowed is 1.0E-5"
+                    },
+                    "axialFracturing": {
+                        "type": "boolean",
+                        "description": "axialFracturing\nIf set to true, each dimension will be fractured with a different order of input coordinates. This is usually 2 or 3 times slower than normal.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "fracture": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisgeneratorstyle",
+                                "description": "fracture\nApply a generator to the coordinate field fed into this parent generator. I.e. Distort your generator with another generator.\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here."
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-style",
+                                "description": "fracture\nApply a generator to the coordinate field fed into this parent generator. I.e. Distort your generator with another generator.\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here."
+                            }
+                        ],
+                        "description": "fracture\nApply a generator to the coordinate field fed into this parent generator. I.e. Distort your generator with another generator.\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here."
+                    },
+                    "exponent": {
+                        "type": "number",
+                        "minimum": 0.01562,
+                        "maximum": 64,
+                        "description": "exponent\nThe exponent\n   \nNumber\n\n    \n* Default Value is 1.0\n* Minimum allowed is 0.01562\n* Maximum allowed is 64.0"
+                    },
+                    "cacheSize": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 8192,
+                        "description": "cacheSize\nIf the cache size is set above 0, this generator will be cached\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is 0\n* Maximum allowed is 8192"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]},
+        "erzbiomes": {"enum": [
+            "arid/ocean/river",
+            "carving/ice-lite",
+            "woodland/autumn-forest",
+            "carving/cavesv4/crystalized",
+            "woodland/deerwood",
+            "carving/drip",
+            "carving/mixed-sandstone",
+            "dev/dev-1/dev-tres",
+            "mesa/plateau",
+            "dev/dev-2/hidden-plains",
+            "tropical/sea/river-steep",
+            "dreadbog/twilight-fens",
+            "mesa/cliffs",
+            "mesa/valleys",
+            "permafrost/shore/pf-beach",
+            "snowleaf/briar-hollow",
+            "tropical/sea/ocean",
+            "mesa/green",
+            "terralost/alpine-grove",
+            "carving/deep/ravines",
+            "winterhold/cold-shrubland-mountain",
+            "carving/deepdark/standard-deepdark",
+            "woodland/autumn-mountain",
+            "sirenia/torrential-basin-extended",
+            "galecrest/shore/beach",
+            "terralost/alpine-highlands",
+            "ashes/ashen-lava",
+            "carving/sandstone",
+            "summit/mediterranean-forest",
+            "permafrost/ocean/pf-river",
+            "dreadbog/dark-oak-forest",
+            "summit/plains-hills",
+            "sakura/sakura-forest",
+            "terralost/ocean/river",
+            "arid/bayou-hills",
+            "vinland/scarlet-plains",
+            "sirenia/torrential-basin",
+            "mesa/blue",
+            "swamp/shore/beach",
+            "woodland/shore/beach",
+            "galecrest/golden-desert",
+            "permafrost/pf-plains",
+            "blossomvale/shore/blossom-beach",
+            "island/shore/coast",
+            "eldoria/shore/beach",
+            "sirenia/sundial-clearing",
+            "sangria/shore/desert-beach",
+            "auroria/frozen-mountains",
+            "carving/cavesv4/mantle-core-small",
+            "eldoria/seraph-summit",
+            "test/test-cuatro",
+            "carving/cavesv4/mushroom",
+            "dawnfog/chroma-plains",
+            "stormweaver/mountain-plains",
+            "forests/oak-mountain",
+            "summit/mountain-middle",
+            "tropical/mountain-water",
+            "tropical/beach-bamboo",
+            "ocean/deep",
+            "carving/draconic",
+            "permafrost/ocean/pf-river-ice",
+            "frozen/frozen-plains",
+            "swamp/marsh",
+            "blossomvale/vermillion-plains",
+            "eldoria/tempest-plains",
+            "abaddon/lava-rivers",
+            "auroria/ocean/pf-river-ice",
+            "vinland/boreal-grove",
+            "summit/mountain-plains",
+            "summit/shore/beach",
+            "boreal/rockland-lake",
+            "crag/shore/beach",
+            "dawnfog/chroma-forest",
+            "woodland/jade-terrace",
+            "frozen/frozen-forest-hills",
+            "auroria/shore/pf-beach",
+            "carving/temperate",
+            "tropical/plains-hills",
+            "vinland/terralost_dragon",
+            "grove/sunlight-grove",
+            "vinland/moonlight-grove",
+            "sirenia/whispering-vines",
+            "forests/pine-forest",
+            "forests/oak-plains",
+            "frozen/frozen-lake",
+            "swamp/sea/lake",
+            "arid/plains",
+            "carving/rocky",
+            "carving/cavesv4/azure-wastes",
+            "sirenia/sea/coral-ocean-cliffs",
+            "sakura/shore/sakura-beach",
+            "summit/mountain",
+            "frozen/ocean/frozen-river",
+            "glacial/ocean/glacial-river",
+            "ashes/ashen-mountain",
+            "dreadbog/swamp-water",
+            "ocean/rich-oceans",
+            "tropical/sea/river-soft",
+            "snowleaf/sea/river-ice",
+            "mesa/plateau-high",
+            "eldoria/frosted-scarlet",
+            "sirenia/shore/beach",
+            "blossomvale/ocean/blossom-river",
+            "frozen/shore/frozen-beach",
+            "sangria/shore/desert-sand-beach",
+            "carving/granite",
+            "woodland/evergreen",
+            "sangria/small-valley",
+            "boreal/taiga",
+            "forests/oak-spring-mountain",
+            "mesa/plateau-dirt",
+            "tropical/island-beach",
+            "glacial/ocean/glacial-ice-river",
+            "stormweaver/shore/mountain-beach",
+            "abaddon/abyssal-lakes",
+            "galecrest/golden-plains",
+            "abaddon/forsaken-cliffs",
+            "sangria/ocean/desert-river",
+            "auroria/ocean/pf-river",
+            "grove/tall-plateau",
+            "mesa/mesa",
+            "carving/deepslate",
+            "swamp/sea/ocean-tree",
+            "sirenia/sea/river-extended",
+            "ocean/ocean",
+            "swamp/handy-willow-forest",
+            "stormweaver/ocean/ocean",
+            "mountain/ocean/mountain-river",
+            "eldoria/starfall-plateau",
+            "test/test",
+            "vinland/plains",
+            "ashes/ashen-savanna",
+            "abaddon/gehenna",
+            "carving/cavesv4/glacial",
+            "blossomvale/vermillion-mountain",
+            "sangria/ocean/deep-river",
+            "boreal/shrublands",
+            "test/test-dos",
+            "vinland/scarlet-mountain",
+            "summit/mountain-extreme",
+            "forests/pine-hills",
+            "crag/sea/river",
+            "summit/ocean/river",
+            "boreal/taiga-mountain",
+            "crag/crag-garden",
+            "swamp/sea/ocean",
+            "carving/amethyst",
+            "ocean/shore/beach",
+            "tropical/beach",
+            "dreadbog/phantom-bog",
+            "summit/rainbow-forest",
+            "carving/ice",
+            "island/beach",
+            "tropical/highlands",
+            "ocean/warm",
+            "temperate/longtree-forest",
+            "permafrost/pf-hills",
+            "sirenia/sea/coral-ocean",
+            "stormweaver/ocean/mountain-river",
+            "carving/mountain-caves",
+            "carving/red-sandstone",
+            "boreal/rockland",
+            "grove/sea/river",
+            "west/ocean/river",
+            "dreadbog/sea/misty-river",
+            "winterhold/cold-shrubland",
+            "snowleaf/orange-willow-mountain",
+            "dev/dev-1/dev-dos",
+            "mesa/shore/beach",
+            "carving/rocky-cavebiome",
+            "test/shore/beach",
+            "terralost/shore/beach",
+            "tropical/sea/coral-ocean-cliffs",
+            "stormweaver/stormweaver-mountain",
+            "ocean/coral-sea",
+            "sakura/ocean/sakura-river",
+            "dreadbog/sea/dread-river",
+            "temperate/shore/beach",
+            "blossomvale/vermillionwood",
+            "sirenia/sea/river",
+            "galecrest/golden-mountains",
+            "forests/sea/river",
+            "abaddon/domain-of-perdition",
+            "temperate/rocky-plains",
+            "mountain/mountain-hills",
+            "tropical/mountain",
+            "summit/plains",
+            "swamp/swamp-mangrove-lake",
+            "tropical/mountain-plains",
+            "woodland/zelkova-forest",
+            "temperate/shore/oak-beach",
+            "eldoria/ocean/river",
+            "mesa/dark",
+            "woodland/evergreen-plains",
+            "woodland/pinecrest-mountain",
+            "island/volcano",
+            "woodland/sea/river",
+            "arid/bayou-plains",
+            "dev/dev-2/sea/river",
+            "glacial/glacial-mountains",
+            "temperate/longtree-forest-extended",
+            "mesa/yellow",
+            "dawnfog/shore/beach",
+            "glacial/glacial-chasm",
+            "tropical/beach-charred",
+            "carving/ice-ravine",
+            "swamp/marsh-rotten",
+            "auroria/frozen-runelands",
+            "temperate/hilly-basin",
+            "arid/shore/beach",
+            "blossomvale/vermillion-hills-extended",
+            "tropical/mountain-extreme",
+            "carving/deep/amethyst",
+            "woodland/autumn-lake",
+            "tropical/plains",
+            "arid/hill",
+            "galecrest/ocean/river",
+            "carving/deep/drip",
+            "carving/deep/calcite",
+            "carving/deep",
+            "carving/swamp",
+            "carving/cavesv4/mantle-core",
+            "snowleaf/sea/river",
+            "dev/dev-2/hidden-dunes",
+            "boreal/ocean/river",
+            "sangria/arid-valley",
+            "glacial/shore/glacial-beach",
+            "snowleaf/snowy-briar-hollow",
+            "grove/pareim",
+            "sangria/valley-extended",
+            "dawnfog/sea/river",
+            "dev/dev-1/dev-uno",
+            "mesa/plateau-dirt-high",
+            "mesa/red",
+            "boreal/shore/beach",
+            "west/ashen-savanna",
+            "carving/cavesv4/dark-depths",
+            "snowleaf/frosty-orchard",
+            "ashes/volcano",
+            "boreal/taiga-hills",
+            "frozen/frozen-forest",
+            "galecrest/golden-desert-spires",
+            "test/sea/river",
+            "carving/calcite",
+            "ocean/dark-depth-ocean",
+            "carving/lush",
+            "eldoria/snowy-forest",
+            "abaddon/hellfire",
+            "forests/shore/beach",
+            "carving/cavesv4/spider-infestation",
+            "carving/deep/vines",
+            "snowleaf/shore/beach",
+            "blossomvale/vermillion-valley-hills",
+            "carving/mountain",
+            "stormweaver/hollow-forest",
+            "sakura/shore/sakura-snowy-beach",
+            "carving/drip-lite",
+            "carving/deepravine",
+            "blossomvale/vermillion-valley",
+            "dreadbog/orchid-swamp",
+            "sakura/snowy-sakura",
+            "test/test-tres",
+            "dawnfog/chroma-cliffs",
+            "swamp/swamp-forest",
+            "boreal/sequoia-forest",
+            "west/plateau",
+            "dawnfog/chroma-slope",
+            "dreadbog/shore/dread-beach",
+            "woodland/whisperwood",
+            "eldoria/ocean/river-ice",
+            "tropical/wilds",
+            "tropical/mountain-middle",
+            "carving/volcanic",
+            "west/plains",
+            "grove/shore/beach",
+            "snowleaf/sea/frozen-river",
+            "carving/cavesv4/crystalized-overgrown",
+            "carving/deep/main",
+            "glacial/ocean/glacial-pond",
+            "ocean/end-deep-ocean",
+            "island/sea/river",
+            "mesa/sea/river",
+            "mountain/shore/mountain-beach",
+            "ocean/coast",
+            "temperate/ocean/river",
+            "sirenia/whispering-vines-extended",
+            "tropical/submerged-volcanic",
+            "vinland/mountain1",
+            "ocean/warm-bottom",
+            "tropical/bamboo-forest",
+            "carving/jungle",
+            "boreal/shore/beach-grass",
+            "forests/pine-extended-hills",
+            "crag/steppe",
+            "dev/dev-2/shore/beach",
+            "tropical/sea/coral-ocean",
+            "boreal/mega-taiga",
+            "west/shore/beach"
+        ]},
+        "obj-com-volmit-iris-engine-object-irisshapedgeneratorstyle": {"anyOf": [
+            {
+                "description": "This represents a generator with a min and max height",
+                "type": "object",
+                "properties": {
+                    "generator": {
+                        "anyOf": [
+                            {
+                                "!required": true,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisgeneratorstyle",
+                                "description": "generator\nThe generator id\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-style",
+                                "description": "generator\nThe generator id\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "generator\nThe generator id\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "min": {
+                        "type": "integer",
+                        "minimum": -2032,
+                        "maximum": 2032,
+                        "description": "min\nThe min block value\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is -2032\n* Maximum allowed is 2032"
+                    },
+                    "max": {
+                        "type": "integer",
+                        "minimum": -2032,
+                        "maximum": 2032,
+                        "description": "max\nThe max block value\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is -2032\n* Maximum allowed is 2032"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]},
+        "erzexpressions": {"enum": [
+            "rivers",
+            "idk",
+            "land-rivers",
+            "cracks",
+            "rivers2",
+            "riverrr",
+            "rivers3"
+        ]},
+        "enum-snippet-style": {"enum": []},
+        "erzimages": {"enum": [
+            "cataract-badland",
+            "smallcobwebs",
+            "magma-rivers",
+            "hm",
+            "prototype-rivers",
+            "voronoi-node",
+            "cool-small-lakes",
+            "voronoi",
+            "copse-ledge",
+            "land-cracks",
+            "walls",
+            "weird-figures",
+            "wallsv2",
+            "noise",
+            "rivers-2",
+            "criptic-hole",
+            "sub-zero",
+            "particles",
+            "voidcells",
+            "smallsquare",
+            "bio-mass",
+            "biomass",
+            "cool-rivers-2",
+            "cobweb",
+            "dev-rivers",
+            "lavawaste",
+            "continents",
+            "canyon-rivers",
+            "vascularcliffs",
+            "island-style",
+            "thickmesa",
+            "voronoi-mountains",
+            "pixels",
+            "distant-cells",
+            "MultiCellDistances",
+            "labyrinth",
+            "painted-plains",
+            "knots",
+            "thick-branches",
+            "voronoi-noise"
+        ]},
+        "enum-snippet-style-range": {"enum": []},
+        "obj-com-volmit-iris-engine-object-irisstyledrange": {"anyOf": [
+            {
+                "description": "Represents a range styled with a custom generator",
+                "type": "object",
+                "properties": {
+                    "min": {
+                        "type": "number",
+                        "description": "min\nThe minimum value\n   \nNumber\n\n    \n* Default Value is 16.0"
+                    },
+                    "max": {
+                        "type": "number",
+                        "description": "max\nThe maximum value\n   \nNumber\n\n    \n* Default Value is 32.0"
+                    },
+                    "style": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisgeneratorstyle",
+                                "description": "style\nThe style to pick the range\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-style",
+                                "description": "style\nThe style to pick the range\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "style\nThe style to pick the range\n   \nGeneratorStyle (Object)\nA gen style\n    \nYou can instead specify \"snippet/style/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]}
+    }
+}

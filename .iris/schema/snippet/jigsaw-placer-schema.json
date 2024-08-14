@@ -1,0 +1,52 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irisjigsawplacement.json",
+    "anyOf": [
+        {
+            "description": "Represents a jigsaw placement",
+            "type": "object",
+            "properties": {
+                "structure": {
+                    "type": "string",
+                    "$ref": "#/definitions/erzjigsaw-structures",
+                    "description": "structure\nThe jigsaw structure to use\n   \nIris Jigsaw Structure\n\n    \n* Default Value is \nMust be a valid jigsaw-structures (use ctrl+space for auto complete!)"
+                },
+                "rarity": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "rarity\nThe rarity for this jigsaw structure to place on a per chunk basis\n   \nInteger\n\n    \n* Default Value is 29\n* Minimum allowed is 1"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {"erzjigsaw-structures": {"enum": [
+        "mush-huts",
+        "ocean-monument",
+        "trail-ruins",
+        "woodland-mansion",
+        "ancient-city",
+        "mineshaft",
+        "dungeon-spider",
+        "village-snowy",
+        "witchzone",
+        "pyramid-desert",
+        "igloo",
+        "village-small-frosty",
+        "village-savanna",
+        "pyramid-jungle",
+        "ruins/ruin3",
+        "dungeon-zombie",
+        "village-plains",
+        "archipielago",
+        "village-desert",
+        "underwater-ruin",
+        "ruined-portal",
+        "dungeon-skeleton",
+        "pillager-outpost",
+        "witch",
+        "village-taiga",
+        "village-japanese",
+        "stronghold"
+    ]}}
+}

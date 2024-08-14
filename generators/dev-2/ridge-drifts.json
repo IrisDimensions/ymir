@@ -1,0 +1,40 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_3",
+        "horizontalScale": 7916.54
+    },
+    "seed": 5527,
+    "composite": [
+        {
+            "seed": 9900,
+            "style": {
+                "style": "SEXOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "zoom": 44.2,
+                "fracture": {
+                    "style": "NOWHERE_CELLULAR",
+                    "zoom": 28.363,
+                    "exponent": 46.36,
+                    "multiplier": 6.7
+                }
+            },
+            "exponent": 35.8,
+            "negative": true
+        },
+        {
+            "seed": 5463,
+            "style": {
+                "style": "VIGOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                "zoom": 57.0,
+                "exponent": 5.47,
+                "fracture": {
+                    "style": "OCTOCTAVE_FRACTAL_BILLOW_SIMPLEX",
+                    "zoom": 43.4,
+                    "exponent": 1.708,
+                    "multiplier": 8.092
+                }
+            },
+            "negative": false,
+            "opacity": 0.3
+        }
+    ]
+}

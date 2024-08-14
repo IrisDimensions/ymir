@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_BEZIER",
+        "horizontalScale": 8.036
+    },
+    "seed": 1038,
+    "composite": [
+        {
+            "style": {
+                "style": "NOWHERE_FRACTAL",
+                "zoom": 9.1,
+                "fracture": {
+                    "style": "CELLULAR_BILINEAR_STARCAST_6",
+                    "zoom": 18.0,
+                    "multiplier": 16.868
+                },
+                "exponent": 0.0
+            },
+            "seed": 5639,
+            "bezier": true,
+            "sinCentered": false,
+            "opacity": 0.4
+        }
+    ],
+    "multiplicitive": false
+}

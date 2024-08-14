@@ -1,0 +1,50 @@
+{
+    "vanillaDerivative": "RIVER",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "glacial",
+        "foliageColor": "#d6f7ff",
+        "grassColor": "#f9eee4",
+        "downfallType": "rain",
+        "category": "plains"
+    }],
+    "name": "Glacial River",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -14,
+        "min": -28
+    }],
+    "derivative": "FROZEN_RIVER"
+}

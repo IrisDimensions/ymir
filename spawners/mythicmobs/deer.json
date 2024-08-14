@@ -1,0 +1,18 @@
+{
+    "maximumRate": {
+        "amount": 0,
+        "per": {"minecraftDays": 0}
+    },
+    "allowedLightLevels":{"max": 32, "min": 0},
+    "weather": "ANY",
+    "maxEntitiesPerChunk": 2,
+    "energyMultiplier": 0.4,
+    "initialSpawns": [
+        {
+            "entity": "mythicmobs/deer",
+            "rarity": 1,
+            "maxSpawns": 2,
+            "minSpawns": 1
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "vanillaDerivative": "BEACH",
+    "customDerivitives": [{
+        "id": "mountain_beach",
+        "category": "beach"
+    }],
+    "name": "Mountain Beach",
+    "derivative": "BEACH",
+    "color": "#e7ea48",
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:sand"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:sandstone"}]
+        }
+    ]
+}

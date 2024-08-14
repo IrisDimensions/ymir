@@ -1,0 +1,148 @@
+{
+    "name": "Scarlet Plains",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "rarity": 1,
+    "color": "#b8e84a",
+    "customDerivitives": [{
+        "id": "scarlet_plains",
+        "foliageColor": "#8d2727",
+        "grassColor": "#b04040",
+        "category": "forest"
+    }],
+    "children": ["vinland/scarlet-mountain"],
+    "childStyle": {
+        "style": "PERLIN",
+        "zoom": 5,
+        "fracture": {
+            "style": "PERLIN",
+            "zoom": 0.3,
+            "multiplier": 15
+            }
+        },
+    "generators": [{
+        "min": 4,
+        "max": 8,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "layers": [
+        {"palette": [{"block": "minecraft:dripstone_block"}]},
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dripstone_block"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:dripstone_block"},
+                {"block": "minecraft:dripstone_block"}
+            ]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:dripstone_block"},
+                {"block": "minecraft:dripstone_block"}
+            ]
+        }
+    ],
+        "deposits": [{
+        "minHeight": 15,
+        "maxPerChunk": 2,
+        "maxHeight": 170,
+        "minPerChunk": 0,
+        "minSize": 4,
+        "maxSize": 12,
+        "palette": [
+            {"block": "minecraft:redstone_ore"}
+        ],
+        "varience": 2
+        }],
+    "objects": [
+        {
+            "trees": [{
+                "anySize": true,
+                "treeTypes": ["TREE"],
+                "sizes": [{
+                    "depth": 1,
+                    "width": 1
+                }]
+            }],
+            "carvingSupport": "SURFACE_ONLY",
+            "place": [
+                "trees/spruce/sup-pine-1",
+                "trees/spruce/sup-pine-2",
+                "trees/spruce/sup-pine-3",
+                "trees/spruce/sup-pine-4",
+                "trees/spruce/sup-pine-5",
+                "trees/spruce/sup-pine-6",
+                "trees/spruce/sup-pine-7",
+                "trees/spruce/sup-pine-8",
+                "trees/spruce/sup-pine-9",
+                "trees/spruce/sup-pine-10",
+                "trees/spruce/sup-pine-11",
+                "trees/spruce/sup-pine-12",
+                "trees/spruce/sup-pine-13"
+            ],
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:spruce_wood"}],"replace":{"palette": [{"block": "oraxen:dead_dragon_log"}]}
+                },
+                {
+                    "find": [{"block": "minecraft:spruce_leaves"}],"replace":{"palette": [{"block": "minecraft:oak_leaves"}]}
+                },
+                {
+                    "find": [{"block": "minecraft:spruce_fence"}],"replace":{"palette": [{"block": "minecraft:air"}]}
+                    }
+                ],
+            "chance": 0.7,
+            "translate": {"y": -5},
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            }
+        },
+        {
+            "carvingSupport": "SURFACE_ONLY",
+            "mode": "PAINT",
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "chance": 0.035,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {"y": 1}
+        },
+        {
+            "edit": [{
+                "find": [{"block": "minecraft:spruce_leaves"}],
+                "replace": {"palette": [{
+                    "block": "minecraft:oak_leaves"
+            }]
+        }}
+    ]}
+]}

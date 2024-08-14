@@ -1,0 +1,75 @@
+{
+    "name": "River",
+    "derivative": "RIVER",
+    "vanillaDerivative": "FOREST",
+    "color": "#1bb9ee",
+    "generators": [{
+        "generator": "dunes",
+        "max": -40,
+        "min": -80
+    }],
+    "customDerivitives": [
+        {
+            "id": "test_green",
+            "foliageColor": "#2b772c",
+            "grassColor": "#2b772c",
+            "skyColor": "#56a2e7",
+            "category": "icy"
+        },
+        {
+            "id": "test_darkgreen",
+            "foliageColor": "#549a54",
+            "grassColor": "#549a54",
+            "skyColor": "#56a2e7",
+            "category": "icy"
+        },
+        {
+            "id": "test_darkgreener",
+            "foliageColor": "#185737",
+            "grassColor": "#185737",
+            "skyColor": "#56a2e7",
+            "category": "icy"
+        }
+    ],
+    "biomeStyle":{
+        "style": "GLOB",
+        "zoom": 0.05
+    },
+    "layers": [{
+        "minHeight": 2,
+        "maxHeight": 10,
+        "style": {"style": "FRACTAL_FBM_IRIS"},
+        "zoom": 0.6,
+        "palette": [
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:clay"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:gravel"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:dirt"},
+            {
+                "weight": 2,
+                "block": "minecraft:sand"
+            }
+        ]
+    }],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ]
+}

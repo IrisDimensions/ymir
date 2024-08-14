@@ -1,0 +1,192 @@
+{
+    "name": "Seraph Summit",
+    "derivative": "FROZEN_PEAKS",
+    "vanillaDerivative": "FROZEN_PEAKS",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "seraph_summit",
+        "temperature": -2,
+        "downfallType": "snow",
+        "category": "icy",
+        "foliageColor": "#ab5741"
+    }],
+    "generators": [
+        {
+            "generator": "custom/dream-mountains",
+            "max": 50,
+            "min": 16
+        },
+        {
+            "generator": "custom/dream-mountains",
+            "max": 150,
+            "min": 50
+        },
+        {
+            "generator": "custom/dream-mountains",
+            "max": 210,
+            "min": 170
+        },
+        {
+            "generator": "custom/dream-cliffs",
+            "max": 220,
+            "min": 210
+        }
+    ],
+    "layers": [
+        {
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 3.2
+            },
+            "minHeight": 1,
+            "maxHeight": 4,
+            "palette": [
+                {
+                    "block": "minecraft:snow_block"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 8,
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        },
+        {
+            "minHeight": 10,
+            "maxHeight": 15,
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        }
+    ],
+    "wall": {"palette": [{"block": "minecraft:snow_block"}]},
+    "objects": [
+            {
+            "edit": [
+                {"find": [{"block": "minecraft:chorus_plant"}],"replace":{"palette": [{"block": "minecraft:oak_leaves"}]}}
+            ],
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 2.1
+            },
+            "place": [
+                "custom/trees/tall/red1",
+                "custom/trees/tall/red2",
+                "custom/trees/tall/red3",
+                "custom/trees/tall/red4",
+                "custom/trees/tall/red5",
+                "custom/trees/tall/red6",
+                "custom/trees/tall/red7",
+                "custom/trees/tall/red8",
+                "custom/trees/tall/red9",
+                "custom/trees/tall/red10"
+                ],
+            "trees": [
+                {
+                    "anyTree": true,
+                    "anySize": true,
+                    "treeTypes": ["DARK_OAK"]
+                }
+            ],
+            "translate":{
+                "y": -3
+            },
+            "chance": 1,
+            "density": 2,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "forbiddenCollisions": [
+                "custom/trees/tall/red1",
+                "custom/trees/tall/red2",
+                "custom/trees/tall/red3",
+                "custom/trees/tall/red4",
+                "custom/trees/tall/red5",
+                "custom/trees/tall/red6",
+                "custom/trees/tall/red7",
+                "custom/trees/tall/red8",
+                "custom/trees/tall/red9",
+                "custom/trees/tall/red10",
+                "trees/sequoia/1",
+                "trees/sequoia/2",
+                "trees/sequoia/3",
+                "trees/sequoia/4",
+                "trees/sequoia/5",
+                "trees/sequoia/6",
+                "trees/sequoia/7",
+                "trees/sequoia/8",
+                "trees/sequoia/9",
+                "trees/sequoia/10"
+            ]
+        },
+        {
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 2.1
+            },
+            "place": [
+                "trees/sequoia/1",
+                "trees/sequoia/2",
+                "trees/sequoia/3",
+                "trees/sequoia/4",
+                "trees/sequoia/5",
+                "trees/sequoia/6",
+                "trees/sequoia/7",
+                "trees/sequoia/8",
+                "trees/sequoia/9",
+                "trees/sequoia/10"
+            ],
+            "trees": [
+                {
+                    "anyTree": true,
+                    "anySize": true,
+                    "treeTypes": ["REDWOOD"]
+                }
+            ],
+            "translate":{
+                "y": -3
+            },
+            "chance": 1,
+            "density": 1,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "forbiddenCollisions": [
+                "custom/trees/tall/red1",
+                "custom/trees/tall/red2",
+                "custom/trees/tall/red3",
+                "custom/trees/tall/red4",
+                "custom/trees/tall/red5",
+                "custom/trees/tall/red6",
+                "custom/trees/tall/red7",
+                "custom/trees/tall/red8",
+                "custom/trees/tall/red9",
+                "custom/trees/tall/red10"
+            ]
+        }
+    ]
+}

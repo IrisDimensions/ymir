@@ -1,0 +1,30 @@
+{
+    "vanillaDerivative": "SNOWY_BEACH",
+    "customDerivitives": [{
+        "id": "terralost_alpine_beach",
+        "grassColor": "#80ab69",
+        "category": "plains"
+    }],
+    "name": "Snowy Beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 5,
+        "generator": "smooth-land"
+    }],
+    "derivative": "SNOWY_BEACH"
+}

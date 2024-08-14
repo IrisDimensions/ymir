@@ -1,0 +1,131 @@
+{
+  "name": "Oak Spring Mountain",
+  "derivative": "PLAINS",
+  "vanillaDerivative": "PLAINS",
+  "rarity": 1,
+  "color": "#808789",
+  "biomeStyle": {
+    "style": "GLOB",
+    "zoom": 0.05
+  },
+  "generators": [
+    {
+      "generator": "canyon",
+      "min": 20,
+      "max": 20
+    },
+    {
+      "generator": "plain-cliffs",
+      "min": 30,
+      "max": 30
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "pine_green",
+      "foliageColor": "#419642",
+      "grassColor": "#419642",
+      "skyColor": "#7aa6ce",
+      "waterColor": "#4ac5df",
+      "category": "icy"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:stone",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:andesite",
+        "weight": 5
+      },
+      {
+        "block": "minecraft:tuff",
+        "weight": 2
+      }
+    ]
+  },
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.5,
+      "palette": [
+        { "block": "minecraft:grass_block", "weight": 30 },
+        { "block": "minecraft:coarse_dirt", "weight": 10 },
+        { "block": "minecraft:rooted_dirt", "weight": 5 }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        { "block": "minecraft:stone", "weight": 5 },
+        { "block": "minecraft:andesite", "weight": 5 },
+        { "block": "minecraft:tuff", "weight": 2 }
+      ]
+    },
+    {
+      "minHeight": 4,
+      "maxHeight": 8,
+      "palette": [
+        { "block": "minecraft:stone", "weight": 5 },
+        { "block": "minecraft:andesite", "weight": 5 },
+        { "block": "minecraft:tuff", "weight": 2 }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.3,
+      "palette": [{ "block": "minecraft:short_grass" }]
+    },
+    {
+      "chance": 0.01,
+      "palette": [{ "block": "minecraft:oxeye_daisy" }]
+    },
+    {
+      "chance": 0.01,
+      "palette": [{ "block": "minecraft:red_tulip" }]
+    },
+    {
+      "chance": 0.2,
+      "palette": [{ "block": "minecraft:fern" }]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:large_fern" }]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:tall_grass" }]
+    }
+  ],
+  "objects": [
+    {
+      "chance": 0.4,
+      "density": 1,
+      "mode": "CENTER_HEIGHT",
+      "translate": {
+        "y": -3
+      },
+      "slopeCondition": {
+        "maximumSlope": 1.2
+      },
+      "place": [
+        "treepack/oak-spring-pines/pine1",
+        "treepack/oak-spring-pines/pine2",
+        "treepack/oak-spring-pines/pine3",
+        "treepack/oak-spring-pines/pine4",
+        "treepack/oak-spring-pines/pine5",
+        "treepack/oak-pines/pine1",
+        "treepack/oak-pines/pine2",
+        "treepack/oak-pines/pine3",
+        "treepack/oak-pines/pine4",
+        "treepack/oak-pines/pine5"
+      ]
+    }
+  ]
+}

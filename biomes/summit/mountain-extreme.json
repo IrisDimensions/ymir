@@ -1,0 +1,135 @@
+{
+    "name": "Summit Mountain Extreme",
+    "color": "#3EBC8B",
+    "rarity": 1,
+    "derivative": "STONY_PEAKS",
+    "vanillaDerivative": "STONY_PEAKS",
+    "customDerivitives": [{
+        "id": "summit_mountain_extreme",
+        "foliageColor": "#478F04",
+        "grassColor": "#41A726",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3FE727",
+        "category": "extreme_hills"
+    }],
+    "generators": [{
+        "generator": "mountain",
+        "max": 200,
+        "min": 112
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4.5
+            },
+            "palette": [{
+                "weight": 1,
+                "block": "minecraft:grass_block"
+            }]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 4.5
+            },
+            "palette": [{"block": "minecraft:dirt"}]
+        }
+    ],
+    "objects": [
+        {
+            "slopeCondition":{
+                "maximumSlope": 1.6
+            },
+            "place": [
+                "clutter/sbush1",
+                "clutter/sbush2",
+                "clutter/sbush3"
+            ],
+            "chance": 0.0020,
+            "density": 4
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.0,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:short_grass"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:tall_grass"
+                }
+            ]
+        },
+        {
+            "chance": 0.0,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.0,
+            "variance": {"style": "NOWHERE"},
+            "zoom": 0.1,
+            "palette": [
+                {"block": "minecraft:jungle_leaves"},
+                {"block": "minecraft:tall_grass"},
+                {"block": "minecraft:short_grass"},
+                {"block": "minecraft:jungle_leaves"},
+                {"block": "minecraft:short_grass"},
+                {"block": "minecraft:jungle_leaves"}
+            ],
+            "style": {
+                "style": "FRACTAL_BILLOW_IRIS",
+                "fracture": {"style": "STATIC"}
+            }
+        },
+        {
+            "chance": 0.0,
+            "verticalZoom": 88,
+            "variance": {"style": "STATIC"},
+            "zoom": 10,
+            "palette": [
+                {"block": "minecraft:short_grass"},
+                {"block": "minecraft:tall_grass"}
+            ],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "STATIC"}
+        }
+    ]
+}

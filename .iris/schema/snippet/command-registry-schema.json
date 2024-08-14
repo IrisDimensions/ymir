@@ -1,0 +1,138 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/iriscommandregistry.json",
+    "anyOf": [
+        {
+            "description": "Represents a casting location for a command",
+            "type": "object",
+            "properties": {
+                "rawCommands": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {"$ref": "#/definitions/obj-com-volmit-iris-engine-object-iriscommand"},
+                    "description": "rawCommands\nRun commands, at the exact location of the player\n   \nList of Commands (Objects)\n\n    \n* Default Value is an empty list\n* At least one entry must be defined, or just remove this list."
+                },
+                "commandOffsetX": {
+                    "type": "number",
+                    "minimum": -8,
+                    "maximum": 8,
+                    "description": "commandOffsetX\nThe alt x, usually represents motion if the particle count is zero. Otherwise an offset.\n   \nNumber\n\n    \n* Default Value is 0.0\n* Minimum allowed is -8.0\n* Maximum allowed is 8.0"
+                },
+                "commandOffsetY": {
+                    "type": "number",
+                    "minimum": -8,
+                    "maximum": 8,
+                    "description": "commandOffsetY\nThe alt y, usually represents motion if the particle count is zero. Otherwise an offset.\n   \nNumber\n\n    \n* Default Value is 0.0\n* Minimum allowed is -8.0\n* Maximum allowed is 8.0"
+                },
+                "commandOffsetZ": {
+                    "type": "number",
+                    "minimum": -8,
+                    "maximum": 8,
+                    "description": "commandOffsetZ\nThe alt z, usually represents motion if the particle count is zero. Otherwise an offset.\n   \nNumber\n\n    \n* Default Value is 0.0\n* Minimum allowed is -8.0\n* Maximum allowed is 8.0"
+                },
+                "commandRandomAltX": {
+                    "type": "boolean",
+                    "description": "commandRandomAltX\nRandomize the altX from -altX to altX\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "commandRandomAltY": {
+                    "type": "boolean",
+                    "description": "commandRandomAltY\nRandomize the altY from -altY to altY\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "commandRandomAltZ": {
+                    "type": "boolean",
+                    "description": "commandRandomAltZ\nRandomize the altZ from -altZ to altZ\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "commandAllRandomLocations": {
+                    "type": "boolean",
+                    "description": "commandAllRandomLocations\nRandomize location for all separate commands (true), or run all on the same location (false)\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {
+        "enum-snippet-time-block": {"enum": []},
+        "oneof-enum-com-volmit-iris-engine-object-irisweather": {"oneOf": [
+            {
+                "const": "NONE",
+                "description": "Represents when weather is not causing downfall"
+            },
+            {
+                "const": "DOWNFALL",
+                "description": "Represents rain or snow"
+            },
+            {
+                "const": "DOWNFALL_WITH_THUNDER",
+                "description": "Represents rain or snow with thunder"
+            },
+            {
+                "const": "ANY",
+                "description": "Any weather"
+            }
+        ]},
+        "obj-com-volmit-iris-engine-object-iristimeblock": {"anyOf": [
+            {
+                "description": "Represents a time of day (24h time, not 12h am/pm). Set both to the same number for any time. If they are both set to -1, it will always be not allowed.",
+                "type": "object",
+                "properties": {
+                    "startHour": {
+                        "type": "number",
+                        "description": "startHour\nThe beginning hour. Set both to the same number for any time. If they are both set to -1, it will always be not allowed.\n   \nNumber\n\n    \n* Default Value is 0.0"
+                    },
+                    "endHour": {
+                        "type": "number",
+                        "description": "endHour\nThe ending hour. Set both to the same number for any time. If they are both set to -1, it will always be not allowed.\n   \nNumber\n\n    \n* Default Value is 0.0"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]},
+        "obj-com-volmit-iris-engine-object-iriscommand": {"anyOf": [
+            {
+                "description": "Represents a set of Iris commands",
+                "type": "object",
+                "properties": {
+                    "commands": {
+                        "type": "array",
+                        "minItems": 1,
+                        "description": "commands\nList of commands. Iris replaces {x} {y} and {z} with the location of the entity spawn\n   \nList of Text\n\n    \n* Default Value is an empty list\n* At least one entry must be defined, or just remove this list."
+                    },
+                    "delay": {
+                        "type": "integer",
+                        "description": "delay\nThe delay for running the command. Instant by default\n   \nInteger\n\n    \n* Default Value is 0"
+                    },
+                    "repeat": {
+                        "type": "boolean",
+                        "description": "repeat\nIf this should be repeated (indefinitely, cannot be cancelled). This does not persist with server-restarts, so it only repeats when the chunk is generated.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "repeatDelay": {
+                        "type": "integer",
+                        "description": "repeatDelay\nThe delay between repeats, in server ticks (by default 100, so 5 seconds)\n   \nInteger\n\n    \n* Default Value is 100"
+                    },
+                    "timeBlock": {
+                        "anyOf": [
+                            {
+                                "!required": false,
+                                "type": "object",
+                                "$ref": "#/definitions/obj-com-volmit-iris-engine-object-iristimeblock",
+                                "description": "timeBlock\nThe block of 24 hour time in which the command should execute.\n   \nTimeBlock (Object)\nRepresents a time of day (24h time, not 12h am/pm). Set both to the same number for any time. If they are both set to -1, it will always be not allowed.\n    \nYou can instead specify \"snippet/time-block/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            },
+                            {
+                                "type": "string",
+                                "$ref": "#/definitions/enum-snippet-time-block",
+                                "description": "timeBlock\nThe block of 24 hour time in which the command should execute.\n   \nTimeBlock (Object)\nRepresents a time of day (24h time, not 12h am/pm). Set both to the same number for any time. If they are both set to -1, it will always be not allowed.\n    \nYou can instead specify \"snippet/time-block/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                            }
+                        ],
+                        "description": "timeBlock\nThe block of 24 hour time in which the command should execute.\n   \nTimeBlock (Object)\nRepresents a time of day (24h time, not 12h am/pm). Set both to the same number for any time. If they are both set to -1, it will always be not allowed.\n    \nYou can instead specify \"snippet/time-block/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                    },
+                    "weather": {
+                        "type": "string",
+                        "$ref": "#/definitions/oneof-enum-com-volmit-iris-engine-object-irisweather",
+                        "description": "weather\nThe weather that is required for the command to execute.\n   \nWeather\nRepresents a weather type\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid Weather (use ctrl+space for auto complete!)"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]}
+    }
+}

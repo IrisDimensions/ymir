@@ -1,0 +1,5 @@
+{
+    "removeOnChange": true,
+    "spawners": ["structure/villager"],
+    "exhaustionChance": 0.75
+}

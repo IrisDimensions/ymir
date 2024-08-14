@@ -1,0 +1,43 @@
+{
+    "name": "Winterhold",
+    "rarity": 1,
+    "color": "#274e13",
+    "landBiomeZoom": 1,
+    "landBiomes": [
+        "winterhold/cold-shrubland",
+        "winterhold/cold-shrubland-mountain"
+    ],
+    "shoreHeightMax": 2,
+    "shoreHeightMin": 0,
+    "shoreBiomes": [
+        "winterhold/cold-shrubland"
+        ],
+    "seaBiomes": [
+        "winterhold/cold-shrubland"
+    ],
+    "jigsawStructures": [
+        {
+            "separation": 100,
+            "spacing": 100,
+            "spreadType": "LINEAR",
+            "rarity": 5000,
+            "structure": "village-taiga"
+        }
+    ],
+    "carving":{
+        "caves": [
+            {
+                "breakSurface": true,
+                "rarity": 300,
+                "cave": "rocky/main",
+                "caveStartHeight":{
+                    "min": 15,
+                    "max": 300,
+                    "style":{
+                        "style": "STATIC"
+                    }
+                }
+            }
+        ]
+    }
+}

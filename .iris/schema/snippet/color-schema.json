@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irisseed.json",
+    "anyOf": [
+        {
+            "description": "Represents a color",
+            "type": "object",
+            "properties": {
+                "seed": {
+                    "type": "integer",
+                    "description": "seed\nThe seed to use\n   \nInteger\n\n    \n* Default Value is 1337"
+                },
+                "ignoreNaturalSeedInput": {
+                    "type": "boolean",
+                    "description": "ignoreNaturalSeedInput\nTo calculate a seed Iris passes in it's natural seed for the current feature, then mixes it with your seed. Setting this to true ignores the parent seed and always uses your exact seed ignoring the input of Iris feature seeds. You can use this to match seeds on other generators.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {}
+}

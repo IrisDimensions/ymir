@@ -1,0 +1,78 @@
+{
+    "name": "Dread Beach",
+    "vanillaDerivative": "SWAMP",
+    "derivative": "SWAMP",
+    "rarity": 1,
+    "color": "#b07312",
+    "biomeScatter": ["SWAMP"],
+    "biomeSkyScatter": ["SWAMP"],
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": 3,
+            "min": 0
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:podzol"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:dirt"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:granite"}
+                ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:small_dripleaf"}]
+        },
+        {
+            "partOf": "SHORE_LINE",
+            "verticalZoom": 0.2,
+            "chance": 0.08,
+            "variance": {"style": "SIMPLEX"},
+            "stackMax": 6,
+            "zoom": 5,
+            "palette": [{"block": "minecraft:sugar_cane"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "NOWHERE"},
+            "stackMin": 1
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:dandelion"}]
+        }
+    ]
+}

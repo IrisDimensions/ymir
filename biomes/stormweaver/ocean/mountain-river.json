@@ -1,0 +1,72 @@
+{
+    "vanillaDerivative": "RIVER",
+    "customDerivitives": [{
+        "id": "stormweaver_river",
+        "grassColor": "#80ab69",
+        "category": "plains"
+    }],
+    "decorators": [
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ],
+    "name": "Stormweaver River",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -30,
+        "min": -50
+    }],
+    "derivative": "RIVER"
+}

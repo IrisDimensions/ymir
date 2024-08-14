@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "CATMULL_ROM_SPLINE",
+        "horizontalScale": 5.81
+    },
+    "seed": 4283,
+    "composite": [
+        {
+            "style": {
+                "style": "OCTOCTAVE_FRACTAL_FBM_SIMPLEX",
+                "zoom": 17.0,
+                "fracture": {
+                    "style": "VASCULAR_IRIS",
+                    "zoom": 15.123,
+                    "multiplier": 12.003
+                },
+                "exponent": 10.818
+            },
+            "seed": 6570,
+            "bezier": true,
+            "sinCentered": true,
+            "opacity": 0.1
+        }
+    ],
+    "multiplicitive": true
+}

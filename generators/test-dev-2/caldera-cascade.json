@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_PARAMETRIC_1_5",
+        "horizontalScale": 62.777
+    },
+    "seed": 2324,
+    "composite": [
+        {
+            "style": {
+                "style": "NONOCTAVE_FRACTAL_RM_SIMPLEX",
+                "zoom": 9.142,
+                "fracture": {
+                    "style": "QUADOCTAVE_FRACTAL_RM_SIMPLEX",
+                    "zoom": 4,
+                    "multiplier": 19.4
+                },
+                "exponent": 3.524
+            },
+            "seed": 7378,
+            "bezier": true,
+            "sinCentered": true,
+            "opacity": 0.923
+        }
+    ],
+    "multiplicitive": true
+}

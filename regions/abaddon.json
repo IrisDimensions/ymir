@@ -1,0 +1,17 @@
+{
+  "name": "Abbadon",
+  "landBiomeZoom": 2,
+  "rarity": 1,
+  "shoreBiomeZoom": 1,
+  "seaBiomeZoom": 1,
+  "shoreHeightMin": 1,
+  "shoreHeightMax": 1,
+  "landBiomes": [
+    "abaddon/abyssal-lakes",
+    "abaddon/gehenna",
+    "abaddon/domain-of-perdition",
+    "abaddon/hellfire"
+  ],
+  "seaBiomes": ["abaddon/abyssal-lakes"],
+  "shoreBiomes": ["abaddon/gehenna"]
+}

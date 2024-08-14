@@ -1,0 +1,58 @@
+{
+    "vanillaDerivative": "RIVER",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "glacial",
+        "foliageColor": "#d6f7ff",
+        "grassColor": "#f9eee4",
+        "downfallType": "rain",
+        "category": "plains"
+    }],
+    "name": "Glacial Chasm",
+    "layers": [
+        {
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:snow_block",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 5,
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        }
+    ],
+    "wall":{
+        "minHeight": 2,
+        "maxHeight": 6,
+        "palette": [
+            {"block": "minecraft:snow_block"}
+        ]
+    },
+    "generators": [{
+        "generator": "mountain",
+        "max": 12,
+        "min": -20
+    }],
+    "derivative": "FROZEN_RIVER"
+}

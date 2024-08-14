@@ -1,0 +1,24 @@
+{
+    "name": "Woodland",
+    "rarity": 1,
+    "color": "#274e13",
+    "landBiomeZoom": 1,
+    "landBiomes": [
+        "woodland/jade-terrace",
+        "woodland/zelkova-forest",
+        "woodland/evergreen",
+        "woodland/pinecrest-mountain",
+        "woodland/deerwood",
+        "woodland/autumn-forest",
+        "woodland/autumn-mountain",
+        "woodland/autumn-lake"
+    ],
+    "shoreHeightMax": 2,
+    "shoreHeightMin": 0,
+    "shoreBiomes": [
+        "woodland/shore/beach"
+        ],
+    "seaBiomes": [
+        "woodland/sea/river"
+    ]
+}

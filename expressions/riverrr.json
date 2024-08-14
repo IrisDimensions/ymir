@@ -1,0 +1,28 @@
+{
+   "expression": "0.2 + 1.5 * sin(0 * (sin(0.05 * x) + cos(0.20 * z))) - 0.05 * exp(-0.01 * sqrt((x - fluidHeightX) * (x - fluidHeightX) + (z - fluidHeightX) * (z - fluidHeightX)))",
+    "variables": [
+      {
+        "name": "fluidHeightX",
+        "engineStreamValue": "HEIGHT",
+        "engineValue": "FLUID_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "NOWHERE_SUPERFRACTAL",
+          "exponent": 12,
+          "multiplier": 6,
+          "zoom": 30,
+          "fracture":{
+            "style": "FRACTAL_CUBIC_IRIS_THICK",
+            "multiplier": 1.5,
+            "exponent": 8,
+            "zoom": 1.5,
+            "fracture":{
+              "style": "FRACTAL_SMOKE",
+              "multiplier": 5,
+              "zoom": 5
+            }
+          }
+        }
+      }
+    ]
+  }

@@ -1,0 +1,99 @@
+{
+  "riverBiomes": ["frozen/frozen-river"],
+  "landBiomes": [
+    "frozen/frozen-forest",
+    "frozen/frozen-plains",
+    "frozen/frozen-lake"
+  ],
+  "color": "#e5ebff",
+  "carving": {
+    "ravines": [
+      {
+        "rarity": 170,
+        "ravine": "rocky/main"
+      }
+    ],
+    "caves": [
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/dark-depths/tubes",
+        "rarity": 150,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/glacial/main",
+        "rarity": 200,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "rocky/main",
+        "rarity": 50,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "deepdark/big-deepdarkcave",
+        "rarity": 25,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      }
+    ]
+  },
+  "biomeImplosionRatio": 0.25,
+  "seaBiomes": ["frozen/ocean/frozen-river"],
+  "deposits": [
+    {
+      "minHeight": 15,
+      "maxPerChunk": 2,
+      "maxHeight": 122,
+      "minPerChunk": 0,
+      "minSize": 4,
+      "maxSize": 12,
+      "palette": [
+        { "block": "minecraft:iron_ore" },
+        { "block": "minecraft:coal_ore" }
+      ],
+      "varience": 4
+    }
+  ],
+  "blockDrops": [
+    {
+      "replaceVanillaDrops": true,
+      "blocks": [{ "block": "minecraft:oak_leaves" }],
+      "drops": [
+        {
+          "type": "spruce_sapling",
+          "minAmount": 1,
+          "maxAmount": 2
+        }
+      ]
+    }
+  ],
+  "landBiomeZoom": 1,
+  "entitySpawners": ["frozen/passive", "frozen/hostile", "frozen/cave"],
+  "riverBiomeZoom": 1,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["frozen/shore/frozen-beach"],
+  "name": "Frozen",
+  "shoreHeightMax": 4.2,
+  "shoreHeightZoom": 1.14,
+  "riverThickness": 0.5,
+  "rarity": 1
+}

@@ -1,0 +1,43 @@
+{
+    "type": "EVOKER",
+    "spawnEffect": {
+        "particleEffect": "SPELL_MOB_AMBIENT",
+        "particleCount": 9,
+        "chance": 1,
+        "interval": 1,
+        "sound": "ENTITY_EVOKER_PREPARE_WOLOLO",
+        "volume": 10
+    },
+    "attributes": [
+        {
+            "attribute": "GENERIC_ARMOR",
+            "maxAmount": 5,
+            "minAmount": 3,
+            "operation": "ADD_NUMBER",
+            "name": "5head"
+        },
+        {
+            "attribute": "GENERIC_MAX_HEALTH",
+            "maxAmount": 21,
+            "minAmount": 19,
+            "operation": "ADD_NUMBER",
+            "name": "6head"
+        }
+    ],
+    "helmet": {
+        "type": "damaged_anvil",
+        "displayName": "&dCracked Mind"
+    },
+    "mainHand": {
+        "type": "blaze_rod",
+        "unbreakable": true,
+        "lore": ["The wand of the world builder"],
+        "displayName": "&dBuilders Wand"
+    },
+    "offHand": {
+        "type": "blaze_rod",
+        "unbreakable": true,
+        "lore": ["The wand of the world builder"],
+        "displayName": "&dBuilders Wand"
+    }
+}

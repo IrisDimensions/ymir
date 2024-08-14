@@ -1,0 +1,74 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_PARAMETRIC_1_5",
+        "horizontalScale": 6875.38
+    },
+    "seed": 200,
+    "composite": [
+        {
+            "style": {
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 17.02,
+                "exponent": 58.0,
+                "fracture": {
+                    "style": "CELLULAR_BICUBIC",
+                    "zoom": 13.13,
+                    "cellularZoom": 16.0,
+                    "axialFracturing": true,
+                    "cellularFrequency": 29.469,
+                    "exponent": 24.97,
+                    "multiplier": 49.9
+                }
+            },
+            "negative": true,
+            "seed": 5
+        }
+    ],
+    "cliffHeightMax": 94.5,
+    "cliffHeightMin": 58.37,
+    "cliffHeightGenerator": {
+        "seed": 120,
+        "bezier": false,
+        "enabled": true,
+        "exponent": 61.713,
+        "style": {
+            "style": "QUINTOCTAVE_FRACTAL_BILLOW_SIMPLEX"
+        },
+        "zoom": 29.0,
+        "fracture": [
+            {
+                "bezier": true,
+                "enabled": true,
+                "exponent": 13.0,
+                "zoom": 2.952,
+                "style": {
+                    "style": "CELLULAR_HEIGHT_IRIS_DOUBLE",
+                    "axialFracturing": false,
+                    "cellularFrequency": 19.439,
+                    "cellularZoom": 28.895,
+                    "exponent": 60.263,
+                    "multiplier": 42.0,
+                    "zoom": 33.0
+                },
+                "sinCentered": true,
+                "negative": true,
+                "seed": 109,
+                "parametric": false,
+                "octaves": 1,
+                "offsetX": 17.113,
+                "offsetY": 14.458,
+                "offsetZ": 17.3,
+                "opacity": 0.0
+            }
+        ]
+    },
+    "cellFractureHeight": 19.9,
+    "cellFractureShuffle": 76.628,
+    "cellFractureZoom": 41.777,
+    "cellPercentSize": 0.5,
+    "multiplicitive": true,
+    "offsetX": 8.0,
+    "offsetZ": 20.0,
+    "opacity": 0.0,
+    "zoom": 8.71
+}

@@ -1,0 +1,138 @@
+{
+    "name": "Orange Willow Mountains",
+    "derivative": "SNOWY_PLAINS",
+    "rarity": 3,
+    "color": "#505051",
+    "customDerivitives": [{
+        "id": "orange_willow_mountains",
+        "category": "icy",
+        "grassColor": "#b8cdc0",
+        "foliageColor": "#c95918",
+        "temperature": -1,
+        "humidity": -1,
+        "downfallType": "snow"
+    }],
+    "generators": [{
+        "generator": "canyon-steep",
+        "max": 30,
+        "min": 30
+    },
+    {
+        "generator": "mountain",
+        "max": 80,
+        "min": 70
+    }],
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.66,
+            "palette": [
+                {"block": "minecraft:grass_block","weight": 30},
+                {"block": "minecraft:dripstone_block","weight": 20},
+                {"block": "minecraft:mud","weight": 8}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 10,
+            "palette": [
+                {"block": "minecraft:dripstone_block"}
+            ]
+        }
+    ],
+    "wall":{
+        "minHeight": 4,
+        "maxHeight": 14,
+        "palette": [{"block": "minecraft:dripstone_block"}]
+    },
+    "decorators": [
+        {
+            "forcePlace": true,
+            "whitelist": [{"block": "minecraft:grass_block"}],
+            "chance": 0.3,
+            "style":{
+                "style": "GLOB",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "multiplier": 0.3,
+                    "zoom": 0.6
+                }
+            },
+            "palette": [
+                {"block": "minecraft:snow","data": {"layers": 1}},
+                {"block": "minecraft:snow","data": {"layers": 2}},
+                {"block": "minecraft:snow","data": {"layers": 3}},
+                {"block": "minecraft:snow","data": {"layers": 4}}
+            ]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:large_fern"}]
+        }
+    ],
+    "objects": [
+        {
+            "edit": [
+                {
+                    "find": [
+                        {"block": "minecraft:cobblestone"},
+                        {"block": "minecraft:stone"},
+                        {"block": "minecraft:andesite"}
+                    ],
+                    "replace":{
+                        "palette": [{"block": "minecraft:dripstone_block"}]
+                    }
+                }
+            ],
+            "chance": 0.088,
+            "slopeCondition":{
+                "maximumSlope": 0.8
+            },
+            "place": [
+                "custom/rare/stonespiek1",
+                "custom/rare/stonespiek2",
+                "custom/rare/stonespiek3"
+            ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "translate":{
+                "y": -5
+            }
+        },
+        {
+            "chance": 0.25,
+            "place": [
+                "custom/trees/terra/birch1",
+                "custom/trees/terra/birch2",
+                "custom/trees/terra/birch3",
+                "custom/trees/terra/birch4",
+                "custom/rare/birch1"
+            ],
+            "snow": 0.4,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "translate":{
+                "y": -2
+            }
+        }
+    ]
+}

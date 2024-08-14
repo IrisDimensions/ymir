@@ -1,0 +1,255 @@
+{
+  "name": "Whispering Vines Hill",
+  "derivative": "JUNGLE",
+  "vanillaDerivative": "JUNGLE",
+  "rarity": 1,
+  "customDerivitives": [
+    {
+      "id": "whispering_vines_extended",
+      "foliageColor": "#40C42B",
+      "grassColor": "#41A726",
+      "category": "jungle",
+      "waterColor": "#3AB2A2",
+      "waterFogColor": "#3AB2A2"
+    }
+  ],
+  "entitySpawners": ["tropical/beach", "tropical/hostile", "tropical/passive"],
+  "generators": [
+    {
+      "generator": "canyon",
+      "max": 5,
+      "min": 5
+    },
+    {
+      "generator": "small-cliffs",
+      "max": 15,
+      "min": 15
+    }
+  ],
+  "layers": [
+    {
+      "style": { "style": "NOWHERE_SIMPLEX" },
+      "zoom": 0.5,
+      "palette": [
+        {
+          "block": "minecraft:grass_block",
+          "weight": 30
+        },
+        { "block": "minecraft:moss_block", "weight": 10 },
+        { "block": "minecraft:coarse_dirt", "weight": 3 },
+        { "block": "minecraft:packed_mud", "weight": 4 }
+      ]
+    },
+    {
+      "minHeight": 0,
+      "maxHeight": 2,
+      "palette": [{ "block": "minecraft:dirt" }]
+    },
+    {
+      "minHeight": 6,
+      "maxHeight": 10,
+      "style": { "style": "STATIC" },
+      "palette": [
+        {
+          "block": "minecraft:stone",
+          "weight": 4
+        },
+        { "block": "minecraft:andesite" }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 6,
+      "palette": [{ "block": "minecraft:stone" }]
+    }
+  ],
+  "wall": {
+    "palette": [
+      { "block": "minecraft:stone" },
+      { "block": "minecraft:andesite" }
+    ],
+    "style": {
+      "style": "STATIC"
+    }
+  },
+  "decorators": [
+    {
+      "style": {
+        "style": "GLOB_IRIS",
+        "zoom": 0.2
+      },
+      "variance": {
+        "style": "NOWHERE_CELLULAR",
+        "zoom": 1
+      },
+      "chance": 0.3,
+      "palette": [
+        { "block": "minecraft:poppy" },
+        { "block": "minecraft:orange_tulip" },
+        { "block": "minecraft:red_tulip" },
+        { "block": "minecraft:lily_of_the_valley" }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:big_dripleaf_stem" }],
+      "topPalette": [{ "block": "minecraft:big_dripleaf" }],
+      "stackMin": 1,
+      "stackMax": 5,
+      "heightVariance": {
+        "style": "STATIC"
+      }
+    },
+    {
+      "chance": 0.3,
+      "palette": [{ "block": "minecraft:fern" }]
+    },
+    {
+      "chance": 0.5,
+      "palette": [{ "block": "minecraft:short_grass" }]
+    },
+    {
+      "chance": 0.04,
+      "palette": [{ "block": "minecraft:large_fern" }]
+    },
+    {
+      "chance": 0.05,
+      "palette": [{ "block": "minecraft:tall_grass" }]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:small_dripleaf" }]
+    },
+    {
+      "chance": 0.05,
+      "palette": [{ "block": "minecraft:melon" }]
+    }
+  ],
+  "objects": [
+    {
+      "chance": 0.05,
+      "mode": "CENTER_HEIGHT",
+      "place": [
+        "clutter/boulder1",
+        "clutter/boulder2",
+        "clutter/boulder3",
+        "clutter/boulder4",
+        "clutter/boulder5",
+        "clutter/boulder6",
+        "clutter/boulder7"
+      ],
+      "translate": {
+        "y": -2
+      }
+    },
+    {
+      "mode": "CENTER_HEIGHT",
+      "chance": 0.07,
+      "translate": {
+        "y": -1
+      },
+      "place": [
+        "bushes/1",
+        "bushes/2",
+        "bushes/3",
+        "clutter/arbusto4",
+        "bushes/6"
+      ],
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 270
+        },
+        "xAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 90
+        }
+      }
+    },
+    {
+      "chance": 0.1,
+      "density": 1,
+      "place": [
+        "trees/jungle/cocogeneric1",
+        "trees/jungle/cocogeneric2",
+        "trees/jungle/cocogeneric3",
+        "trees/jungle/cocogeneric4"
+      ],
+      "slopeCondition": {
+        "minimumSlope": 0,
+        "maximumSlope": 0.8
+      },
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": 0,
+          "max": 270
+        }
+      }
+    },
+    {
+      "chance": 0.3,
+      "density": 1,
+      "place": ["trees/jungle/sgeneric1", "trees/jungle/sgeneric3"],
+      "slopeCondition": {
+        "minimumSlope": 0,
+        "maximumSlope": 0.8
+      },
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    },
+    {
+      "chance": 0.3,
+      "density": 1,
+      "place": ["trees/jungle/lgeneric1", "trees/jungle/lgeneric2"],
+      "slopeCondition": {
+        "minimumSlope": 0,
+        "maximumSlope": 0.8
+      },
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    },
+    {
+      "translate": {
+        "y": -10
+      },
+      "chance": 0.05,
+      "density": 1,
+      "place": ["custom/trees/terra/bigoak1"],
+      "slopeCondition": {
+        "minimumSlope": 0,
+        "maximumSlope": 0.4
+      },
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    }
+  ]
+}

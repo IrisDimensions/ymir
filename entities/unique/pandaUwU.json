@@ -1,0 +1,8 @@
+{
+    "type": "PANDA",
+    "silent": true,
+    "passengers": [{
+        "type": "FOX",
+        "customNameVisible": false
+    }]
+}

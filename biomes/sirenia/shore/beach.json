@@ -1,0 +1,106 @@
+{
+  "name": "Sirenia Beach",
+  "color": "#57DFA9",
+  "rarity": 1,
+  "derivative": "JUNGLE",
+  "vanillaDerivative": "JUNGLE",
+  "generators": [
+    {
+      "min": -3,
+      "max": 4,
+      "generator": "plain"
+    }
+  ],
+  "entitySpawners": ["tropical/beach"],
+  "wall": { "palette": [{ "block": "minecraft:smooth_sandstone" }] },
+  "layers": [
+    {
+      "minHeight": 3,
+      "maxHeight": 6,
+      "palette": [{ "block": "minecraft:sand" }]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [{ "block": "minecraft:dirt" }]
+    }
+  ],
+  "objects": [
+    {
+      "mode": "MIN_STILT",
+      "chance": 0.34,
+      "density": 2,
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:player_wall_head" }],
+          "replace": { "palette": [{ "block": "minecraft:air" }] }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": [
+        "trees/jungle/palm1",
+        "trees/jungle/palm2",
+        "trees/jungle/palm3",
+        "trees/jungle/palm12",
+        "trees/jungle/palm11",
+        "trees/jungle/palm10",
+        "trees/jungle/palm9"
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.01,
+      "variance": { "style": "STATIC" },
+      "zoom": 0.3,
+      "palette": [
+        {
+          "data": {
+            "face": "floor",
+            "powered": false,
+            "facing": "east"
+          },
+          "block": "minecraft:jungle_button"
+        },
+        { "block": "minecraft:air" },
+        {
+          "data": {
+            "face": "floor",
+            "powered": false,
+            "facing": "south"
+          },
+          "block": "minecraft:jungle_button"
+        }
+      ],
+      "style": { "style": "STATIC" }
+    },
+    {
+      "partOf": "SHORE_LINE",
+      "chance": 0.18,
+      "stackMax": 4,
+      "stackMin": 1,
+      "heightVariance": { "style": "STATIC" },
+      "palette": [{ "block": "minecraft:sugar_cane" }]
+    }
+  ],
+  "effects": [
+    {
+      "particleAltX": 0.301,
+      "particleAltY": -0.33885,
+      "particleAltZ": 0.301,
+      "chance": 1,
+      "particleEffect": "TOTEM",
+      "particleOffset": 12,
+      "interval": 550,
+      "particleCount": 0
+    }
+  ]
+}

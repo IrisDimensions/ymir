@@ -1,0 +1,80 @@
+{
+    "name": "Gehenna",
+    "color": "#2FAB7B",
+    "derivative": "CRIMSON_FOREST",
+    "vanillaDerivative": "CRIMSON_FOREST",
+    "biomeSkyScatter": ["CRIMSON_FOREST"],
+    "biomeScatter": ["CRIMSON_FOREST"],
+    "children": ["abaddon/lava-rivers"],
+    "customDerivitives": [
+        {
+            "skyColor": "#521111",
+            "fogColor": "#660000",
+            "id": "gehenna",
+            "category": "nether"
+        }
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.28,
+        "exponent": 7.2
+    },
+    "childShrinkFactor": 1,
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 10,
+        "min": 2
+    }],
+    "wall":{
+        "palette": [{"block": "minecraft:mud"}]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:soul_sand","weight": 30},
+                {"block": "minecraft:soul_soil","weight": 20},
+                {"block": "minecraft:mud","weight": 15}
+                ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:netherrack"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:netherrack"}]
+        }
+    ],
+    "decorators": [
+        {
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.53
+            },
+            "chance": 0.07,
+            "palette": [{"block": "minecraft:nether_wart","data": {"age": 0}}]
+        },
+        {
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.53
+            },
+            "chance": 0.13,
+            "palette": [{"block": "minecraft:nether_wart","data": {"age": 2}}]
+        },
+        {
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.53
+            },
+            "chance": 0.22,
+            "palette": [{"block": "minecraft:nether_wart","data": {"age": 3}}]
+        }
+    ]
+}

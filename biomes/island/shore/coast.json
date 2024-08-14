@@ -1,0 +1,52 @@
+{
+    "name": "Island Beach",
+    "vanillaDerivative": "BEACH",
+    "customDerivitives": [{
+        "id": "island_beach",
+        "skyColor": "#66b6ff",
+        "waterColor": "#6ca3d5",
+        "category": "desert",
+        "downfallType": "rain"
+    }],
+    "layers": [
+        {
+            "style": {
+                "style": "VASCULAR_IRIS",
+                "zoom": 0.3,
+                "exponent": 1,
+                "multiplier": 3,
+                "fracture": {
+                    "style": "GLOB",
+                    "zoom": 0.5,
+                    "multiplier": 5
+                }
+            },
+            "minHeight": 1,
+            "maxHeight": 4,
+            "palette": [{
+                "block": "minecraft:sand"
+            },
+            {
+                "block": "minecraft:sandstone"
+            }]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 4,
+        "generator": "smooth-land"
+    }],
+    "derivative": "BEACH",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:smooth_sandstone"},
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:smooth_sandstone"}
+        ]
+    },
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [{"block": "minecraft:sandstone_slab"}]
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "name": "Abyssal Lakes",
+    "color": "#2FAB7B",
+    "derivative": "CRIMSON_FOREST",
+    "vanillaDerivative": "CRIMSON_FOREST",
+    "biomeSkyScatter": ["CRIMSON_FOREST"],
+    "biomeScatter": ["CRIMSON_FOREST"],
+    "children": ["abaddon/lava-rivers"],
+    "customDerivitives": [
+        {
+            "skyColor": "#521111",
+            "fogColor": "#660000",
+            "id": "abyssal_lakes",
+            "category": "nether"
+        }
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.28,
+        "exponent": 7.2
+    },
+    "childShrinkFactor": 1,
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 10,
+        "min": 2
+    }],
+    "wall":{
+        "palette": [{"block": "minecraft:mud"}]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:crimson_nylium","weight": 30},
+                {"block": "minecraft:netherrack","weight": 15}
+                ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:soul_sand"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:mud"}]
+        }
+    ],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:crimson_roots"}]
+        },
+        {
+            "forcePlace": true,
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:crimson_fungus"}]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "forbiddenCollisions": [
+                "trees/crimson/crimsonwood1",
+                "trees/crimson/crimsonwood2",
+                "trees/crimson/crimsonwood3",
+                "trees/crimson/crimsonwood4",
+                "trees/crimson/crimsonwood5"
+            ],
+            "chance": 0.10,
+            "density": 1,
+            "place": [
+                "clutter/singleicespike1",
+                "clutter/singleicespike2",
+                "clutter/singleicespike3",
+                "clutter/singleicespike4"
+                ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:packed_ice"}],"replace":{
+                        "style":{
+                            "style": "NOWHERE_SIMPLEX"
+                        },
+                        "zoom": 0.5,
+                        "palette": [
+                            {"block": "minecraft:blackstone"}
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "forbiddenCollisions": [
+                "clutter/singleicespike1",
+                "clutter/singleicespike2",
+                "clutter/singleicespike3",
+                "clutter/singleicespike4",
+                "clutter/singleicespike5"
+            ],
+            "chance": 1,
+            "density": 1,
+            "mode": "CENTER_HEIGHT",
+            "place": [
+                "trees/crimson/crimsonwood1",
+                "trees/crimson/crimsonwood2",
+                "trees/crimson/crimsonwood3",
+                "trees/crimson/crimsonwood4",
+                "trees/crimson/crimsonwood5"
+            ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            }
+        }
+    ]
+}

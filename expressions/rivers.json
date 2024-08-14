@@ -1,0 +1,65 @@
+{
+    "expression": "0.5 + 5.5 * sin(10 * (sin(0.02 * x) + cos(0.02 * z) + sin(0.02 * y))) * exp(-2 * sqrt(x * x + z * z + y * y))",
+    "variables": [
+      {
+        "name": "height",
+        "engineStreamValue": "HEIGHT_OR_FLUID",
+        "engineValue": "FLUID_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "NOWHERE_SUPERFRACTAL",
+          "zoom": 2,
+          "exponent": 4,
+          "multiplier": 5,
+          "cellularFrequency": 0.02,
+          "cellularZoom": 0.35,
+          "fracture":{
+            "style": "NOWHERE_CUBIC",
+            "exponent": 5,
+            "multiplier": 1.5,
+            "zoom": 1.3
+          }
+        }
+      },
+      {
+        "name": "fluidHeight",
+        "engineStreamValue": "OVERLAY_NOISE",
+        "engineValue": "ENGINE_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "FRACTAL_SMOKE",
+          "cellularFrequency": 0.02,
+          "cellularZoom": 0.05,
+          "zoom": 0.005,
+          "exponent": 6,
+          "multiplier": 1.6,
+          "fracture":{
+            "style": "VIGOCTAVE_FRACTAL_RM_SIMPLEX",
+            "zoom": 0.005,
+            "exponent": 4,
+            "multiplier": 2.1
+          }
+        }
+      },
+      {
+        "name": "engineHeight",
+        "engineStreamValue": "HEIGHT_OR_FLUID",
+        "engineValue": "ENGINE_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "VASCULAR_IRIS_THICK",
+          "cellularFrequency": 0.02,
+          "cellularZoom": 0.50,
+          "zoom": 0.20,
+          "exponent": 6,
+          "multiplier": 1.6,
+          "fracture":{
+            "style": "TRIOCTAVE_SIMPLEX",
+            "zoom": 2,
+            "exponent": 4,
+            "multiplier": 2.1
+          }
+        }
+      }
+    ]
+  }

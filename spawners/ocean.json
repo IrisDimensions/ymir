@@ -1,0 +1,38 @@
+{
+    "group": "UNDERWATER",
+    "maxEntitiesPerChunk": 20,
+    "energyMultiplier": 1,
+    "weather": "ANY",
+    "spawns": [
+        {
+            "entity": "standard/hostile/drowned",
+            "maxSpawns": 5,
+            "minSpawns": 1,
+            "rarity": 3
+        },
+        {
+            "entity": "standard/neutral/dolphin",
+            "maxSpawns": 2,
+            "minSpawns": 1,
+            "rarity": 2
+        },
+        {
+            "entity": "standard/passive/glowsquid",
+            "maxSpawns": 1,
+            "minSpawns": 1,
+            "rarity": 4
+        },
+        {
+            "entity": "standard/passive/squid",
+            "maxSpawns": 3,
+            "minSpawns": 1,
+            "rarity": 2
+        },
+        {
+            "entity": "standard/passive/pufferfish",
+            "maxSpawns": 3,
+            "minSpawns": 1,
+            "rarity": 3
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Snowleaf",
+  "rarity": 1,
+  "color": "#274e13",
+  "landBiomeZoom": 1,
+  "landBiomes": [
+    "snowleaf/snowy-briar-hollow",
+    "snowleaf/briar-hollow",
+    "snowleaf/orange-willow-mountain",
+    "snowleaf/frosty-orchard"
+  ],
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["snowleaf/shore/beach"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": [
+    "snowleaf/sea/frozen-river",
+    "snowleaf/sea/river",
+    "snowleaf/sea/river-ice"
+  ]
+}

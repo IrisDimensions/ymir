@@ -1,0 +1,41 @@
+{
+    "vanillaDerivative": "DESERT",
+    "name": "Beach",
+    "customDerivitives": [{
+        "id": "west",
+        "downfallType": "none",
+        "grassColor": "#dde048",
+        "foliageColor": "#ced256"
+    }],
+    "layers": [
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:brown_terracotta"},
+                {"block": "minecraft:black_terracotta"}
+                ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:brown_terracotta"},
+                {"block": "minecraft:black_terracotta"}
+                ]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 1,
+        "generator": "plain"
+    }],
+    "derivative": "DESERT",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:brown_terracotta"},
+            {"block": "minecraft:black_terracotta"}
+        ]
+    }
+}

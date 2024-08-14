@@ -1,0 +1,95 @@
+{
+    "name": "Summit Mountain",
+    "color": "#29AB79",
+    "rarity": 1,
+    "derivative": "STONY_PEAKS",
+    "vanillaDerivative": "STONY_PEAKS",
+    "customDerivitives": [{
+        "id": "summit_mountain",
+        "foliageColor": "#478F04",
+        "grassColor": "#41A726",
+        "category": "extreme_hills",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "children": ["summit/mountain-middle"],
+    "generators": [{
+        "min": 75,
+        "max": 150,
+        "generator": "mountain"
+    }],
+    "biomeZoom": 30,
+    "biomeStyle": {
+        "style": "NOWHERE",
+        "zoom": 0.7,
+        "exponent": 4
+    },
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:rooted_dirt"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "mode": "PAINT",
+            "place": [
+                "clutter/sbush1",
+                "clutter/sbush2",
+                "clutter/sbush3"
+            ],
+            "chance": 0.0020,
+            "density": 4
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:short_grass"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:tall_grass"
+                }
+            ]
+        },
+        {
+            "chance": 0.0,
+            "variance": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:short_grass"}]
+        }
+    ]
+}

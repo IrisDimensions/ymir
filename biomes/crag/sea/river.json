@@ -1,0 +1,127 @@
+{
+    "name": "Crag River",
+    "color": "#5341FF",
+    "derivative": "WARM_OCEAN",
+    "vanillaDerivative": "WARM_OCEAN",
+    "generators": [{
+        "min": -50,
+        "max": -30,
+        "generator": "river"
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "style": {"style": "FRACTAL_FBM_IRIS"},
+            "zoom": 0.6,
+            "palette": [
+                {"block": "minecraft:mossy_cobblestone"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:cobblestone"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:cobblestone"}]
+        }
+    ],
+    "objects": [
+        {
+        "onwater": true,
+        "chance": 1,
+        "density": 3,
+        "carvingSupport": "SURFACE_ONLY",
+        "translate":{
+            "y": 1
+        },
+        "place": ["clutter/lilly"]
+        },
+        {
+            "place": [
+                "structures/landstone1",
+                "structures/landstone2",
+                "structures/landstone3",
+                "structures/landstone4",
+                "structures/landstone5"
+            ],
+            "chance": 0.86,
+            "density": 2,
+            "mode": "PAINT",
+            "underwater": true,
+            "waterloggable": true,
+            "edit": [
+                {
+                    "find": [
+                        {"block": "minecraft:grass_block"},
+                        {"block": "minecraft:dirt"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:clay"}]}
+                },
+                {
+                    "find": [
+                        {"block": "minecraft:tall_grass"},
+                        {"block": "minecraft:short_grass"}
+                    ],
+                    "replace": {"palette": [{"block": "minecraft:seagrass"}]}
+                }
+            ]
+        },
+        {
+            "place": ["clutter/ellipsoid1"],
+            "chance": 0.5,
+            "underwater": true,
+            "mode": "CENTER_HEIGHT",
+            "edit": [{
+                "find": [{"block": "minecraft:clay"}],
+                "replace": {
+                    "style": {
+                        "style": "GLOB",
+                        "zoom": 0.02
+                    },
+                    "palette": [
+                        {
+                            "weight": 2,
+                            "block": "minecraft:clay"
+                        },
+                        {
+                            "weight": 1,
+                            "block": "minecraft:cave_air"
+                        }
+                    ]
+                }
+            }]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ]
+}

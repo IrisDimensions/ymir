@@ -1,0 +1,46 @@
+{
+    "vanillaDerivative": "SAVANNA",
+    "derivative": "BEACH",
+    "name": "Beach",
+    "customDerivitives": [{
+        "id": "savanna",
+        "downfallType": "none",
+        "grassColor": "#e5db66",
+        "foliageColor": "#98d256"
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "block": "minecraft:sand"
+                }
+            ]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:stone"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:fern"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 3,
+        "generator": "smooth-land"
+    }]
+}

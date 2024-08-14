@@ -1,0 +1,9 @@
+{
+    "object": "structures/archipielago",
+    "placementOptions": {
+        "loot": ["structures/ancient-city"],
+        "mode": "PAINT",
+        "waterloggable": true,
+        "translate":{"y": 20}
+        }
+}

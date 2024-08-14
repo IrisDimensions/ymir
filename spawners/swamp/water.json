@@ -1,0 +1,36 @@
+{
+  "group": "UNDERWATER",
+  "maximumRate": {
+    "amount": 3,
+    "per": { "seconds": 60 }
+  },
+  "maxEntitiesPerChunk": 2,
+  "energyMultiplier": 1.25,
+
+  "spawns": [
+    {
+      "entity": "standard/passive/cod",
+      "minSpawns": 1,
+      "maxSpawns": 4,
+      "rarity": 1
+    },
+    {
+      "entity": "standard/passive/squid",
+      "maxSpawns": 2,
+      "minSpawns": 1,
+      "rarity": 2
+    },
+    {
+      "entity": "standard/passive/frog",
+      "maxSpawns": 4,
+      "minSpawns": 1,
+      "rarity": 2
+    },
+    {
+      "entity": "standard/passive/tadpole",
+      "maxSpawns": 4,
+      "minSpawns": 1,
+      "rarity": 2
+    }
+  ]
+}

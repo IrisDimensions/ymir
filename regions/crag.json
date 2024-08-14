@@ -1,0 +1,14 @@
+{
+  "landBiomes": ["crag/crag-garden", "crag/steppe"],
+  "seaBiomes": ["crag/sea/river"],
+  "landBiomeZoom": 2,
+  "shoreHeightMin": 0,
+  "shoreHeightMax": 4,
+  "shoreBiomeZoom": 1,
+  "seaBiomeZoom": 1,
+  "shoreBiomes": ["crag/shore/beach"],
+  "name": "Crag",
+  "color": "#baee59",
+  "rarity": 1,
+  "entitySpawners": ["tropical/passive", "tropical/hostile", "tropical/cave"]
+}

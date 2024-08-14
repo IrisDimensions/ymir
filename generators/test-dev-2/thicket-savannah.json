@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "HERMITE_STARCAST_6",
+        "horizontalScale": 25.0
+    },
+    "seed": 8453,
+    "composite": [
+        {
+            "style": {
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 2.0,
+                "fracture": {
+                    "style": "CELLULAR_IRIS_DOUBLE",
+                    "zoom": 9.0,
+                    "multiplier": 6.4
+                },
+                "exponent": 11.941
+            },
+            "seed": 4167,
+            "bezier": false,
+            "sinCentered": false,
+            "opacity": 0.265
+        }
+    ],
+    "multiplicitive": false
+}

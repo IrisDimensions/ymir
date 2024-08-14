@@ -1,0 +1,101 @@
+{
+    "name": "Forsaken Cliffs",
+    "color": "#2FAB7B",
+    "derivative": "WARPED_FOREST",
+    "vanillaDerivative": "WARPED_FOREST",
+    "biomeSkyScatter": ["WARPED_FOREST"],
+    "biomeScatter": ["WARPED_FOREST"],
+    "children": ["abaddon/lava-rivers"],
+    "customDerivitives": [
+        {
+            "skyColor": "#521111",
+            "fogColor": "#660000",
+            "id": "domain_of_perdition",
+            "category": "nether"
+        }
+    ],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.28,
+        "exponent": 7.2
+    },
+    "childShrinkFactor": 1,
+    "generators": [{
+        "generator": "mountain",
+        "max": 100,
+        "min": 2
+    }],
+    "wall":{
+        "palette": [{"block": "minecraft:netherrack"}]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:warped_nylium","weight": 30},
+                {"block": "minecraft:moss_block","weight": 15}
+                ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:netherrack"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:mud"}]
+        }
+    ],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:nether_sprouts"}]
+        },
+        {
+            "forcePlace": true,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:warped_roots"}]
+        },
+        {
+            "forcePlace": true,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:warped_fungus"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 1,
+            "density": 1,
+            "mode": "CENTER_HEIGHT",
+            "place": [
+                "custom/trees/warped/generic1",
+                "custom/trees/warped/generic1",
+                "custom/trees/warped/generic3",
+                "custom/trees/warped/generic4",
+                "custom/trees/warped/generic5",
+                "custom/trees/warped/generic6",
+                "custom/trees/warped/generic7",
+                "custom/trees/warped/generic8",
+                "custom/trees/warped/generic9",
+                "custom/trees/warped/generic10",
+                "custom/trees/warped/generic11",
+                "custom/trees/warped/generic12",
+                "custom/trees/warped/generic13"
+            ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            }
+        }
+    ]
+}

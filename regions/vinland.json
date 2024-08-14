@@ -1,0 +1,27 @@
+{
+  "name": "Vinland",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 2,
+  "landBiomes": [
+    "vinland/plains",
+    "vinland/mountain1",
+    "vinland/terralost_dragon",
+    "vinland/moonlight-grove",
+    "vinland/boreal-grove",
+    "vinland/scarlet-plains"
+  ],
+  "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
+  "entitySpawners": [
+    "temperate/passive",
+    "temperate/hostile",
+    "temperate/cave",
+    "temperate/water"
+  ],
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 4,
+  "shoreHeightMin": 1,
+  "shoreBiomes": ["temperate/shore/beach"],
+  "seaBiomeZoom": 2,
+  "seaBiomes": ["temperate/ocean/river"]
+}

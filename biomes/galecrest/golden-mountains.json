@@ -1,0 +1,98 @@
+{
+    "name": "Golden Mountain",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "golden_mountain",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "mountain",
+        "max": 40,
+        "min": 5
+    },
+    {
+        "generator": "mountain",
+        "max": 80,
+        "min": 40
+
+    }],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:sand"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:smooth_sandstone"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.002,
+            "palette": [{"block": "minecraft:dead_bush"},
+        {
+            "verticalZoom": 5,
+            "chance": 0.004,
+            "variance": {"style": "STATIC"},
+            "stackMax": 5,
+            "style": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:cactus"}],
+            "heightVariance": {"style": "STATIC"},
+            "stackMin": 1
+            }
+        ]
+    }],
+    "objects": [
+
+        {"place": [
+            "palmtrees/generic1",
+            "palmtrees/generic2",
+            "palmtrees/generic3",
+            "palmtrees/generic4",
+            "palmtrees/generic5",
+            "palmtrees/generic6",
+            "palmtrees/generic7"
+            ],
+            "slopeCondition":{
+                "maximumSlope": 1
+            },
+            "translate":{
+                "y": -3
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 180,
+                    "min": -180
+                }
+            },
+            "chance": 0.040,
+            "edit": [
+                {"find": [{"block": "minecraft:note_block"}],
+                "replace":{
+                    "palette": [{"block": "minecraft:jungle_log"}]
+                }}
+            ]
+            }
+    ]
+}

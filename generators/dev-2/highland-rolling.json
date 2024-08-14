@@ -1,0 +1,40 @@
+{
+    "interpolator": {
+        "function": "STARCAST_12",
+        "horizontalScale": 6721.0
+    },
+    "seed": 1243,
+    "composite": [
+        {
+            "seed": 6009,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "zoom": 52.0,
+                "fracture": {
+                    "style": "PERLIN_IRIS_DOUBLE",
+                    "zoom": 36.0,
+                    "exponent": 54.0,
+                    "multiplier": 20.5
+                }
+            },
+            "exponent": 59.9,
+            "negative": true
+        },
+        {
+            "seed": 6977,
+            "style": {
+                "style": "IRIS_THICK",
+                "zoom": 33.1,
+                "exponent": 46.31,
+                "fracture": {
+                    "style": "SEPTOCTAVE_SIMPLEX",
+                    "zoom": 38.0,
+                    "exponent": 24.0,
+                    "multiplier": 27.5
+                }
+            },
+            "negative": false,
+            "opacity": 0.693
+        }
+    ]
+}

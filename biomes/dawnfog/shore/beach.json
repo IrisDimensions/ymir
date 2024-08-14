@@ -1,0 +1,40 @@
+{
+    "name": "Dawnfog Beach",
+    "derivative": "BEACH",
+    "rarity": 1,
+    "vanillaDerivative": "BEACH",
+    "color": "#e7ea48",
+        "customDerivitives": [
+        {
+            "id": "chroma_coast",
+            "category": "beach",
+            "grassColor": "#bf9000"
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "layers": [
+        {
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 1
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}]
+        }
+    ]
+}

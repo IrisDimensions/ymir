@@ -1,0 +1,65 @@
+{
+    "interpolator": {
+        "function": "STARCAST_9",
+        "horizontalScale": 1.0
+    },
+    "seed": 58,
+    "composite": [
+        {
+            "style": {
+                "style": "BIOCTAVE_FRACTAL_RM_SIMPLEX",
+                "zoom": 2,
+                "exponent": 5.7,
+                "fracture": {
+                    "style": "IRIS_THICK",
+                    "zoom": 2,
+                    "cellularZoom": 5.81,
+                    "axialFracturing": false,
+                    "cellularFrequency": 10.5,
+                    "exponent": 42.0,
+                    "multiplier": 16.6
+                }
+            },
+            "negative": true,
+            "seed": 78
+        }
+    ],
+    "cliffHeightMax": 25.078,
+    "cliffHeightMin": 34.9,
+    "cliffHeightGenerator": {
+        "seed": 37,
+        "bezier": true,
+        "enabled": false,
+        "exponent": 17.13,
+        "style": {
+            "style": "CELLULAR"
+        },
+        "zoom": 3.4,
+        "fracture": [
+            {
+                "bezier": true,
+                "enabled": true,
+                "exponent": 2.1,
+                "zoom": 4.5,
+                "style": {
+                    "style": "CUBIC",
+                    "axialFracturing": true,
+                    "cellularFrequency": 1.1,
+                    "cellularZoom": 18.0,
+                    "exponent": 47.0,
+                    "multiplier": 6.0,
+                    "zoom": 38.997
+                },
+                "sinCentered": true,
+                "negative": true,
+                "seed": 52,
+                "parametric": false,
+                "octaves": 16,
+                "offsetX": 8.0,
+                "offsetY": 17.5,
+                "offsetZ": 28.65,
+                "opacity": 0.091
+            }
+        ]
+    }
+}

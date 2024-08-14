@@ -1,0 +1,176 @@
+{
+    "name": "Briar Hollow",
+    "derivative": "SNOWY_PLAINS",
+    "rarity": 1,
+    "color": "#505051",
+    "customDerivitives": [{
+        "id": "briar_hollow",
+        "category": "icy",
+        "grassColor": "#b8cdc0",
+        "foliageColor": "#aec7bb",
+        "temperature": -1,
+        "humidity": -1,
+        "downfallType": "snow"
+    }],
+    "generators": [
+        {
+            "generator": "dunes",
+            "max": 12,
+            "min": -10
+        }
+    ],
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style":{
+                "style": "STATIC"
+            },
+            "zoom": 0.3,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 7,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "whitelist": [{"block": "minecraft:grass_block"}],
+            "chance": 0.4,
+            "style":{
+                "style": "GLOB",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "multiplier": 0.3,
+                    "zoom": 0.6
+                }
+            },
+            "palette": [
+                {"block": "minecraft:snow","data": {"layers": 1}},
+                {"block": "minecraft:snow","data": {"layers": 2}},
+                {"block": "minecraft:snow","data": {"layers": 3}},
+                {"block": "minecraft:snow","data": {"layers": 4}}
+            ]
+        },
+        {
+            "chance": 0.3,
+            "palette": [
+                {"block": "minecraft:short_grass"}
+            ]
+        },
+        {
+            "chance": 0.3,
+            "palette": [
+                {"block": "minecraft:fern"}
+            ]
+        },
+        {
+            "chance": 0.05,
+            "palette": [
+                {"block": "minecraft:tall_grass"}
+            ]
+        },
+        {
+            "chance": 0.05,
+            "palette": [
+                {"block": "minecraft:large_fern"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "forbiddenCollisions": [
+                "custom/rare/stonespiek1",
+                "custom/rare/stonespiek2",
+                "custom/rare/stonespiek3",
+                "trees/oak/lponderosa1",
+                "trees/oak/lponderosa2",
+                "trees/oak/lponderosa3",
+                "trees/oak/mponderosa1",
+                "trees/oak/mponderosa2",
+                "trees/oak/mponderosa3",
+                "trees/oak/mponderosa4"
+            ],
+            "chance": 0.20,
+            "place": [
+                "trees/oak/lponderosa1",
+                "trees/oak/lponderosa2",
+                "trees/oak/lponderosa3",
+                "trees/oak/mponderosa1",
+                "trees/oak/mponderosa2",
+                "trees/oak/mponderosa3",
+                "trees/oak/mponderosa4"
+            ],
+            "snow": 0.4,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "translate":{
+                "y": -1
+            }
+        },
+        {
+            "chance": 0.5,
+            "translate":{
+                "y": 0,
+                "yRandom": -3
+            },
+            "snow": 0.4,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "place": [
+                "custom/trees/bog/oakclutt1",
+                "custom/trees/bog/oakclutt2",
+                "custom/trees/bog/oakclutt3",
+                "clutter/oakclutt2",
+                "clutter/oakclutt3"
+            ]
+        },
+        {
+            "chance": 0.3,
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4"
+            ],
+            "snow": 0.2,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            }
+        }
+    ]
+}

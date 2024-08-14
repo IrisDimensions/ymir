@@ -1,0 +1,34 @@
+{
+    "vanillaDerivative": "FOREST",
+    "customDerivitives": [{
+        "id": "eldoria",
+        "grassColor": "#f9eee4",
+        "foliageColor": "#d6f7ff",
+        "temperature": -1,
+        "downfallType": "rain",
+        "category": "plains"
+    }],
+    "name": "Eldoria Beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "derivative": "SNOWY_BEACH",
+    "rarity": 1
+}

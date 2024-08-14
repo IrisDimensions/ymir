@@ -1,0 +1,41 @@
+{
+    "name": "Mesa River",
+    "color": "#41C3FF",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "generators": [{
+        "min": -32,
+        "max": -10,
+        "generator": "mountain"
+    }],
+    "layers": [
+        {
+            "style": {"style": "NOWHERE"},
+            "zoom": 0.7,
+            "palette": [
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:orange_terracotta"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:red_sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:red_sand"
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.2,
+        "palette": [{"block": "minecraft:seagrass"}]
+    }]
+}

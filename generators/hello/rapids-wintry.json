@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_PARAMETRIC_1_5",
+        "horizontalScale": 59.64
+    },
+    "seed": 4922,
+    "composite": [
+        {
+            "style": {
+                "style": "NOWHERE_CUBIC",
+                "zoom": 3.0,
+                "fracture": {
+                    "style": "NOWHERE_CUBIC",
+                    "zoom": 4.17,
+                    "multiplier": 9.789
+                },
+                "exponent": 2.0
+            },
+            "seed": 80
+        }
+    ]
+}

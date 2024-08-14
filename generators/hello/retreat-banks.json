@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_9",
+        "horizontalScale": 39.55
+    },
+    "seed": 5160,
+    "composite": [
+        {
+            "style": {
+                "style": "TRIOCTAVE_FRACTAL_CUBIC",
+                "zoom": 4.531,
+                "fracture": {
+                    "style": "SEPTOCTAVE_FRACTAL_RM_SIMPLEX",
+                    "zoom": 3.806,
+                    "multiplier": 13.82
+                },
+                "exponent": 2.0
+            },
+            "seed": 8804
+        }
+    ]
+}

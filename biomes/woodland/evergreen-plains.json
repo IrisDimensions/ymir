@@ -1,0 +1,72 @@
+{
+    "name": "Evergreen Plains",
+    "derivative": "FOREST",
+    "biomeScatter": ["FOREST"],
+    "biomeSkyScatter": ["FOREST"],
+    "customDerivitives": [
+        {
+            "id": "evergreen_plains",
+            "waterColor": "#59bdd2",
+            "grassColor": "#5aa738"
+        }
+    ],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "min": 2,
+            "max": 6
+        }
+    ],
+    "color": "#274e13",
+    "rarity": 1,
+    "decorators": [
+        {
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.2
+            },
+            "variance":{
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 1
+            },
+            "chance": 0.2,
+            "palette": [
+                {"block": "minecraft:peony"},
+                {"block": "minecraft:lilac"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:short_grass"}]
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 7,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"}
+        ]
+    }
+}

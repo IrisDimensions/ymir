@@ -1,0 +1,6 @@
+{
+    "pieces": ["witch-zone/witchzone"],
+    "maxDepth": 9,
+    "terminate": true,
+    "feature": {"entitySpawners": ["skeletalknight"]}
+}

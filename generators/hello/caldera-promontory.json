@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "HERMITE_STARCAST_12",
+        "horizontalScale": 57.0
+    },
+    "seed": 8944,
+    "composite": [
+        {
+            "style": {
+                "style": "FRACTAL_BILLOW_PERLIN",
+                "zoom": 0.632,
+                "fracture": {
+                    "style": "QUINTOCTAVE_SIMPLEX",
+                    "zoom": 1.5,
+                    "multiplier": 3.0
+                },
+                "exponent": 2.75
+            },
+            "seed": 3791
+        }
+    ]
+}

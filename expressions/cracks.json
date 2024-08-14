@@ -1,0 +1,9 @@
+{
+  "expression": "if(pow(noise, 2) > 0.5, pow(noise, 2) * 0.5 - abs(y / 20), pow(noise, 2) * 0.5 - abs(y / 20))",
+  "variables": [
+      {
+        "name": "noise",
+        "staticValue": 1
+      }
+  ]
+}

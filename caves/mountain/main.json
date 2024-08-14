@@ -1,0 +1,49 @@
+{
+    "fill": {"block": "minecraft:cave_air"},
+    "verticalRange": {
+        "max": 220,
+        "min": 30
+    },
+    "customBiome": "carving/mountain",
+    "fork": {"caves": [{
+        "cave": "mountain/small",
+        "rarity": 50,
+        "caveStartHeight": {
+            "style": {"style": "STATIC"},
+            "max": 180,
+            "min": 70
+        }
+    }]},
+    "worm": {
+        "girth": {
+            "max": 2,
+            "min": 6,
+            "style": {"style": "STATIC"}
+        },
+        "maxDistance": 400,
+        "yStyle": {
+            "min": -7,
+            "max": 2,
+            "generator": {
+                "zoom": 3,
+                "style": "PERLIN"
+            }
+        },
+        "xStyle": {
+            "min": -7,
+            "max": 7,
+            "generator": {
+                "zoom": 1,
+                "style": "IRIS_DOUBLE"
+            }
+        },
+        "zStyle": {
+            "min": -7,
+            "max": 7,
+            "generator": {
+                "zoom": 1,
+                "style": "IRIS_DOUBLE"
+            }
+        }
+    }
+}

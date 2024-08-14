@@ -1,0 +1,26 @@
+{
+    "name": "Sakura Beach",
+    "derivative": "BEACH",
+    "vanillaDerivative": "BEACH",
+    "color": "#e7ea48",
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/passive"
+    ],
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:sand"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:sand"}]
+        }
+    ]
+}

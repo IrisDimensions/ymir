@@ -1,0 +1,221 @@
+{
+    "name": "Hilly Basin",
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "rarity": 1,
+    "color": "#808789",
+    "generators": [{
+        "generator": "plain",
+        "max": 5,
+        "min": 2
+    }],
+    "customDerivitives": [
+        {
+            "id": "hilly_basin",
+            "foliageColor": "#a6b644",
+            "grassColor": "#a6b644",
+            "skyColor": "#6fa8dc",
+            "category": "plains"
+        }
+    ],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block","weight": 40
+                },
+                {
+                    "block": "minecraft:podzol","weight": 10
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:dirt"}
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.4,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "stackMin": 1,
+            "stackMax": 11,
+            "chance": 0.1,
+            "variance": {
+                "style": "STATIC",
+                "zoom": 0.1
+            },
+            "topPalette": [{
+                "data": {
+                    "stage": 0,
+                    "age": 0,
+                    "leaves": "small"
+                },
+                "block": "minecraft:bamboo"
+            }],
+            "palette": [
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "none"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "small"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 0,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 0,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                },
+                {
+                    "data": {
+                        "stage": 1,
+                        "age": 1,
+                        "leaves": "large"
+                    },
+                    "block": "minecraft:bamboo"
+                }
+            ],
+            "style": {"style": "STATIC"}
+        }
+    ],
+    "objects": [
+        {
+            "carvingSupport": "SURFACE_ONLY",
+            "slopeCondition":{
+                "maximumSlope": 1.2
+            },
+            "chance": 0.80,
+            "density": 3,
+            "place": [
+                "custom/trees/terra/genericoak1",
+                "custom/trees/terra/genericoak2",
+                "custom/trees/terra/genericoak3",
+                "custom/trees/terra/genericoak4",
+                "custom/trees/terra/genericoak5",
+                "custom/trees/terra/genericoak6"
+            ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            }
+        },
+        {
+            "chance": 0.15,
+            "mode": "PAINT",
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6"
+            ]
+        }
+    ]
+}

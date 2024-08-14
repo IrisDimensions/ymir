@@ -1,0 +1,560 @@
+{
+  "name": "Ymir",
+  "version": 1110,
+  "environment": "NORMAL",
+  "continentalStyle": {
+    "style": "NOWHERE_SUPERFRACTAL",
+    "zoom": 1.9,
+    "exponent": 14,
+    "multiplier": 2.1,
+    "fracture": {
+      "style": "FRACTAL_CUBIC",
+      "zoom": 4.2,
+      "multiplier": 4
+    }
+  },
+  "regionStyle": {
+    "style": "CELLULAR_HERMITE",
+    "zoom": 8,
+    "axialFracturing": true,
+    "fracture": {
+      "style": "FRACTAL_SMOKE",
+      "axialFracturing": true,
+      "zoom": 0.07,
+      "multiplier": 10,
+      "fracture": {
+        "style": "GLOB",
+        "zoom": 8,
+        "multiplier": 6,
+        "axialFracturing": true,
+        "fracture": {
+          "style": "CELLULAR_BICUBIC",
+          "multiplier": 4,
+          "zoom": 0.05,
+          "axialFracturing": true,
+          "fracture": {
+            "style": "STATIC",
+            "multiplier": 20
+          }
+        }
+      }
+    }
+  },
+  "landBiomeStyle": {
+    "style": "CELLULAR",
+    "fracture": {
+      "multiplier": 30,
+      "style": "PERLIN",
+      "zoom": 0.15,
+      "fracture": {
+        "style": "STATIC",
+        "multiplier": 1
+      }
+    }
+  },
+  "logicalHeight": 1024,
+  "dimensionHeight": {
+    "max": 1024,
+    "min": -64
+  },
+  "logicalHeightEnd": 448,
+  "dimensionHeightEnd": {
+    "max": 448,
+    "min": -64
+  },
+  "logicalHeightNether": 448,
+  "dimensionHeightNether": {
+    "max": 448,
+    "min": -64
+  },
+  "shoreBiomeStyle": {
+    "style": "CELLULAR",
+    "fracture": {
+      "multiplier": 18,
+      "maxFractureAccuracy": true,
+      "style": "FRACTAL_WATER",
+      "zoom": 0.255,
+      "fracture": {
+        "maxFractureAccuracy": true,
+        "style": "STATIC",
+        "multiplier": 4
+      }
+    }
+  },
+  "jigsawStructures": [
+    {
+      "separation": 80,
+      "spacing": 80,
+      "spreadType": "LINEAR",
+      "rarity": 3500,
+      "structure": "dungeon-skeleton"
+    },
+    {
+      "separation": 80,
+      "spacing": 80,
+      "spreadType": "LINEAR",
+      "rarity": 3500,
+      "structure": "dungeon-zombie"
+    },
+    {
+      "separation": 80,
+      "spacing": 80,
+      "spreadType": "LINEAR",
+      "rarity": 3500,
+      "structure": "dungeon-spider"
+    },
+    {
+      "separation": 100,
+      "spacing": 100,
+      "spreadType": "LINEAR",
+      "rarity": 7000,
+      "structure": "ancient-city"
+    }
+  ],
+  "regions": [
+    "abaddon",
+    "temperate",
+    "boreal",
+    "auroria",
+    "woodland",
+    "dawnfog",
+    "dreadbog",
+    "crag",
+    "sea/sea",
+    "mountain-hills",
+    "sakura",
+    "test",
+    "forests",
+    "winterhold",
+    "snowy-sakura",
+    "summit",
+    "tropical",
+    "sirenia",
+    "sea/ocean",
+    "snowleaf",
+    "permafrost",
+    "grove",
+    "west",
+    "galecrest",
+    "sangria",
+    "sea/waves"
+  ],
+  "fluidPalette": { "palette": [{ "block": "minecraft:water" }] },
+  "fluidHeight": 80,
+  "landZoom": 3.15,
+  "seaZoom": 3,
+  "continentZoom": 3,
+  "biomeZoom": 1,
+  "lootTries": 32,
+  "terrainZoom": 1,
+  "coordFractureZoom": 0.15,
+  "stronghold": "stronghold",
+  "strongholdJumpDistance": 670,
+  "maxStrongholds": 27,
+  "regionZoom": 5,
+  "dimensionAngleDeg": 12,
+  "landChance": 0.67,
+  "preventLeafDecay": true,
+  "decorate": true,
+  "placeObjects": true,
+  "postProcessing": true,
+  "bedrock": true,
+  "aggressiveBiomeReshuffle": true,
+  "postProcessingSlabs": true,
+  "postProcessingWalls": true,
+  "coordFractureDistance": 926,
+  "postProcessCaves": true,
+  "carving": {
+    "caves": [
+      {
+        "breakSurface": false,
+        "cave": "deep/main",
+        "rarity": 14,
+        "caveStartHeight": {
+          "max": 60,
+          "min": 5,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "draconic/main",
+        "rarity": 220,
+        "caveStartHeight": {
+          "max": 120,
+          "min": 58,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/dark-depths/tubes",
+        "rarity": 90,
+        "caveStartHeight": {
+          "max": 30,
+          "min": 10,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/azure-wastes/main",
+        "rarity": 120,
+        "caveStartHeight": {
+          "max": 120,
+          "min": 58,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/mushroom/main",
+        "rarity": 180,
+        "caveStartHeight": {
+          "max": 100,
+          "min": 45,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/crystalized-overgrown/tubes",
+        "rarity": 120,
+        "caveStartHeight": {
+          "max": 90,
+          "min": 42,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/crystalized/tubes",
+        "rarity": 120,
+        "caveStartHeight": {
+          "max": 90,
+          "min": 42,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/spider-infestation/main",
+        "rarity": 170,
+        "caveStartHeight": {
+          "max": 360,
+          "min": 64,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "cavesv4/mantle-core/main",
+        "rarity": 60,
+        "caveStartHeight": {
+          "max": 20,
+          "min": 12,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "cave": "lush/main",
+        "rarity": 100,
+        "breakSurface": false,
+        "caveStartHeight": {
+          "max": 65,
+          "min": 30,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "deep/elongated",
+        "rarity": 40,
+        "caveStartHeight": {
+          "max": 64,
+          "min": 12,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": false,
+        "cave": "deepdark/big-deepdarkcave",
+        "rarity": 300,
+        "caveStartHeight": {
+          "max": 50,
+          "min": 12,
+          "style": { "style": "STATIC" }
+        }
+      }
+    ]
+  },
+  "treeSettings": {
+    "enabled": true,
+    "mode": "FIRST"
+  },
+  "seaBiomeStyle": {
+    "style": "CELLULAR_IRIS_THICK"
+  },
+  "caves": true,
+  "loot": { "tables": ["global-treasure", "global-tools", "global-clutter"] },
+  "rockPalette": {
+    "palette": [
+      {
+        "weight": 10,
+        "block": "minecraft:stone"
+      },
+      { "block": "minecraft:granite" },
+      { "block": "minecraft:andesite" }
+    ],
+    "style": {
+      "style": "IRIS_THICK",
+      "zoom": 1.26,
+      "fracture": {
+        "style": "STATIC",
+        "multiplier": 3
+      }
+    }
+  },
+  "deposits": [
+    {
+      "minHeight": 19,
+      "maxPerChunk": 8,
+      "maxHeight": 390,
+      "minPerChunk": 1,
+      "minSize": 25,
+      "maxSize": 25,
+      "palette": [{ "block": "minecraft:granite" }],
+      "varience": 2
+    },
+    {
+      "minHeight": 19,
+      "maxPerChunk": 8,
+      "maxHeight": 310,
+      "minPerChunk": 1,
+      "minSize": 25,
+      "maxSize": 25,
+      "palette": [{ "block": "minecraft:andesite" }],
+      "varience": 2
+    },
+    {
+      "minHeight": 19,
+      "maxPerChunk": 8,
+      "maxHeight": 309,
+      "minPerChunk": 1,
+      "minSize": 25,
+      "maxSize": 25,
+      "palette": [{ "block": "minecraft:diorite" }],
+      "varience": 2
+    },
+    {
+      "minHeight": 19,
+      "maxPerChunk": 8,
+      "maxHeight": 389,
+      "minPerChunk": 1,
+      "minSize": 25,
+      "maxSize": 25,
+      "palette": [{ "block": "minecraft:gravel" }],
+      "varience": 2
+    },
+    {
+      "minHeight": 1,
+      "maxPerChunk": 128,
+      "maxHeight": 64,
+      "minPerChunk": 128,
+      "minSize": 8,
+      "maxSize": 4,
+      "palette": [{ "block": "minecraft:deepslate" }],
+      "varience": 4
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 13,
+      "maxHeight": 51,
+      "minPerChunk": 5,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_copper_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 5,
+      "maxHeight": 64,
+      "minPerChunk": 1,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_diamond_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 4,
+      "maxHeight": 64,
+      "minPerChunk": 1,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_emerald_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 9,
+      "maxHeight": 64,
+      "minPerChunk": 5,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_gold_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 13,
+      "maxHeight": 64,
+      "minPerChunk": 5,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_iron_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 15,
+      "maxHeight": 64,
+      "minPerChunk": 5,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_coal_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 12,
+      "maxHeight": 64,
+      "minPerChunk": 5,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_redstone_ore"
+        }
+      ]
+    },
+    {
+      "minHeight": 5,
+      "maxPerChunk": 12,
+      "maxHeight": 64,
+      "minPerChunk": 5,
+      "minSize": 4,
+      "maxSize": 8,
+      "palette": [
+        {
+          "block": "minecraft:deepslate_lapis_ore"
+        }
+      ],
+      "varience": 4
+    },
+    {
+      "minHeight": 64,
+      "maxHeight": 2048,
+      "maxPerChunk": 40,
+      "minPerChunk": 20,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:coal_ore" }],
+      "varience": 64
+    },
+    {
+      "minHeight": 48,
+      "maxHeight": 2048,
+      "maxPerChunk": 25,
+      "minPerChunk": 16,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:copper_ore" }],
+      "varience": 50
+    },
+    {
+      "minHeight": 5,
+      "maxHeight": 400,
+      "maxPerChunk": 10,
+      "minPerChunk": 2,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:lapis_ore" }],
+      "varience": 20
+    },
+    {
+      "minHeight": 5,
+      "maxHeight": 2048,
+      "maxPerChunk": 90,
+      "minPerChunk": 10,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:iron_ore" }],
+      "varience": 40
+    },
+    {
+      "minHeight": 5,
+      "maxHeight": 400,
+      "maxPerChunk": 12,
+      "minPerChunk": 2,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:gold_ore" }],
+      "varience": 15
+    },
+    {
+      "minHeight": 5,
+      "maxHeight": 400,
+      "maxPerChunk": 12,
+      "minPerChunk": 4,
+      "minSize": 6,
+      "maxSize": 10,
+      "palette": [
+        {
+          "data": { "lit": false },
+          "block": "minecraft:redstone_ore"
+        }
+      ],
+      "varience": 15
+    },
+    {
+      "minHeight": 5,
+      "maxHeight": 80,
+      "maxPerChunk": 8,
+      "minPerChunk": 2,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:diamond_ore" }],
+      "varience": 5
+    },
+    {
+      "minHeight": 48,
+      "maxHeight": 450,
+      "maxPerChunk": 10,
+      "minPerChunk": 2,
+      "minSize": 3,
+      "maxSize": 6,
+      "palette": [{ "block": "minecraft:emerald_ore" }],
+      "varience": 6
+    }
+  ]
+}

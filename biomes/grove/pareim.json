@@ -1,0 +1,108 @@
+{
+    "name": "Pareim",
+    "vanillaDerivative": "PLAINS",
+    "derivative": "PLAINS",
+    "rarity": 1,
+    "color": "#66cdaa",
+    "customDerivitives": [
+        {
+            "id": "pareim",
+            "category": "plains",
+            "foliageColor": "#c7782f",
+            "grassColor": "#7ecf65",
+            "humidity": 0.4,
+            "temperature": 0.2,
+            "downfallType": "rain"
+        }
+    ],
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "min": 2,
+            "max": 6
+        }
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"}
+        ]
+    },
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:dirt"}
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.3,
+            "palette": [
+                {"block": "minecraft:short_grass"}
+            ]
+        },
+        {
+            "chance": 0.03,
+            "palette": [
+                {"block": "minecraft:tall_grass"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.050,
+            "density": 1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "edit": [
+                {"find": [
+                    {"block": "minecraft:oak_leaves"}
+                ],
+                "replace":{
+                    "palette": [{"block": "minecraft:spruce_leaves"}]
+                }}
+            ],
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7",
+                "bushes/8"
+            ]
+        }
+    ],
+    "jigsawStructures": [
+        {
+            "separation": 100,
+            "spacing": 100,
+            "spreadType": "LINEAR",
+            "rarity": 4000,
+            "structure": "village-plains"
+        }
+    ]
+}

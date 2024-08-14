@@ -1,0 +1,25 @@
+{
+    "name": "DEV",
+    "rarity": 1,
+    "color": "#fffa66",
+    "landBiomeZoom": 2,
+    "landBiomes": [
+        "dev/dev-1/dev-uno",
+        "dev/dev-1/dev-dos"
+    ],
+    "entitySpawners": [
+        "hot/passive",
+        "hot/hostile",
+        "hot/cave"
+    ],
+    "shoreBiomeZoom": 1,
+    "shoreHeightMax": 2,
+    "shoreHeightMin": 0,
+    "shoreBiomes": [
+        "dev/dev-1/dev-uno"
+    ],
+    "seaBiomeZoom": 1,
+    "seaBiomes": [
+        "dev/dev-1/dev-uno"
+    ]
+}

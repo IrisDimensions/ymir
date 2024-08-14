@@ -1,0 +1,56 @@
+{
+    "name": "Galecrest Beach",
+    "derivative": "BEACH",
+    "vanillaDerivative": "BEACH",
+    "color": "#e7ea48",
+    "generators": [{
+        "min": 0,
+        "max": 4,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:sandstone"},
+            {"block": "minecraft:sand"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "GLOB_IRIS"
+            },
+            "zoom": 0.5,
+            "palette": [{"block": "minecraft:grass_block","weight": 10},
+                        {"block": "minecraft:moss_block","weight": 8},
+                        {"block": "minecraft:sand","weight": 8}]
+        },
+        {
+            "style":{
+                "style": "FRACTAL_SMOKE"
+            },
+            "zoom": 0.5,
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:sandstone","weight": 10},
+                {"block": "minecraft:sand","weight": 10}
+            ]
+        },
+        {
+            "partOf": "SHORE_LINE",
+            "chance": 0.21,
+            "variance": {"style": "SIMPLEX"},
+            "stackMax": 6,
+            "zoom": 5,
+            "palette": [{"block": "minecraft:sugar_cane"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "NOWHERE"},
+            "stackMin": 1
+        }
+    ]
+}

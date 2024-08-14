@@ -1,0 +1,100 @@
+{
+    "name": "Stormweaver Ocean",
+    "color": "#102540",
+    "derivative": "OCEAN",
+    "vanillaDerivative": "OCEAN",
+    "generators": [{
+        "min": -50,
+        "max": -35,
+        "generator": "river"
+    }],
+    "wall": {
+        "style": {"style": "NOWHERE"},
+        "palette": [
+            {"block": "minecraft:clay"},
+            {
+                "weight": 2,
+                "block": "minecraft:smooth_sandstone"
+            },
+            {"block": "minecraft:sand"}
+        ]
+    },
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "VASCULAR",
+                "zoom": 0.8,
+                "fracture": {"style": "STATIC"}
+            },
+            "zoom": 0.825,
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:clay"}
+            ]
+        },
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:grass_block"
+                },
+                {"block": "minecraft:dirt"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ],
+    "slab": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "minecraft:sandstone_slab"
+            },
+            {
+                "data": {
+                    "waterlogged": false,
+                    "type": "bottom"
+                },
+                "block": "minecraft:smooth_sandstone_slab"
+            },
+            {
+                "weight": 6,
+                "block": "minecraft:air"
+            }
+        ]
+    }
+}

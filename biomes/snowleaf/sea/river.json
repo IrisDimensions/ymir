@@ -1,0 +1,85 @@
+{
+    "vanillaDerivative": "RIVER",
+    "rarity": 2,
+    "customDerivitives": [{
+        "id": "snowleaf_river",
+        "foliageColor": "#d6f7ff",
+        "grassColor": "#f9eee4",
+        "downfallType": "rain",
+        "category": "plains"
+    }],
+    "seaLayers": [{
+        "minHeight": 4,
+        "maxHeight": 7,
+        "style": {
+            "style": "GLOB_IRIS_THICK",
+            "fracture": {
+                "style": "STATIC",
+                "multiplier": 3
+            }
+        },
+        "zoom": 0.4,
+        "palette": [
+            {
+                "weight": 2,
+                "block": "minecraft:ice"
+            },
+            {
+                "weight": 3,
+                "block": "minecraft:packed_ice"
+            },
+            {"block": "minecraft:blue_ice"},
+            {
+                "weight": 3,
+                "block": "minecraft:packed_ice"
+            },
+            {
+                "weight": 2,
+                "block": "minecraft:ice"
+            },
+            {
+                "block": "minecraft:water",
+                "weight": 30
+            }
+        ]
+    }],
+    "name": "Snowleaf River",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -25,
+        "min": -32
+    }],
+    "derivative": "FROZEN_RIVER"
+}

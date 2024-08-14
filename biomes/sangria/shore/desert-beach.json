@@ -1,0 +1,73 @@
+{
+    "vanillaDerivative": "DESERT",
+    "name": "Sangria Beach",
+    "customDerivitives": [{
+        "id": "sangria_beach",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:terracotta",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:packed_mud",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:coarse_dirt",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [
+                {"block": "minecraft:terracotta","weight": 5},
+                {"block": "minecraft:packed_mud","weight": 5},
+                {"block": "minecraft:coarse_dirt","weight": 5}
+                ]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 4,
+        "generator": "smooth-land"
+    }],
+    "derivative": "JUNGLE",
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:terracotta"},
+            {"block": "minecraft:granite"}
+        ]
+    },
+    "decorators": [
+        {
+            "partOf": "SHORE_LINE",
+            "chance": 0.18,
+            "stackMax": 4,
+            "stackMin": 1,
+            "heightVariance": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:sugar_cane"}]
+        },
+        {
+            "chance": 0.4,
+            "palette": [{"block": "minecraft:short_grass"}]
+        }
+    ]
+}

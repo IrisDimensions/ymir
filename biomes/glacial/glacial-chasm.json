@@ -1,0 +1,49 @@
+{
+    "name": "Glacial Chasm",
+    "color": "#6E7D85",
+    "rarity": 2,
+    "derivative": "WINDSWEPT_HILLS",
+    "vanillaDerivative": "WINDSWEPT_HILLS",
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 5,
+        "min": 2
+    }],
+    "children": ["glacial/ocean/glacial-pond"],
+    "childShrinkFactor": 1.5,
+    "childStyle":{
+        "style": "TRIOCTAVE_FRACTAL_CUBIC",
+        "zoom": 0.1,
+        "exponent": 0.37
+    },
+    "wall": {
+        "minHeight": 2,
+        "maxHeight": 4,
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:packed_ice"},
+            {"block": "minecraft:blue_ice"}
+        ]
+    },
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 8,
+            "palette": [
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ]
+}

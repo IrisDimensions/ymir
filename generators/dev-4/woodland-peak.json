@@ -1,0 +1,65 @@
+{
+    "interpolator": {
+        "function": "HERMITE_STARCAST_9",
+        "horizontalScale": 3692.0
+    },
+    "seed": 153,
+    "composite": [
+        {
+            "style": {
+                "style": "PERLIN_IRIS_DOUBLE",
+                "zoom": 25.58,
+                "exponent": 36.0,
+                "fracture": {
+                    "style": "CELLULAR_HERMITE_STARCAST_6",
+                    "zoom": 24.16,
+                    "cellularZoom": 10.0,
+                    "axialFracturing": true,
+                    "cellularFrequency": 21.255,
+                    "exponent": 47.0,
+                    "multiplier": 65.7
+                }
+            },
+            "negative": false,
+            "seed": 110
+        }
+    ],
+    "cliffHeightMax": 71.8,
+    "cliffHeightMin": 60.0,
+    "cliffHeightGenerator": {
+        "seed": 110,
+        "bezier": true,
+        "enabled": true,
+        "exponent": 0.0,
+        "style": {
+            "style": "FRACTAL_FBM_SIMPLEX"
+        },
+        "zoom": 45.0,
+        "fracture": [
+            {
+                "bezier": true,
+                "enabled": false,
+                "exponent": 28.73,
+                "zoom": 11.591,
+                "style": {
+                    "style": "SIMPLEX_VASCULAR",
+                    "axialFracturing": true,
+                    "cellularFrequency": 11.82,
+                    "cellularZoom": 10.0,
+                    "exponent": 8.51,
+                    "multiplier": 97.0,
+                    "zoom": 26.0
+                },
+                "sinCentered": false,
+                "negative": false,
+                "seed": 73,
+                "parametric": true,
+                "octaves": 1,
+                "offsetX": 6.239,
+                "offsetY": 19.0,
+                "offsetZ": 22.37,
+                "opacity": 0.1
+            }
+        ]
+    }
+}

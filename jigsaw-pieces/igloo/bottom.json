@@ -1,0 +1,17 @@
+{
+    "connectors": [{
+        "targetName": "*",
+        "innerConnector": true,
+        "entityCount": 1,
+        "rotateConnector": false,
+        "name": "",
+        "position": {
+            "x": 1,
+            "y": 3,
+            "z": 4
+        },
+        "direction": "WEST_NEGATIVE_X"
+    }],
+    "placementOptions": {"loot": ["structures/igloo"]},
+    "object": "jigsaw/igloo/bottom"
+}

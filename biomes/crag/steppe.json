@@ -1,0 +1,80 @@
+{
+    "name": "Steppe",
+    "color": "#42C894",
+    "rarity": 1,
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "generators": [{
+        "min": 4,
+        "max": 12,
+        "generator": "canyon-steep"
+    }],
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"}
+        ]
+    },
+    "layers": [
+        {
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 2.1
+            },
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "style":{
+                "style": "STATIC"
+            },
+            "zoom": 2,
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [
+                {
+                    "block": "minecraft:stone"
+                },
+                {
+                    "block": "minecraft:andesite"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.5,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [{"block": "minecraft:short_grass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.030,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [{"block": "minecraft:tall_grass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.3,
+            "style":{
+                "style": "IRIS",
+                "zoom": 0.28
+            },
+            "variance":{
+                "style": "STATIC",
+                "zoom": 0.15
+            },
+            "palette": [
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:cornflower"}]
+        }
+    ]
+}

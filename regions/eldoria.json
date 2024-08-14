@@ -1,0 +1,26 @@
+{
+  "name": "Eldoria",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 10,
+  "landBiomes": [
+    "eldoria/tempest-plains",
+    "eldoria/snowy-forest",
+    "eldoria/frosted-scarlet",
+    "eldoria/seraph-summit",
+    "eldoria/starfall-plateau"
+  ],
+  "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
+  "entitySpawners": [
+    "temperate/passive",
+    "temperate/hostile",
+    "temperate/cave",
+    "temperate/water"
+  ],
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["eldoria/shore/beach"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": ["eldoria/ocean/river-ice"]
+}

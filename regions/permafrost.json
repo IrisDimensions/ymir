@@ -1,0 +1,14 @@
+{
+  "landBiomes": ["permafrost/pf-plains", "permafrost/pf-hills"],
+  "seaBiomes": ["permafrost/ocean/pf-river", "permafrost/ocean/pf-river-ice"],
+  "landBiomeZoom": 1,
+  "shoreHeightMin": 1,
+  "shoreHeightMax": 4,
+  "shoreBiomeZoom": 1,
+  "seaBiomeZoom": 1,
+  "shoreBiomes": ["permafrost/shore/pf-beach"],
+  "name": "Permafrost",
+  "color": "#baee59",
+  "rarity": 1,
+  "entitySpawners": ["frozen/passive", "frozen/hostile", "frozen/cave"]
+}

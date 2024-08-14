@@ -1,0 +1,37 @@
+{
+  "name": "Temperate",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 1,
+  "landBiomes": [
+    "temperate/rocky-plains",
+    "temperate/longtree-forest",
+    "temperate/hilly-basin"
+  ],
+  "caveBiomes": ["carving/rocky-cavebiome"],
+  "jigsawStructures": [
+    {
+      "structure": "ruined-portal",
+      "rarity": 2500,
+      "separation": 80,
+      "spacing": 80
+    }
+  ],
+  "ENTITY_SPAWNS": "ALL ENTITY SPAWNS FOR THE REGION",
+  "entitySpawners": [
+    "temperate/passive",
+    "temperate/hostile",
+    "temperate/cave",
+    "temperate/water"
+  ],
+  "shoreHeightMax": 4,
+  "shoreHeightMin": 1,
+  "shoreBiomes": ["temperate/shore/beach", "temperate/shore/oak-beach"],
+  "seaBiomeZoom": 6,
+  "seaBiomes": [
+    "temperate/ocean/river",
+    "ocean/deep",
+    "ocean/dark-depth-ocean",
+    "ocean/rich-oceans"
+  ]
+}

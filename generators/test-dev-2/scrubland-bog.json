@@ -1,0 +1,26 @@
+{
+    "interpolator": {
+        "function": "HERMITE_TENSE",
+        "horizontalScale": 12.0
+    },
+    "seed": 132,
+    "composite": [
+        {
+            "style": {
+                "style": "FRACTAL_BILLOW_PERLIN",
+                "zoom": 6.0,
+                "fracture": {
+                    "style": "FRACTAL_CUBIC_IRIS",
+                    "zoom": 12.0,
+                    "multiplier": 5.0
+                },
+                "exponent": 6.94
+            },
+            "seed": 9290,
+            "bezier": true,
+            "sinCentered": false,
+            "opacity": 0.4
+        }
+    ],
+    "multiplicitive": true
+}

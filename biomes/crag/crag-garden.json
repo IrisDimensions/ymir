@@ -1,0 +1,117 @@
+{
+    "name": "Crag Gardens",
+    "color": "#42C894",
+    "rarity": 1,
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "generators": [{
+        "min": 4,
+        "max": 29,
+        "generator": "plain-cliffs"
+    }],
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"},
+            {"block": "minecraft:mossy_cobblestone"}
+        ]
+    },
+    "layers": [
+        {
+            "style": {"style": "STATIC"},
+            "zoom": 0.01,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {"palette": [{"block": "minecraft:dirt"}]},
+        {
+            "minHeight": 1,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:coarse_dirt"}]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"},
+                {"block": "minecraft:mossy_cobblestone"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 270,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "mode": "FAST_MIN_STILT",
+            "chance": 0.5,
+            "density": 2,
+            "place": [
+                "custom/trees/swamp/crag1",
+                "custom/trees/swamp/crag2",
+                "custom/trees/swamp/crag3",
+                "custom/trees/swamp/crag4"
+            ]
+        },
+        {
+            "mode": "FAST_MIN_STILT",
+            "chance": 0.5,
+            "density": 2,
+            "rotation": {
+                "yAxis": {
+                    "min": 0,
+                    "max": 270,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "custom/trees/swamp/crag1",
+                "custom/trees/swamp/crag2",
+                "custom/trees/swamp/crag3",
+                "custom/trees/swamp/crag4"
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.5,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [{"block": "minecraft:short_grass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.030,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [{"block": "minecraft:tall_grass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.070,
+            "style":{
+                "style": "IRIS",
+                "zoom": 0.28
+            },
+            "variance":{
+                "style": "STATIC",
+                "zoom": 0.3
+            },
+            "palette": [{"block": "minecraft:poppy"}]
+        },
+        {
+            "chance": 0.030,
+            "palette": [{"block": "minecraft:small_dripleaf"}]
+        }
+    ]
+}

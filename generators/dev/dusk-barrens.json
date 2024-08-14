@@ -1,0 +1,40 @@
+{
+    "interpolator": {
+        "function": "STARCAST_3",
+        "horizontalScale": 3141.8
+    },
+    "seed": 2795,
+    "composite": [
+        {
+            "seed": 5927,
+            "style": {
+                "style": "VASCULAR_IRIS",
+                "zoom": 76.4,
+                "fracture": {
+                    "style": "FRACTAL_BILLOW_IRIS_HALF",
+                    "zoom": 62.938,
+                    "exponent": 47.0,
+                    "multiplier": 11.712
+                }
+            },
+            "exponent": 15.27,
+            "negative": false
+        },
+        {
+            "seed": 9241,
+            "style": {
+                "style": "CELLULAR_HEIGHT",
+                "zoom": 70.08,
+                "exponent": 1.5,
+                "fracture": {
+                    "style": "TRIOCTAVE_FRACTAL_CUBIC",
+                    "zoom": 63.29,
+                    "exponent": 22.608,
+                    "multiplier": 1.6
+                }
+            },
+            "negative": false,
+            "opacity": 0.532
+        }
+    ]
+}

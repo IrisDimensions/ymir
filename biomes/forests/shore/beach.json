@@ -1,0 +1,50 @@
+{
+  "name": "Beach",
+  "derivative": "BEACH",
+  "vanillaDerivative": "BEACH",
+  "color": "#e7ea48",
+  "generators": [
+    {
+      "min": 0,
+      "max": 2,
+      "generator": "smooth-land"
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "pine_green",
+      "foliageColor": "#419642",
+      "grassColor": "#419642",
+      "skyColor": "#7aa6ce",
+      "waterColor": "#4ac5df",
+      "category": "icy"
+    }
+  ],
+  "biomeStyle": {
+    "style": "GLOB",
+    "zoom": 0.05
+  },
+  "entitySpawners": [
+    "temperate/passive",
+    "temperate/hostile",
+    "temperate/cave"
+  ],
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.5,
+      "palette": [
+        { "block": "minecraft:grass_block", "weight": 20 },
+        { "block": "minecraft:coarse_dirt", "weight": 5 },
+        { "block": "minecraft:packed_mud", "weight": 5 }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [{ "block": "minecraft:dirt" }]
+    }
+  ]
+}

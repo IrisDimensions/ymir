@@ -1,0 +1,36 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_PARAMETRIC_2",
+        "horizontalScale": 4006.0
+    },
+    "seed": 58,
+    "composite": [
+        {
+            "style": {
+                "style": "CLOVER_HERMITE_STARCAST_3",
+                "zoom": 39.0,
+                "exponent": 53.704,
+                "fracture": {
+                    "style": "CELLULAR_IRIS",
+                    "zoom": 39.21,
+                    "cellularZoom": 7.0,
+                    "axialFracturing": true,
+                    "cellularFrequency": 7.0,
+                    "exponent": 8.7,
+                    "multiplier": 53.27
+                }
+            },
+            "negative": true,
+            "seed": 43
+        }
+    ],
+    "cellFractureHeight": 3.0,
+    "cellFractureShuffle": 64.93,
+    "cellFractureZoom": 5.0,
+    "cellPercentSize": 0.0,
+    "multiplicitive": true,
+    "offsetX": 20.0,
+    "offsetZ": 14.0,
+    "opacity": 0.09,
+    "zoom": 37.17
+}

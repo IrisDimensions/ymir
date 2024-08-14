@@ -1,0 +1,34 @@
+{
+    "name": "Tempest Plains",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "rarity": 5,
+    "color": "#b8e84a",
+    "customDerivitives": [{
+        "id": "tempest_plains",
+        "waterColor": "#00f5c2",
+        "skyColor": "#69d3ea",
+        "category": "forest",
+        "foliageColor": "#ab5741"
+    }],
+    "generators": [{
+        "min": 3,
+        "max": 8,
+        "generator": "custom/dream"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "wall":{
+        "palette": [{"block": "minecraft:snow_block"}]
+    },
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:snow_block"}]
+        }
+    ]
+}

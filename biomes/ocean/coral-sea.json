@@ -1,0 +1,90 @@
+{
+    "name": "Coral Sea",
+    "color": "#5C4DEA",
+    "derivative": "DEEP_OCEAN",
+    "vanillaDerivative": "DEEP_OCEAN",
+
+    "generators": [{
+        "generator": "mountain",
+        "max": -40,
+        "min": -100
+    }],
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3
+            },
+            "style": {"style": "NOWHERE"},
+            "zoom": 0.6,
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:clay"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:gravel"},
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:dirt"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:pearlescent_froglight"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 10,
+            "palette": [{"block": "minecraft:gravel"}]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.4,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:seagrass"}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 0,
+            "stackMax": 1,
+            "stackMin": 1,
+            "scaleStack": false,
+            "chance": 0.90,
+            "palette": [
+                {"block": "minecraft:tube_coral"},
+                {"block": "minecraft:tube_coral_fan"},
+                {"block": "minecraft:bubble_coral"},
+                {"block": "minecraft:bubble_coral_fan"},
+                {"block": "minecraft:brain_coral"},
+                {"block": "minecraft:brain_coral_fan"},
+                {"block": "minecraft:horn_coral"},
+                {"block": "minecraft:horn_coral_fan"},
+                {"block": "minecraft:fire_coral"},
+                {"block": "minecraft:fire_coral_fan"}
+            ]
+        }
+    ]
+}

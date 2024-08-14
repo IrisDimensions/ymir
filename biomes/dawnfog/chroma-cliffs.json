@@ -1,0 +1,84 @@
+{
+    "name": "Chroma Cliffs",
+    "derivative": "STONY_PEAKS",
+    "rarity": 1,
+    "color": "#b07312",
+    "vanillaDerivative": "STONY_PEAKS",
+    "biomeScatter": ["STONY_PEAKS"],
+    "biomeSkyScatter": ["STONY_PEAKS"],
+    "customDerivitives": [
+        {
+            "id": "chroma_cliffs",
+            "category": "extreme_hills",
+            "foliageColor": "#ab5741",
+            "grassColor": "#bf9000"
+        }
+    ],
+    "biomeStyle": {
+        "zoom": 1,
+        "style": "GLOB"
+        },
+    "generators": [
+        {
+            "generator": "small-cliffs",
+            "max": 10,
+            "min": -30
+        },
+        {
+            "generator": "plain-cliffs",
+            "max": 50,
+            "min": 10
+        }
+    ],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "palette": [
+            {"block": "minecraft:deepslate"},
+            {"block": "minecraft:tuff"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "STATIC"
+            },
+            "zoom": 2,
+            "palette": [
+                {"block": "minecraft:grass_block","weight": 30},
+                {"block": "minecraft:podzol","weight": 6},
+                {"block": "minecraft:coarse_dirt","weight": 6}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:deepslate"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:deepslate"},
+                {"block": "minecraft:tuff"}
+                ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        }
+    ]
+}

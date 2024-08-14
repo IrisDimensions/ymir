@@ -1,0 +1,74 @@
+{
+    "name": "Mesa Plateau High",
+    "color": "#AF4B1F",
+    "rarity": 3,
+    "derivative": "BADLANDS",
+    "vanillaDerivative": "BADLANDS",
+    "biomeScatter": [
+        "BADLANDS",
+        "ERODED_BADLANDS",
+        "ERODED_BADLANDS"
+    ],
+    "children": ["mesa/plateau-dirt-high"],
+    "generators": [{
+        "min": 70,
+        "max": 110,
+        "generator": "vascular-cracked-cliffs"
+    },
+    {
+        "min": 110,
+        "max": 150,
+        "generator": "vascular-cracked-cliffs"
+    }],
+    "biomeStyle": {"style": "SIMPLEX"},
+    "layers": [
+        {
+            "minHeight": 5,
+            "maxHeight": 5,
+            "style": {"style": "NOWHERE"},
+            "zoom": 0.4,
+            "palette": [
+                {"block": "minecraft:red_terracotta"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:terracotta"},
+                {"block": "minecraft:terracotta"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:orange_terracotta"}]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:white_terracotta"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:terracotta"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:yellow_terracotta"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 8,
+            "palette": [{"block": "minecraft:brown_terracotta"}]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.05,
+        "palette": [{"block": "minecraft:tall_grass"}]
+    }],
+    "lockLayers": true
+}

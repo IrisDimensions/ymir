@@ -1,0 +1,62 @@
+{
+    "vanillaDerivative": "FOREST",
+    "customDerivitives": [{
+        "id": "snowleaf_beach",
+        "category": "icy",
+        "grassColor": "#b8cdc0",
+        "foliageColor": "#aec7bb",
+        "temperature": -1,
+        "humidity": -1,
+        "downfallType": "snow"
+    }],
+    "name": "Snowleaf Beach",
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 7,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "variance":{
+                "style": "IRIS",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "zoom": 1
+                }
+            },
+            "style":{
+                "style": "GLOB",
+                "zoom": 0.3
+            },
+            "chance": 0.86,
+            "palette": [
+                {"block": "minecraft:snow","data": {"layers": 1}},
+                {"block": "minecraft:snow","data": {"layers": 2}},
+                {"block": "minecraft:snow","data": {"layers": 3}}
+            ]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "derivative": "SNOWY_BEACH",
+    "rarity": 1
+}

@@ -1,0 +1,15 @@
+{
+    "interpolator": {
+        "horizontalScale": 1,
+        "function": "NONE"
+    },
+    "seed": 1,
+    "composite": [
+        {
+            "style": {
+                "style": "FLAT"
+            },
+            "seed": 1
+        }
+    ]
+}

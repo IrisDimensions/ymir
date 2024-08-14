@@ -1,0 +1,26 @@
+{
+  "name": "Arid zone",
+  "rarity": 2,
+  "color": "#fbd746",
+  "landBiomeZoom": 1,
+  "landBiomes": [
+    "arid/hill",
+    "arid/plains",
+    "arid/bayou-plains",
+    "arid/bayou-hills"
+  ],
+  "jigsawStructures": [
+    {
+      "separation": 100,
+      "spacing": 100,
+      "spreadType": "LINEAR",
+      "rarity": 5000,
+      "structure": "village-savanna"
+    }
+  ],
+  "shoreHeightMax": 3,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["arid/shore/beach"],
+  "seaBiomes": ["arid/ocean/river"],
+  "entitySpawners": ["hot/passive", "hot/hostile", "hot/cave"]
+}

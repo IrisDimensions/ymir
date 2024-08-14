@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irisjigsawstructureplacement.json",
+    "anyOf": [
+        {
+            "description": "Represents a jigsaw structure placer",
+            "type": "object",
+            "properties": {
+                "structure": {
+                    "type": "string",
+                    "$ref": "#/definitions/erzjigsaw-structures",
+                    "description": "structure\nThe structure to place\n   \nIris Jigsaw Structure\n\nMust be a valid jigsaw-structures (use ctrl+space for auto complete!)"
+                },
+                "rarity": {
+                    "type": "integer",
+                    "description": "rarity\nThe 1 in X chance rarity applies when generating multiple structures at once\n   \nInteger\n\n    \n* Default Value is 100"
+                },
+                "salt": {
+                    "type": "integer",
+                    "minimum": -2147483648,
+                    "maximum": 2147483647,
+                    "description": "salt\nThe salt to use when generating the structure (to differentiate structures)\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is -2147483648\n* Maximum allowed is 2147483647"
+                },
+                "spacing": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "spacing\nAverage distance in chunks between two neighboring generation attempts\n   \nInteger\n\n    \n* Default Value is -1\n* Minimum allowed is 0"
+                },
+                "separation": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "separation\nMinimum distance in chunks between two neighboring generation attempts\nThe maximum distance of two neighboring generation attempts is 2*spacing - separation\n   \nInteger\n\n    \n* Default Value is -1\n* Minimum allowed is 0"
+                },
+                "spreadType": {
+                    "type": "string",
+                    "$ref": "#/definitions/oneof-enum-com-volmit-iris-engine-object-irisjigsawstructureplacement-spreadtype",
+                    "description": "spreadType\nThe method used to spread the structure\n   \nSpreadType\nSpread type\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid SpreadType (use ctrl+space for auto complete!)"
+                },
+                "minDistances": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisjigsawmindistance"},
+                    "description": "minDistances\nList of minimum distances to check for\n   \nList of JigsawMinDistances (Objects)\n\n    \n* Default Value is an empty list"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {
+        "erzjigsaw-structures": {"enum": [
+            "mush-huts",
+            "ocean-monument",
+            "trail-ruins",
+            "woodland-mansion",
+            "ancient-city",
+            "mineshaft",
+            "dungeon-spider",
+            "village-snowy",
+            "witchzone",
+            "pyramid-desert",
+            "igloo",
+            "village-small-frosty",
+            "village-savanna",
+            "pyramid-jungle",
+            "ruins/ruin3",
+            "dungeon-zombie",
+            "village-plains",
+            "archipielago",
+            "village-desert",
+            "underwater-ruin",
+            "ruined-portal",
+            "dungeon-skeleton",
+            "pillager-outpost",
+            "witch",
+            "village-taiga",
+            "village-japanese",
+            "stronghold"
+        ]},
+        "obj-com-volmit-iris-engine-object-irisjigsawmindistance": {"anyOf": [
+            {
+                "description": "Represents the min distance between jigsaw structure placements",
+                "type": "object",
+                "properties": {
+                    "structure": {
+                        "type": "string",
+                        "$ref": "#/definitions/erzjigsaw-structures",
+                        "description": "structure\nThe structure to check against\n   \nIris Jigsaw Structure\n\nMust be a valid jigsaw-structures (use ctrl+space for auto complete!)"
+                    },
+                    "distance": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "distance\nThe min distance in blocks to a placed structure\nWARNING: The performance impact scales exponentially!\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is 0"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]},
+        "oneof-enum-com-volmit-iris-engine-object-irisjigsawstructureplacement-spreadtype": {"oneOf": [
+            {
+                "const": "LINEAR",
+                "description": "Linear spread"
+            },
+            {
+                "const": "TRIANGULAR",
+                "description": "Triangular spread"
+            }
+        ]}
+    }
+}

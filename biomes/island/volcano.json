@@ -1,0 +1,109 @@
+{
+    "name": "Volcano",
+    "derivative": "BEACH",
+    "rarity": 1,
+    "color": "#97ce55",
+    "vanillaDerivative": "BEACH",
+    "customDerivitives": [{
+        "id": "volcano",
+        "skyColor": "#66b6ff",
+        "waterColor": "#6ca3d5",
+        "category": "desert",
+        "downfallType": "none"
+        }],
+    "generators": [{
+        "generator": "custom/dream-mountains",
+        "max": 100,
+        "min": -200
+    },
+    {
+        "generator": "custom/dream-mountains",
+        "max": 220,
+        "min": 100
+    }],
+    "entitySpawners": [
+        "tropical/beach"
+    ],
+    "layers": [
+        {
+            "style":{
+                "style": "GLOB"
+            },
+            "zoom": 0.5,
+            "palette": [
+            {"block": "minecraft:sand","weight": 20},
+            {"block": "minecraft:sandstone","weight": 15}]
+        },
+        {
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 1.5
+            },
+            "maxHeight": 1,
+            "minHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:grass_block"
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 5,
+            "palette": [{"block": "minecraft:sandstone"}]
+        },
+        {
+            "maxHeight": 5,
+            "minHeight": 6,
+            "palette": [
+                {
+                    "block": "minecraft:stone"
+                }
+            ]
+        }
+    ],
+    "wall": {"palette": [
+        {"block": "minecraft:sandstone"},
+        {"block": "minecraft:sand"}
+    ]},
+    "decorators": [
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:tall_grass"}]
+
+        },
+        {
+            "chance": 0.6,
+            "palette": [{"block": "minecraft:short_grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.3,
+            "density": 1,
+            "rotation": {
+                "yAxis": {
+                    "min": -360,
+                    "max": 360,
+                    "interval": 90,
+                    "enabled": true
+                },
+                "enabled": true
+            },
+            "place": [
+                "palmtrees/generic1",
+                "palmtrees/generic2",
+                "palmtrees/generic3",
+                "palmtrees/generic4",
+                "palmtrees/generic5",
+                "palmtrees/generic6",
+                "palmtrees/generic7"
+        ],
+            "translate": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            }
+        }
+    ]
+}

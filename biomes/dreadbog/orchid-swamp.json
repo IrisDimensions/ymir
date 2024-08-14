@@ -1,0 +1,103 @@
+{
+    "name": "Orchid Swamp",
+    "vanillaDerivative": "SWAMP",
+    "derivative": "SWAMP",
+    "rarity": 2,
+    "color": "#b07312",
+    "biomeScatter": ["SWAMP"],
+    "biomeSkyScatter": ["SWAMP"],
+    "generators": [
+        {
+            "generator": "dunes",
+            "max": 12,
+            "min": -10
+        }
+    ],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "zoom": 0.3,
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:granite"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:grass_block","weight": 30},
+                {"block": "minecraft:coarse_dirt","weight": 6},
+                {"block": "minecraft:clay","weight": 6}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:dirt"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:granite"}
+                ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.10,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.50,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": 0
+            },
+            "place": [
+                "custom/trees/swamp/birch1",
+                "custom/trees/swamp/birch2",
+                "custom/trees/swamp/birch3",
+                "custom/trees/swamp/birch4"
+            ]
+        }
+    ]
+}

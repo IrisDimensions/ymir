@@ -1,0 +1,13 @@
+{
+    "weather": "NONE",
+    "timeBlock": {
+        "startHour": 4,
+        "endHour": 12
+    },
+    "spawns": [{
+        "entity": "standard/neutral/bee",
+        "maxSpawns": 2,
+        "minSpawns": 1,
+        "rarity": 1
+    }]
+}

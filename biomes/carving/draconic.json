@@ -1,0 +1,28 @@
+{
+    "name": "Draconic Cavern",
+    "wall": {"palette": [{"block": "minecraft:muddy_mangrove_roots"}]},
+    "layers": [{
+        "maxHeight": 1,
+        "minHeight": 1,
+        "palette": [
+            {"block": "minecraft:packed_mud"},
+            {"block": "minecraft:packed_mud"}
+        ]
+    }],
+    "decorators": [{
+        "chance": 0.001,
+        "style": {"style": "STATIC"},
+        "topPalette": [{"block": "minecraft:muddy_mangrove_roots"}],
+        "stackMax": 5,
+        "stackMin": 1,
+        "palette": [{"block": "minecraft:muddy_mangrove_roots"}]
+    }],
+    "caveCeilingLayers": [{
+        "maxHeight": 1,
+        "minHeight": 1,
+        "palette": [
+            {"block": "minecraft:packed_mud"},
+            {"block": "minecraft:dripstone_block"}
+        ]
+    }]
+}

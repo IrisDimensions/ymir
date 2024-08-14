@@ -1,0 +1,12 @@
+{
+  "name": "Sakura",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 2,
+  "landBiomes": ["sakura/sakura-forest", "sakura/sakura-forest"],
+  "entitySpawners": ["temperate/passive"],
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["sakura/shore/sakura-beach"],
+  "seaBiomes": ["sakura/ocean/sakura-river"]
+}

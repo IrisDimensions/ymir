@@ -1,0 +1,90 @@
+{
+    "name": "Summit Plains",
+    "color": "#1DA571",
+    "rarity": 1,
+    "derivative": "PLAINS",
+    "vanillaDerivative": "PLAINS",
+    "customDerivitives": [{
+        "id": "summit_plains",
+        "foliageColor": "#40C42B",
+        "grassColor": "#41A726",
+        "category": "jungle",
+        "waterColor": "#3AB2A2",
+        "waterFogColor": "#3AB2A2"
+    }],
+    "children": ["summit/plains-hills"],
+    "generators": [{
+        "generator": "smooth-dunes",
+        "max": 20,
+        "min": -10
+    }],
+    "layers": [
+        {"palette": [{"block": "minecraft:grass_block"}]},
+        {
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "style": {"style": "STATIC"},
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:stone"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "slopeCondition":{
+                "maximumSlope": 1.6
+            },
+            "place": [
+                "clutter/sbush1",
+                "clutter/sbush2",
+                "clutter/sbush3"
+            ],
+            "chance": 0.0020,
+            "density": 4
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:short_grass"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:tall_grass"
+                }
+            ]
+        },
+        {
+            "chance": 0.0,
+            "variance": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:orange_tulip"},
+                {"block": "minecraft:white_tulip"},
+                {"block": "minecraft:pink_tulip"},
+                {"block": "minecraft:oxeye_daisy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        }
+    ],
+    "childStyle": {
+        "style": "SIMPLEX",
+        "zoom": 0.5,
+        "exponent": 2
+    }
+}

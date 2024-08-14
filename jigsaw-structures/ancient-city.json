@@ -1,0 +1,6 @@
+{
+    "pieces": ["ancient-city/ancient_city"],
+    "lockY": 20,
+    "maxDepth": 5,
+    "terminate": false
+}

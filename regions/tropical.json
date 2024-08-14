@@ -1,0 +1,151 @@
+{
+  "name": "Tropical",
+  "color": "#54EA2C",
+  "rarity": 2,
+  "landBiomes": [
+    "tropical/wilds",
+    "tropical/plains",
+    "tropical/bamboo-forest",
+    "tropical/mountain",
+    "tropical/mountain-extreme",
+    "tropical/mountain-plains",
+    "tropical/plains-hills"
+  ],
+  "caveBiomes": ["carving/rocky-cavebiome"],
+  "objects": [
+    {
+      "heightmap": {
+        "seed": 1337,
+        "style": {
+          "style": "SIMPLEX",
+          "multiplier": 10
+        },
+        "offsetY": 5
+      },
+      "chance": 0.05,
+      "bottom": true,
+      "density": 1,
+      "place": [
+        "structures/amethyst1",
+        "structures/amethyst2",
+        "structures/amethyst3",
+        "structures/amethyst4",
+        "structures/amethyst5",
+        "structures/amethyst6"
+      ],
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:glass" }],
+          "replace": { "palette": [{ "block": "minecraft:void_air" }] }
+        }
+      ],
+      "enabled": true,
+      "xAxis": {
+        "interval": 90,
+        "max": 360,
+        "min": 0
+      },
+      "yAxis": {
+        "interval": 90,
+        "max": 270,
+        "min": 0
+      },
+      "translate": {
+        "yRandom": 10,
+        "y": 2
+      }
+    }
+  ],
+  "shoreBiomes": [
+    "tropical/island-beach",
+    "tropical/beach",
+    "tropical/beach-bamboo"
+  ],
+  "seaBiomeZoom": 4,
+  "seaBiomes": [
+    "tropical/submerged-volcanic",
+    "tropical/sea/ocean",
+    "ocean/dark-depth-ocean",
+    "ocean/rich-oceans"
+  ],
+  "carving": {
+    "ravines": [
+      {
+        "rarity": 170,
+        "ravine": "jungle/main"
+      }
+    ],
+    "caves": [
+      {
+        "breakSurface": true,
+        "cave": "volcanic/main",
+        "rarity": 75,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": true,
+        "cave": "drip/main",
+        "rarity": 45,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": true,
+        "cave": "rocky/main",
+        "rarity": 50,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      },
+      {
+        "breakSurface": true,
+        "cave": "jungle/main",
+        "rarity": 25,
+        "caveStartHeight": {
+          "max": 400,
+          "min": 15,
+          "style": { "style": "STATIC" }
+        }
+      }
+    ]
+  },
+  "deposits": [
+    {
+      "minHeight": 10,
+      "maxPerChunk": 9,
+      "maxHeight": 92,
+      "minPerChunk": 2,
+      "minSize": 3,
+      "maxSize": 8,
+      "palette": [
+        { "block": "minecraft:lapis_ore" },
+        { "block": "minecraft:redstone_ore" }
+      ],
+      "varience": 8
+    }
+  ],
+  "entitySpawners": [
+    "tropical/passive",
+    "tropical/hostile",
+    "tropical/water",
+    "tropical/cave",
+    "tropical/beach"
+  ],
+  "landBiomeZoom": 5.5,
+  "shoreHeightMin": 3.2,
+  "shoreHeightMax": 9.2,
+  "shoreHeightZoom": 2.14,
+  "loot": {
+    "mode": "REPLACE",
+    "tables": ["tropical/treasure", "tropical/food", "tropical/dungeon"]
+  }
+}

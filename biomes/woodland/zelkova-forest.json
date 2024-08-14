@@ -1,0 +1,126 @@
+{
+    "name": "Zelkova Forest",
+    "derivative": "FOREST",
+    "biomeScatter": ["FOREST"],
+    "biomeSkyScatter": ["FOREST"],
+    "customDerivitives": [
+        {
+            "id": "zelkova_forest",
+            "waterColor": "#59bdd2",
+            "foliageColor": "#256c05",
+            "grassColor": "#5aa738"
+        }
+    ],
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "min": 2,
+            "max": 6
+        }
+    ],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "color": "#274e13",
+    "ores": [
+        {
+            "range":{
+                "min": 100,
+                "max": 120
+            },
+            "chanceStyle":{
+                "style": "GLOB",
+                "zoom": 5
+            },
+            "generateSurface": false,
+            "palette":{
+                "palette": [{"block": "minecraft:redstone_ore"}]
+            },
+            "threshold": 0.1
+        }
+    ],
+    "rarity": 1,
+    "decorators": [
+        {
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.2
+            },
+            "variance":{
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 1
+            },
+            "chance": 0.2,
+            "palette": [
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"}
+            ]
+        },
+        {
+            "chance": 0.5,
+            "palette": [{"block": "minecraft:short_grass"}]
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 7,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"}
+            ]
+    },
+    "objects": [
+        {
+            "chance": 1,
+            "density": 4,
+            "edit": [
+                {"find": [{"block": "minecraft:mangrove_log"}],"replace":{"palette": [{"block": "minecraft:acacia_log"}]}},
+                {"find": [{"block": "minecraft:mangrove_leaves"}],"replace":{"palette": [{"block": "minecraft:dark_oak_leaves"}]}}
+            ],
+            "carvingSupport": "SURFACE_ONLY",
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 1.2
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "trees": [{
+                "anySize": true,
+                "anyTree": true,
+                "treeTypes": ["REDWOOD"]
+            }],
+            "place": [
+                "custom/trees/zelkova/zelkova1",
+                "custom/trees/zelkova/zelkova2",
+                "custom/trees/zelkova/zelkova3",
+                "custom/trees/zelkova/zelkova4",
+                "custom/trees/zelkova/zelkova5"
+            ]
+        }
+    ]
+}

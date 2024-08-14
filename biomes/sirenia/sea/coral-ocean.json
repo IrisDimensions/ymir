@@ -1,0 +1,181 @@
+{
+  "name": "Sirenia Coral Ocean",
+  "color": "#213780",
+  "rarity": 1,
+  "derivative": "LUKEWARM_OCEAN",
+  "vanillaDerivative": "WARM_OCEAN",
+  "generators": [
+    {
+      "min": -71,
+      "max": -37,
+      "generator": "river"
+    }
+  ],
+  "wall": {
+    "palette": [
+      {
+        "block": "minecraft:sand"
+      },
+      {
+        "block": "minecraft:gravel"
+      },
+      {
+        "block": "minecraft:dirt"
+      }
+    ],
+    "style": {
+      "style": "NOWHERE"
+    },
+    "zoom": 0.2
+  },
+  "layers": [
+    {
+      "minHeight": 2,
+      "maxHeight": 6,
+      "palette": [{ "block": "minecraft:sand" }]
+    },
+    { "palette": [{ "block": "minecraft:dirt" }] },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        {
+          "weight": 2,
+          "block": "minecraft:dirt"
+        },
+        { "block": "minecraft:coarse_dirt" }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "place": [
+        "clutter/coralpink1",
+        "clutter/coralpink2",
+        "clutter/coralpink3",
+        "clutter/coralpink4",
+        "clutter/coralpurp1",
+        "clutter/coralpurp2",
+        "clutter/coralpurp3",
+        "clutter/coralred1",
+        "clutter/coralby1",
+        "clutter/coralby2",
+        "clutter/coralby3",
+        "clutter/coralby4"
+      ],
+      "chance": 0.5,
+      "density": 3,
+      "underwater": true,
+      "mode": "CENTER_HEIGHT",
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "max": 360,
+          "min": -360
+        }
+      }
+    },
+    {
+      "place": [
+        "structures/landstone1",
+        "structures/landstone2",
+        "structures/landstone3",
+        "structures/landstone4",
+        "structures/landstone5"
+      ],
+      "chance": 0.334,
+      "density": 3,
+      "mode": "PAINT",
+      "underwater": true,
+      "waterloggable": true,
+      "edit": [
+        {
+          "find": [
+            { "block": "minecraft:grass_block" },
+            { "block": "minecraft:dirt" }
+          ],
+          "replace": { "palette": [{ "block": "minecraft:clay" }] }
+        },
+        {
+          "find": [
+            { "block": "minecraft:tall_grass" },
+            { "block": "minecraft:short_grass" }
+          ],
+          "replace": { "palette": [{ "block": "minecraft:clay" }] }
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.02,
+      "palette": [{ "block": "minecraft:kelp_plant" }],
+      "stackMin": 2,
+      "stackMax": 6
+    },
+    {
+      "forcePlace": true,
+      "partOf": "SEA_FLOOR",
+      "topPalette": [
+        { "block": "minecraft:tall_seagrass", "data": { "half": "upper" } }
+      ],
+      "whitelist": [
+        { "block": "minecraft:tall_seagrass", "data": { "half": "lower" } }
+      ],
+      "stackMax": 2,
+      "chance": 0.1,
+      "palette": [
+        { "block": "minecraft:tall_seagrass", "data": { "half": "lower" } }
+      ]
+    },
+    {
+      "forcePlace": true,
+      "absoluteMaxStack": 1,
+      "stackMax": 1,
+      "stackMin": 1,
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:seagrass" }]
+    },
+    {
+      "forcePlace": true,
+      "chance": 0.008,
+      "palette": [
+        {
+          "data": {
+            "pickles": 2
+          },
+          "block": "minecraft:sea_pickle"
+        },
+        {
+          "data": {
+            "pickles": 3
+          },
+          "block": "minecraft:sea_pickle"
+        },
+        {
+          "data": {
+            "pickles": 4
+          },
+          "block": "minecraft:sea_pickle"
+        }
+      ],
+      "style": { "style": "STATIC" }
+    }
+  ],
+  "effects": [
+    {
+      "particleAltX": 0.3,
+      "particleAltY": 1.960885,
+      "particleAltZ": 0.3,
+      "particleDistanceWidth": 8,
+      "chance": 1,
+      "particleEffect": "BUBBLE_COLUMN_UP",
+      "particleDistance": 5,
+      "particleOffset": 2,
+      "interval": 250,
+      "particleCount": 0
+    }
+  ]
+}

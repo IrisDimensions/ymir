@@ -1,0 +1,28 @@
+{
+    "name": "Woodland Beach",
+    "derivative": "BEACH",
+    "vanillaDerivative": "BEACH",
+    "color": "#e7ea48",
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "layers": [
+        {
+            "style":{
+                "style": "GLOB_IRIS"
+            },
+            "zoom": 0.5,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [{"block": "minecraft:grass_block","weight": 10},
+                        {"block": "minecraft:sand","weight": 5}]
+        }
+    ]
+}

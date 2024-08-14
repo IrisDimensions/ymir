@@ -1,0 +1,22 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE",
+        "horizontalScale": 84.4
+    },
+    "seed": 9276,
+    "composite": [
+        {
+            "style": {
+                "style": "FLAT",
+                "zoom": 0.771,
+                "fracture": {
+                    "style": "CELLULAR_STARCAST_3",
+                    "zoom": 4.395,
+                    "multiplier": 19.3
+                },
+                "exponent": 0.6
+            },
+            "seed": 2309
+        }
+    ]
+}

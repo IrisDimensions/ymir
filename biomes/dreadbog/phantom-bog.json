@@ -1,0 +1,249 @@
+{
+    "name": "Phantom Bog",
+    "vanillaDerivative": "MANGROVE_SWAMP",
+    "derivative": "MANGROVE_SWAMP",
+    "rarity": 1,
+    "color": "#b07312",
+    "biomeScatter": ["MANGROVE_SWAMP"],
+    "biomeSkyScatter": ["MANGROVE_SWAMP"],
+    "generators": [
+        {
+            "generator": "vascular-cracked-cliffs",
+            "max": 8,
+            "min": 5
+        }
+    ],
+    "children": [
+        "dreadbog/swamp-water"
+    ],
+    "childStyle":{
+        "style": "TRIOCTAVE_FRACTAL_CUBIC",
+        "zoom": 0.1,
+        "exponent": 0.37
+    },
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "zoom": 0.3,
+        "palette": [
+            {"block": "minecraft:deepslate"},
+            {"block": "minecraft:mud"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:mud","weight": 30},
+                {"block": "minecraft:grass_block","weight": 20},
+                {"block": "minecraft:coarse_dirt","weight": 15},
+                {"block": "minecraft:podzol","weight": 10}
+            ]
+        },
+        {
+            "style":{
+                "style": "STATIC"
+            },
+            "zoom": 0.3,
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:deepslate"},
+                {"block": "minecraft:mud"}
+                ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "forcePlace": true,
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "forcePlace": true,
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:small_dripleaf"}]
+        },
+        {
+            "chance": 0.1,
+            "style":{
+                "style": "IRIS",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "zoom": 1
+                }
+            },
+            "palette": [
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:cornflower"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "translate":{
+                "y": -3
+            },
+            "forbiddenCollisions": [
+                "icybiome/tentacle1",
+                "icybiome/tentacle2",
+                "trees/darkoak/large-3",
+                "clutter/spruceclutt5",
+                "clutter/spruceclutt6",
+                "trees/darkoak/generic1",
+                "trees/darkoak/generic5",
+                "trees/darkoak/generic6",
+                "trees/darkoak/generic7"
+            ],
+            "edit": [
+                {"find": [
+                    {"block": "minecraft:spruce_slab"},
+                    {"block": "minecraft:spruce_fence"}
+                    ],"replace":{
+                        "palette": [{"block": "minecraft:air"}]
+                    }}
+            ],
+            "chance": 0.1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "mode": "MIN_STILT",
+            "place": [
+                "custom/trees/swamp/deadtree1"
+            ]
+        },
+        {
+            "translate":{
+                "y": -8
+            },
+            "forbiddenCollisions": [
+                "icybiome/tentacle1",
+                "icybiome/tentacle2",
+                "trees/darkoak/large-3",
+                "clutter/spruceclutt5",
+                "clutter/spruceclutt6",
+                "trees/darkoak/generic1",
+                "trees/darkoak/generic5",
+                "trees/darkoak/generic6",
+                "trees/darkoak/generic7"
+            ],
+            "edit": [
+                {"find": [
+                    {"block": "minecraft:spruce_slab"},
+                    {"block": "minecraft:spruce_fence"}
+                    ],"replace":{
+                        "palette": [{"block": "minecraft:air"}]
+                    }}
+            ],
+            "chance": 0.1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "mode": "MIN_STILT",
+            "place": [
+                "custom/trees/swamp/deadtree1"
+            ]
+        },
+        {
+            "chance": 0.30,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "translate":{
+                "y": -2
+            },
+            "edit": [
+                {"find": [
+                    {"block": "minecraft:packed_ice"},
+                    {"block": "minecraft:blue_ice"},
+                    {"block": "minecraft:snow_block"}],
+                        "replace":{
+                            "palette": [{"block": "minecraft:mangrove_wood"}]
+                        }
+                },
+                {"find": [
+                    {"block": "minecraft:snow"}
+                ],
+                    "replace":{
+                        "palette": [{"block": "minecraft:air"}]
+                    }}
+            ],
+            "mode": "MIN_STILT",
+            "place": [
+                "icybiome/tentacle1",
+                "icybiome/tentacle2"
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "chance": 0.05,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "place": [
+                "clutter/l1",
+                "clutter/l2",
+                "clutter/l3",
+                "clutter/l4",
+                "clutter/l5"
+            ]
+        }
+    ]
+}

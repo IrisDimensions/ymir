@@ -1,0 +1,104 @@
+{
+    "name": "Mountain Hills",
+    "color": "#6E7D85",
+    "rarity": 10,
+    "derivative": "WINDSWEPT_HILLS",
+    "vanillaDerivative": "WINDSWEPT_HILLS",
+    "generators": [{
+        "generator": "canyon-steep",
+        "max": 73,
+        "min": 73
+    },
+    {
+        "generator": "mountain",
+        "min": 73,
+        "max": 140
+    }],
+    "wall": {
+        "style": {"style": "STATIC"},
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"},
+            {"block": "minecraft:stone"}
+        ]
+    },
+    "layers": [
+        {
+            "minHeight": 0,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:snow_block"}],
+            "slopeCondition":{"maximumSlope": 3.4}
+
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 3.6
+            },
+            "palette": [{"block": "minecraft:snow_block"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "slopeCondition": {"minimumSlope": 3.95},
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:stone"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 18,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:andesite"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.2,
+            "variance": {
+                "style": "CELLULAR",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10
+                }
+            },
+            "style": {
+                "style": "TRIOCTAVE_SIMPLEX",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            }
+        },
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:short_grass"}]
+                }
+            ],
+        "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.29,
+        "exponent": 7.6
+            },
+        "childShrinkFactor": 1
+}

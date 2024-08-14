@@ -1,0 +1,87 @@
+{
+    "expression": "0.5 + 0.5 * sin(10 * (sin(0.02 * x) + cos(0.02 * y) + sin(0.02 * z))) * exp(-0.1 * sqrt(x * x + y * y + z * z))",
+    "variables": [
+      {
+        "name": "height",
+        "engineStreamValue": "HEIGHT",
+        "engineValue": "ENGINE_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "NOWHERE_SUPERFRACTAL",
+          "zoom": 1.9,
+          "exponent": 14
+        }
+      },
+      {
+        "name": "height2",
+        "engineStreamValue": "OVERLAY_NOISE",
+        "engineValue": "ENGINE_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "NOWHERE_SUPERFRACTAL",
+          "zoom": 1.9,
+          "exponent": 14
+        }
+      },
+      {
+        "name": "engineHeight",
+        "engineStreamValue": "HEIGHT",
+        "engineValue": "FLUID_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "VASCULAR_IRIS_THICK",
+          "cellularFrequency": 0.02,
+          "cellularZoom": 0.50,
+          "zoom": 0.20,
+          "exponent": 6,
+          "multiplier": 1.6,
+          "fracture":{
+            "style": "TRIOCTAVE_SIMPLEX",
+            "zoom": 2,
+            "exponent": 4,
+            "multiplier": 2.1
+          }
+        }
+      },
+      {
+        "name": "fluidHeight",
+        "engineStreamValue": "OVERLAY_NOISE",
+        "engineValue": "FLUID_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "FRACTAL_SMOKE",
+          "cellularFrequency": 0.02,
+          "cellularZoom": 0.05,
+          "zoom": 0.005,
+          "exponent": 6,
+          "multiplier": 1.6,
+          "fracture":{
+            "style": "VIGOCTAVE_FRACTAL_RM_SIMPLEX",
+            "zoom": 0.005,
+            "exponent": 4,
+            "multiplier": 2.1
+          }
+        }
+      },
+      {
+        "name": "engineFluid",
+        "engineStreamValue": "HEIGHT",
+        "engineValue": "FLUID_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "style": "FRACTAL_SMOKE",
+          "cellularFrequency": 0.02,
+          "cellularZoom": 0.05,
+          "zoom": 0.005,
+          "exponent": 6,
+          "multiplier": 3.6,
+          "fracture":{
+            "style": "VIGOCTAVE_FRACTAL_RM_SIMPLEX",
+            "zoom": 0.005,
+            "exponent": 4,
+            "multiplier": 2.1
+          }
+        }
+      }
+    ]
+  }

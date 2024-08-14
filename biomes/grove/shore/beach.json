@@ -1,0 +1,27 @@
+{
+    "vanillaDerivative": "SNOWY_BEACH",
+    "customDerivitives": [{
+        "id": "grove_beach",
+        "grassColor": "#7ecf65",
+        "category": "plains"
+    }],
+    "name": "Grove Beach",
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:sand"}
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "generators": [{
+        "min": 0,
+        "max": 2,
+        "generator": "smooth-land"
+    }],
+    "derivative": "GROVE"
+}

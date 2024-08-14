@@ -1,0 +1,163 @@
+{
+    "name": "Twilight Fens",
+    "vanillaDerivative": "SWAMP",
+    "derivative": "SWAMP",
+    "rarity": 2,
+    "color": "#b07312",
+    "biomeScatter": ["SWAMP"],
+    "biomeSkyScatter": ["SWAMP"],
+    "customDerivitives": [
+        {
+            "id": "twilight_fens_yellow",
+            "category": "swamp",
+            "grassColor": "#44762e",
+            "skyColor": "#3270a9",
+            "fogColor": "#5a8c5c",
+            "waterColor": "#29722c",
+            "waterFogColor": "#5a8c5c",
+            "foliageColor": "#bc9248"
+        },
+        {
+            "id": "twilight_fens_brown",
+            "category": "swamp",
+            "grassColor": "#44762e",
+            "skyColor": "#3270a9",
+            "fogColor": "#5a8c5c",
+            "waterColor": "#29722c",
+            "waterFogColor": "#5a8c5c",
+            "foliageColor": "#83532b"
+        }
+    ],
+    "biomeStyle": {
+        "zoom": 1,
+        "style": "GLOB"
+        },
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": 15,
+            "min": 5
+        }
+    ],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "zoom": 0.3,
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:grass_block","weight": 30},
+                {"block": "minecraft:coarse_dirt","weight": 15},
+                {"block": "minecraft:mud","weight": 2}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:dirt"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+                ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.2,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.50,
+            "density": 2,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": 0
+            },
+            "place": [
+                "trees/oak/lponderosa1",
+                "trees/oak/lponderosa2",
+                "trees/oak/lponderosa3",
+                "trees/oak/lponderosa4",
+                "trees/oak/lponderosa5",
+                "trees/oak/lponderosa6",
+                "trees/oak/lponderosa7",
+                "trees/oak/lponderosa8",
+                "trees/oak/lponderosa9",
+                "trees/oak/lponderosa10"
+            ]
+        },
+        {
+            "chance": 0.50,
+            "density": 2,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": 0
+            },
+            "place": [
+                "trees/oak/mponderosa12",
+                "trees/oak/mponderosa13",
+                "trees/oak/mponderosa14",
+                "trees/oak/mponderosa15",
+                "trees/oak/mponderosa16",
+                "trees/oak/mponderosa17",
+                "trees/oak/mponderosa18",
+                "trees/oak/mponderosa19",
+                "trees/oak/mponderosa20"
+            ]
+        }
+    ]
+}

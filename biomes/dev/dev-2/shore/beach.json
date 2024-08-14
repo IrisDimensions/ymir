@@ -1,0 +1,73 @@
+{
+  "name": "Swamp Beach",
+  "vanillaDerivative": "SWAMP",
+  "derivative": "SWAMP",
+  "rarity": 1,
+  "color": "#b07312",
+  "biomeScatter": ["SWAMP"],
+  "biomeSkyScatter": ["SWAMP"],
+  "generators": [
+    {
+      "generator": "smooth-land",
+      "max": 2,
+      "min": 0
+    }
+  ],
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.5,
+      "palette": [
+        { "block": "minecraft:grass_block", "weight": 40 },
+        { "block": "minecraft:gravel", "weight": 5 },
+        { "block": "minecraft:coarse_dirt", "weight": 5 }
+      ]
+    },
+    {
+      "minHeight": 2,
+      "maxHeight": 4,
+      "palette": [
+        {
+          "block": "minecraft:dirt"
+        },
+        {
+          "block": "minecraft:rooted_dirt"
+        },
+        {
+          "block": "minecraft:coarse_dirt"
+        }
+      ]
+    },
+    {
+      "style": {
+        "style": "FRACTAL_SMOKE"
+      },
+      "minHeight": 4,
+      "maxHeight": 6,
+      "palette": [
+        { "block": "minecraft:tuff" },
+        { "block": "minecraft:andesite" }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.3,
+      "palette": [{ "block": "minecraft:short_grass" }]
+    },
+    {
+      "chance": 0.03,
+      "palette": [{ "block": "minecraft:tall_grass" }]
+    },
+    {
+      "chance": 0.05,
+      "palette": [{ "block": "minecraft:brown_mushroom" }]
+    },
+    {
+      "chance": 0.05,
+      "palette": [{ "block": "minecraft:red_mushroom" }]
+    }
+  ]
+}

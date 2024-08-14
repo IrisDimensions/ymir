@@ -1,0 +1,81 @@
+{
+    "name": "Golden Plains",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "golden_plains",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "children": ["galecrest/golden-mountains"],
+    "childShrinkFactor": 1.5,
+    "childStyle":{
+        "style": "CELLULAR_IRIS_DOUBLE",
+        "exponent": 1,
+        "zoom": 2
+    },
+    "generators": [{
+        "generator": "smooth-land",
+        "max": 10,
+        "min": 5
+    }],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "zoom": 0.5,
+        "palette": [
+            {"block": "minecraft:sandstone"},
+            {"block": "minecraft:sand"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:sand","weight": 30},
+                {"block": "minecraft:sandstone","weight": 10}
+                ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {
+                    "block": "minecraft:sandstone"
+                }
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {
+                    "block": "minecraft:stone"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.01,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "verticalZoom": 5,
+            "chance": 0.004,
+            "variance": {"style": "STATIC"},
+            "stackMax": 5,
+            "style": {"style": "STATIC"},
+            "palette": [{"block": "minecraft:cactus"}],
+            "heightVariance": {"style": "STATIC"},
+            "stackMin": 1
+        }
+    ]
+}

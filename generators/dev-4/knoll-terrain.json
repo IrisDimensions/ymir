@@ -1,0 +1,36 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE_FULL_NEGATIVE_BIAS",
+        "horizontalScale": 5536.0
+    },
+    "seed": 83,
+    "composite": [
+        {
+            "style": {
+                "style": "FRACTAL_CUBIC_IRIS_THICK",
+                "zoom": 32.3,
+                "exponent": 0.0,
+                "fracture": {
+                    "style": "TRIOCTAVE_FRACTAL_FBM_SIMPLEX",
+                    "zoom": 9.0,
+                    "cellularZoom": 10.7,
+                    "axialFracturing": true,
+                    "cellularFrequency": 4.55,
+                    "exponent": 16.3,
+                    "multiplier": 24.525
+                }
+            },
+            "negative": true,
+            "seed": 124
+        }
+    ],
+    "cellFractureHeight": 6.72,
+    "cellFractureShuffle": 52.9,
+    "cellFractureZoom": 26.7,
+    "cellPercentSize": 0.17,
+    "multiplicitive": false,
+    "offsetX": 0.0,
+    "offsetZ": 26.2,
+    "opacity": 0.066,
+    "zoom": 46.0
+}

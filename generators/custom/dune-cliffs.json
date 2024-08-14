@@ -1,0 +1,70 @@
+{
+  "interpolator": {
+    "function": "BILINEAR_STARCAST_9",
+    "horizontalScale": 12
+  },
+  "seed": 7246661,
+  "composite": [
+    {
+      "style": {
+        "style": "GLOB",
+        "zoom": 1.3,
+        "exponent": 0.7,
+        "fracture": {
+          "style": "NOWHERE",
+          "zoom": 0.1,
+          "cellularZoom": 0,
+          "axialFracturing": true,
+          "cellularFrequency": 0,
+          "exponent": 0.01562,
+          "multiplier": 5
+        }
+      },
+      "negative": true,
+      "seed": 10056
+    }
+  ],
+  "cliffHeightMax": 80,
+  "cliffHeightMin": 35,
+  "cliffHeightGenerator": {
+    "seed": 2348,
+    "bezier": true,
+    "enabled": true,
+    "exponent": 0.0,
+    "style": {"style": "CELLULAR_HEIGHT"},
+    "zoom": 0.4,
+    "fracture": [{
+      "bezier": true,
+      "enabled": true,
+      "exponent": 0,
+      "zoom": 0.0001,
+      "style": {
+        "style": "BIOCTAVE_FRACTAL_BILLOW_PERLIN",
+        "axialFracturing": true,
+        "cellularFrequency": 0.0,
+        "cellularZoom": 0.0,
+        "exponent": 0.01562,
+        "multiplier": 0.00001,
+        "zoom": 0.0001
+        },
+      "sinCentered": true,
+      "negative": true,
+      "seed": 0,
+      "parametric": true,
+      "octaves": 1,
+      "offsetX": 0.0,
+      "offsetY": 0.0,
+      "offsetZ": 0.0,
+      "opacity": 0.0
+    }]
+  },
+  "cellFractureHeight": 0.0,
+  "cellFractureShuffle": 0.0,
+  "cellFractureZoom": 1000,
+  "cellPercentSize": 0.0,
+  "multiplicitive": false,
+  "offsetX": 0.0,
+  "offsetZ": 0.0,
+  "opacity": 0.0,
+  "zoom": 0.01
+}

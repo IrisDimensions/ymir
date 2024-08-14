@@ -1,0 +1,59 @@
+{
+    "name": "Golden Spires",
+    "derivative": "DESERT",
+    "vanillaDerivative": "DESERT",
+    "rarity": 5,
+    "customDerivitives": [{
+        "id": "golden_spires",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "generators": [{
+        "generator": "mountain",
+        "max": 35,
+        "min": -60
+    },
+    {
+        "generator": "mountain-large",
+        "max": 100,
+        "min": 35
+
+    }],
+    "wall":{
+        "minHeight": 4,
+        "maxHeight": 10,
+        "palette": [
+            {"block": "minecraft:sandstone"},
+            {"block": "minecraft:sand"}
+            ]
+    },
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [{"block": "minecraft:sand"}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                },
+                {
+                    "weight": 1,
+                    "block": "minecraft:smooth_sandstone"
+                }
+            ]
+        }
+    ],
+    "decorators": [{
+        "chance": 0.002,
+        "palette": [{"block": "minecraft:dead_bush"}]
+    }]
+}

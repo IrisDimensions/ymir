@@ -1,0 +1,66 @@
+{
+    "vanillaDerivative": "RIVER",
+    "customDerivitives": [{
+        "id": "grove_river",
+        "grassColor": "#7ecf65",
+        "category": "river"
+    }],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ],
+    "name": "Grove River",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:sand",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:sand"},
+            {"block": "minecraft:clay"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "river",
+        "max": -50,
+        "min": -80
+    }],
+    "derivative": "RIVER"
+}

@@ -1,0 +1,190 @@
+{
+    "name": "Chroma Slopes",
+    "derivative": "STONY_PEAKS",
+    "rarity": 2,
+    "color": "#b07312",
+    "vanillaDerivative": "STONY_PEAKS",
+    "biomeScatter": ["STONY_PEAKS"],
+    "biomeSkyScatter": ["STONY_PEAKS"],
+    "customDerivitives": [
+        {
+            "id": "chroma_forest_red",
+            "category": "extreme_hills",
+            "foliageColor": "#ab5741",
+            "grassColor": "#38761d"
+        },
+        {
+            "id": "chroma_forest_yellow",
+            "category": "extreme_hills",
+            "foliageColor": "#937331",
+            "grassColor": "#38761d"
+        }
+    ],
+    "biomeStyle": {
+        "zoom": 1,
+        "style": "GLOB"
+        },
+    "generators": [
+        {
+            "generator": "mountain",
+            "max": 20,
+            "min": -50
+        },
+        {
+            "generator": "mountain-large",
+            "max": 130,
+            "min": 20
+        }
+    ],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "palette": [
+            {"block": "minecraft:deepslate"},
+            {"block": "minecraft:tuff"}
+        ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:grass_block","weight": 30},
+                {"block": "minecraft:coarse_dirt","weight": 10}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:deepslate"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:deepslate"},
+                {"block": "minecraft:tuff"}
+                ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.10,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "chance": 0.10,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:large_fern"}]
+        },
+        {
+            "chance": 0.03,
+            "palette": [{"block": "minecraft:tall_grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.20,
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 0.5
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": -2
+            },
+            "place": [
+                "trees/spruce/levergreen1",
+                "trees/spruce/levergreen2",
+                "trees/spruce/levergreen3",
+                "trees/spruce/levergreen4",
+                "trees/spruce/levergreen5"
+            ]
+        },
+        {
+            "chance": 0.10,
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 0.4
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": -2
+            },
+            "place": [
+                "trees/spruce/unfrostedlarge1",
+                "trees/spruce/unfrostedlarge2",
+                "trees/spruce/unfrostedlarge3",
+                "trees/spruce/unfrostedlarge4",
+                "trees/spruce/unfrostedlarge5",
+                "trees/spruce/unfrostedlarge6"
+            ]
+        },
+        {
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:spruce_leaves"}],"replace":{"palette": [{"block": "minecraft:oak_leaves"}]}                }
+            ],
+            "chance": 0.20,
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 0.4
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": -2
+            },
+            "place": [
+                "trees/spruce/levergreen1",
+                "trees/spruce/levergreen2",
+                "trees/spruce/levergreen3",
+                "trees/spruce/levergreen4",
+                "trees/spruce/levergreen5"
+            ]
+        }
+    ]
+}

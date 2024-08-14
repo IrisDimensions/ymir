@@ -1,0 +1,13 @@
+{
+  "name": "Test",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 2,
+  "landBiomes": ["test/test", "test/test-tres"],
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["test/test"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": ["test/test"]
+}

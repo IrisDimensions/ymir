@@ -1,0 +1,77 @@
+{
+    "name": "Glacial Mountain",
+    "color": "#6E7D85",
+    "rarity": 3,
+    "derivative": "WINDSWEPT_HILLS",
+    "vanillaDerivative": "WINDSWEPT_HILLS",
+    "generators": [{
+        "generator": "canyon-steep",
+        "max": 100,
+        "min": 10
+    }],
+    "wall": {
+        "minHeight": 0,
+        "maxHeight": 10,
+        "palette": [
+            {"block": "minecraft:snow_block"}
+        ]
+    },
+    "decorators": [
+                {
+            "chance": 0.40,
+            "variance": {
+                "style": "GLOB",
+                "zoom": 0.8,
+                "fracture": {
+                    "style": "SIMPLEX",
+                    "zoom": 0.2,
+                    "multiplier": 10,
+                    "fracture": {
+                        "style": "STATIC",
+                        "multiplier": 15
+                    }
+                }
+            },
+            "style": {
+                "style": "GLOB",
+                "zoom": 0.8,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 8
+                }
+            },
+            "palette": [
+                {
+                    "block": "minecraft:snow_block"
+                },
+                {
+                    "block": "minecraft:snow"
+                },
+                {
+                    "block": "minecraft:snow",
+                    "data": {"layers": 2}
+                },
+                {
+                    "block": "minecraft:snow",
+                    "data": {"layers": 3}
+                },
+                {
+                    "block": "minecraft:snow",
+                    "data": {"layers": 4}
+                }
+            ]
+        }
+    ],
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:snow_block"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 10,
+            "palette": [{"block": "minecraft:snow_block"}]
+        }
+    ]
+}

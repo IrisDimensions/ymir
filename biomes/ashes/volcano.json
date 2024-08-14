@@ -1,0 +1,80 @@
+{
+    "name": "Ashen Savanna Mountain",
+    "color": "#8C3A16",
+    "rarity": 1,
+    "children": ["ashes/ashen-lava"],
+    "childStyle": {
+        "style": "GLOB",
+        "zoom": 0.28,
+        "exponent": 7.2
+    },
+    "childShrinkFactor": 1,
+    "derivative": "SAVANNA",
+    "vanillaDerivative": "BADLANDS",
+            "customDerivitives": [{
+        "id": "ashen_savanna",
+        "category": "plains",
+        "foliageColor": "#938d76",
+        "grassColor": "#938d76"
+    }],
+    "generators": [{
+        "min": 30,
+        "max": 30,
+        "generator": "custom/dream"
+    },
+    {
+        "generator": "mountain-large",
+        "max": 250,
+        "min": 30
+    }],
+    "wall":{
+        "style":{
+            "style": "NOWHERE_SIMPLEX"
+        },
+        "zoom": 0.5,
+        "palette": [
+            {"block": "minecraft:blackstone","weight": 13},
+            {"block": "minecraft:smooth_basalt","weight": 5},
+            {"block": "minecraft:deepslate","weight": 1},
+            {"block": "minecraft:gravel","weight": 3}
+            ]
+    },
+    "layers": [
+        {
+            "style":{
+                "style": "FRACTAL_SMOKE"
+            },
+            "zoom": 0.5,
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {
+                    "block": "minecraft:blackstone","weight": 30
+                },
+                {
+                    "block": "minecraft:deepslate","weight": 20
+                },
+                {
+                    "block": "minecraft:gravel","weight": 20
+                },
+                {
+                    "block": "minecraft:smooth_basalt","weight": 20
+                }
+                ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 6,
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block": "minecraft:blackstone","weight": 13},
+                {"block": "minecraft:smooth_basalt","weight": 5},
+                {"block": "minecraft:deepslate","weight": 1},
+                {"block": "minecraft:gravel","weight": 3}
+            ]
+        }
+    ]
+}

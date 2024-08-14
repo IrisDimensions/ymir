@@ -1,0 +1,65 @@
+{
+    "vanillaDerivative": "DESERT",
+    "name": "Deep River",
+    "customDerivitives": [{
+        "id": "sangria_river",
+        "foliageColor": "#6ec52b",
+        "grassColor": "#41A726",
+        "category": "desert",
+        "downfallType": "none"
+    }],
+    "layers": [
+        {
+            "style": {"style": "FRACTAL_WATER"},
+            "zoom": 0.5,
+            "palette": [
+                {
+                    "block": "minecraft:sand",
+                    "weight": 5
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 2
+                }
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {"style": "STATIC"},
+            "palette": [
+                {"block": "minecraft:sand"},
+                {"block": "minecraft:brown_terracotta"},
+                {
+                    "weight": 2,
+                    "block": "minecraft:sand"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": -7,
+        "min": -45
+    }],
+    "derivative": "DESERT"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Snowy Sakura",
+  "rarity": 1,
+  "color": "#72d86e",
+  "landBiomeZoom": 1,
+  "landBiomes": ["sakura/snowy-sakura"],
+  "entitySpawners": ["temperate/passive"],
+  "seaBiomeZoom": 1,
+  "shoreBiomeZoom": 1,
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomes": ["sakura/shore/sakura-snowy-beach"],
+  "seaBiomes": ["sakura/ocean/sakura-river"]
+}

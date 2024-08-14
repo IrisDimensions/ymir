@@ -1,0 +1,43 @@
+{
+  "expression": "0.3 + 0.3 * sin(10 * (sin(0.02 * x) + cos(0.02 * z))) - 0.05 * exp(-0.1 * sqrt((x - riverPathX) * (x - riverPathX) + (z - riverPathZ) * (z - riverPathZ)))",
+    "variables": [
+      {
+        "name": "riverPathX",
+        "engineStreamValue": "OVERLAY_NOISE",
+        "engineValue": "FLUID_HEIGHT",
+        "staticValue": 0,
+        "styleValue": {
+          "cellularFrequency": 0.02,
+          "cellularZoom": 1,
+          "exponent": 2,
+          "multiplier": 1.5,
+          "style": "VIGOCTAVE_FRACTAL_RM_SIMPLEX",
+          "zoom": 0.005
+        }
+      },
+      {
+        "name": "riverPathZ",
+        "engineValue": "FLUID_HEIGHT",
+        "engineStreamValue": "OVERLAY_NOISE",
+        "staticValue": 0,
+        "styleValue": {
+          "cellularFrequency": 0.02,
+          "cellularZoom": 1,
+          "exponent": 2,
+          "multiplier": 4,
+          "style": "FRACTAL_SMOKE",
+          "zoom": 0.0007,
+          "fracture":{
+            "imageMap":{
+             "image": "continents",
+              "channel": "RED",
+              "centered": true,
+              "tiled": true,
+              "inverted": false
+            },
+        "zoom": 0.4
+        }
+      }
+    }
+  ]
+}

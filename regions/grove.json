@@ -1,0 +1,13 @@
+{
+  "name": "Grove",
+  "rarity": 1,
+  "color": "#274e13",
+  "landBiomeZoom": 1,
+  "landBiomes": ["grove/pareim", "grove/sunlight-grove", "grove/tall-plateau"],
+  "shoreHeightMax": 2,
+  "shoreHeightMin": 0,
+  "shoreBiomeZoom": 1,
+  "shoreBiomes": ["grove/shore/beach"],
+  "seaBiomeZoom": 1,
+  "seaBiomes": ["grove/sea/river"]
+}

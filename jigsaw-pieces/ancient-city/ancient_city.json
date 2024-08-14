@@ -1,0 +1,22 @@
+{
+    "object": "jigsaw/ancient-city/ancient_city",
+    "placementOptions": {
+        "loot": ["structures/ancient-city"],
+        "overrideGlobalLoot": true,
+        "bore": true,
+        "warp":{
+            "style": "FRACTAL_SMOKE",
+            "zoom": 0.4
+        },
+        "mode": "CENTER_HEIGHT",
+        "carvingSupport": "ANYWHERE",
+        "edit": [
+            {
+                "find": [{"block": "minecraft:sculk_shrieker"}],
+                "replace":{
+                    "palette": [{"block": "minecraft:sculk_shrieker","data": {"can_summon": true}}]
+                }
+            }
+        ]
+    }
+}

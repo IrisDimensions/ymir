@@ -1,0 +1,365 @@
+{
+    "name": "Frozen Runelands",
+    "derivative": "FOREST",
+    "vanillaDerivative": "FOREST",
+    "rarity": 1,
+    "customDerivitives": [{
+        "id": "frozen_runelands",
+        "foliageColor": "#f0f8ff",
+        "grassColor": "#f9eee4",
+        "temperature": -1,
+        "downfallType": "snow",
+        "category": "plains"
+    }],
+    "generators": [{
+        "generator": "plain",
+        "max": 16,
+        "min": 10
+    }],
+    "layers": [
+        {
+            "style": {"style": "STATIC"},
+            "slopeCondition": {
+                "maximumSlope": 2.1,
+                "minimumSlope": 0
+            },
+            "minHeight": 1,
+            "maxHeight": 2,
+            "palette": [
+                {
+                    "block": "minecraft:snow_block"
+                }
+            ]
+        },
+        {
+            "style":{
+                "style": "FRACTAL_WATER",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "multiplier": 2
+                }
+            },
+            "slopeCondition":{
+                "maximumSlope": 2.1,
+                "minimumSlope": 0.6
+            },
+            "minHeight": 3,
+            "maxHeight": 3,
+            "palette": [{"block": "minecraft:stone"}]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 3,
+            "style": {
+                "style": "FRACTAL_WATER",
+                "zoom": 0.3,
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 15
+                }
+            },
+            "zoom": 0.4,
+            "slopeCondition": {
+                "minimumSlope": 0,
+                "maximumSlope": 2.1
+            },
+            "palette": [{
+                "block": "minecraft:stone",
+                "weight": 4
+            },
+            {"block": "minecraft:snow_block","weight": 2}]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style": {"style": "STATIC"},
+            "slopeCondition": {"minimumSlope": 1.5},
+            "palette": [
+                {
+                    "block": "minecraft:snow_block"
+                }
+            ]
+        },
+        {
+            "minHeight": 6,
+            "maxHeight": 10,
+            "style": {"style": "STATIC"},
+            "palette": [{
+                "block": "minecraft:snow_block"
+            }]
+        }
+    ],
+    "wall": {"palette": [{"block": "minecraft:snow_block"}]},
+    "objects": [
+            {
+            "edit": [
+                {
+                    "find": [
+                        {
+                            "block": "minecraft:chorus_plant"
+                        }
+                    ],
+                    "replace":{
+                        "palette": [{"block": "minecraft:oak_leaves"}]
+                    }
+                }
+            ],
+            "place": [
+                "custom/trees/spruce/frosted_spruce1",
+                "custom/trees/spruce/frosted_spruce2",
+                "custom/trees/spruce/frosted_spruce3",
+                "custom/trees/spruce/frosted_spruce4",
+                "custom/trees/spruce/frosted_spruce5",
+                "custom/trees/spruce/frosted_spruce6",
+                "custom/trees/spruce/frosted_spruce7",
+                "custom/trees/spruce/frosted_spruce8",
+                "custom/trees/spruce/frosted_spruce9"
+            ],
+            "trees": [
+                {
+                    "anyTree": true,
+                    "anySize": true,
+                    "treeTypes": ["REDWOOD"]
+                }
+            ],
+            "chance": 0.25,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "forbiddenCollisions": [
+                "custom/trees/spruce/frosted_spruce1",
+                "custom/trees/spruce/frosted_spruce2",
+                "custom/trees/spruce/frosted_spruce3",
+                "custom/trees/spruce/frosted_spruce4",
+                "custom/trees/spruce/frosted_spruce5",
+                "custom/trees/spruce/frosted_spruce6",
+                "custom/trees/spruce/frosted_spruce7",
+                "custom/trees/spruce/frosted_spruce8",
+                "custom/trees/spruce/frosted_spruce9",
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/trees/spruce/spruce6",
+                "custom/trees/spruce/spruce7",
+                "custom/trees/spruce/spruce8",
+                "custom/trees/spruce/spruce9",
+                "clutter/singleicespike1",
+                "clutter/singleicespike2"
+            ]
+        },
+        {
+            "place": [
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/trees/spruce/spruce6",
+                "custom/trees/spruce/spruce7",
+                "custom/trees/spruce/spruce8",
+                "custom/trees/spruce/spruce9"
+            ],
+            "trees": [
+                {
+                    "anyTree": true,
+                    "anySize": true,
+                    "treeTypes": ["REDWOOD"]
+                }
+            ],
+            "chance": 0.35,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "forbiddenCollisions": [
+                "custom/trees/spruce/frosted_spruce1",
+                "custom/trees/spruce/frosted_spruce2",
+                "custom/trees/spruce/frosted_spruce3",
+                "custom/trees/spruce/frosted_spruce4",
+                "custom/trees/spruce/frosted_spruce5",
+                "custom/trees/spruce/frosted_spruce6",
+                "custom/trees/spruce/frosted_spruce7",
+                "custom/trees/spruce/frosted_spruce8",
+                "custom/trees/spruce/frosted_spruce9",
+                "clutter/singleicespike1",
+                "clutter/singleicespike2"
+            ]
+        },
+        {
+            "forbiddenCollisions": [
+                "custom/trees/spruce/frosted_spruce1",
+                "custom/trees/spruce/frosted_spruce2",
+                "custom/trees/spruce/frosted_spruce3",
+                "custom/trees/spruce/frosted_spruce4",
+                "custom/trees/spruce/frosted_spruce5",
+                "custom/trees/spruce/frosted_spruce6",
+                "custom/trees/spruce/frosted_spruce7",
+                "custom/trees/spruce/frosted_spruce8",
+                "custom/trees/spruce/frosted_spruce9",
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/trees/spruce/spruce6",
+                "custom/trees/spruce/spruce7",
+                "custom/trees/spruce/spruce8",
+                "custom/trees/spruce/spruce9",
+                "clutter/singleicespike1",
+                "clutter/singleicespike2"
+            ],
+            "place": [
+                "structures/r1",
+                "structures/r2"
+            ],
+            "chance": 0.003,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "forbiddenCollisions": [
+                "custom/trees/spruce/frosted_spruce1",
+                "custom/trees/spruce/frosted_spruce2",
+                "custom/trees/spruce/frosted_spruce3",
+                "custom/trees/spruce/frosted_spruce4",
+                "custom/trees/spruce/frosted_spruce5",
+                "custom/trees/spruce/frosted_spruce6",
+                "custom/trees/spruce/frosted_spruce7",
+                "custom/trees/spruce/frosted_spruce8",
+                "custom/trees/spruce/frosted_spruce9",
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/trees/spruce/spruce6",
+                "custom/trees/spruce/spruce7",
+                "custom/trees/spruce/spruce8",
+                "custom/trees/spruce/spruce9",
+                "clutter/singleicespike1",
+                "clutter/singleicespike2"
+            ],
+            "mode": "FAST_MIN_HEIGHT",
+            "place": [
+                "structures/r3",
+                "structures/r4",
+                "structures/r5"
+            ],
+            "chance": 0.003,
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": -1,
+                "z": 0
+            }
+        },
+        {
+            "mode": "PAINT",
+            "chance": 0.08,
+            "place": [
+                "clutter/arbusto1",
+                "clutter/arbusto2",
+                "clutter/arbusto4",
+                "clutter/arbusto5"
+            ],
+            "rotation": {
+                "enabled": true,
+                "yAxis": {
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "translate": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "edit": [{
+                "find": [{"block": "minecraft:spruce_leaves"}],
+                "replace": {"palette": [{
+                    "block": "minecraft:oak_leaves",
+                    "data": {"persistent": true}
+                }]}
+            }]
+        },
+        {
+            "forbiddenCollisions": [
+                "custom/trees/spruce/frosted_spruce1",
+                "custom/trees/spruce/frosted_spruce2",
+                "custom/trees/spruce/frosted_spruce3",
+                "custom/trees/spruce/frosted_spruce4",
+                "custom/trees/spruce/frosted_spruce5",
+                "custom/trees/spruce/frosted_spruce6",
+                "custom/trees/spruce/frosted_spruce7",
+                "custom/trees/spruce/frosted_spruce8",
+                "custom/trees/spruce/frosted_spruce9",
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/trees/spruce/spruce6",
+                "custom/trees/spruce/spruce7",
+                "custom/trees/spruce/spruce8",
+                "custom/trees/spruce/spruce9",
+                "clutter/singleicespike1",
+                "clutter/singleicespike2"
+            ],
+            "mode": "CENTER_HEIGHT",
+            "chance": 0.05,
+            "translate":{
+                "y": -3,
+                "yRandom": -2
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 180,
+                    "min": -180
+                }
+            },
+            "place": [
+                "clutter/singleicespike1",
+                "clutter/singleicespike2"
+            ]
+        }
+    ]
+}

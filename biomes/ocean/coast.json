@@ -1,0 +1,106 @@
+{
+    "name": "Coast",
+    "derivative": "BEACH",
+    "rarity": 300,
+    "color": "#b07312",
+    "vanillaDerivative": "BEACH",
+    "biomeScatter": ["BEACH"],
+    "biomeSkyScatter": ["BEACH"],
+    "generators": [
+        {
+            "generator": "mountain",
+            "max": 5,
+            "min": -50
+        }
+    ],
+    "wall":{
+        "style":{
+            "style": "STATIC"
+        },
+        "palette": [
+            {"block": "minecraft:deepslate"},
+            {"block": "minecraft:tuff"}
+        ]
+    },
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [
+                {"block": "minecraft:deepslate"}
+                ]
+        },
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.5,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 1
+                }
+            },
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:deepslate"},
+                {"block": "minecraft:tuff"}
+                ]
+        }
+    ],
+    "objects": [
+        {
+            "forbiddenCollisions": [
+                "palmtrees/generic1",
+                "palmtrees/generic2",
+                "palmtrees/generic3",
+                "palmtrees/generic4",
+                "palmtrees/generic5",
+                "palmtrees/generic6",
+                "palmtrees/generic7"
+            ],
+            "chance": 0.10,
+            "mode": "PAINT",
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 0.2
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "edit": [
+                {"find": [{"block": "minecraft:note_block"}],
+                "replace":{
+                    "palette": [{"block": "minecraft:jungle_log"}]
+                }}
+            ],
+            "place": [
+                "palmtrees/generic1",
+                "palmtrees/generic2",
+                "palmtrees/generic3",
+                "palmtrees/generic4",
+                "palmtrees/generic5",
+                "palmtrees/generic6",
+                "palmtrees/generic7"
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.5,
+            "palette": [
+                {"block": "minecraft:short_grass"}
+            ]
+        }
+    ]
+}

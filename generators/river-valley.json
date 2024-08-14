@@ -1,0 +1,21 @@
+{
+    "interpolator": {
+        "function": "HERMITE_STARCAST_9",
+        "horizontalScale": 5
+    },
+    "seed": 510,
+    "composite": [{
+        "seed": 530,
+        "zoom": 0.8,
+        "style": {
+            "style": "VASCULAR_IRIS",
+            "zoom": 3,
+            "fracture": {
+                "style": "FRACTAL_FBM_SIMPLEX",
+                "zoom": 0.5,
+                "exponent": 1.5
+            }
+        },
+        "negative": true
+    }]
+}

@@ -1,0 +1,67 @@
+{
+    "vanillaDerivative": "RIVER",
+    "customDerivitives": [{
+        "id": "terralost_alpine_river",
+        "grassColor": "#80ab69",
+        "category": "river"
+    }],
+    "decorators": [
+        {
+            "chance": 0.07,
+            "variance": {"style": "STATIC"},
+            "zoom": 5,
+            "palette": [{"block": "minecraft:seagrass"}],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "chance": 0.013,
+            "verticalZoom": 88,
+            "variance": {"style": "STATIC"},
+            "stackMax": 6,
+            "zoom": 1,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "IRIS"},
+            "stackMin": 2
+        }
+    ],
+    "name": "Alpine River",
+    "layers": [
+        {
+            "minHeight": 2,
+            "maxHeight": 3,
+            "style": {
+                "style": "IRIS_DOUBLE",
+                "fracture": {
+                    "style": "STATIC",
+                    "multiplier": 30
+                }
+            },
+            "zoom": 0.7,
+            "palette": [
+                {
+                    "block": "minecraft:cobblestone",
+                    "weight": 3
+                },
+                {
+                    "block": "minecraft:clay",
+                    "weight": 1
+                },
+                {
+                    "block": "minecraft:gravel",
+                    "weight": 8
+                }
+            ]
+        },
+        {"palette": [
+            {"block": "minecraft:cobblestone"},
+            {"block": "minecraft:stone"}
+        ]}
+    ],
+    "generators": [{
+        "generator": "smooth-land",
+        "max": -18,
+        "min": -25
+    }],
+    "derivative": "RIVER"
+}

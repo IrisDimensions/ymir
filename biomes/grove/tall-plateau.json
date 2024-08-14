@@ -1,0 +1,355 @@
+{
+    "name": "Tall Plateau",
+    "vanillaDerivative": "PLAINS",
+    "derivative": "PLAINS",
+    "rarity": 1,
+    "color": "#66cdaa",
+    "customDerivitives": [
+        {
+            "id": "tall_plateau_orange",
+            "category": "plains",
+            "foliageColor": "#c7782f",
+            "grassColor": "#7ecf65",
+            "humidity": 0.4,
+            "temperature": 0.2,
+            "downfallType": "rain"
+        },
+        {
+            "id": "tall_plateau_darker_orange",
+            "category": "plains",
+            "foliageColor": "#c7692f",
+            "grassColor": "#7ecf65",
+            "humidity": 0.4,
+            "temperature": 0.2,
+            "downfallType": "rain"
+        }
+    ],
+    "biomeStyle":{
+        "style": "STATIC",
+        "zoom": 0.5
+    },
+    "generators": [
+        {
+            "generator": "mountain",
+            "min": 20,
+            "max": 50
+        },
+        {
+            "generator": "canyon-steep",
+            "max": 50,
+            "min": 58
+        }
+    ],
+    "jigsawStructures": [
+        {
+            "separation": 100,
+            "spacing": 100,
+            "spreadType": "LINEAR",
+            "rarity": 4000,
+            "structure": "pillager-outpost"
+        }
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"}
+        ]
+    },
+    "layers": [
+        {
+            "slopeCondition":{
+                "maximumSlope": 2.1
+            },
+            "style":{
+                "style": "NOWHERE_SIMPLEX"
+            },
+            "zoom": 0.5,
+            "palette": [
+                {"block":"minecraft:grass_block","weight": 50},
+                {"block":"minecraft:coarse_dirt","weight": 10},
+                {"block":"minecraft:packed_mud","weight": 10}
+            ]
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 2.1
+            },
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+                {"block": "minecraft:dirt"}
+            ]
+        },
+        {
+            "minHeight": 3,
+            "maxHeight": 6,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "chance": 0.3,
+            "palette": [
+                {"block": "minecraft:short_grass"}
+            ]
+        },
+        {
+            "chance": 0.03,
+            "palette": [
+                {"block": "minecraft:tall_grass"}
+            ]
+        },
+        {
+            "chance": 0.03,
+            "palette": [
+                {"block": "minecraft:large_fern"}
+            ]
+        },
+        {
+            "chance": 0.2,
+            "palette": [
+                {"block": "minecraft:fern"}
+            ]
+        },
+        {
+            "chance": 0.18,
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.2
+            },
+            "variance":{
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 1
+            },
+            "palette": [
+                {"block": "minecraft:azure_bluet"},
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:blue_orchid"},
+                {"block": "minecraft:red_tulip"},
+                {"block": "minecraft:cornflower"}
+            ]
+        },
+        {
+            "chance": 0.20,
+            "forcePlace": true,
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.2
+            },
+            "variance":{
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 1
+            },
+            "palette": [
+                {"block": "minecraft:sweet_berry_bush","data": {"age": 1}},
+                {"block": "minecraft:sweet_berry_bush","data": {"age": 3}}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.4,
+            "density": 1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "slopeCondition":{
+                "maximumSlope": 1.6
+            },
+            "edit": [
+                {"find": [
+                    {"block": "minecraft:spruce_log"}
+                ],
+                "replace":{
+                    "palette": [{"block": "minecraft:oak_log"}]
+                }}
+            ],
+            "clamp":{
+                "minimumHeight": 200
+            },
+            "forbiddenCollisions": [
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/rare/birch1"
+            ],
+            "place": [
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5"
+            ]
+        },
+        {
+            "chance": 0.1,
+            "density": 1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "edit": [
+                {"find": [
+                    {"block": "minecraft:oak_leaves"}
+                ],
+                "replace":{
+                    "palette": [{"block": "minecraft:spruce_leaves"}]
+                }},
+                {
+                    "find": [{"block": "minecraft:spruce_fence"}],
+                    "replace":{
+                        "palette": [{"block": "minecraft:oak_leaves"}]
+                    }
+                }
+            ],
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7",
+                "bushes/8"
+            ]
+        },
+        {
+            "slopeCondition":{
+                "maximumSlope": 0.8
+            },
+            "clamp":{
+                "minimumHeight": 200
+            },
+            "chance": 0.10,
+            "density": 1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:oak_leaves"}],
+                    "replace":{
+                        "palette": [{"block": "minecraft:birch_leaves"}]
+                    }
+                }
+            ],
+            "forbiddenCollisions": [
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/rare/birch1"
+            ],
+            "place": [
+                "custom/rare/birch1"
+            ]
+        },
+        {
+            "chance": 0.4,
+            "density": 1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "slopeCondition":{
+                "maximumSlope": 1.6
+            },
+            "edit": [
+                {
+                    "find": [
+                    {"block": "minecraft:spruce_log"}
+                ],
+                "replace":{
+                    "palette": [{"block": "minecraft:oak_log"}]
+                    }
+                },
+                {
+                    "find": [
+                        {
+                            "block": "minecraft:spruce_leaves"
+                        }
+                    ],
+                    "replace":{
+                        "palette": [{"block": "minecraft:oak_leaves"}]
+                    }
+                }
+            ],
+            "clamp":{
+                "minimumHeight": 200
+            },
+            "forbiddenCollisions": [
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/rare/birch1"
+            ],
+            "place": [
+                "custom/trees/spruce/spruce1",
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5"
+            ]
+        },
+        {
+            "chance": 0.10,
+            "density": 1,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "slopeCondition":{
+                "maximumSlope": 2.1
+            },
+            "edit": [
+                {
+                    "find": [{"block": "minecraft:spruce_fence"}],
+                    "replace":{
+                        "palette": [{"block": "minecraft:oak_leaves"}]
+                    }
+                }
+            ],
+            "place": [
+                "clutter/oakshrub1",
+                "clutter/oakshrub2",
+                "clutter/oakshrub3",
+                "clutter/oakshrub4"
+            ]
+        }
+    ]
+}

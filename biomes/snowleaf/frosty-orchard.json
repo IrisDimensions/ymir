@@ -1,0 +1,93 @@
+{
+    "name": "Frosty Orchard",
+    "derivative": "SNOWY_PLAINS",
+    "rarity": 1,
+    "color": "#505051",
+    "customDerivitives": [{
+        "id": "frosty_orchard",
+        "category": "icy",
+        "grassColor": "#b8cdc0",
+        "foliageColor": "#906292",
+        "temperature": -1,
+        "humidity": -1,
+        "downfallType": "snow"
+    }],
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "max": 5,
+            "min": 2
+        }
+    ],
+    "layers": [
+        {
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "style":{
+                "style": "STATIC"
+            },
+            "zoom": 0.3,
+            "palette": [
+                {"block": "minecraft:dirt"},
+                {"block": "minecraft:coarse_dirt"}
+            ]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 7,
+            "palette": [
+                {"block": "minecraft:stone"},
+                {"block": "minecraft:andesite"}
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "style":{
+                "style": "STATIC",
+                "zoom": 0.4,
+                "fracture":{
+                    "style": "IRIS",
+                    "zoom": 0.6
+                }
+            },
+            "chance": 0.70,
+            "palette": [
+                {"block": "minecraft:allium"},
+                {"block": "minecraft:peony"},
+                {"block": "minecraft:lilac"},
+                {"block": "minecraft:tall_grass"},
+                {"block": "minecraft:pink_tulip"}
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.30,
+            "place": [
+                "custom/trees/terra/birch1",
+                "custom/trees/terra/birch2",
+                "custom/trees/terra/birch3",
+                "custom/trees/terra/birch4",
+                "custom/rare/birch1"
+            ],
+            "snow": 0.4,
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "translate":{
+                "y": -1
+            }
+        }
+    ]
+}

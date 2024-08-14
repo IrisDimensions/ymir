@@ -1,0 +1,65 @@
+{
+    "interpolator": {
+        "function": "HERMITE_LOOSE_FULL_POSITIVE_BIAS",
+        "horizontalScale": 82.0
+    },
+    "seed": 85,
+    "composite": [
+        {
+            "style": {
+                "style": "CELLULAR_IRIS_THICK",
+                "zoom": 0.0,
+                "exponent": 53.889,
+                "fracture": {
+                    "style": "CELLULAR_IRIS_HALF",
+                    "zoom": 11.0,
+                    "cellularZoom": 17.33,
+                    "axialFracturing": false,
+                    "cellularFrequency": 17.65,
+                    "exponent": 12.84,
+                    "multiplier": 33.894
+                }
+            },
+            "negative": true,
+            "seed": 148
+        }
+    ],
+    "cliffHeightMax": 18.3,
+    "cliffHeightMin": 18.7,
+    "cliffHeightGenerator": {
+        "seed": 78,
+        "bezier": false,
+        "enabled": true,
+        "exponent": 53.797,
+        "style": {
+            "style": "CELLULAR_BICUBIC"
+        },
+        "zoom": 2.681,
+        "fracture": [
+            {
+                "bezier": true,
+                "enabled": true,
+                "exponent": 5.59,
+                "zoom": 28.74,
+                "style": {
+                    "style": "STATIC_BICUBIC",
+                    "axialFracturing": false,
+                    "cellularFrequency": 15.047,
+                    "cellularZoom": 17.274,
+                    "exponent": 20.45,
+                    "multiplier": 26.64,
+                    "zoom": 1.55
+                },
+                "sinCentered": false,
+                "negative": false,
+                "seed": 33,
+                "parametric": true,
+                "octaves": 13,
+                "offsetX": 22.0,
+                "offsetY": 7.74,
+                "offsetZ": 12.61,
+                "opacity": 0.96
+            }
+        ]
+    }
+}

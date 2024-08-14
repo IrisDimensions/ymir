@@ -1,0 +1,109 @@
+{
+    "name": "Swamp Beach",
+    "color": "#55A300",
+    "rarity": 1,
+    "derivative": "SWAMP",
+    "vanillaDerivative": "BEACH",
+    "generators": [{
+        "min": -5,
+        "max": 1,
+        "generator": "plain"
+    }],
+    "layers": [{
+        "minHeight": 3,
+        "maxHeight": 6,
+        "style": {"style": "NOWHERE"},
+        "zoom": 0.2,
+        "palette": [
+            {"block": "minecraft:coarse_dirt"},
+            {"block": "minecraft:mud"}
+        ]
+    }],
+    "objects": [{
+        "place": [
+            "trees/jungle/lgeneric1",
+            "trees/jungle/lgeneric2",
+            "trees/jungle/lgeneric3",
+            "trees/jungle/lgeneric4",
+            "trees/jungle/lgeneric5",
+            "trees/jungle/lgeneric7",
+            "trees/jungle/lgeneric8",
+            "trees/jungle/lgeneric9"
+        ],
+        "chance": 0.24,
+        "density": 3,
+        "edit": [
+            {
+                "find": [{"block": "minecraft:jungle_leaves"}],
+                "replace": {"palette": [{"block": "minecraft:oak_leaves"}]}
+            },
+            {
+                "find": [{"block": "minecraft:jungle_wood"}],
+                "replace": {"palette": [{"block": "minecraft:dark_oak_wood"}]}
+            },
+            {
+                "find": [{"block": "minecraft:jungle_log"}],
+                "replace": {"palette": [{"block": "minecraft:dark_oak_wood"}]}
+            }
+        ],
+        "rotation": {
+            "enabled": true,
+            "yAxis": {
+                "enabled": true,
+                "interval": 90,
+                "min": 0,
+                "max": 270
+            }
+        },
+        "translate": {"y": -3}
+    }],
+    "decorators": [
+        {
+            "data": {
+                "eggs": 1,
+                "hatch": 0
+            },
+            "block": "minecraft:turtle_egg"
+        },
+        {
+            "data": {
+                "eggs": 2,
+                "hatch": 0
+            },
+            "block": "minecraft:turtle_egg"
+        },
+        {
+            "data": {
+                "eggs": 3,
+                "hatch": 0
+            },
+            "block": "minecraft:turtle_egg"
+        },
+        {
+            "chance": 0.01,
+            "variance": {"style": "STATIC"},
+            "zoom": 0.3,
+            "palette": [
+                {
+                    "data": {
+                        "face": "floor",
+                        "powered": false,
+                        "facing": "east"
+                    },
+                    "block": "minecraft:dark_oak_button"
+                },
+                {"block": "minecraft:air"}
+            ],
+            "style": {"style": "STATIC"}
+        },
+        {
+            "partOf": "SHORE_LINE",
+            "chance": 0.29,
+            "stackMin": 1,
+            "stackMax": 4,
+            "palette": [{"block": "minecraft:sugar_cane"}],
+            "style": {"style": "STATIC"},
+            "heightVariance": {"style": "STATIC"}
+        }
+    ]
+}

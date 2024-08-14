@@ -1,0 +1,23 @@
+{
+    "interpolator": {
+        "function": "BILINEAR_STARCAST_12"
+    },
+    "seed": 340,
+    "composite": [{
+        "negative": false,
+        "seed": 620,
+
+    "style":{
+                    "imageMap":{
+                        "channel": "COMPOSITE_ADD_RGB",
+                        "coordinateScale": 8,
+                        "image": "MultiCellDistances",
+                        "centered": true,
+                        "interpolationMethod": "STARCAST_12",
+                        "tiled": true
+
+                    },
+                    "zoom": 0.8
+                }
+    }]
+}

@@ -1,0 +1,170 @@
+{
+  "name": "Crag Beach",
+  "color": "#57DFA9",
+  "rarity": 1,
+  "derivative": "JUNGLE",
+  "vanillaDerivative": "JUNGLE",
+  "generators": [
+    {
+      "min": 0,
+      "max": 4,
+      "generator": "plain"
+    }
+  ],
+  "wall": { "palette": [{ "block": "minecraft:mossy_cobblestone" }] },
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.5,
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        { "block": "minecraft:mossy_cobblestone", "weight": 30 },
+        { "block": "minecraft:moss_block", "weight": 30 }
+      ]
+    },
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.5,
+      "minHeight": 3,
+      "maxHeight": 6,
+      "palette": [
+        { "block": "minecraft:mossy_cobblestone", "weight": 30 },
+        { "block": "minecraft:moss_block", "weight": 20 }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "whitelist": [{ "block": "minecraft:moss_block" }],
+      "stackMin": 1,
+      "stackMax": 7,
+      "chance": 0.09,
+      "variance": { "style": "STATIC" },
+      "palette": [
+        {
+          "data": {
+            "stage": 0,
+            "age": 0,
+            "leaves": "none"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 1,
+            "age": 0,
+            "leaves": "none"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 0,
+            "age": 1,
+            "leaves": "none"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 1,
+            "age": 1,
+            "leaves": "none"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 0,
+            "age": 0,
+            "leaves": "small"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 1,
+            "age": 0,
+            "leaves": "small"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 0,
+            "age": 1,
+            "leaves": "small"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 1,
+            "age": 1,
+            "leaves": "small"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 0,
+            "age": 0,
+            "leaves": "large"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 1,
+            "age": 0,
+            "leaves": "large"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 0,
+            "age": 1,
+            "leaves": "large"
+          },
+          "block": "minecraft:bamboo"
+        },
+        {
+          "data": {
+            "stage": 1,
+            "age": 1,
+            "leaves": "large"
+          },
+          "block": "minecraft:bamboo"
+        }
+      ],
+      "style": { "style": "STATIC" }
+    },
+    {
+      "whitelist": [{ "block": "minecraft:moss_block" }],
+      "partOf": "SHORE_LINE",
+      "verticalZoom": 0.2,
+      "chance": 0.21,
+      "variance": { "style": "SIMPLEX" },
+      "stackMax": 6,
+      "zoom": 5,
+      "palette": [{ "block": "minecraft:sugar_cane" }],
+      "style": { "style": "STATIC" },
+      "heightVariance": { "style": "NOWHERE" },
+      "stackMin": 1
+    },
+    {
+      "chance": 0.03,
+      "palette": [{ "block": "minecraft:small_dripleaf" }]
+    },
+    {
+      "chance": 0.2,
+      "palette": [{ "block": "minecraft:short_grass" }]
+    }
+  ]
+}

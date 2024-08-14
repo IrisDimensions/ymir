@@ -1,0 +1,311 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://volmit.com/iris-schema/irisjigsawpiececonnector.json",
+    "anyOf": [
+        {
+            "description": "Represents a structure tile",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "name\nThe name of this connector, such as entry, or table node. This is a name for organization. Other connectors can specifically use targetName to target a specific connector type. Multiple connectors can use the same name.\n   \nText\n\n    \n* Default Value is "
+                },
+                "targetName": {
+                    "type": "string",
+                    "description": "targetName\nTarget a piece's connector with the specified name. For any piece's connector, define * or don't define it.\n   \nText\n\n    \n* Default Value is *"
+                },
+                "rotateConnector": {
+                    "type": "boolean",
+                    "description": "rotateConnector\nRotates the placed piece on this connector. If rotation is enabled, this connector will effectivley rotate, if this connector is facing the Z direction, then the connected piece would rotate in the X,Y direction in 90 degree segments.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "innerConnector": {
+                    "type": "boolean",
+                    "description": "innerConnector\nIf set to true, this connector is allowed to place pieces inside of it's own piece. For example if you are adding a light post, or house on top of a path piece, you would set this to true to allow the piece to collide with the path bounding box.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "pools": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {"$ref": "#/definitions/erzjigsaw-pools"},
+                    "description": "pools\nPick piece pools to place onto this connector\n   \nList<Jigsaw Pool>\n\n    \n* Default Value is an empty list\n* At least one entry must be defined, or just remove this list.\nMust be a valid Jigsaw Pool (use ctrl+space for auto complete!)"
+                },
+                "spawnEntity": {
+                    "type": "string",
+                    "$ref": "#/definitions/erzentities",
+                    "description": "spawnEntity\nPick an entity to spawn on this connector\n   \nIris Entity\n\nMust be a valid entities (use ctrl+space for auto complete!)"
+                },
+                "keepEntity": {
+                    "type": "boolean",
+                    "description": "keepEntity\nStop the entity from despawning\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "entityCount": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 50,
+                    "description": "entityCount\nThe amount of entities to spawn (must be a whole number)\n   \nInteger\n\n    \n* Default Value is 1\n* Minimum allowed is 1\n* Maximum allowed is 50"
+                },
+                "position": {
+                    "anyOf": [
+                        {
+                            "!required": true,
+                            "type": "object",
+                            "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisposition",
+                            "description": "position\nThe relative position this connector is located at for connecting to other pieces\n   \nPosition (Object)\nRepresents a position\n    \nYou can instead specify \"snippet/position-3d/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        },
+                        {
+                            "type": "string",
+                            "$ref": "#/definitions/enum-snippet-position-3d",
+                            "description": "position\nThe relative position this connector is located at for connecting to other pieces\n   \nPosition (Object)\nRepresents a position\n    \nYou can instead specify \"snippet/position-3d/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                        }
+                    ],
+                    "description": "position\nThe relative position this connector is located at for connecting to other pieces\n   \nPosition (Object)\nRepresents a position\n    \nYou can instead specify \"snippet/position-3d/some-name.json\" to use a snippet file instead of specifying it here.\n    \n* Default Value is a default object (create this object to see default properties)"
+                },
+                "entityPosition": {
+                    "anyOf": [
+                        {
+                            "!required": false,
+                            "type": "object",
+                            "$ref": "#/definitions/obj-com-volmit-iris-engine-object-irisposition",
+                            "description": "entityPosition\nThe relative position to this connector to place entities at\n   \nPosition (Object)\nRepresents a position\n    \nYou can instead specify \"snippet/position-3d/some-name.json\" to use a snippet file instead of specifying it here."
+                        },
+                        {
+                            "type": "string",
+                            "$ref": "#/definitions/enum-snippet-position-3d",
+                            "description": "entityPosition\nThe relative position to this connector to place entities at\n   \nPosition (Object)\nRepresents a position\n    \nYou can instead specify \"snippet/position-3d/some-name.json\" to use a snippet file instead of specifying it here."
+                        }
+                    ],
+                    "description": "entityPosition\nThe relative position to this connector to place entities at\n   \nPosition (Object)\nRepresents a position\n    \nYou can instead specify \"snippet/position-3d/some-name.json\" to use a snippet file instead of specifying it here."
+                },
+                "direction": {
+                    "type": "string",
+                    "$ref": "#/definitions/oneof-enum-com-volmit-iris-engine-object-irisdirection",
+                    "description": "direction\nThe direction this connector is facing. If the direction is set to UP, then pieces will place ABOVE the connector.\n   \nDirection\nA direction object\n    \n* Default Value is a default object (create this object to see default properties)\nMust be a valid Direction (use ctrl+space for auto complete!)"
+                },
+                "lockY": {
+                    "type": "boolean",
+                    "description": "lockY\nLock the Y position of this connector\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
+                }
+            }
+        },
+        {"type": "string"}
+    ],
+    "definitions": {
+        "enum-snippet-position-3d": {"enum": []},
+        "erzjigsaw-pools": {"enum": [
+            "pillager-outpost/features",
+            "mineshaft/way",
+            "village/plains/large-pool",
+            "village/taiga/zombie/streets",
+            "village/taiga",
+            "stronghold/paths-rooms",
+            "village/plains/streets",
+            "village/savanna/terminators",
+            "village/plains/zombie/town_centers",
+            "igloo/bottom",
+            "stronghold/ceiling-7x7",
+            "village/snowy/town_centers",
+            "stronghold/ceiling-5x5",
+            "mush-huts/paths",
+            "village/plains/terminators",
+            "stronghold/paths-connectors",
+            "village/desert",
+            "mush-huts/huts",
+            "village/desert/streets",
+            "stronghold/portal-paths",
+            "pyramid-desert/pyramid",
+            "village/savanna/zombie/terminators",
+            "stronghold/jails",
+            "stronghold/wall",
+            "village/snowy/zombie/streets",
+            "village/plains/zombie/houses",
+            "village/japanese/paths-hall",
+            "village/savanna/streets",
+            "village/snowy/houses",
+            "stronghold/paths",
+            "igloo/middle",
+            "village/plains",
+            "village/taiga/town_centers",
+            "stronghold/doors",
+            "village/savanna/zombie/streets",
+            "pillager-outpost/features-overgrown",
+            "mineshaft/generic",
+            "village/savanna/zombie/houses",
+            "village/snowy/zombie/houses",
+            "village/japanese/paths-all",
+            "village/desert/town_centers",
+            "stronghold/portalroom",
+            "mineshaft/intersection",
+            "village/japanese/paths-tjunct",
+            "village/desert/zombie/streets",
+            "village/plains/town_centers",
+            "stronghold/from-portal",
+            "stronghold/wall-fixture-5x3",
+            "village/desert/terminators",
+            "village/snowy/streets",
+            "village/taiga/streets",
+            "pyramid-jungle/pyramid",
+            "village/snowy/zombie/town_centers",
+            "village/desert/zombie/town_centers",
+            "village/savanna/houses",
+            "village/savanna",
+            "village/plains/houses",
+            "village/desert/houses",
+            "village/savanna/town_centers",
+            "village/snowy",
+            "village/desert/zombie/terminators",
+            "stronghold/stairs/casing-floor",
+            "stronghold/floor-3x3",
+            "village/taiga/zombie/houses",
+            "village/taiga/houses",
+            "village/japanese/houses",
+            "village/taiga/zombie/town_centers",
+            "village/desert/zombie/houses",
+            "village/savanna/zombie/town_centers",
+            "village/plains/zombie/streets",
+            "village/japanese/paths-corner",
+            "village/japanese/paths-end",
+            "village/japanese/paths-cross"
+        ]},
+        "oneof-enum-com-volmit-iris-engine-object-irisdirection": {"oneOf": [
+            {
+                "const": "UP_POSITIVE_Y",
+                "description": "0, 1, 0"
+            },
+            {
+                "const": "DOWN_NEGATIVE_Y",
+                "description": "0, -1, 0"
+            },
+            {
+                "const": "NORTH_NEGATIVE_Z",
+                "description": "0, 0, -1"
+            },
+            {
+                "const": "SOUTH_POSITIVE_Z",
+                "description": "0, 0, 1"
+            },
+            {
+                "const": "EAST_POSITIVE_X",
+                "description": "1, 0, 0"
+            },
+            {
+                "const": "WEST_NEGATIVE_X",
+                "description": "-1, 0, 0"
+            }
+        ]},
+        "erzentities": {"enum": [
+            "standard/passive/tropicalfish",
+            "standard/neutral/llama",
+            "standard/hostile/vex",
+            "standard/hostile/zombified-piglin",
+            "unique/skelepirate",
+            "standard/passive/turtle",
+            "standard/passive/fox",
+            "standard/passive/skeletonhorse",
+            "standard/hostile/blaze",
+            "standard/hostile/shulker",
+            "standard/passive/salmon",
+            "standard/passive/strider",
+            "standard/passive/squid",
+            "unique/fred",
+            "standard/neutral/zombifiedpiglin",
+            "standard/passive/cat",
+            "standard/hostile/creeper",
+            "standard/hostile/stray",
+            "standard/neutral/panda",
+            "standard/hostile/endermite",
+            "standard/passive/mule",
+            "unique/dan",
+            "standard/passive/glowsquid",
+            "standard/hostile/witherskeleton",
+            "standard/neutral/bee",
+            "standard/passive/frog",
+            "standard/hostile/evoker",
+            "standard/passive/sniffer",
+            "unique/lightning",
+            "standard/boss/enderdragon",
+            "standard/hostile/silverfish",
+            "unique/brian",
+            "standard/hostile/enderman",
+            "standard/neutral/wolf",
+            "standard/passive/tadpole",
+            "unique/amenhotep",
+            "standard/hostile/slime",
+            "standard/passive/mooshroom",
+            "standard/passive/snowman",
+            "standard/passive/pufferfish",
+            "standard/passive/allay",
+            "standard/passive/cod",
+            "standard/passive/rabbit",
+            "standard/passive/donkey",
+            "standard/neutral/cavespider",
+            "standard/hostile/ghast",
+            "standard/passive/ocelot",
+            "standard/hostile/elderguardian",
+            "standard/hostile/vindicator",
+            "standard/hostile/skeleton",
+            "standard/neutral/dolphin",
+            "standard/passive/cow",
+            "mythicmobs/skeletalknight",
+            "mythicmobs/duendillo-corredor",
+            "standard/hostile/guardian",
+            "standard/passive/pig",
+            "standard/passive/wanderingtrader",
+            "standard/hostile/warden",
+            "standard/hostile/hoglin",
+            "standard/hostile/zombievillager",
+            "standard/neutral/traderlama",
+            "standard/passive/bat",
+            "standard/hostile/zoglin",
+            "standard/passive/sheep",
+            "unique/aeternum",
+            "standard/hostile/phantom",
+            "standard/neutral/enderman",
+            "standard/hostile/slimebaby",
+            "standard/neutral/spider",
+            "standard/passive/parrot",
+            "unique/pandaUwU",
+            "standard/hostile/piglinbrute",
+            "standard/hostile/ravager",
+            "standard/hostile/zombie",
+            "standard/hostile/witch",
+            "standard/passive/chicken",
+            "mythicmobs/capibara",
+            "standard/passive/axolotl",
+            "standard/hostile/husk",
+            "standard/hostile/magmacube",
+            "standard/passive/villager",
+            "standard/neutral/goat",
+            "unique/phantomapi",
+            "standard/neutral/piglin",
+            "standard/passive/camel",
+            "standard/boss/wither",
+            "standard/hostile/drowned",
+            "standard/passive/horse",
+            "standard/hostile/pillager",
+            "mythicmobs/deer",
+            "mythicmobs/planta-carnivora",
+            "standard/neutral/polarbear",
+            "standard/neutral/irongolem"
+        ]},
+        "obj-com-volmit-iris-engine-object-irisposition": {"anyOf": [
+            {
+                "description": "Represents a position",
+                "type": "object",
+                "properties": {
+                    "x": {
+                        "type": "integer",
+                        "description": "x\nThe x position\n   \nInteger\n\n    \n* Default Value is 0"
+                    },
+                    "y": {
+                        "type": "integer",
+                        "description": "y\nThe y position\n   \nInteger\n\n    \n* Default Value is 0"
+                    },
+                    "z": {
+                        "type": "integer",
+                        "description": "z\nThe z position\n   \nInteger\n\n    \n* Default Value is 0"
+                    }
+                }
+            },
+            {"type": "string"}
+        ]}
+    }
+}

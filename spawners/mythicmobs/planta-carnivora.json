@@ -1,0 +1,18 @@
+{
+    "maximumRate": {
+        "amount": 0,
+        "per": {"minecraftDays": 0}
+    },
+    "allowedLightLevels":{"max": 32, "min": 0},
+    "weather": "ANY",
+    "maxEntitiesPerChunk": 3,
+    "energyMultiplier": 0.3,
+    "initialSpawns": [
+        {
+            "entity": "mythicmobs/planta-carnivora",
+            "rarity": 1,
+            "maxSpawns": 3,
+            "minSpawns": 1
+        }
+    ]
+}

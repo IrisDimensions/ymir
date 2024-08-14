@@ -1,0 +1,164 @@
+{
+    "name": "Cold Mountains",
+    "derivative": "SNOWY_TAIGA",
+    "vanillaDerivative": "SNOWY_TAIGA",
+    "biomeScatter": ["SNOWY_TAIGA"],
+    "biomeSkyScatter": ["SNOWY_TAIGA"],
+    "customDerivitives": [
+        {
+            "id": "cold_shrubland_mountain",
+            "category": "taiga",
+            "foliageColor": "#bf780a",
+            "grassColor": "#d07413"
+        }
+    ],
+    "rarity": 1,
+    "color": "#b07312",
+    "generators": [
+        {
+            "generator": "canyon-steep",
+            "max": 60,
+            "min": 20
+        },
+        {
+            "generator": "mountain-large",
+            "max": 120,
+            "min": 60
+        },
+        {
+            "generator": "mountain-large",
+            "max": 200,
+            "min": 120
+        }
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:stone"}
+        ]
+    },
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 0.6
+            },
+            "palette": [
+                {"block": "minecraft:stone"}
+            ]
+        },
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "slopeCondition":{
+                "minimumSlope": 0.6,
+                "maximumSlope": 2.1
+            },
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:stone"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 6,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "decorators": [
+        {
+            "style":{
+                "style": "GLOB",
+                "zoom": 0.5
+            },
+            "variance":{
+                "style": "IRIS",
+                "zoom": 0.3,
+                "fracture":{
+                    "style": "STATIC",
+                    "zoom": 1
+                }
+            },
+            "whitelist": [{"block": "minecraft:stone"}],
+            "chance": 0.50,
+            "palette": [
+                {"block": "minecraft:snow","data": {"layers": 1}},
+                {"block": "minecraft:snow","data": {"layers": 2}},
+                {"block": "minecraft:snow","data": {"layers": 3}}
+            ]
+        },
+        {
+            "chance": 0.10,
+            "palette": [{"block": "minecraft:dead_bush"}]
+        },
+        {
+            "chance": 0.15,
+            "palette": [{"block": "minecraft:short_grass"}]
+        }
+    ],
+    "objects": [
+        {
+            "chance": 0.10,
+            "mode": "CENTER_HEIGHT",
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 0.6
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 360,
+                    "min": -360
+                }
+            },
+            "translate":{
+                "y": -5
+            },
+            "place": [
+                "clutter/mrock1",
+                "clutter/mrock2",
+                "clutter/mrock3",
+                "clutter/mrock4",
+                "clutter/mrock5",
+                "clutter/mrock6",
+                "clutter/mrock7"
+            ]
+        },
+        {
+            "chance": 0.10,
+            "mode": "CENTER_HEIGHT",
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            },
+            "translate":{
+                "y": -1
+            },
+            "place": [
+                "bushes/1",
+                "bushes/2",
+                "bushes/3",
+                "bushes/4",
+                "bushes/5",
+                "bushes/6",
+                "bushes/7",
+                "bushes/8",
+                "custom/trees/bog/oakclutt1",
+                "custom/trees/bog/oakclutt2",
+                "custom/trees/bog/oakclutt3"
+            ]
+        }
+    ]
+}

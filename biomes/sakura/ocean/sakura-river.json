@@ -1,0 +1,61 @@
+{
+    "name": "Sakura River",
+    "derivative": "RIVER",
+    "vanillaDerivative": "CHERRY_GROVE",
+    "color": "#1bb9ee",
+    "rarity": 2,
+    "generators": [{
+        "generator": "river",
+        "max": -40,
+        "min": -70
+    }],
+    "layers": [{
+            "style":{
+                "style": "GLOB_IRIS"
+            },
+            "zoom": 0.5,
+            "minHeight": 2,
+            "maxHeight": 2,
+            "palette": [
+            {"block": "minecraft:mossy_cobblestone","weight": 10},
+            {"block": "minecraft:gravel","weight": 15},
+            {"block": "minecraft:clay","weight": 15},
+            {"block": "minecraft:dirt","weight": 10}
+                ]
+    }],
+    "objects": [{
+        "onwater": true,
+        "chance": 1,
+        "density": 3,
+        "carvingSupport": "SURFACE_ONLY",
+        "translate":{
+            "y": 1
+        },
+        "place": ["clutter/lilly"]
+    }],
+    "decorators": [
+        {
+            "chance": 0.02,
+            "palette": [{"block": "minecraft:kelp_plant"}],
+            "stackMin": 2,
+            "stackMax": 6
+        },
+        {
+            "forcePlace": true,
+            "partOf": "SEA_FLOOR",
+            "topPalette": [{"block": "minecraft:tall_seagrass","data": {"half": "upper"}}],
+            "whitelist": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}],
+            "stackMax": 2,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:tall_seagrass","data": {"half": "lower"}}]
+        },
+        {
+            "forcePlace": true,
+            "absoluteMaxStack": 1,
+            "stackMax": 1,
+            "stackMin": 1,
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:seagrass"}]
+        }
+    ]
+}

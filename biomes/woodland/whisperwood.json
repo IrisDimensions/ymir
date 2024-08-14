@@ -1,0 +1,188 @@
+{
+    "name": "Whisperwood",
+    "derivative": "FOREST",
+    "biomeScatter": ["FOREST"],
+    "biomeSkyScatter": ["FOREST"],
+    "customDerivitives": [
+        {
+            "id": "whisperwood",
+            "waterColor": "#59bdd2",
+            "foliageColor": "#256c05",
+            "grassColor": "#5aa738"
+        }
+    ],
+    "generators": [
+        {
+            "generator": "smooth-land",
+            "min": 100,
+            "max": 106
+        }
+    ],
+    "entitySpawners": [
+        "temperate/passive",
+        "temperate/hostile",
+        "temperate/cave"
+    ],
+    "color": "#274e13",
+    "rarity": 1,
+    "decorators": [
+        {
+            "style":{
+                "style": "GLOB_IRIS",
+                "zoom": 0.2
+            },
+            "variance":{
+                "style": "NOWHERE_CELLULAR",
+                "zoom": 1
+            },
+            "chance": 0.2,
+            "palette": [
+                {"block": "minecraft:poppy"},
+                {"block": "minecraft:cornflower"},
+                {"block": "minecraft:lily_of_the_valley"},
+                {"block": "minecraft:dandelion"},
+                {"block": "minecraft:blue_orchid"}
+            ]
+        },
+        {
+            "chance": 0.1,
+            "palette": [{"block": "minecraft:short_grass"}]
+        },
+        {
+            "chance": 0.3,
+            "palette": [{"block": "minecraft:fern"}]
+        },
+        {
+            "chance": 0.05,
+            "palette": [{"block": "minecraft:large_fern"}]
+        }
+    ],
+    "layers": [
+        {
+            "minHeight": 1,
+            "maxHeight": 1,
+            "palette": [
+                {"block": "minecraft:grass_block"}
+            ]
+        },
+        {
+            "minHeight": 2,
+            "maxHeight": 4,
+            "palette": [{"block": "minecraft:dirt"}]
+        },
+        {
+            "minHeight": 4,
+            "maxHeight": 7,
+            "palette": [{"block": "minecraft:stone"}]
+        }
+    ],
+    "wall":{
+        "palette": [
+            {"block": "minecraft:stone"},
+            {"block": "minecraft:andesite"},
+            {"block": "minecraft:tuff"}
+            ]
+    },
+    "objects": [
+        {
+            "chance": 1,
+            "density": 3,
+            "carvingSupport": "SURFACE_ONLY",
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 2.1
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "min": -360,
+                    "max": 360
+                }
+            },
+            "trees": [{
+                "anySize": true,
+                "anyTree": true,
+                "treeTypes": ["REDWOOD"]
+            }],
+            "place": [
+                "custom/trees/spruce/spruce4",
+                "custom/trees/spruce/spruce5",
+                "custom/trees/spruce/spruce6"
+            ]
+        },
+        {
+            "chance": 1,
+            "density": 3,
+            "carvingSupport": "SURFACE_ONLY",
+            "slopeCondition":{
+                "minimumSlope": 0,
+                "maximumSlope": 2.1
+            },
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "min": 0,
+                    "max": 270
+                }
+            },
+            "trees": [{
+                "anySize": true,
+                "anyTree": true,
+                "treeTypes": ["REDWOOD"]
+            }],
+            "place": [
+                "custom/trees/spruce/spruce2",
+                "custom/trees/spruce/spruce3",
+                "custom/trees/spruce/spruce7"
+            ]
+        },
+        {
+            "mode": "PAINT",
+            "translate":{
+                "y": -1
+            },
+            "chance": 0.050,
+            "place": [
+                "clutter/boulder2",
+                "clutter/boulder3",
+                "custom/trees/hytale/boulder1"
+            ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            }
+        },
+        {
+            "mode": "PAINT",
+            "translate":{
+                "y": -1
+            },
+            "chance": 0.050,
+            "place": [
+                "clutter/sbush1",
+                "bushes/3",
+                "clutter/arbusto3",
+                "bushes/4",
+                "clutter/arbusto4"
+            ],
+            "rotation":{
+                "enabled": true,
+                "yAxis":{
+                    "enabled": true,
+                    "interval": 90,
+                    "max": 270,
+                    "min": 0
+                }
+            }
+        }
+    ]
+}

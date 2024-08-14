@@ -1,0 +1,18 @@
+{
+  "name": "Dreadbog",
+  "rarity": 1,
+  "color": "#274e13",
+  "landBiomeZoom": 2,
+  "landBiomes": [
+    "dreadbog/orchid-swamp",
+    "dreadbog/twilight-fens",
+    "dreadbog/phantom-bog",
+    "dreadbog/dark-oak-forest"
+  ],
+  "shoreHeightMax": 3,
+  "shoreHeightMin": 0,
+  "shoreBiomeZoom": 5,
+  "shoreBiomes": ["dreadbog/shore/dread-beach"],
+  "seaBiomeZoom": 5,
+  "seaBiomes": ["dreadbog/sea/dread-river", "dreadbog/sea/misty-river"]
+}
