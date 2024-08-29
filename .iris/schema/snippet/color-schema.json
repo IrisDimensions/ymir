@@ -1,34 +1,18 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://volmit.com/iris-schema/iriscolor.json",
+    "$id": "https://volmit.com/iris-schema/irisseed.json",
     "anyOf": [
         {
             "description": "Represents a color",
             "type": "object",
             "properties": {
-                "hex": {
-                    "type": "string",
-                    "minLength": 6,
-                    "maxLength": 7,
-                    "description": "hex\nPass in a 6 digit hexadecimal color to fill R G and B values. You can also include the # symbol, but it's not required.\n   \nText\n\n* Minimum Length allowed is 6\n* Maximum Length allowed is 7"
-                },
-                "red": {
+                "seed": {
                     "type": "integer",
-                    "minimum": 0,
-                    "maximum": 255,
-                    "description": "red\nRepresents the red channel. Only define this if you are not defining the hex value.\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is 0\n* Maximum allowed is 255"
+                    "description": "seed\nThe seed to use\n   \nInteger\n\n    \n* Default Value is 1337"
                 },
-                "green": {
-                    "type": "integer",
-                    "minimum": 0,
-                    "maximum": 255,
-                    "description": "green\nRepresents the green channel. Only define this if you are not defining the hex value.\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is 0\n* Maximum allowed is 255"
-                },
-                "blue": {
-                    "type": "integer",
-                    "minimum": 0,
-                    "maximum": 255,
-                    "description": "blue\nRepresents the blue channel. Only define this if you are not defining the hex value.\n   \nInteger\n\n    \n* Default Value is 0\n* Minimum allowed is 0\n* Maximum allowed is 255"
+                "ignoreNaturalSeedInput": {
+                    "type": "boolean",
+                    "description": "ignoreNaturalSeedInput\nTo calculate a seed Iris passes in it's natural seed for the current feature, then mixes it with your seed. Setting this to true ignores the parent seed and always uses your exact seed ignoring the input of Iris feature seeds. You can use this to match seeds on other generators.\n   \nBoolean\n\n    \n* Default Value is a default object (create this object to see default properties)"
                 }
             }
         },

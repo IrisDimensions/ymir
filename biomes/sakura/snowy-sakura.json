@@ -1,205 +1,213 @@
 {
-    "name": "Snowy Sakura",
-    "derivative": "CHERRY_GROVE",
-    "vanillaDerivative": "CHERRY_GROVE",
-    "rarity": 3,
-    "color": "#97ce55",
-    "customDerivitives": [
-        {
-            "id": "snowy_sakura",
-            "category": "forest",
-            "foliageColor": "#f0f8ff",
-            "grassColor": "#b8cdc0"
-        }
-    ],
-    "generators": [{
-        "generator": "smooth-land",
-        "max": 5,
-        "min": 2
-    }],
-    "entitySpawners": [
-        "temperate/passive"
-    ],
-    "layers": [
-        {
-            "palette": [{"block": "minecraft:grass_block","data": {"snowy": true}}]
-        },
-        {
-            "minHeight": 2,
-            "maxHeight": 3,
-            "palette": [{"block": "minecraft:dirt"}]
-        },
-        {
-            "minHeight": 3,
-            "maxHeight": 5,
-            "palette": [
-                {
-                    "block": "minecraft:stone"
-                }
-            ]
-        }
-    ],
-    "wall":{
-        "style":{
-            "style": "NOWHERE_SIMPLEX"
-        },
-        "zoom": 0.5,
-        "palette": [
-            {"block": "minecraft:stone","weight": 20},
-            {"block": "minecraft:mossy_cobblestone","weight": 5},
-            {"block": "minecraft:cobblestone","weight": 10}
-            ]
+  "name": "Snowy Sakura",
+  "derivative": "CHERRY_GROVE",
+  "vanillaDerivative": "CHERRY_GROVE",
+  "rarity": 3,
+  "color": "#97ce55",
+  "customDerivitives": [
+    {
+      "id": "snowy_sakura",
+      "category": "forest",
+      "foliageColor": "#f0f8ff",
+      "grassColor": "#b8cdc0"
+    }
+  ],
+  "generators": [
+    {
+      "generator": "smooth-land",
+      "max": 5,
+      "min": 2
+    }
+  ],
+  "entitySpawners": ["temperate/passive"],
+  "layers": [
+    {
+      "palette": [
+        { "block": "minecraft:grass_block", "data": { "snowy": true } }
+      ]
     },
-    "decorators": [
+    {
+      "minHeight": 2,
+      "maxHeight": 3,
+      "palette": [{ "block": "minecraft:dirt" }]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "palette": [
         {
-            "chance": 0.55,
-            "variance":{
-                "style": "GLOB",
-                "zoom": 0.3,
-                "fracture":{
-                    "style": "STATIC",
-                    "zoom": 0.4
-                }
-            },
-            "palette": [
-                {"block": "minecraft:snow","data": {"layers": 1}}
-            ]
-        },
-        {
-            "chance": 0.3,
-            "variance": {
-                "style": "CELLULAR",
-                "zoom": 0.3,
-                "fracture": {
-                    "style": "SIMPLEX",
-                    "zoom": 0.2,
-                    "multiplier": 10,
-                    "fracture": {
-                        "style": "STATIC",
-                        "multiplier": 15
-                    }
-                }
-            },
-            "style": {
-                "style": "TRIOCTAVE_SIMPLEX",
-                "zoom": 0.3,
-                "fracture": {
-                    "style": "STATIC",
-                    "multiplier": 8
-                }
-            },
-            "palette": [
-                {
-                    "block": "minecraft:pink_petals","weight":2,
-                    "data": {"flower_amount": 1}
-                },
-                                {
-                    "block": "minecraft:pink_petals","weight":2,
-                    "data": {"flower_amount": 2}
-                },
-                {
-                    "block": "minecraft:pink_petals","weight":2,
-                    "data": {"flower_amount": 3}
-                },
-                                {
-                    "block": "minecraft:pink_petals","weight":2,
-                    "data": {"flower_amount": 4}
-                }
-            ]
-        },
-        {
-            "chance": 0.1,
-            "palette": [{"block": "minecraft:tall_grass"}]
-        },
-        {
-            "chance": 0.3,
-            "palette": [{"block": "minecraft:short_grass"}]
+          "block": "minecraft:stone"
         }
-    ],
-    "objects": [
-        {
-            "mode": "PAINT",
-            "place": [
-                "clutter/boulder1",
-                "clutter/boulder2",
-                "clutter/boulder3",
-                "clutter/boulder4",
-                "clutter/boulder5",
-                "clutter/boulder6",
-                "clutter/boulder7",
-                "clutter/boulder8",
-                "clutter/boulder9"
-            ],
-            "chance": 0.05,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            },
-            "translate": {"y": -2}
-        },
-        {
-            "mode": "PAINT",
-            "place": [
-                "bushes/1",
-                "bushes/2",
-                "bushes/3",
-                "bushes/4",
-                "bushes/5"
-            ],
-            "snow": 0.4,
-            "chance": 0.10,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            }
-        },
-        {
-            "snow": 0.4,
-            "slopeCondition":{
-                "maximumSlope": 1.2
-            },
-            "chance": 1,
-            "density": 1,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "min": -360,
-                    "max": 360,
-                    "interval": 90,
-                    "enabled": true
-                }
-            },
-            "mode": "FAST_MIN_STILT",
-            "place": [
-                "trees/sakura/em3",
-                "trees/sakura/em4",
-                "trees/sakura/em5",
-                "trees/sakura/em6",
-                "trees/sakura/em7",
-                "trees/sakura/em8",
-                "trees/sakura/em9",
-                "trees/sakura/em10",
-                "trees/sakura/em11",
-                "trees/sakura/em12",
-                "trees/sakura/em13"
-                ],
-            "edit": [{"find": [{"block": "minecraft:chain"}],"replace":{"palette": [{"block": "minecraft:air"}]}},
-            {"find": [{"block": "minecraft:pearlescent_froglight"}],"replace":{"palette": [{"block": "minecraft:air"}]}}],
-            "translate": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            }
-        }
+      ]
+    }
+  ],
+  "wall": {
+    "style": {
+      "style": "NOWHERE_SIMPLEX"
+    },
+    "zoom": 0.5,
+    "palette": [
+      { "block": "minecraft:andesite", "weight": 10 },
+      { "block": "minecraft:stone", "weight": 5 }
     ]
+  },
+  "decorators": [
+    {
+      "chance": 0.3,
+      "variance": {
+        "style": "GLOB",
+        "zoom": 0.3,
+        "fracture": {
+          "style": "STATIC",
+          "zoom": 0.4
+        }
+      },
+      "palette": [{ "block": "minecraft:snow", "data": { "layers": 1 } }]
+    },
+    {
+      "chance": 0.3,
+      "variance": {
+        "style": "CELLULAR",
+        "zoom": 0.3,
+        "fracture": {
+          "style": "SIMPLEX",
+          "zoom": 0.2,
+          "multiplier": 10,
+          "fracture": {
+            "style": "STATIC",
+            "multiplier": 15
+          }
+        }
+      },
+      "style": {
+        "style": "TRIOCTAVE_SIMPLEX",
+        "zoom": 0.3,
+        "fracture": {
+          "style": "STATIC",
+          "multiplier": 8
+        }
+      },
+      "palette": [
+        {
+          "block": "minecraft:pink_petals",
+          "weight": 2,
+          "data": { "flower_amount": 1 }
+        },
+        {
+          "block": "minecraft:pink_petals",
+          "weight": 2,
+          "data": { "flower_amount": 2 }
+        },
+        {
+          "block": "minecraft:pink_petals",
+          "weight": 2,
+          "data": { "flower_amount": 3 }
+        },
+        {
+          "block": "minecraft:pink_petals",
+          "weight": 2,
+          "data": { "flower_amount": 4 }
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "palette": [{ "block": "minecraft:tall_grass" }]
+    },
+    {
+      "chance": 0.3,
+      "palette": [{ "block": "minecraft:short_grass" }]
+    }
+  ],
+  "objects": [
+    {
+      "mode": "CENTER_HEIGHT",
+      "place": [
+        "clutter/boulder1",
+        "clutter/boulder2",
+        "clutter/boulder3",
+        "clutter/boulder4",
+        "clutter/boulder5",
+        "clutter/boulder6",
+        "clutter/boulder7",
+        "clutter/boulder8",
+        "clutter/boulder9"
+      ],
+      "chance": 0.05,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      },
+      "translate": { "y": -2 }
+    },
+    {
+      "mode": "CENTER_HEIGHT",
+      "place": ["bushes/1", "bushes/2", "bushes/3", "bushes/4", "bushes/5"],
+      "snow": 0.4,
+      "chance": 0.05,
+      "translate": {
+        "y": -2
+      },
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    },
+    {
+      "snow": 0.4,
+      "slopeCondition": {
+        "maximumSlope": 0.3
+      },
+      "chance": 0.3,
+      "density": 1,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "min": -360,
+          "max": 360,
+          "interval": 90,
+          "enabled": true
+        }
+      },
+      "mode": "CENTER_HEIGHT",
+      "place": [
+        "trees/sakura/em3",
+        "trees/sakura/em4",
+        "trees/sakura/em5",
+        "trees/sakura/em6",
+        "trees/sakura/em7",
+        "trees/sakura/em8",
+        "trees/sakura/em9",
+        "trees/sakura/em10",
+        "trees/sakura/em11",
+        "trees/sakura/em12",
+        "trees/sakura/em13"
+      ],
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:chain" }],
+          "replace": { "palette": [{ "block": "minecraft:air" }] }
+        },
+        {
+          "find": [{ "block": "minecraft:pearlescent_froglight" }],
+          "replace": { "palette": [{ "block": "minecraft:air" }] }
+        }
+      ],
+      "translate": {
+        "x": 0,
+        "y": -3,
+        "z": 0
+      }
+    }
+  ]
 }

@@ -4,18 +4,9 @@
   "rarity": 1,
   "landBiomes": [
     "summit/mediterranean-forest",
-    "summit/rainbow-forest",
-    "summit/plains",
-    "summit/mountain",
-    "summit/mountain-extreme",
-    "summit/mountain-plains",
-    "summit/plains-hills"
+    "summit/hollow-forest",
+    "summit/plains"
   ],
-  "loot": {
-    "mode": "ADD",
-    "multiplier": 1,
-    "tables": ["tropical/dungeon"]
-  },
   "landBiomeZoom": 2,
   "seaBiomeZoom": 1,
   "shoreBiomes": ["summit/shore/beach"],

@@ -112,7 +112,7 @@
         "y": -3
       },
       "slopeCondition": {
-        "maximumSlope": 1.2
+        "maximumSlope": 0.8
       },
       "place": [
         "treepack/fir-pines/generic1",

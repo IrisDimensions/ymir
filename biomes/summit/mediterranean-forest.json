@@ -1,167 +1,149 @@
 {
-    "name": "Mediterranean Forest",
-    "color": "#642B10",
-    "rarity": 1,
-    "biomeScatter": ["FOREST","TAIGA"],
-    "derivative": "OLD_GROWTH_SPRUCE_TAIGA",
-    "vanillaDerivative": "OLD_GROWTH_SPRUCE_TAIGA",
-    "customDerivitives": [{
-        "category": "taiga",
-        "id": "mediterranean_forest",
-        "grassColor": "#5aa53a",
-        "skyColor": "#7fbef8"
-    }],
-    "generators": [{
-        "min": 3,
-        "max": 10,
-        "generator": "mountain"
-    },
+  "name": "Mediterranean Forest",
+  "color": "#642B10",
+  "rarity": 1,
+  "biomeScatter": ["FOREST", "TAIGA"],
+  "derivative": "OLD_GROWTH_SPRUCE_TAIGA",
+  "vanillaDerivative": "OLD_GROWTH_SPRUCE_TAIGA",
+  "customDerivitives": [
     {
-        "min": 10,
-        "max": 17,
-        "generator": "mountain"
-    },
-    {
-        "min": 17,
-        "max": 24,
-        "generator": "mountain"
-    },
-    {
-        "min": 24,
-        "max": 31,
-        "generator": "mountain"
-    },
-    {
-        "min": 31,
-        "max": 45,
-        "generator": "smooth-dunes"
+      "category": "taiga",
+      "id": "mediterranean_forest",
+      "grassColor": "#6aa84f",
+      "skyColor": "#6fa8dc"
     }
-    ],
-    "biomeZoom": 9,
-    "biomeStyle": {"style": "SIMPLEX"},
-    "wall": {
-        "style": {"style": "STATIC"},
-        "palette": [
-            {"block": "minecraft:stone"},
-            {"block": "minecraft:andesite"},
-            {"block": "minecraft:stone"}
-        ]
-    },
-    "layers": [
-        {
-            "style": {"style": "NOWHERE"},
-            "zoom": 0.5,
-            "palette": [
-                {
-                    "weight": 3,
-                    "block": "minecraft:grass_block"
-                },
-                {"block": "minecraft:podzol"},
-                {
-                    "weight": 4,
-                    "block": "minecraft:grass_block"
-                }
-            ]
-        },
-        {"palette": [{"block": "minecraft:dirt"}]},
-        {
-            "minHeight": 1,
-            "maxHeight": 3,
-            "palette": [
-                {"block": "minecraft:dirt"},
-                {"block": "minecraft:coarse_dirt"}
-            ]
-        },
-        {
-            "minHeight": 6,
-            "maxHeight": 18,
-            "style": {"style": "STATIC"},
-            "palette": [
-                {"block": "minecraft:stone"},
-                {"block": "minecraft:andesite"},
-                {"block": "minecraft:stone"}
-            ]
-        }
-    ],
-    "objects": [
-        {
-            "place": [
-                "trees/spruce/generic1",
-                "trees/spruce/generic2",
-                "trees/spruce/generic3"
-            ],
-            "chance": 0.4,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            }
-        },
-        {
-            "chance": 0.35,
-            "density": 2,
-            "rotation": {
-                "yAxis": {
-                    "min": 0,
-                    "max": 270,
-                    "interval": 90,
-                    "enabled": true
-                },
-                "enabled": true
-            },
-            "place": [
-                "clutter/oakclutt1",
-                "clutter/oakclutt2",
-                "clutter/oakclutt3"
-            ],
-            "translate": {
-                "x": 0,
-                "y": -2,
-                "z": 0
-            }
-        },
-        {
-            "place": [
-                "trees/spruce/generic1",
-                "trees/spruce/generic2",
-                "trees/spruce/generic3"
-            ],
-            "chance": 0.4,
-            "rotation": {
-                "enabled": true,
-                "yAxis": {
-                    "enabled": true,
-                    "interval": 90,
-                    "min": -360,
-                    "max": 360
-                }
-            },
-            "edit": [{"find": [{"block": "minecraft:spruce_leaves"}],"replace":{"palette": [{"block": "minecraft:oak_leaves"}]}}]
-        }
-    ],
-    "decorators": [
-        {
-            "chance": 0.060,
-            "variance": {"style": "STATIC"},
-            "zoom": 0.02,
-            "palette": [
-                {"block": "minecraft:lilac"},
-                {"block": "minecraft:peony"}
-            ],
-            "style": {"style": "STATIC"}
-        },
-        {
-            "chance": 0.040,
-            "variance": {"style": "STATIC"},
-            "zoom": 0.2,
-            "palette": [
-                {"block": "minecraft:short_grass"}
-            ],
-            "style": {"style": "STATIC"}
-        }
+  ],
+  "generators": [
+    {
+      "min": 2,
+      "max": 20,
+      "generator": "smooth-land"
+    }
+  ],
+  "biomeZoom": 9,
+  "biomeStyle": { "style": "SIMPLEX" },
+  "wall": {
+    "style": { "style": "STATIC" },
+    "palette": [
+      { "block": "minecraft:stone" },
+      { "block": "minecraft:andesite" },
+      { "block": "minecraft:stone" }
     ]
+  },
+  "layers": [
+    {
+      "style": { "style": "NOWHERE" },
+      "zoom": 0.5,
+      "palette": [
+        {
+          "weight": 3,
+          "block": "minecraft:grass_block"
+        },
+        { "block": "minecraft:podzol" },
+        {
+          "weight": 4,
+          "block": "minecraft:grass_block"
+        }
+      ]
+    },
+    { "palette": [{ "block": "minecraft:dirt" }] },
+    {
+      "minHeight": 1,
+      "maxHeight": 3,
+      "palette": [
+        { "block": "minecraft:dirt" },
+        { "block": "minecraft:coarse_dirt" }
+      ]
+    },
+    {
+      "minHeight": 6,
+      "maxHeight": 18,
+      "style": { "style": "STATIC" },
+      "palette": [
+        { "block": "minecraft:stone" },
+        { "block": "minecraft:andesite" },
+        { "block": "minecraft:stone" }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "place": [
+        "trees/spruce/generic1",
+        "trees/spruce/generic2",
+        "trees/spruce/generic3"
+      ],
+      "chance": 0.4,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      }
+    },
+    {
+      "chance": 0.35,
+      "density": 2,
+      "rotation": {
+        "yAxis": {
+          "min": 0,
+          "max": 270,
+          "interval": 90,
+          "enabled": true
+        },
+        "enabled": true
+      },
+      "place": ["clutter/oakclutt1", "clutter/oakclutt2", "clutter/oakclutt3"],
+      "translate": {
+        "x": 0,
+        "y": -2,
+        "z": 0
+      }
+    },
+    {
+      "place": [
+        "trees/spruce/generic1",
+        "trees/spruce/generic2",
+        "trees/spruce/generic3"
+      ],
+      "chance": 0.4,
+      "rotation": {
+        "enabled": true,
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "min": -360,
+          "max": 360
+        }
+      },
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:spruce_leaves" }],
+          "replace": { "palette": [{ "block": "minecraft:oak_leaves" }] }
+        }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.06,
+      "variance": { "style": "STATIC" },
+      "zoom": 0.02,
+      "palette": [
+        { "block": "minecraft:lilac" },
+        { "block": "minecraft:peony" }
+      ],
+      "style": { "style": "STATIC" }
+    },
+    {
+      "chance": 0.04,
+      "variance": { "style": "STATIC" },
+      "zoom": 0.2,
+      "palette": [{ "block": "minecraft:short_grass" }],
+      "style": { "style": "STATIC" }
+    }
+  ]
 }

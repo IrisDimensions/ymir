@@ -1,61 +1,69 @@
 {
-    "name": "Sakura Beach",
-    "derivative": "BEACH",
-    "vanillaDerivative": "BEACH",
-    "color": "#e7ea48",
-    "generators": [{
-        "min": 0,
-        "max": 2,
-        "generator": "smooth-land"
-    }],
-    "customDerivitives": [
+  "name": "Sakura Beach",
+  "derivative": "BEACH",
+  "vanillaDerivative": "BEACH",
+  "color": "#e7ea48",
+  "generators": [
+    {
+      "min": 0,
+      "max": 2,
+      "generator": "smooth-land"
+    }
+  ],
+  "customDerivitives": [
+    {
+      "id": "snowy_sakura_beach",
+      "category": "forest",
+      "foliageColor": "#f0f8ff",
+      "grassColor": "#b8cdc0"
+    }
+  ],
+  "entitySpawners": ["temperate/passive"],
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "zoom": 0.4,
+      "palette": [
         {
-            "id": "snowy_sakura_beach",
-            "category": "forest",
-            "foliageColor": "#f0f8ff",
-            "grassColor": "#b8cdc0"
+          "block": "minecraft:grass_block",
+          "data": { "snowy": true },
+          "weight": 30
+        },
+        { "block": "minecraft:sand", "weight": 15 }
+      ]
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.77,
+      "style": {
+        "style": "GLOB",
+        "zoom": 0.3,
+        "fracture": {
+          "style": "IRIS",
+          "zoom": 1
         }
-    ],
-    "entitySpawners": [
-        "temperate/passive"
-    ],
-    "layers": [
+      },
+      "palette": [
         {
-            "style":{
-                "style": "NOWHERE_SIMPLEX"
-            },
-            "zoom": 0.4,
-            "palette": [
-            {"block": "minecraft:grass_block","data": {"snowy": true},"weight": 30},
-            {"block": "minecraft:sand","weight": 15}
-            ]
-        }
-    ],
-    "decorators": [
+          "block": "minecraft:snow",
+          "data": { "layers": 1 }
+        },
         {
-            "chance": 0.77,
-            "style":{
-                "style": "GLOB",
-                "zoom": 0.3,
-                "fracture":{
-                    "style": "IRIS",
-                    "zoom": 1
-                }
-            },
-            "palette": [
-                {
-                    "block": "minecraft:snow","data": {"layers": 1}
-                },
-                {
-                    "block": "minecraft:snow","data": {"layers": 2}
-                },
-                {
-                    "block": "minecraft:snow","data": {"layers": 3}
-                },
-                {
-                    "block": "minecraft:snow","data": {"layers": 4}
-                }
-            ]
+          "block": "minecraft:snow",
+          "data": { "layers": 2 }
+        },
+        {
+          "block": "minecraft:snow",
+          "data": { "layers": 3 }
+        },
+        {
+          "block": "minecraft:snow",
+          "data": { "layers": 4 }
         }
-    ]
+      ]
+    }
+  ]
 }

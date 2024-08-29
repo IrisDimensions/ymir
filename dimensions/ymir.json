@@ -34,7 +34,12 @@
           "axialFracturing": true,
           "fracture": {
             "style": "STATIC",
-            "multiplier": 20
+            "multiplier": 30,
+            "fracture": {
+              "style": "PERLIN",
+              "zoom": 0.1,
+              "multiplier": 10
+            }
           }
         }
       }
@@ -43,12 +48,17 @@
   "landBiomeStyle": {
     "style": "CELLULAR",
     "fracture": {
-      "multiplier": 30,
+      "multiplier": 25,
       "style": "PERLIN",
       "zoom": 0.15,
       "fracture": {
         "style": "STATIC",
-        "multiplier": 1
+        "multiplier": 3.5,
+        "fracture": {
+          "style": "FRACTAL_SMOKE",
+          "zoom": 0.05,
+          "multiplier": 5
+        }
       }
     }
   },
@@ -141,19 +151,17 @@
   ],
   "fluidPalette": { "palette": [{ "block": "minecraft:water" }] },
   "fluidHeight": 80,
-  "landZoom": 3.15,
-  "seaZoom": 3,
+  "landZoom": 2.8,
+  "seaZoom": 3.3,
   "continentZoom": 3,
   "biomeZoom": 1,
-  "lootTries": 32,
-  "terrainZoom": 1,
-  "coordFractureZoom": 0.15,
+  "coordFractureZoom": 0.23,
   "stronghold": "stronghold",
   "strongholdJumpDistance": 670,
   "maxStrongholds": 27,
   "regionZoom": 20,
-  "dimensionAngleDeg": 12,
-  "landChance": 0.67,
+  "dimensionAngleDeg": 18,
+  "landChance": 0.62,
   "preventLeafDecay": true,
   "decorate": true,
   "placeObjects": true,

@@ -1,90 +1,209 @@
 {
-    "name": "Summit Plains",
-    "color": "#1DA571",
-    "rarity": 1,
-    "derivative": "PLAINS",
-    "vanillaDerivative": "PLAINS",
-    "customDerivitives": [{
-        "id": "summit_plains",
-        "foliageColor": "#40C42B",
-        "grassColor": "#41A726",
-        "category": "jungle",
-        "waterColor": "#3AB2A2",
-        "waterFogColor": "#3AB2A2"
-    }],
-    "children": ["summit/plains-hills"],
-    "generators": [{
-        "generator": "smooth-dunes",
-        "max": 20,
-        "min": -10
-    }],
-    "layers": [
-        {"palette": [{"block": "minecraft:grass_block"}]},
-        {
-            "minHeight": 2,
-            "maxHeight": 2,
-            "palette": [{"block": "minecraft:dirt"}]
-        },
-        {
-            "style": {"style": "STATIC"},
-            "minHeight": 1,
-            "maxHeight": 1,
-            "palette": [
-                {"block": "minecraft:dirt"},
-                {"block": "minecraft:stone"}
-            ]
-        }
-    ],
-    "objects": [
-        {
-            "slopeCondition":{
-                "maximumSlope": 1.6
-            },
-            "place": [
-                "clutter/sbush1",
-                "clutter/sbush2",
-                "clutter/sbush3"
-            ],
-            "chance": 0.0020,
-            "density": 4
-        }
-    ],
-    "decorators": [
-        {
-            "chance": 0.7,
-            "palette": [
-                {
-                    "weight": 2,
-                    "block": "minecraft:short_grass"
-                },
-                {
-                    "weight": 1,
-                    "block": "minecraft:tall_grass"
-                }
-            ]
-        },
-        {
-            "chance": 0.0,
-            "variance": {"style": "STATIC"},
-            "palette": [
-                {"block": "minecraft:dandelion"},
-                {"block": "minecraft:poppy"},
-                {"block": "minecraft:blue_orchid"},
-                {"block": "minecraft:allium"},
-                {"block": "minecraft:azure_bluet"},
-                {"block": "minecraft:red_tulip"},
-                {"block": "minecraft:orange_tulip"},
-                {"block": "minecraft:white_tulip"},
-                {"block": "minecraft:pink_tulip"},
-                {"block": "minecraft:oxeye_daisy"},
-                {"block": "minecraft:cornflower"},
-                {"block": "minecraft:lily_of_the_valley"}
-            ]
-        }
-    ],
-    "childStyle": {
-        "style": "SIMPLEX",
-        "zoom": 0.5,
-        "exponent": 2
+  "name": "Summit Plains",
+  "color": "#1DA571",
+  "rarity": 1,
+  "derivative": "PLAINS",
+  "vanillaDerivative": "PLAINS",
+  "customDerivitives": [
+    {
+      "id": "summit_plains",
+      "grassColor": "#6aa84f",
+      "skyColor": "#6fa8dc"
     }
+  ],
+  "generators": [
+    {
+      "generator": "canyon-steep",
+      "max": 8,
+      "min": 0
+    },
+    {
+      "generator": "dunes",
+      "max": 15,
+      "min": 10
+    }
+  ],
+  "layers": [
+    {
+      "style": {
+        "style": "NOWHERE_SIMPLEX"
+      },
+      "slopeCondition": {
+        "maximumSlope": 0.6
+      },
+      "zoom": 0.5,
+      "palette": [
+        { "block": "minecraft:grass_block", "weight": 10 },
+        { "block": "minecraft:mud", "weight": 5 }
+      ]
+    },
+    {
+      "minHeight": 1,
+      "maxHeight": 1,
+      "palette": [{ "block": "minecraft:grass_block" }]
+    },
+    {
+      "style": {
+        "style": "FRACTAL_SMOKE"
+      },
+      "zoom": 0.67,
+      "minHeight": 2,
+      "maxHeight": 2,
+      "palette": [
+        { "block": "minecraft:dirt" },
+        { "block": "minecraft:coarse_dirt" }
+      ]
+    },
+    {
+      "minHeight": 3,
+      "maxHeight": 5,
+      "palette": [
+        { "block": "minecraft:stone" },
+        { "block": "minecraft:andesite" }
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "slopeCondition": {
+        "maximumSlope": 0.8
+      },
+      "place": ["clutter/sbush1", "clutter/sbush2", "clutter/sbush3"],
+      "chance": 1,
+      "density": 2
+    },
+    {
+      "slopeCondition": {
+        "maximumSlope": 0.8
+      },
+      "place": [
+        "rock/1",
+        "rock/2",
+        "rock/11",
+        "rock/12",
+        "custom/trees/hytale/boulder1"
+      ],
+      "translate": {
+        "y": -2
+      },
+      "chance": 1,
+      "density": 2
+    },
+    {
+      "chance": 0.05,
+      "slopeCondition": {
+        "maximumSlope": 0.2
+      },
+      "place": ["custom/trees/fantasy/bigoak1"],
+      "translate": {
+        "y": -5
+      },
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:green_candle" }],
+          "replace": {
+            "palette": [{ "block": "minecraft:air" }]
+          }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "max": 270,
+          "min": 0
+        }
+      }
+    },
+    {
+      "chance": 0.05,
+      "slopeCondition": {
+        "maximumSlope": 0.4
+      },
+      "place": ["custom/trees/fantasy/bigoak2"],
+      "translate": {
+        "y": -5
+      },
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:green_candle" }],
+          "replace": {
+            "palette": [{ "block": "minecraft:air" }]
+          }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "max": 270,
+          "min": 0
+        }
+      }
+    },
+    {
+      "chance": 0.05,
+      "slopeCondition": {
+        "maximumSlope": 0.4
+      },
+      "place": ["custom/trees/fantasy/bigoak3"],
+      "translate": {
+        "y": -5
+      },
+      "edit": [
+        {
+          "find": [{ "block": "minecraft:green_candle" }],
+          "replace": {
+            "palette": [{ "block": "minecraft:air" }]
+          }
+        }
+      ],
+      "rotation": {
+        "yAxis": {
+          "enabled": true,
+          "interval": 90,
+          "max": 270,
+          "min": 0
+        }
+      }
+    }
+  ],
+  "decorators": [
+    {
+      "chance": 0.7,
+      "palette": [
+        {
+          "weight": 2,
+          "block": "minecraft:short_grass"
+        },
+        {
+          "weight": 1,
+          "block": "minecraft:tall_grass"
+        }
+      ]
+    },
+    {
+      "chance": 0.1,
+      "variance": { "style": "STATIC" },
+      "palette": [
+        { "block": "minecraft:dandelion" },
+        { "block": "minecraft:poppy" },
+        { "block": "minecraft:blue_orchid" },
+        { "block": "minecraft:allium" },
+        { "block": "minecraft:azure_bluet" },
+        { "block": "minecraft:red_tulip" },
+        { "block": "minecraft:orange_tulip" },
+        { "block": "minecraft:white_tulip" },
+        { "block": "minecraft:pink_tulip" },
+        { "block": "minecraft:oxeye_daisy" },
+        { "block": "minecraft:cornflower" },
+        { "block": "minecraft:lily_of_the_valley" }
+      ]
+    }
+  ],
+  "childStyle": {
+    "style": "SIMPLEX",
+    "zoom": 0.5,
+    "exponent": 2
+  }
 }
