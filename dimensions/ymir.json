@@ -112,13 +112,6 @@
       "spreadType": "LINEAR",
       "rarity": 3500,
       "structure": "dungeon-spider"
-    },
-    {
-      "separation": 100,
-      "spacing": 100,
-      "spreadType": "LINEAR",
-      "rarity": 7000,
-      "structure": "ancient-city"
     }
   ],
   "regions": [
